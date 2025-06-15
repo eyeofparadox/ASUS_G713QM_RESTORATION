@@ -1,0 +1,228 @@
+unable-to-reset-your-pc-a-required-drive-partition-is-missing
+https://rog-forum.asus.com/t5/rog-gaming-notebooks/unable-to-reset-your-pc-a-required-drive-partition-is-missing/td-p/446746
+
+"Unable to reset your PC. A required drive partition is missing." 
+
+Sounds like you accidentally deleted your partition table. Are you familiar with PartedMagic or TestDisk? Both have tools that can help you rebuild the table and make the drive bootable again. Worst case scenario, PartedMagic comes with DD, and you can completely wipe the disk and start over from scratch. If you do that, you'll be wiping the disk back to factory destroying the recovery partition.
+
+No, I didn't "accidentally" delete the partition table. I did it on purpose. The whole point was to do a clean install on a clean drive, partitioned the way I like.
+
+For the benefit of future web hikers, I will go ahead and answer my own question.
+
+HOW TO CREATE A GPT PARTITION TABLE AND REINSTALL WINDOWS 8 WHEN THE RECOVERY WILL NOT WORK:
+
+1. Boot up from the recovery USB drive and go to the command prompt.
+
+2. At the command prompt, enter the following (note that this will give you a 150 GB Windows partition and a big user data partition; the data partition can be omitted if desired):
+diskpart
+select disk 0
+clean
+convert gpt
+create partition primary size=300
+format quick fs=ntfs label="Windows RE tools"
+assign letter="T"
+set id="de94bba4-06d1-4d40-a16a-bfd50179d6ac"
+gpt attributes=0x8000000000000001
+create partition efi size=260
+format quick fs=fat32 label="System"
+assign letter="S"
+create partition msr size=128
+create partition primary size=153600
+format quick fs=ntfs label="Windows"
+assign letter="W"
+create partition primary
+shrink minimum=15000
+format quick fs=ntfs
+create partition primary
+format quick fs=ntfs label="Recovery image"
+assign letter="R"
+set id="de94bba4-06d1-4d40-a16a-bfd50179d6ac"
+gpt attributes=0x8000000000000001
+exit
+
+3. Now you should be out of Diskpart but still at the command prompt. Copy the recovery images to the recovery partition. Your recovery USB will probably be drive C, and the images will be several install.swm files in the Sources directory. Copy them to drive R. Like this:
+c:
+cd sources
+copy *.* r:
+
+4. Apply the images to the Windows partition:
+dism /apply-image /imagefile:install.swm /swmfile:install*.swm /index:1 /applydir:W:\
+
+5. Copy the Windows RE tools to the Windows RE partition:
+md T:\Recovery\WindowsRE
+w:
+cd windows\system32\recovery
+attrib winre.wim -h -s -r [use this line only if the next line fails]
+copy winre.wim t:\recovery\windowsre\
+
+6. Copy the boot files to the System partition:
+bcdboot w:\windows
+
+7. At this point, Windows will boot up, but will look funny. You can now do a Reset Your PC without getting the message about a missing partition, and everything will be back to normal!
+
+FOR FURTHER READING:
+http://technet.microsoft.com/en-us/library/hh825686.aspx
+http://technet.microsoft.com/en-us/library/hh825089.aspx
+http://technet.microsoft.com/en-us/library/hh825258.aspx
+
+
+Recovery AND RecoveryImage AND ASUS.swm
+https://www.google.com/search?q=Recovery+AND+RecoveryImage+AND+ASUS.swm&sca_esv=7899e45081c54108&ei=U0YtaKbIJPDE0PEPr8bdoAk&ved=0ahUKEwjmveSyzbONAxVwIjQIHS9jF5QQ4dUDCBA&uact=5&oq=Recovery+AND+RecoveryImage+AND+ASUS.swm&gs_lp=Egxnd3Mtd2l6LXNlcnAiJ1JlY292ZXJ5IEFORCBSZWNvdmVyeUltYWdlIEFORCBBU1VTLnN3bTIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBTIIEAAYgAQYogQyCBAAGIAEGKIESK-sAVDQC1iZiAFwAngAkAEAmAFvoAHnCKoBAzkuM7gBA8gBAPgBAZgCDKACoQjCAgoQIRigARjDBBgKwgIEECEYCpgDAOIDBRIBMSBAiAYBkgcEMTAuMqAH3CyyBwM5LjK4B58I&sclient=gws-wiz-serp
+
+The ASUS.swm file is a recovery image used by ASUS laptops to restore the system to its factory settings. It's often found within the RESTORE partition or hidden within other partitions. The ASUS.swm file, along with other .swm files (like asus2.swm, asus3.swm, etc.), can be used to restore a system to a clean state. 
+
+Here's a more detailed breakdown:
+
+1. What is ASUS.swm?
+The ASUS.swm file is a recovery image that contains a complete copy of the Windows operating system and pre-installed applications as it was when the laptop was first purchased.
+It's essentially a snapshot of the system's initial state. 
+
+2. Where is ASUS.swm located?
+The ASUS.swm file is typically located within the RESTORE partition on your hard drive. 
+The RESTORE partition is a hidden partition that contains the factory recovery image. 
+You might also find the ASUS.swm file in other hidden or system-related partitions. 
+
+3. How to use ASUS.swm for recovery?
+Access the RESTORE partition:
+* You might need to use a partition management tool (like Diskpart) or a recovery environment to access the RESTORE partition and locate the ASUS.swm file. 
+Extract and apply the image:
+* You can use tools like 7-Zip to extract the contents of the ASUS.swm file. Then, you can use the dism command (Deployment Image Servicing and Management) to apply the image to your system. 
+
+Alternative: Use MyASUS in WinRE:
+* ASUS's MyASUS utility in the Windows Recovery Environment (WinRE) can also facilitate factory reset using the ASUS.swm file. 
+
+4. When to use ASUS.swm?
+You can use the ASUS.swm file to restore your laptop to its factory settings, which can be helpful if your system is experiencing severe issues, malware infections, or if you are selling or gifting your laptop.
+It's a reliable way to get your system back to a clean and functional state. 
+
+Important Considerations:
+Data Loss:
+Using the ASUS.swm file will erase all data on your hard drive, so make sure to back up your important files before starting the recovery process.
+Drive Compatibility:
+Ensure the ASUS.swm file is compatible with your laptop model and that the recovery process is designed for your specific system. 
+
+
+How to Use Cloud Recovery in WinRE | ASUS SUPPORT
+https://youtu.be/xN7AzT4GjyI
+
+Transcript
+Intro
+How to use Cloud Recovery in WinRE?
+Cloud Recovery is an easy and efficient way to recover your system
+with latest drivers and software with internet connection
+You can also use Cloud Recovery to back up your files before getting your computer repaired
+It will help you save waiting time at the service center
+First, check the system requirements
+and you will need an external storage device for the back up
+Cloud recovery feature is built within MyASUS in WinRE
+How to Access Cloud Recovery
+There're two ways to access
+You can press and hold F12 to turn on your laptop and enter WinRE
+Choose [Troubleshoot] then enter [MyASUS in WinRE]
+How to Restart Your PC
+Or you can go to WinRE from Windows
+Go to Windows, Click on Power
+Hold the Shift key and select [Restart]
+Your PC will restart and reboot into WinRE
+Go to [Troubleshoot] and [MyASUS in WinRE]
+If it's your first time using MyASUS in WinRE, read and agree to the Privacy Notice that pops up
+How to Use Cloud Recovery
+Now, choose [Cloud Recovery]
+Make sure your laptop is connected to the wired or wireless internet connection
+Before the recovery, back up your personal files first
+Choose your external storage device and the files you want to back up
+Please do not remove the external storage device or power sources while backing up
+When the backup is completed, click [Yes] to start the cloud recovery process
+Please also make sure to keep the network and power connected during the cloud recovery process
+The recovery process may take 1 to 3 hours depending on your network and computer configuration
+Now, Cloud Recovery is completed and your computer has been restored
+to initial settings with latest OS and drivers installed
+If you're having problems to complete Cloud Recovery
+you are welcomed to contact the ASUS Service Center for further assistance
+Welcome to subscribe to our ASUS Support Channel, like the video and share your comments
+We are happy to provide you with more useful information.
+
+
+Unable to use built-in ASUS recovery partition
+https://www.eightforums.com/threads/unable-to-use-built-in-asus-recovery-partition.39197/page-8
+
+Please try the below steps.
+
+1. Download and install "Partition Guru" from http://www.eassos.com/partitionguru.php
+
+2. Install the tool and open it. Unlike "Partition Wizard", "PartitionGuru" will let us copy files from hidden partitions. Now create a folder in one of the empty data partition - preferable named "Recovery". Then copy asus.swm, asus2.swm,asus3.swm and asus4.swm to the "Recovery" folder.
+
+http://www.partitionguru.com/manual/...mPartition.php
+
+3. Open an elevated "Command Prompt" and type the below command exactly.
+
+dism /Get-WimInfo /WimFile:e:\Recovery\asus.swm
+
+(assuming the SWM files are stored inside "E:\Recovery" folder ).
+
+Let us know the result with next reply. There iare other wim files like driver 64 which contains the drivers needed for the laptop. Usually the recovery image will contain the necessary drivers required for the system. However it won't hurt to copy that wim file too.
+
+On a later thought, please execute the below command after the first one.
+
+dism /Get-WimInfo /WimFile:e:\Recovery\asus.swm >e:\wiminfo.txt
+
+This will create a file named "wiminfo.txt" in E drive. (There is a typo in the second command but never mind, the screenshot is more than enough.) There is only one image inside the SWM files and it is straightly named as "Recovery image". Recovering OS from it is the hard part.
+
+You need to build a "WinPE" boot disc with some special tools ( created by WinPE guru "SIW2" ).
+
+Download the latest version of the builder from https://www.dropbox.com/s/8q4mqlo4qwoq7dl/REv18.zip
+
+Follow instruction from this page to ceate the boot disc : new versions of simple winpe maker
+
+(instruction are for old version 7 builder ). When it asks for permission to download some files from net, press "Y" to confirm.
+
+Burn the resulting ISO to a blank CD and boot from it. You can optionally create a USB flash drive but avoid that if your system do have an optical drive.
+
+Please report whether you can successfully boot using SIW2's WinPE disc.
+
+Note: Post based on Win 7; saved mostly as a guidline for potential troubleshooting. | Big improvements for win 7 users in new versions of simple winpe maker (below). Much improved appearance and extra functions for handling wim and split wim files. Also made adjustments to cope with MS frequent updates to win8x.
+
+It works on win 7/8/8.1
+
+https://www.dropbox.com/s/v91sg0p87x...REv21.zip?dl=0
+
+USAGE
+
+1. Download the bit version corresponding to your windows bit version.
+
+2. Rt click the zip>properties>unblock.apply>ok.
+
+3. Extract the zip, preferably onto your drive e.g. c:\RE64v7G will be the folder.
+
+4. Rt click and run as admin on the RE64v7g-runmeasadmin.cmd
+
+
+What it does:
+
+1. It looks for winre.wim on your hard drive. ( Winre.wim is the guy you get from the F8 "Repair My Computer" option. It already contains the system recovery options, like startup repair, system restore, etc )
+
+2. It mounts winre.wim and adds a few useful free tools and a menu.
+
+3. It asks if you want to make a small download of ms tools and recuva. Only about 8mb. Recommend you say yes so they can be included as well.
+
+4. It looks on your hard drive for the popular disk imaging and partitioning programs, if you have them, they will also be included.
+
+5. It unmounts winre.wim and asks if you want to make an iso. The iso will support efi and bios boot on 64 bit win7 and on both bit versions win8x. It will be bios bootable if you are running 32 bit win7.
+
+The whole process should only take about 1 1/2 to 2 minutes ( bit longer on 8x as it is slower)
+
+You will end up with bootable winpe iso containing your imaging and partitioning program, windows recovery options, and several useful free tools.
+
+These are the installed programs it will look for :
+
+Imaging:
+
+Aomei Backupper, Macrium reflect ( free or paid ), Paragon Backup and recovery Free ( OR any Paragon paid versions but you will need to browse for that ).
+
+You will probably only have one of the above.
+
+Partitioning:
+
+Aomei partition Assistant ( free and paid versions), Partition Guru Pro ( you can install and run pguru pro unregistered - the data recovery does not work unregistered, but the partitioning functions do, it is very, very useful )
+
+I recommend you install both of the above.

@@ -1,0 +1,69 @@
+MyASUS in WinRE for USB 
+
+reddit
+https://www.reddit.com/r/ZephyrusM16/comments/1bca9fp/recovering_the_factory_image_when_youve_lost_it/
+
+Recovering the Factory Image, when you've lost it. Maybe.
+
+Good Afternoon,
+
+I have been scouring this sub for awhile trying to find answers and files etc. So helpful!! Today I got thinking, how can I get the OEM installation files without sending my Laptop back to ASUS and dealing with all that nonsense. So I went tinkering, the cloud recovery option in bios says my product isnt supported ( 2023 M16 GU604VI).
+
+So where to start, well li know MyASUS has to be in WinRE. But how to get it there.. this came with a lot of headaches at first. Ill detail the best I can.
+
+And now the how to:
+
+Google MyASUS in WinRE for USB ( it is for a ASUS Tuf laptop but dont let that stop you)
+
+Follow the instructions to get it on the USB
+
+Boot off the USB you made, follow instructions.
+
+I had a lot of failures at this point, Cloud Recovery kept just rebooting in to cloud recovery over and over again after downloading the files. I eventually just loaded off a vanilla windows installer and installed over the windows partition that cloud recovery had made, and followed these steps and maybe its best to fail at least once, as the MyAsus partition gets marked as bootable and is the way i succeded.
+
+Install vanilla windows on an NVME drive, log into windows and change the C: drive name to OS (may have to be System on different models, not absolutely sure)
+
+I also mounted the recovery partition and made sure it was labeled RECOVERY (some advice from a different thread, I dont know if its necessary)
+
+I rebooted the machine. Booted into windows. Rebooted again and mashed the F2 key
+
+Changed the boot device to the MyAsus Recovery ( will be labeled as UEFI OS (not windows))
+
+Did the cloud recovery steps all over again.
+
+And boom, it started the actually recovery process. Made it into windows all drivers intact, and all software, including McAfee, and dolby vision now shows up for me.
+
+Now my drive was a mess because of all the failed attempts. I am making a recovery drive now to clean it up.
+
+I hope this helps someone else.
+
+Edit: Recovery drive a success. Esupport folder, zephyrus wallpaper, Dolby vision all intact.
+
+
+Esupport folder can be found here: ASUSTreiber.de - Ihre ASUS Treiber Seite im Internet – Windows 11
+[search: model, sort: name]
+
+This method downloads the shipped factory image. For those that want it.
+
+
+MyASUS in WinRE for USB
+
+Go to ASUS support and drivers.
+
+Search for model FX506LH
+
+The file is there.
+
+Remember this was almost a year ago. Might not work. But definitely worth a shot. It was trial and error a lot. But I eventually got it.
+
+
+to shed some light on the steps ...
+
+USB should be formatted to fat32 and named RECOVERY
+
+Copy the MyAsus in MyASUS_in_WinRE_For_USB_V1.0.0.64_1 downloaded from FX506LH - Support into the usb and then run it from there..
+
+3. After running, it would some files on the usb drive, its like windows media creation tool but just the efi file that will take you to myasus in winre like interface from an externally plugged in device and then restart system with the usb in the laptop port and keep pressing esc or any other key for boot menu and select the usb device to boot, then youll be greeted with the familiar myasus in winre interface and go ahead and initialize the cloud recovery from there..itll work fine
+
+the process was successful. the usb drive had to be plugged out after the initial reboot otherwise it would boot into the cloud recovery usb over and over again. as the initial setup would already initialize the necessary myasus partition and boot from that to complete the rest of the process of cloud recovery. the cloud recovery within the uefi bios used to work before but has been dead for 2 months and keeps connecting to china server and fails with network error even when the bios time is correct and with multiple wifi/hotspot alternatives as suggested by other threads. Asus hasn't even acknowledged the issue even though ive been reporting it for the past few months. got my system up and running finally with factory asus image. what asus support couldn't guide me through for months, your thread saved the day. am looking for a good free entire backup solution so that i dont have to go through the issue over and over again. do suggest me some tools if you have been using any. ive heard about clonezilla a lot, shall look into it...
+
