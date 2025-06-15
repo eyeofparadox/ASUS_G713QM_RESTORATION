@@ -1,0 +1,8 @@
+"D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount\Windows\Setup\Installers\ArmouryCrateAuraCreatorInstaller_ASUS_Z_V3.3.1.0_16611.exe"
+"D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount\Windows\Setup\Installers\AsusMultiAntennaService_ASUS_Z_V3.2.3_15314_3.exe"
+"D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount\Windows\Setup\Installers\ASUSSmartDisplayControl_ASUS_Z_V1.10.13_14430_3.exe"
+"D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount\Windows\Setup\Installers\MyASUS Installer.exe"
+"D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount\Windows\Setup\Installers\NVIDIA Control Panel Installer.exe"
+"D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount\Windows\Setup\Installers\RefreshRateService.msi"
+"D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount\Windows\Setup\Scripts\SetupComplete.cmd"
+"D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount\Windows\Setup\State\State.ini"

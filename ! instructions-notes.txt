@@ -1,0 +1,43 @@
+In G:
+instructions:
+watch "Video instruction - run twice", MUST SEE
+If “Boot Menu” show Two USB drive, most computer choose “UEFI / EFI” ,
+try Two USB option both on boot menu that can fix for "windows can't be installed on drive" 
+
+you can also follow the image name “installing Windows” attached to install windows 11/10/7
+
+
+if you have any problem, Must see "Fix Error" folder
+
+Email me if any issue,I can assit you with any problem
+My email : boot32GB@outlook.com
+ 
+----------------------------------------------------------------------------------------
+------if you successfully installed windows, not need read followling-------------------
+
+most problems are here, check folder “Fix Error”:
+---windows can't be installed on drive        error saying "MBR" or "GPT" (video available)
+---windows could not prepare the computer  (video available)
+---Network unable to connect   (install network drives in folder "Fix Error" )
+---We couldn't created a new partition...  (delete all partitions can be fixed , see image instruction)
+---we couldn't find any drives. to get...  
+---Bitlocker Removed
+---Apps not display, Blank screen ( video available in folder “Fix Error” )
+---"Black screen", after "loading" is completed, then screen turned black 
+     ( press "Ctrl+Alt+A" , or choose "10PE" after press enter on boot menu )
+     
+---windows cannot install require files...0x80070570 
+---setup cannot continue due to a corrupted... 
+---windows could not update the computers boot... ( Surface, disable "boot configuration lock" in Bios)
+---the computer restarted unexpectedly or encountered...
+---Win7 not support NVME hard drive, check image in "Fix Error"
+
+Please email me if problem continue
+----------------------------------------------------------------------------------------
+In `password reset`:
+this password tool can reset " Windows password & Pin " -- but not for Bitlocker 
+make sure your hard drive is disable Bitlocker
+
+if hard drive is enable Bitlocker, then password tool will not be able to access hard drive, 
+it will not display windows account, because the Bitlocker has already locked the hard drive, 
+no software can access it, so the password tool can do nothing

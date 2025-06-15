@@ -1,0 +1,25 @@
+﻿ASUSTreiber.de - Your ASUS driver site on the Internet 
+
+
+
+Translate.com | German > English
+________________
+
+
+ Download Details | Popular
+ G513Q driver  
+G513Q Driver DVD
+Version 0.09_20H2
+License:         Commercial License
+File Size:         3.07 GB
+File Name:         G513QM_2009_X64_V0.09.7z
+Downloads:         2,816
+Creation Date:         2021.13.06
+Last Update:         2023.22.09
+System:         Windows 10
+MD5 Checksum:         206e5a3f20e4626babd7985e26b4f4bd
+Changelog
+Driver DVD for Windows 10
+Valid for the following models:
+G513QC, G513QE, G513QM, G513QR, G533QM, G533QR, G533QS, G713QC, G713QE, G713QM, G713QR, G733QM, G733QR, G733QS, G713QH, G513QH, G733QSA
+download | https://www.asustreiber.de/downloads/download/60-windows-10/866-g513q-treiber-dvd
