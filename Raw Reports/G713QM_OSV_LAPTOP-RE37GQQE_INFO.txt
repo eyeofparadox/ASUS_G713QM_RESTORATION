@@ -1,0 +1,117 @@
+https://support.microsoft.com/en-us/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227
+
+BitLocker recovery keys
+Device Name
+Key ID
+Recovery Key
+Drive
+Key upload date
+LAPTOP-RE37GQQE
+84249D31
+173756-711612-511544-026653-396088-480227-066748-585178
+OSV
+10/1/2021 5:52:00 PM
+ 
+Name
+LAPTOP-RE37GQQE
+OS Edition
+Windows 11 Home
+Version
+2009
+OS Build
+10.0.26100.3194
+System type
+ROG Strix G713QM_G713QM
+RAM
+15 GB
+Serial number
+M4NRKD016818172
+
+MicrosoftSupport 
+Account manager for David Roberson
+Activate Windows
+Applies To
+Windows 11 Windows 10
+
+Tip: Having problems activating Windows?  Try the troubleshooting steps at Get help with Windows activation errors.
+
+Activation helps verify that your copy of Windows is genuine and hasn’t been used on more devices than the Microsoft Software License Terms allow. Watch how to activate Windows in the video below.
+
+It is essential that you link your Microsoft account to the Windows 11 license on your device. Linking your Microsoft account with your digital license enables you to reactivate Windows using the Activation troubleshooter whenever you make a significant hardware change.
+
+Linking your Microsoft account
+To link your Microsoft account, follow these instructions:
+
+Sign in as an administrator to add your Microsoft account. To confirm you’re using an administrator account, select the Start  button, then select Settings  > Accounts  > Your info  . Under your name, you’ll see Administrator . If you’re not an administrator, see Manage user accounts in Windows to create an administrator account.
+
+Go to your info in Settings
+
+Confirm that the administrator account is also your Microsoft account by checking to see if an email address is displayed above Administrator . If an email address is displayed, this is a Microsoft account. If not, you’re logged in with a local account. If you don’t yet have a Microsoft account, see How to create a new Microsoft account.
+
+Once you confirm that you’re an administrator and using your Microsoft account, go back to the Activation page, select Add an account, enter your Microsoft account and password, and then select Sign in .
+
+After your Microsoft account has been added, on the Activation page you’ll see Windows is activated with a digital license linked to your Microsoft account.
+
+Methods of Windows activation
+Depending on how you got your copy of Windows 11, you’ll need either a digital license or a 25-character product key to activate it. Without one of these, you won’t be able to activate your device.
+
+A digital license (called a digital entitlement in Windows 11) is a method of activation in Windows 11 that doesn’t require you to enter a product key.
+
+A product key is a 25-character code used to activate Windows. What you’ll see is PRODUCT KEY: XXXXX-XXXXX-XXXXX-XXXXX-XXXXX.
+
+After determining which activation method you use, follow the steps in the corresponding Activate using a digital license or Activate using a product key.
+
+What Windows activation method do I use, a digital license or a product key?
+Purchase a Windows 11 license
+Activate Windows using a digital license
+Digital licenses are associated with your hardware and linked to your Microsoft account, so there’s nothing you need to find on your PC. You’re all set once your PC is connected to the internet and you log in to your Microsoft account.
+
+If you don’t have a digital license, you can use a product key to activate.  To learn how to activate using a product key, follow the steps at Activate using a product key.
+
+First time installation and activation on a new device or motherboard
+Activate after reinstalling Windows 11
+If you have a digital license for your device, you can reinstall the same edition of Windows 11 on this device without entering a product key.
+
+Make sure that Windows 11 is activated before you try to reinstall it. To find out, select the Start  button, and then select Settings  > System  > Activation  . You’ll be able to confirm that your Windows 11 has been activated and that your Microsoft account is associated with your digital license.
+
+Check  activation status in Settings
+
+Here are the possible messages that display on the Activation page:
+
+Activation status
+
+Description
+
+Windows is activated with a digital license
+
+Your Microsoft account is not linked to your digital license. Follow instructions for Linking your Microsoft account.
+
+Windows is activated with a digital license linked to your Microsoft account
+
+Your Microsoft account is already linked to your digital license.
+
+If Windows 11 isn’t activated on your device, see Get help with Windows activation errors for more info.
+
+If your digital license is not linked to your Microsoft account, follow the steps under Checking your Activation status, Linking your Microsoft account.
+
+Once you have your account linked, then you can run setup to reinstall Windows 11. For more info about how to create installation media to reinstall Windows 11, go to the Microsoft software download website. When creating installation media, make sure to choose the edition of Windows 11 that matches the edition already installed on your device.
+
+During reinstallation, if you’re asked to enter a product key, you can skip this step by selecting I don’t have a product key. Windows 11 will automatically activate online after the installation is complete. If you linked your digital license with your Microsoft account, be sure to sign in to the Microsoft account that is linked to the digital license.
+
+Reactivating Windows 11 after a hardware change
+Activate Windows using a product key
+A product key is a 25-character code, that looks like this:
+
+PRODUCT KEY: XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+
+During installation, you’ll be prompted to enter a product key.  Or, after installation, to enter the product key, select the Start  button, and then select Settings  > System  > Activation  > Change product key.
+
+Change product key in Settings
+
+To locate your product key, see the product key table in Activation methods, What activation method do I use, a digital license or a product key?
+
+Note: Microsoft only keeps a record of product keys if you purchased from the Microsoft online store. You can find out if you purchased from Microsoft in your Microsoft account Order history. For more help, see Find your Windows product key.
+
+If you have a product key, then you can use Change product key to activate Windows 11 in each of the following scenarios. Below is supplemental information that might help you with activation:
+
+

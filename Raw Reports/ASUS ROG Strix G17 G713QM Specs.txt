@@ -1,0 +1,52 @@
+ASUS ROG Strix G17 G713QM-HX016T AMD Ryzen™ 9 5900HX Laptop 43.9 cm (17.3") Full HD 16 GB DDR4-SDRAM 1 TB SSD NVIDIA GeForce RTX 3060 Wi-Fi 6 (802.11ax) Windows 10 Home Black, Grey
+
+2021 ROG Strix G17 G713QM-ES94
+https://rog.asus.com/us/laptops/rog-strix/2021-rog-strix-g17-series/spec/
+
+Registration Date: 2021-10-02
+G713QM
+Serial Number : M4NRKD016818172
+Warranty : Expired
+
+MS Device Name:
+DESKTOP-22G3P3U
+OS Edition:
+Windows Core
+Version:
+2009
+OS Build:
+10.0.22631.2861
+
+Driver & Tools
+FAQ
+Manual & Document
+Warranty Extension
+Repair Records
+Tech Specs
+Operating System
+Windows 10 Home - ASUS recommends Windows 10 Pro for business
+Windows 10 Pro - ASUS recommends Windows 10 Pro for business, Free Upgrade to Windows 11¹ (when available, see below)
+Processor
+AMD Ryzen™ 9 5900HX Mobile Processor (8-core/16-thread, 20MB cache, up to 4.6 GHz max boost)
+Graphics
+NVIDIA® GeForce RTX™ 3060 Laptop GPU, With ROG Boost up to 1802MHz at 115W (130W with Dynamic Boost), 6GB GDDR6
+Display
+17.3-inch, FHD (1920 x 1080) 16:9, Value IPS-level, Anti-glare display, - sRGB:62.50%, - Adobe:47.34%, - Refresh Rate:144Hz, Adaptive-Sync, N/A, Optimus
+Memory
+8GB DDR4-3200 SO-DIMM x 2, - Max Capacity:32GB
+Storage
+1TB PCIe® 3.0 NVMe™ M.2 SSD
+I/O Ports
+1x 3.5mm Combo Audio Jack, 1x HDMI 2.0b, 3x USB 3.2 Gen 1 Type-A (data speed up to 5Gbps) 1x USB 3.2 Gen 2 Type-C with support for DisplayPort™ / power delivery / G-SYNC (data speed up to 10Gbps) 1x RJ45 LAN port
+Keyboard and Touchpad
+Backlit Chiclet Keyboard 4-Zone RGB, Touchpad, N/A
+Audio
+Smart Amp Technology Dolby Atmos AI noise-canceling technology, Built-in array microphone, 2x 4W speaker with Smart Amp Technology
+Network and Communication
+Wi-Fi 6(802.11ax) (Dual band) 2*2 + Bluetooth® 5.2 Wireless Card (*Bluetooth® version may change with OS version different.) -RangeBoost
+Battery
+90WHrs, 4S1P, 4-cell Li-ion
+Power Supply
+ø6.0, 240W AC Adapter, Output: 20V DC, 12A, 240W, Input: 100~240C AC 50/60Hz universal
+Security
+BIOS Administrator Password and User Password Protection Trusted Platform Module (Firmware TPM)

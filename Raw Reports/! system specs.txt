@@ -1,0 +1,73 @@
+System Information | Wednesday, September 7, 2022, 10:31:20 PM
+------------------
+Windows 10 Home 64-bit (10.0, Build 19044) (19041.vb_release.191206-1406)
+ASUSTeK COMPUTER INC.
+ROG Strix G713QM_G713QM
+BIOS: G713QM.320 (type: UEFI)
+AMD Ryzen 9 5900HX with Radeon Graphics         (16 CPUs), ~3.3GHz
+Memory: 16384MB RAM
+Available OS Memory: 15792MB RAM
+DirectX Version: DirectX 12
+Microsoft Graphics Hybrid: Supported
+DirectX Database Version: 1.4.1
+DxDiag Version: 10.00.19041.1741 64bit Unicode
+
+Display Devices
+---------------
+AMD Radeon(TM) Graphics
+Manufacturer: Advanced Micro Devices, Inc.
+Chip type: AMD Radeon Graphics Processor (0x1638)
+DAC type: Internal DAC(400MHz)
+Device Type: Full Device (POST)
+Display Memory: 8392 MB
+Dedicated Memory: 496 MB
+Shared Memory: 7896 MB
+Current Mode: 1920 x 1080 (32 bit) (144Hz)
+HDR Support: Not Supported
+Display Topology: Extend
+Hybrid Graphics GPU: Integrated
+
+NVIDIA GeForce RTX 3060 Laptop GPU
+Manufacturer: NVIDIA
+Chip type: NVIDIA GeForce RTX 3060 Laptop GPU
+DAC type: Integrated RAMDAC
+Device Type: Full Device
+Display Memory: 13919 MB
+Dedicated Memory: 6023 MB
+Shared Memory: 7896 MB
+Detachable GPU: No
+Hybrid Graphics GPU: Discrete
+
+Disk & DVD/CD-ROM Drives
+------------------------
+Drive: C:
+Free Space: 657.0 GB
+Total Space: 955.6 GB
+File System: NTFS
+Model: HFM001TD3JX013N
+
+Drive: D:
+Free Space: 2064.1 GB
+Total Space: 3815.4 GB
+File System: exFAT
+Model: WD My Book 25EE USB Device
+
+Drive: E:
+Free Space: 951.3 GB
+Total Space: 953.8 GB
+File System: NTFS
+Model: WD My Passport 25E1 USB Device
+
+Drive: F:
+Free Space: 2869.9 GB
+Total Space: 3815.4 GB
+File System: NTFS
+Model: WD My Passport 2626 USB Device
+
+Drive: G:
+Free Space: 2146.3 GB
+Total Space: 2861.6 GB
+File System: NTFS
+Model: WD My Passport 259F USB Device
+
+
