@@ -1,0 +1,9 @@
+DiskGenius Disk Verify Result:
+
+Disk: RD4:USBDISK2.0(2GB)
+Cylinder Range: 0 - 243 (Total cylnders count: 243)
+Time: 2025-05-23 22:12:57
+
+0 bad track areas found.
+
+

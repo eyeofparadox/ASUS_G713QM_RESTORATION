@@ -1,0 +1,61 @@
+My Computer: AnhdvBoot - Anhdv Boot 2024 F24.2 Apr x64
+|---AMD USB 3.10 eXtensible Host Controller - 1.10 (Microsoft) - USB xHCI Compliant Host Controller
+|   \---USB Root Hub (USB 3.0)
+|       |HS-[1-1]
+|       |HS-[1-2]
+|       |FS-[1-3]: ASUSTek Computer USB Input Device
+|       |   |---HID-compliant vendor-defined device
+|       |   |---HID-compliant vendor-defined device
+|       |   |---HID Keyboard Device
+|       |   |---HID-compliant vendor-defined device
+|       |   |---HID-compliant vendor-defined device
+|       |   |---HID-compliant consumer control device
+|       |   \---HID-compliant system controller
+|       |HS-[1-4]
+|       |SS-[1-5]
+|       \SS-[1-6]: Kingston DataTraveler 3.0 USB Device
+|           \---Kingston DataTraveler 3.0 USB Device - Disk drive - Disk1 - 62 GB
+|               |---Volume - 5 GB - "K1-BOOT" - J:\
+|               \---Volume - 57 GB - "Instructions" - K:\
+\---AMD USB 3.10 eXtensible Host Controller - 1.10 (Microsoft) - USB xHCI Compliant Host Controller
+    \---USB Root Hub (USB 3.0)
+        |---[2-1]: Generic USB 2.1 Hub
+        |   |---[2-1-1]: Generic USB 2.1 Hub
+        |   |   |HS-[2-1-1-1]
+        |   |   |HS-[2-1-1-2]
+        |   |   |HS-[2-1-1-3]: HP External HDD
+        |   |   |   |---HP External HDD USB Device - Disk drive - Disk5 - 499 GB
+        |   |   |   |   |---Volume - 34 GB - "ESD-USB" - S:\
+        |   |   |   |   \---Volume - 465 GB - "DATA" - T:\
+        |   |   |   \---HP Virtual CD 4507 USB Device - CD-ROM Drive - CdRom0 - E:\
+        |   |   \HS-[2-1-1-4]
+        |   |HS-[2-1-2]
+        |   |HS-[2-1-3]
+        |   \FS-[2-1-4]: Logitech Gaming Mouse G502
+        |       |---USB Input Device
+        |       |   \---HID-compliant mouse
+        |       \---USB Input Device
+        |           |---HID Keyboard Device
+        |           |---HID-compliant consumer control device
+        |           |---HID-compliant system controller
+        |           |---HID-compliant vendor-defined device
+        |           \---HID-compliant vendor-defined device
+        |HS-[2-2]
+        |HS-[2-3]
+        |28-[2-4]: Intel 0029
+        |---[2-5]: Generic SuperSpeed USB 3.0 Hub
+        |   |---[2-5-1]: Generic SuperSpeed USB 3.0 Hub
+        |   |   |SS-[2-5-1-1]: Longsys Lexar USB Flash Drive USB Device
+        |   |   |   \---Lexar USB Flash Drive USB Device - Disk drive - Disk2 - 31 GB
+        |   |   |SS-[2-5-1-2]: Longsys Lexar USB Flash Drive USB Device
+        |   |   |   \---Lexar USB Flash Drive USB Device - Disk drive - Disk3 - 31 GB
+        |   |   |SS-[2-5-1-3]
+        |   |   \SS-[2-5-1-4]
+        |   |SS-[2-5-2]
+        |   |SS-[2-5-3]: Western Digital My Passport 2627
+        |   |   |---WD My Passport 2627 USB Device - Disk drive - Disk4 - 2 TB
+        |   |   |   |---Volume - 982 GB - "AEGIS" - Q:\
+        |   |   |   \---Volume - 34 GB
+        |   |   \28-WD SES Device USB Device
+        |   \SS-[2-5-4]
+        \SS-[2-6]

@@ -1,0 +1,258 @@
+
+  -- General Information --
+
+    Application Information
+   -------------------------
+    Installed Version  . . . . . . . . . . . . . . . : Hard Disk Sentinel 6.20 PRO
+    Registered To  . . . . . . . . . . . . . . . . . : Janos Mathe CEO
+    Current Date And Time  . . . . . . . . . . . . . : 4/25/2025 11:50:19 PM
+    Health Calculation Method  . . . . . . . . . . . : Analyse data field (default)
+
+    Computer Information
+   ----------------------
+    Computer Name  . . . . . . . . . . . . . . . . . : AnhdvBoot
+    User Name  . . . . . . . . . . . . . . . . . . . : SYSTEM
+    Computer Type  . . . . . . . . . . . . . . . . . : Mobile
+    IP Address . . . . . . . . . . . . . . . . . . . : 127.0.0.1
+    MAC Address  . . . . . . . . . . . . . . . . . . : CC-E9-06-06-E4-1E
+    System Uptime  . . . . . . . . . . . . . . . . . : 0 days, 0 hours, 43 minutes, 41 seconds
+    System Idle Time . . . . . . . . . . . . . . . . : 0 days, 0 hours, 0 minutes, 0 seconds
+    System Up Since  . . . . . . . . . . . . . . . . : 4/25/2025 11:06:39 PM
+    Virtual Memory . . . . . . . . . . . . . . . . . : 15791 MB, Used: 1826 MB (12 %)
+
+    System Information
+   --------------------
+    Windows Version  . . . . . . . . . . . . . . . . : Anhdv Boot 2024 F24.2 Apr 
+    CPU Type & Speed #1  . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #2  . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #3  . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #4  . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #5  . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #6  . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #7  . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #8  . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #9  . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #10 . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #11 . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #12 . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #13 . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #14 . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #15 . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    CPU Type & Speed #16 . . . . . . . . . . . . . . : AMD Ryzen 9 5900HX with Radeon Graphics, 3294 MHz
+    BIOS Manufacturer  . . . . . . . . . . . . . . . : AMI
+    Physical Memory Size . . . . . . . . . . . . . . : 15791 MB, Used: 1911 MB (12 %)
+    Display Adapter
+    Display Resolution . . . . . . . . . . . . . . . : 1920 x 1080 (32 bit)
+    Network Controller . . . . . . . . . . . . . . . : Realtek(R) PCI(e) Ethernet Controller
+    Optical Drive
+
+    PCI Device Information
+   ------------------------
+    PCI Bus 0; Device 1; Function 1  . . . . . . . . : PCI Express Root Port
+    PCI Bus 0; Device 2; Function 1  . . . . . . . . : PCI Express Root Port
+    PCI Bus 0; Device 2; Function 2  . . . . . . . . : PCI Express Root Port
+    PCI Bus 0; Device 2; Function 4  . . . . . . . . : PCI Express Root Port
+    PCI Bus 0; Device 8; Function 1  . . . . . . . . : PCI Express Root Port
+    PCI Bus 1; Device 0; Function 1  . . . . . . . . : High Definition Audio Controller
+    PCI Bus 2; Device 0; Function 0  . . . . . . . . : Realtek(R) PCI(e) Ethernet Controller
+    PCI Bus 4; Device 0; Function 0  . . . . . . . . : Standard NVM Express Controller
+    PCI Bus 5; Device 0; Function 1  . . . . . . . . : High Definition Audio Controller
+    PCI Bus 5; Device 0; Function 3  . . . . . . . . : %1 USB %2 eXtensible Host Controller - %3 (Microsoft);(AMD,3.10,1.10)
+    PCI Bus 5; Device 0; Function 4  . . . . . . . . : %1 USB %2 eXtensible Host Controller - %3 (Microsoft);(AMD,3.10,1.10)
+    PCI Bus 5; Device 0; Function 6  . . . . . . . . : High Definition Audio Controller
+
+
+
+  -- Physical Disk Information - Disk: #0: HFM001TD3JX013N --
+
+    Hard Disk Summary
+   -------------------
+    Hard Disk Number . . . . . . . . . . . . . . . . : 0
+    Interface  . . . . . . . . . . . . . . . . . . . : NVMe
+    Hard Disk Model ID . . . . . . . . . . . . . . . : HFM001TD3JX013N
+    Firmware Revision  . . . . . . . . . . . . . . . : 41000C20
+    Hard Disk Serial Number  . . . . . . . . . . . . : CY11N096911702159
+    Total Size . . . . . . . . . . . . . . . . . . . : 976756 MB
+    Power State  . . . . . . . . . . . . . . . . . . : Active
+    Logical Drive(s) . . . . . . . . . . . . . . . . : F: [] 
+    Current Temperature  . . . . . . . . . . . . . . : 36 °C
+    Maximum Temperature (Ever Measured)  . . . . . . : 39 °C, 4/25/2025 11:38:54 PM
+    Minimum Temperature (Ever Measured)  . . . . . . : 35 °C, 4/25/2025 11:09:55 PM
+    Power On Time  . . . . . . . . . . . . . . . . . : 1122 days, 14 hours
+    Estimated Remaining Lifetime . . . . . . . . . . : more than 688 days
+    Lifetime Writes  . . . . . . . . . . . . . . . . : 73.48 TB
+    Health . . . . . . . . . . . . . . . . . . . . . : ###################- 99 % (Excellent)
+    Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+
+    The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+    The health is determined by SSD specific S.M.A.R.T. attribute(s):  Available Spare (Percent), Percentage Used
+    The TRIM feature of the SSD is supported but disabled. It is recommended to upgrade the operating system, the disk controller or its driver to improve performance.
+      No actions needed.
+
+    Properties
+   ------------
+    NVMe Standard Version  . . . . . . . . . . . . . : 1.3
+    PCI Vendor ID (VID)  . . . . . . . . . . . . . . : 0x1C5C
+    PCI Subsystem Vendor ID (SSVID)  . . . . . . . . : 0x1C5C
+    IEEE OUI Identifier  . . . . . . . . . . . . . . : 2E-E4-AC
+    Recommended Arbitration Burst (RAB)  . . . . . . : 3
+    Multi-Interface Capabilities . . . . . . . . . . : 0
+    Maximum Data Transfer Size . . . . . . . . . . . : 64 (6)
+    Abort Command Limit  . . . . . . . . . . . . . . : 4
+    Asynchronous Event Request Limit . . . . . . . . : 8
+    Number FW Slots Support  . . . . . . . . . . . . : 3
+    Maximum Error Log Page Entries . . . . . . . . . : 256
+    Total Number Of Power States . . . . . . . . . . : 5
+    Admin Vendor Specific CMD Format . . . . . . . . : 1
+    Submission Queue Entry Size  . . . . . . . . . . : Max: 64, Min: 64
+    Completion Queue Entry Size  . . . . . . . . . . : Max: 16, Min: 16
+    Number Of Namespaces . . . . . . . . . . . . . . : 1
+    Stripe Size  . . . . . . . . . . . . . . . . . . : 0
+    Maximum Power (mW) . . . . . . . . . . . . . . . : 6300
+
+    NVMe Features
+   ---------------
+    Doorbell Buffer Config . . . . . . . . . . . . . : Not supported
+    Virtualization Management  . . . . . . . . . . . : Not supported
+    NVMe MI Send/Receive . . . . . . . . . . . . . . : Not supported
+    Directives . . . . . . . . . . . . . . . . . . . : Not supported
+    Device Self-test . . . . . . . . . . . . . . . . : Supported
+    Extended Self-test Estimated Time  . . . . . . . : 60 minutes
+    Only One Device Self-test  . . . . . . . . . . . : Yes
+    Namespace Management . . . . . . . . . . . . . . : Not supported
+    Firmware Activate Download . . . . . . . . . . . : Supported
+    Format NVM . . . . . . . . . . . . . . . . . . . : Supported
+    Security Send Receive  . . . . . . . . . . . . . : Supported
+    Firmware Activation Without Reset  . . . . . . . : Supported
+    First Firmware Slot Read Only  . . . . . . . . . : No
+    Command Effects Log Page . . . . . . . . . . . . : Supported
+    SMART Information Per Namespace  . . . . . . . . : Not supported
+    Reservations . . . . . . . . . . . . . . . . . . : Not supported
+    Save / Select Fields . . . . . . . . . . . . . . : Supported
+    Write Zeroes . . . . . . . . . . . . . . . . . . : Supported
+    Dataset Management Command . . . . . . . . . . . : Supported
+    Write Uncorrectable Command  . . . . . . . . . . : Supported
+    Compare Command  . . . . . . . . . . . . . . . . : Supported
+    Compare And Write Fused Operation  . . . . . . . : Not supported
+    Cryptographic Erase  . . . . . . . . . . . . . . : Not supported
+    Secure Erase All Namespaces  . . . . . . . . . . : Not supported
+    Format All Namespaces  . . . . . . . . . . . . . : Not supported
+    Volatile Write Cache Present . . . . . . . . . . : Supported
+    Autonomous Power State Transitions . . . . . . . : Supported
+    Atomic Compare And Write Unit  . . . . . . . . . : Not supported
+    Scatter Gather List (SGL)  . . . . . . . . . . . : Not supported
+    Host Controlled Thermal Management . . . . . . . : Supported
+    Thermal Management Temperature 1 . . . . . . . . : 354 °K (81 °C)
+    Thermal Management Temperature 2 . . . . . . . . : 356 °K (83 °C)
+    Warning Composite Temperature Threshold  . . . . : 356 °K (83 °C)
+    Critical Composite Temperature Threshold . . . . : 358 °K (85 °C)
+    Sanitize Overwrite . . . . . . . . . . . . . . . : Not supported
+    Sanitize Block Erase . . . . . . . . . . . . . . : Supported
+    Sanitize Crypto Erase  . . . . . . . . . . . . . : Not supported
+    Sanitize Status  . . . . . . . . . . . . . . . . : Never sanitized [0]
+    Estimated Time For Block Erase . . . . . . . . . : 10
+
+    NVMe Namespace Information
+   ----------------------------
+    NS 1 Total Sectors . . . . . . . . . . . . . . . : 2000409264
+    NS 1 Bytes Per Sector  . . . . . . . . . . . . . : 512
+    NS 1 Active LBA Format Index . . . . . . . . . . : 0
+    NS 1 LBA Formats Supported . . . . . . . . . . . : 2
+    NS 1 LBA Format List (Disk Performance)  . . . . : 512 (Best), 4096 (Best)
+
+    Disk Information
+   ------------------
+    Disk Information
+    Form Factor  . . . . . . . . . . . . . . . . . . : M.2 2280
+    Capacity . . . . . . . . . . . . . . . . . . . . : 1024 GB (1024 x 1,000,000,000 bytes)
+    Disk Interface . . . . . . . . . . . . . . . . . : PCI-Express x4 (3.0)
+    Device Type  . . . . . . . . . . . . . . . . . . : NAND
+    Width  . . . . . . . . . . . . . . . . . . . . . : 22.0 mm (0.9 inch)
+    Depth  . . . . . . . . . . . . . . . . . . . . . : 80.0 mm (3.1 inch)
+    Height . . . . . . . . . . . . . . . . . . . . . : 2.2 mm (0.1 inch)
+    Weight . . . . . . . . . . . . . . . . . . . . . : 8 grams (0.0 pounds)
+
+    S.M.A.R.T.
+   ------------
+Attribute                                                            Threshold                       Value
+Critical Warning                                                                                         0
+Composite Temperature (Kelvin)                                                                         309
+Available Spare (Percent)                                                                              100
+Available Spare Threshold                                                                               10
+Percentage Used                                                                                          1
+Data Units Read (512000 Bytes)                                                                 167,141,550
+Data Units Written (512000 Bytes)                                                              157,801,737
+Host Read Commands                                                                           2,046,659,819
+Host Write Commands                                                                          1,723,717,545
+Controller Busy Time (minutes)                                                                       5,439
+Power Cycles                                                                                     3,929,540
+Power On Hours                                                                                      26,942
+Unsafe Shutdowns                                                                                       188
+Media and Data Integrity Errors                                                                          0
+Number of Error Information Log Entries                                                                  0
+Warning Composite Temperature Time (minutes)                                                             0
+Critical Composite Temperature Time (minutes)                                                            0
+Temperature Sensor 1                                                                                   309
+Temperature Sensor 2                                                                                   314
+
+    Transfer Rate Information
+   ---------------------------
+    Real time performance monitoring is not supported on this disk.
+
+
+
+  -- Physical Disk Information - Disk: #1: Kingston DataTraveler 3.0 --
+
+    Hard Disk Summary
+   -------------------
+    Hard Disk Number . . . . . . . . . . . . . . . . : 1
+    Interface  . . . . . . . . . . . . . . . . . . . : USB
+    Hard Disk Model ID . . . . . . . . . . . . . . . : Kingston DataTraveler 3.0
+    Firmware Revision  . . . . . . . . . . . . . . . : 0000
+    Hard Disk Serial Number  . . . . . . . . . . . . : ?
+    Total Size . . . . . . . . . . . . . . . . . . . : 59114 MB
+    Power State  . . . . . . . . . . . . . . . . . . : Active
+    Logical Drive(s) . . . . . . . . . . . . . . . . : D: [Instruction] H: [] 
+    Current Temperature  . . . . . . . . . . . . . . : ?
+    Health . . . . . . . . . . . . . . . . . . . . . : ? (Unknown)
+    Performance  . . . . . . . . . . . . . . . . . . : ? (Unknown)
+
+    Properties
+   ------------
+    Vendor Information . . . . . . . . . . . . . . . : ?
+    Status . . . . . . . . . . . . . . . . . . . . . : OK
+    Version  . . . . . . . . . . . . . . . . . . . . : 6
+    Device Type  . . . . . . . . . . . . . . . . . . : Disk
+    ASC  . . . . . . . . . . . . . . . . . . . . . . : 0
+    ASCQ . . . . . . . . . . . . . . . . . . . . . . : 0
+    Bytes Per Sector . . . . . . . . . . . . . . . . : 512
+    Total Sectors  . . . . . . . . . . . . . . . . . : 121,077,760
+    Unformatted Capacity . . . . . . . . . . . . . . : 61,991,813,120
+
+    SCSI Information
+   ------------------
+    Removable  . . . . . . . . . . . . . . . . . . . : Supported
+    Failure Prediction . . . . . . . . . . . . . . . : Not supported
+    Failure Prediction . . . . . . . . . . . . . . . : Disabled
+
+    Hard Disk Test
+   ----------------
+    Short Self-test  . . . . . . . . . . . . . . . . : Not supported
+    Extended Self-test . . . . . . . . . . . . . . . : Not supported
+
+    Transfer Rate Information
+   ---------------------------
+    Real time performance monitoring is not supported on this disk.
+
+
+
+  -- Partition Information --
+
+Logical Drive                           Total Space         Free Space          Free Space               Used Space
+C:                                      0.1 GB              0.1 GB               65 %                    #######-------------
+D: Instruction (Disk: #1)               53.3 GB             14.7 GB              28 %                    ##############------
+F: (Disk: #0)                           953.1 GB            923.2 GB             97 %                    --------------------
+G:                                      0.6 GB              0.1 GB               18 %                    ################----
+H: Boot (Disk: #1)                      4.4 GB              0.5 GB               11 %                    #################---
+X: Boot                                 128.0 GB            127.4 GB            100 %                    --------------------
+

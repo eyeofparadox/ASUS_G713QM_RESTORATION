@@ -1,0 +1,80 @@
+Field	Value Computer	
+Computer Type	ACPI x64-based PC
+Operating System	Microsoft Windows PE
+OS Service Pack	-
+Internet Explorer	11.1.22000.0
+DirectX	DirectX 
+Computer Name	AnhdvBoot
+User Name	SYSTEM
+Logon Domain	NT AUTHORITY
+Date / Time	2025-05-25 / 23:45
+	
+Motherboard	
+CPU Type	OctalCore AMD Ryzen 9 5900HX, 4641 MHz (46.5 x 100)
+Motherboard Name	Unknown
+Motherboard Chipset	AMD K19.5 FCH, AMD K19.5 IMC
+System Memory	15792 MB
+DIMM1: Micron 4ATF1G64HZ-3G2E2	8 GB DDR4-3200 DDR4 SDRAM  (24-22-22-52 @ 1600 MHz)  (23-22-22-52 @ 1600 MHz)  (22-22-22-52 @ 1600 MHz)  (21-21-21-49 @ 1527 MHz)  (20-20-20-47 @ 1454 MHz)  (19-19-19-45 @ 1381 MHz)  (18-18-18-42 @ 1309 MHz)  (17-17-17-40 @ 1236 MHz)  (16-16-16-38 @ 1163 MHz)  (15-15-15-35 @ 1090 MHz)  (14-14-14-33 @ 1018 MHz)  (13-13-13-31 @ 945 MHz)  (12-12-12-28 @ 872 MHz)  (11-11-11-26 @ 800 MHz)  (10-10-10-24 @ 727 MHz)
+DIMM2: Micron 4ATF1G64HZ-3G2E2	8 GB DDR4-3200 DDR4 SDRAM  (24-22-22-52 @ 1600 MHz)  (23-22-22-52 @ 1600 MHz)  (22-22-22-52 @ 1600 MHz)  (21-21-21-49 @ 1527 MHz)  (20-20-20-47 @ 1454 MHz)  (19-19-19-45 @ 1381 MHz)  (18-18-18-42 @ 1309 MHz)  (17-17-17-40 @ 1236 MHz)  (16-16-16-38 @ 1163 MHz)  (15-15-15-35 @ 1090 MHz)  (14-14-14-33 @ 1018 MHz)  (13-13-13-31 @ 945 MHz)  (12-12-12-28 @ 872 MHz)  (11-11-11-26 @ 800 MHz)  (10-10-10-24 @ 727 MHz)
+BIOS Type	Unknown
+	
+Display	
+Video Adapter	nVIDIA GeForce RTX 3060 Laptop
+Video Adapter	AMD Cezanne
+3D Accelerator	AMD Cezanne
+3D Accelerator	nVIDIA GeForce RTX 3060 Laptop
+Monitor	BOEhydis NV173FHM-NX4  [17.3" LCD]  {2020}
+	
+Multimedia	
+Audio Adapter	AMD K19.5 - Audio Processor
+Audio Adapter	ATI Radeon HDMI @ AMD K19.5 - Display High Definition Audio Controller
+Audio Adapter	nVIDIA GA106 HDMI/DP @ nVIDIA GA106 - High Definition Audio Controller
+Audio Adapter	Realtek ALC285 @ AMD K19.5 - Audio Processor - High Definition Audio Controller (Standalone AZ)
+	
+Storage	
+Storage Controller	Microsoft Storage Spaces Controller
+Storage Controller	Standard NVM Express Controller
+Disk Drive	HFM001TD3JX013N  (1024 GB, PCI-E 3.0 x4)
+Disk Drive	Kingston DataTraveler 3.0 USB Device  (7 GB, USB)
+Disk Drive	Lexar USB Flash Drive USB Device  (57 GB, USB)
+SMART Hard Disks Status	OK
+	
+Partitions	
+C: (NTFS)	49 MB (36 MB free)
+E: (NTFS)	528 MB (128 MB free)
+F: (FAT32)	96 MB (69 MB free)
+H: (FAT32)	2258 MB (2180 MB free)
+I: (NTFS)	641 MB (115 MB free)
+O: (NTFS)	950.4 GB (928.4 GB free)
+X: (NTFS)	128.0 GB (127.0 GB free)
+Y: (FAT32)	2258 MB (2180 MB free)
+Total Size	1084.1 GB (1060.0 GB free)
+	
+Input	
+Keyboard	HID Keyboard Device
+Keyboard	HID Keyboard Device
+Keyboard	PC/AT Enhanced PS/2 Keyboard (101/102-Key)
+Mouse	HID-compliant mouse
+Mouse	HID-compliant mouse
+	
+Network	
+Primary IP Address	192.168.0.100
+Primary MAC Address	FC-34-97-4D-35-1C
+Network Adapter	Realtek(R) PCI(e) Ethernet Controller  (192.168.0.100)
+	
+Peripherals	
+USB3 Controller	AMD K19.5 - USB 3.1 xHCI Controller
+USB3 Controller	AMD K19.5 - USB 3.1 xHCI Controller
+USB Device	Generic SuperSpeed USB Hub
+USB Device	Generic SuperSpeed USB Hub
+USB Device	Generic USB Hub
+USB Device	Generic USB Hub
+USB Device	Unknown
+USB Device	USB Composite Device
+USB Device	USB Input Device
+USB Device	USB Input Device
+USB Device	USB Input Device
+USB Device	USB Mass Storage Device
+USB Device	USB Mass Storage Device
+Battery	Microsoft AC Adapter
+Battery	Microsoft ACPI-Compliant Control Method Battery
