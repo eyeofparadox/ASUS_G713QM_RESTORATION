@@ -1,4 +1,4 @@
-<style>th { text-align: left; font-size: 1.25em;}</style>
+
 
 # System Information Report
 **Generated:** 06/16/25 18:06:33  
@@ -6,6 +6,7 @@
 
 ## System Summary
 <table>
+<style>th { text-align: left; font-size: 1.25em;}</style><!--head></head-->
   <tr>
     <th>Item</th>
     <th>Value</th>
