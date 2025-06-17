@@ -7,8 +7,8 @@
 ## System Summary
 <table>
   <tr>
-    <th style="text-align: left; font-size: 1.25em;">Item</th>
-    <th style="text-align: left; font-size: 1.25em;">Value</th>
+    <th style="text-align: left; font-size: 1.5em; font-weight: bold;">Item</th>
+    <th style="text-align: left; font-size: 1.5em; font-weight: bold;">Value</th>
   </tr>
   <tr>
     <td>OS Name</td>
@@ -111,11 +111,11 @@
     <td>Pacific Daylight Time</td>
   </tr>
   <tr>
-    <th style="text-align: left; font-size: 1.25em;" colspan="2">Memory</th>
+    <th style="text-align: left; font-size: 1.5em; font-weight: bold;" colspan="2">Memory</th>
   </tr>
   <tr>
-    <th>Item</th>
-    <th>Value</th>
+    <th style="text-align: left; font-size: 1.5em; font-weight: bold;">Item</th>
+    <th style="text-align: left; font-size: 1.5em; font-weight: bold;">Value</th>
   </tr>
   <tr>
     <td>Installed Physical Memory</td>
@@ -146,11 +146,11 @@
     <td>C:\pagefile.sys</td>
   </tr>
   <tr>
-    <th style="text-align: left; font-size: 1.25em;" colspan="2">Security & Virtualization</th>
+    <th style="text-align: left; font-size: 1.5em; font-weight: bold;" colspan="2">Security & Virtualization</th>
   </tr>
   <tr>
-    <th>Item</th>
-    <th>Value</th>
+    <th style="text-align: left; font-size: 1.5em; font-weight: bold;">Item</th>
+    <th style="text-align: left; font-size: 1.5em; font-weight: bold;">Value</th>
   </tr>
   <tr>
     <td>Kernel DMA Protection</td>
