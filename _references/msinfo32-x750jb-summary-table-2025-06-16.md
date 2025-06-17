@@ -1,4 +1,5 @@
-<style>th { text-align: left; font-size: 1.25em;}</style>
+<head><style>th { text-align: left; font-size: 1.25em;}</style></head>
+
 # System Information Report
 **Generated:** 06/16/25 18:06:33  
 **System Name:** DESKTOP-A1AQJMV  
