@@ -110,6 +110,7 @@
     <td>Time Zone</td>
     <td>Pacific Daylight Time</td>
   </tr>
+  <tr><th colspan="2">&nbsp;</th></tr>
   <tr>
     <th style="text-align: left; font-size: 1.5em; font-weight: bold;" colspan="2">Memory</th>
   </tr>
@@ -145,6 +146,7 @@
     <td>Page File</td>
     <td>C:\pagefile.sys</td>
   </tr>
+  <tr><th colspan="2">&nbsp;</th></tr>
   <tr>
     <th style="text-align: left; font-size: 1.5em; font-weight: bold;" colspan="2">Security & Virtualization</th>
   </tr>
