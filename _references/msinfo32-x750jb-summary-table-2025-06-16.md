@@ -6,10 +6,9 @@
 
 ## System Summary
 <table>
-<style>th { text-align: left; font-size: 1.25em;}</style><!--head></head-->
   <tr>
-    <th>Item</th>
-    <th>Value</th>
+    <th style="text-align: left; font-size: 1.25em;">Item</th>
+    <th style="text-align: left; font-size: 1.25em;">Value</th>
   </tr>
   <tr>
     <td>OS Name</td>
@@ -112,7 +111,7 @@
     <td>Pacific Daylight Time</td>
   </tr>
   <tr>
-    <th  colspan="2">Memory</th>
+    <th style="text-align: left; font-size: 1.25em;" colspan="2">Memory</th>
   </tr>
   <tr>
     <th>Item</th>
@@ -147,7 +146,7 @@
     <td>C:\pagefile.sys</td>
   </tr>
   <tr>
-    <th  colspan="2">Security & Virtualization</th>
+    <th style="text-align: left; font-size: 1.25em;" colspan="2">Security & Virtualization</th>
   </tr>
   <tr>
     <th>Item</th>
