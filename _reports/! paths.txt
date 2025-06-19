@@ -1,0 +1,401 @@
+Windows 10 v.1903 Build 18362.175
+G513QM_2009_X64_V0.11
+
+"D:\Downloads\!Unpacked\SysinternalsSuite"
+"D:\Downloads\Applications\Installers\mediacreationtool.exe"
+"D:\Downloads\Applications\Installers\Windows.iso"
+"D:\Downloads\Applications\Installers\Windows11InstallationAssistant.exe"
+"D:\Downloads\Applications\Unzipped\IObit"
+"D:\Downloads\Applications\Unzipped\winrar"
+"D:\Downloads\Applications\Installers\7z1900-x64.exe"
+"D:\Downloads\Applications\Installers\ChromeSetup.exe"
+"D:\Downloads\Applications\Installers\npp.7.Installer.x64.exe"
+"E:\Documents\Active\Computer\ASUS ROG Strix G17 G713QM"
+"G:\" "\3TB Passport"
+"I:\resources\ASUS ROG G701VI-XS78K"
+"C:\Users\Public\G713QM"
+
+"C:\Users\Public\Documents"
+"E:\Downloads\Applications\Installers\Windows.iso"
+
+net user Administrator/active:yes
+"C:\Windows\System32\control.exe"
+
+bad path: "G:\DAZ 3D\Studio\Library\Runtime\Textures\FaceGen\Genesis8F\Avonlea Morgan"
+
+wmic logicaldisk get name
+wmic logicaldisk get deviceid, volumename
+wmic logicaldisk get caption
+
+diskpart
+list disk
+select disk [#]
+list volume
+-- or --
+list partition
+DISKPART> list volume
+
+  Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 0     E   HP Launcher  CDFS   CD-ROM       668 MB  Healthy
+  Volume 1     C   OS           NTFS   Partition    933 GB  Healthy
+  Volume 2                      NTFS   Partition    795 MB  Healthy
+  Volume 3         RESTORE      NTFS   Partition     19 GB  Healthy
+  Volume 4         MYASUS       FAT32  Partition    200 MB  Healthy
+  Volume 5         SYSTEM       FAT32  Partition    260 MB  Healthy    Hidden
+  Volume 6     D   ESD-USB      FAT32  Partition     32 GB  Healthy
+  Volume 7     F   1TB Passpor  NTFS   Partition    931 GB  Healthy
+  Volume 8     G   4TB Passpor  NTFS   Partition   3725 GB  Healthy
+  Volume 9     H   8GB LEXAR    FAT32  Removable   7647 MB  Healthy
+  Volume 10    I   3TB Passpor  NTFS   Partition   2794 GB  Healthy
+  Volume 11    J   4TB Archive  exFAT  Partition   3726 GB  Healthy
+  Volume 12    K   32G LEXAR 1  NTFS   Removable     28 GB  Healthy
+  Volume 13    L   UEFI_NTFS    FAT    Removable   1039 KB  Healthy
+
+Microsoft DiskPart version 10.0.18362.1
+
+ACTIVE      - Mark the selected partition as active.
+ADD         - Add a mirror to a simple volume.
+ASSIGN      - Assign a drive letter or mount point to the selected volume.
+ATTRIBUTES  - Manipulate volume or disk attributes.
+ATTACH      - Attaches a virtual disk file.
+AUTOMOUNT   - Enable and disable automatic mounting of basic volumes.
+BREAK       - Break a mirror set.
+CLEAN       - Clear the configuration information, or all information, off the
+              disk.
+COMPACT     - Attempts to reduce the physical size of the file.
+CONVERT     - Convert between different disk formats.
+CREATE      - Create a volume, partition or virtual disk.
+DELETE      - Delete an object.
+DETAIL      - Provide details about an object.
+DETACH      - Detaches a virtual disk file.
+EXIT        - Exit DiskPart.
+EXTEND      - Extend a volume.
+EXPAND      - Expands the maximum size available on a virtual disk.
+FILESYSTEMS - Display current and supported file systems on the volume.
+FORMAT      - Format the volume or partition.
+GPT         - Assign attributes to the selected GPT partition.
+HELP        - Display a list of commands.
+IMPORT      - Import a disk group.
+INACTIVE    - Mark the selected partition as inactive.
+LIST        - Display a list of objects.
+MERGE       - Merges a child disk with its parents.
+ONLINE      - Online an object that is currently marked as offline.
+OFFLINE     - Offline an object that is currently marked as online.
+RECOVER     - Refreshes the state of all disks in the selected pack.
+              Attempts recovery on disks in the invalid pack, and
+              resynchronizes mirrored volumes and RAID5 volumes
+              that have stale plex or parity data.
+REM         - Does nothing. This is used to comment scripts.
+REMOVE      - Remove a drive letter or mount point assignment.
+REPAIR      - Repair a RAID-5 volume with a failed member.
+RESCAN      - Rescan the computer looking for disks and volumes.
+RETAIN      - Place a retained partition under a simple volume.
+SAN         - Display or set the SAN policy for the currently booted OS.
+SELECT      - Shift the focus to an object.
+SETID       - Change the partition type.
+SHRINK      - Reduce the size of the selected volume.
+UNIQUEID    - Displays or sets the GUID partition table (GPT) identifier or
+              master boot record (MBR) signature of a disk.
+
+dir /s -- shows all files in directory and subdirectories
+dir /p -- shows content one "page" at a time
+
+Mount-DiskImage -ImagePath C:\Users\Public\Documents\Windows.iso
+'Mount-DiskImage' is not recognized as an internal or external command, operable program or batch file.
+
+robocopy "D:\Downloads\!Unpacked\SysinternalsSuite" "C:\Users\Public\Documents\SysinternalsSuite"
+robocopy "C:\Users\Public\Documents" "D:\Documents"
+robocopy "E:\3TB Passport" "E:\G713QM" /s /e /v /j /xd dirs ["E:\3TB Passport\DAZ 3D\Studio\Library\Runtime\Textures\FaceGen\Genesis8F\Avonlea Morgan "] /Xf file ["E:\3TB Passport\DAZ 3D\Studio\Library\Runtime\Textures\FaceGen\Genesis8F\Avonlea Morgan "] \move
+robocopy "N:\_0" "K:\Archive\_0" /E /V /COPY:DATSOU /DCOPY:DAT /SL /MOVE 
+robocopy "G:\DAZ 3D" "K:\DAZ 3D" /e /copyall /dcopy:dat /sl /move
+
+I attempted to move all files and subfolders from one external hd to a larger one, but it may not have moved everything using: `robocopy "G:\DAZ 3D" "K:\DAZ 3D" /e /copyall /dcopy:dat /sl /move`. I need a powershell script that will compare the source and destination, validate and remove source copies if they exist in the destination, validate and move the ones previously skipped from `source` to `destination`, log exceptions and then append a summary to the log. 
+
+xcopy "D:\Downloads\Applications\Installers\7z1900-x64.exe" "C:\Users\Public\Documents\Installers\7z1900-x64.exe" /s /q
+xcopy "D:\Downloads\Applications\Unzipped\IObit" "C:\Users\Public\Documents\Installers\IObit" /s /q
+xcopy "D:\Downloads\Applications\Installers\ChromeSetup.exe" "C:\Users\Public\Documents\Installers\ChromeSetup.exe" /s /q
+xcopy "C:\Users\Public\Dcuments"
+xcopy "E:\Downloads\Applications\Installers\Windows.iso" "D:\" /s /e /v /j
+
+xcopy "E:\Downloads\Applications\Installers\Windows.iso" "J:\" /s /e /v /j
+xcopy C:\Windows "I:\OS Export 20250317\Windows" /b /c /e /v /h /i /j /k /o /q /y
+
+-------------------------------------------------------------------------------
+   XCOPY  Copies files and directory trees.
+-------------------------------------------------------------------------------
+
+XCOPY source [destination] [/A | /M] [/D[:date]] [/P] [/S [/E]] [/V] [/W]
+                           [/C] [/I] [/Q] [/F] [/L] [/G] [/H] [/R] [/T] [/U]
+                           [/K] [/N] [/O] [/X] [/Y] [/-Y] [/Z] [/B] [/J]
+                           [/EXCLUDE:file1[+file2][+file3]...]
+
+  source       Specifies the file(s) to copy.
+  destination  Specifies the location and/or name of new files.
+  /A           Copies only files with the archive attribute set,
+               doesn't change the attribute.
+  /M           Copies only files with the archive attribute set,
+               turns off the archive attribute.
+  /D:m-d-y     Copies files changed on or after the specified date.
+               If no date is given, copies only those files whose
+               source time is newer than the destination time.
+  /EXCLUDE:file1[+file2][+file3]...
+               Specifies a list of files containing strings.  Each string
+               should be in a separate line in the files.  When any of the
+               strings match any part of the absolute path of the file to be
+               copied, that file will be excluded from being copied.  For
+               example, specifying a string like \obj\ or .obj will exclude
+               all files underneath the directory obj or all files with the
+               .obj extension respectively.
+  /P           Prompts you before creating each destination file.
+  /S           Copies directories and subdirectories except empty ones.
+  /E           Copies directories and subdirectories, including empty ones.
+               Same as /S /E. May be used to modify /T.
+  /V           Verifies the size of each new file.
+  /W           Prompts you to press a key before copying.
+  /C           Continues copying even if errors occur.
+  /I           If destination does not exist and copying more than one file,
+               assumes that destination must be a directory.
+  /Q           Does not display file names while copying.
+  /F           Displays full source and destination file names while copying.
+  /L           Displays files that would be copied.
+  /G           Allows the copying of encrypted files to destination that does
+               not support encryption.
+  /H           Copies hidden and system files also.
+  /R           Overwrites read-only files.
+  /T           Creates directory structure, but does not copy files. Does not
+               include empty directories or subdirectories. /T /E includes
+               empty directories and subdirectories.
+  /U           Copies only files that already exist in destination.
+  /K           Copies attributes. Normal Xcopy will reset read-only attributes.
+  /N           Copies using the generated short names.
+  /O           Copies file ownership and ACL information.
+  /X           Copies file audit settings (implies /O).
+  /Y           Suppresses prompting to confirm you want to overwrite an
+               existing destination file.
+  /-Y          Causes prompting to confirm you want to overwrite an
+               existing destination file.
+  /Z           Copies networked files in restartable mode.
+  /B           Copies the Symbolic Link itself versus the target of the link.
+  /J           Copies using unbuffered I/O. Recommended for very large files.
+
+The switch /Y may be preset in the COPYCMD environment variable.
+This may be overridden with /-Y on the command line.
+
+-------------------------------------------------------------------------------
+   DIR	Displays a list of files and subdirectories in a directory.
+-------------------------------------------------------------------------------
+
+DIR [drive:][path][filename] [/A[[:]attributes]] [/B] [/C] [/D] [/L] [/N]
+  [/O[[:]sortorder]] [/P] [/Q] [/R] [/S] [/T[[:]timefield]] [/W] [/X] [/4]
+
+  [drive:][path][filename]
+              Specifies drive, directory, and/or files to list.
+
+  /A          Displays files with specified attributes.
+  attributes   D  Directories                R  Read-only files
+               H  Hidden files               A  Files ready for archiving
+               S  System files               I  Not content indexed files
+               L  Reparse Points             O  Offline files
+               -  Prefix meaning not
+  /B          Uses bare format (no heading information or summary).
+  /C          Display the thousand separator in file sizes.  This is the
+              default.  Use /-C to disable display of separator.
+  /D          Same as wide but files are list sorted by column.
+  /L          Uses lowercase.
+  /N          New long list format where filenames are on the far right.
+  /O          List by files in sorted order.
+  sortorder    N  By name (alphabetic)       S  By size (smallest first)
+               E  By extension (alphabetic)  D  By date/time (oldest first)
+               G  Group directories first    -  Prefix to reverse order
+  /P          Pauses after each screenful of information.
+  /Q          Display the owner of the file.
+  /R          Display alternate data streams of the file.
+  /S          Displays files in specified directory and all subdirectories.
+  /T          Controls which time field displayed or used for sorting
+  timefield   C  Creation
+              A  Last Access
+              W  Last Written
+  /W          Uses wide list format.
+  /X          This displays the short names generated for non-8dot3 file
+              names.  The format is that of /N with the short name inserted
+              before the long name. If no short name is present, blanks are
+              displayed in its place.
+  /4          Displays four-digit years
+
+Switches may be preset in the DIRCMD environment variable.  Override
+preset switches by prefixing any switch with - (hyphen)--for example, /-W.
+
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Thursday, March 13, 2025 4:23:17 AM
+              Usage :: ROBOCOPY source destination [file [file]...] [options]
+
+             source :: Source Directory (drive:\path or \\server\share\path).
+        destination :: Destination Dir  (drive:\path or \\server\share\path).
+               file :: File(s) to copy  (names/wildcards: default is "*.*").
+
+::
+:: Copy options :
+::
+                 /S :: copy Subdirectories, but not empty ones.
+                 /E :: copy subdirectories, including Empty ones.
+             /LEV:n :: only copy the top n LEVels of the source directory tree.
+
+                 /Z :: copy files in restartable mode.
+                 /B :: copy files in Backup mode.
+                /ZB :: use restartable mode; if access denied use Backup mode.
+                 /J :: copy using unbuffered I/O (recommended for large files).
+            /EFSRAW :: copy all encrypted files in EFS RAW mode.
+
+  /COPY:copyflag[s] :: what to COPY for files (default is /COPY:DAT).
+                       (copyflags : D=Data, A=Attributes, T=Timestamps).
+                       (S=Security=NTFS ACLs, O=Owner info, U=aUditing info).
+
+
+               /SEC :: copy files with SECurity (equivalent to /COPY:DATS).
+           /COPYALL :: COPY ALL file info (equivalent to /COPY:DATSOU).
+            /NOCOPY :: COPY NO file info (useful with /PURGE).
+            /SECFIX :: FIX file SECurity on all files, even skipped files.
+            /TIMFIX :: FIX file TIMes on all files, even skipped files.
+
+             /PURGE :: delete dest files/dirs that no longer exist in source.
+               /MIR :: MIRror a directory tree (equivalent to /E plus /PURGE).
+
+               /MOV :: MOVe files (delete from source after copying).
+              /MOVE :: MOVE files AND dirs (delete from source after copying).
+
+     /A+:[RASHCNET] :: add the given Attributes to copied files.
+     /A-:[RASHCNET] :: remove the given Attributes from copied files.
+
+            /CREATE :: CREATE directory tree and zero-length files only.
+               /FAT :: create destination files using 8.3 FAT file names only.
+               /256 :: turn off very long path (> 256 characters) support.
+
+             /MON:n :: MONitor source; run again when more than n changes seen.
+             /MOT:m :: MOnitor source; run again in m minutes Time, if changed.
+
+      /RH:hhmm-hhmm :: Run Hours - times when new copies may be started.
+                /PF :: check run hours on a Per File (not per pass) basis.
+
+             /IPG:n :: Inter-Packet Gap (ms), to free bandwidth on slow lines.
+
+                /SL :: copy symbolic links versus the target.
+
+            /MT[:n] :: Do multi-threaded copies with n threads (default 8).
+                       n must be at least 1 and not greater than 128.
+                       This option is incompatible with the /IPG and /EFSRAW options.
+                       Redirect output using /LOG option for better performance.
+
+ /DCOPY:copyflag[s] :: what to COPY for directories (default is /DCOPY:DA).
+                       (copyflags : D=Data, A=Attributes, T=Timestamps).
+
+           /NODCOPY :: COPY NO directory info (by default /DCOPY:DA is done).
+
+         /NOOFFLOAD :: copy files without using the Windows Copy Offload mechanism.
+
+::
+:: File Selection Options :
+::
+                 /A :: copy only files with the Archive attribute set.
+                 /M :: copy only files with the Archive attribute and reset it.
+    /IA:[RASHCNETO] :: Include only files with any of the given Attributes set.
+    /XA:[RASHCNETO] :: eXclude files with any of the given Attributes set.
+
+ /XF file [file]... :: eXclude Files matching given names/paths/wildcards.
+ /XD dirs [dirs]... :: eXclude Directories matching given names/paths.
+
+                /XC :: eXclude Changed files.
+                /XN :: eXclude Newer files.
+                /XO :: eXclude Older files.
+                /XX :: eXclude eXtra files and directories.
+                /XL :: eXclude Lonely files and directories.
+                /IS :: Include Same files.
+                /IT :: Include Tweaked files.
+
+             /MAX:n :: MAXimum file size - exclude files bigger than n bytes.
+             /MIN:n :: MINimum file size - exclude files smaller than n bytes.
+
+          /MAXAGE:n :: MAXimum file AGE - exclude files older than n days/date.
+          /MINAGE:n :: MINimum file AGE - exclude files newer than n days/date.
+          /MAXLAD:n :: MAXimum Last Access Date - exclude files unused since n.
+          /MINLAD:n :: MINimum Last Access Date - exclude files used since n.
+                       (If n < 1900 then n = n days, else n = YYYYMMDD date).
+
+                /XJ :: eXclude Junction points and symbolic links. (normally included by default).
+
+               /FFT :: assume FAT File Times (2-second granularity).
+               /DST :: compensate for one-hour DST time differences.
+
+               /XJD :: eXclude Junction points and symbolic links for Directories.
+               /XJF :: eXclude symbolic links for Files.
+
+                /IM :: Include Modified files (differing change times).
+::
+:: Retry Options :
+::
+               /R:n :: number of Retries on failed copies: default 1 million.
+               /W:n :: Wait time between retries: default is 30 seconds.
+
+               /REG :: Save /R:n and /W:n in the Registry as default settings.
+
+               /TBD :: wait for sharenames To Be Defined (retry error 67).
+
+::
+:: Logging Options :
+::
+                 /L :: List only - don't copy, timestamp or delete any files.
+                 /X :: report all eXtra files, not just those selected.
+                 /V :: produce Verbose output, showing skipped files.
+                /TS :: include source file Time Stamps in the output.
+                /FP :: include Full Pathname of files in the output.
+             /BYTES :: Print sizes as bytes.
+
+                /NS :: No Size - don't log file sizes.
+                /NC :: No Class - don't log file classes.
+               /NFL :: No File List - don't log file names.
+               /NDL :: No Directory List - don't log directory names.
+
+                /NP :: No Progress - don't display percentage copied.
+               /ETA :: show Estimated Time of Arrival of copied files.
+
+          /LOG:file :: output status to LOG file (overwrite existing log).
+         /LOG+:file :: output status to LOG file (append to existing log).
+
+       /UNILOG:file :: output status to LOG file as UNICODE (overwrite existing log).
+      /UNILOG+:file :: output status to LOG file as UNICODE (append to existing log).
+
+               /TEE :: output to console window, as well as the log file.
+
+               /NJH :: No Job Header.
+               /NJS :: No Job Summary.
+
+           /UNICODE :: output status as UNICODE.
+
+::
+:: Job Options :
+::
+       /JOB:jobname :: take parameters from the named JOB file.
+      /SAVE:jobname :: SAVE parameters to the named job file
+              /QUIT :: QUIT after processing command line (to view parameters).
+              /NOSD :: NO Source Directory is specified.
+              /NODD :: NO Destination Directory is specified.
+                /IF :: Include the following Files.
+
+::
+:: Remarks :
+::
+       Using /PURGE or /MIR on the root directory of the volume formerly caused
+       robocopy to apply the requested operation on files inside the System
+       Volume Information directory as well. This is no longer the case; if
+       either is specified, robocopy will skip any files or directories with that
+       name in the top-level source and destination directories of the copy session.
+
+       The modified files classification applies only when both source
+       and destination filesystems support change timestamps (e.g., NTFS)
+       and the source and destination files have different change times but are
+       otherwise the same. These files are not copied by default; specify /IM
+       to include them.

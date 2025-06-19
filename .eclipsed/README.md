@@ -50,7 +50,7 @@ What started as a search for the right recovery media evolved step by step:
 
 ---
 
-### This Branch Ultimately Crosses Paths With:
+### 🔗 This Branch Ultimately Crosses Paths With:
 
 - [`PowerShell_Archive_Tools`](../PowerShell_Archive_Tools/README.md): Born as a reaction to incomplete drive migrations and metadata mismatch recovery  
 - [`DISMTools_Recovery_Project`](../DISMTools_Recovery_Project/README.md): The UI gateway to assembling layered, testable builds  

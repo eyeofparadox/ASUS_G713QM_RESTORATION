@@ -1,0 +1,68 @@
+Portable Apps
+
+Google Chrome Portable
+https://portableapps.com/apps/internet/google_chrome_portable
+	Download from PortableApps.com
+	Version 136.0.7103.114 for Windows, Multilingual
+	108MB download / 332MB installed
+
+Runs anywhere (cloud, removable, local) without 'installing'. Use the PortableApps.com Platform for easy installs and automatic updates.
+
+Description
+Chrome is a fast, simple, and secure web browser, built for the modern web. Chrome is designed to be fast in every possible way. It's quick to start up from your desktop, loads web pages in a snap, and runs complex web applications lightning fast. Chrome's browser window is streamlined, clean and simple. For example, you can search and navigate from the same box and arrange tabs however you wish -- quickly and easily. Chrome is designed to keep you safer and more secure on the web with built-in malware and phishing protection, auto-updates to make sure you have all the latest security fixes, and more. Chrome puts you in control of your private information while helping protect the information you share when you're online. There are tons of ways to customize Chrome and make it yours. It's easy to tweak your settings and add apps, extensions, and themes from the Chrome Web Store. Signing in to Chrome brings your bookmarks, history, and other settings to all your computers. It also automatically signs you in to all your favorite Google services.
+
+App Notes
+Passwords Not Saved Between PCs By Default: Google Chrome stores passwords in such a way that they are encrypted in a way tied to current PC. While the passwords are not kept or left behind on the PC itself, they won't be retrievable when you move to a new PC. We've added password portability as an advanced option, though, which you can enable by reading the help.html file.
+
+Certificates Not Portable: Google Chrome has no certificate manager. It uses Windows' certificates manager. So, any certificates you install through the Google Chrome interface are stored on the current local machine and will not travel with you. Thus, you should not use any private certificates with Google Chrome except on your own PC.
+
+Some Settings/Extensions Locked Per PC: Google Chrome locks specific settings to a given PC. Details are included in this post. This behavior is by design by the Chrome team. If you would like this changed, please file a bug with the Chrome team. A suggested workaround is to sign in to Google to restore all settings and extensions and to use an extension such as Session Buddy to maintain your session state as you move PCs. Note that PortableApps.com has not evaluated this extension.
+
+Note that other portable browsers such as Mozilla Firefox, Portable Edition do not have any of the issues mentioned above. These issues are specific to Chrome due to Chrome's design and not something we can work around without fixes to the base app by the Chrome developers.
+
+Download Details
+Open Source Initiative Approved License
+Publisher: Google & PortableApps.com (John T. Haller)
+Date Updated: 2025-05-14
+Date Added: 2009-05-28
+System Requirements: Windows 10, 11
+     (Legacy Download: Windows 7/8: 109.0.5414.120, Windows XP/Vista: 49.0.2623.112)
+App License: Open Source (Various Open Source and Google Chrome Additional Terms of Service)
+Source: Google Chrome, Google Chrome Portable Launcher Source, PortableApps.com Installer
+SHA256 Hash: f1a0f77d83a7ffcb56c701d5b8a8d6c8092a252eb86848258ce8fdbc2f0e9bd8
+
+
+Notepad++ Portable
+https://portableapps.com/apps/development/notepadpp_portable
+
+Version 8.8.1 for Windows, Multilingual
+Download from PortableApps.com
+11MB download / 24-37MB installed
+Notes | Antivirus Scan | Details
+
+Runs anywhere (cloud, removable, local) without 'installing'. Use the PortableApps.com Platform for easy installs and automatic updates.
+
+Make a Donation - Support PortableApps.com development & hosting, Make a Donation - Support Notepad++ development
+
+Description
+
+Notepad++ Portable is a full-featured text editor with features like: Syntax Highlighting and Syntax Folding, User Defined Syntax Highlighting and Folding, PCRE (Perl Compatible Regular Expression) Search/Replace, customizable GUI with vertical tab and vertical document list, Document Map, Auto-completion: Word completion, Function completion and Function parameters hint, Multi-Document (Tab interface), Multi-View, WYSIWYG (Printing), Zoom in and zoom out, Multi-Language environment supported, Bookmarks, Macro recording and playback, Launch with different arguments, and more. Both the 32-bit and 64-bit versions are included for best feature support.
+
+Learn more about Notepad++
+https://notepad-plus-plus.org/
+
+App Notes
+Plugin Admin: When using the Notepad++ plugin admin, after Notepad++ restarts, close it, wait a moment, and then reopen it. It tends to break out of portablization on many systems.
+
+Theme Customization: Notepad++ oddly alters its own themes files when you make changes using the Style Configurator. These will be lost on upgrades as newer themes are copied in. To get around this strange behavior, while Notepad++ is closed, open up your Notepad++Portable\Data\themes directory. Copy and paste the ThemeYouWant.xml file and name it ThemeYouWant-custom.xml. Then open up Notepad++ Portable and select this new theme from the Style Configurator. You'll be able to customize it ongoing without it being overwritten. It won't get any updates from the publisher, of course, though the original ThemeYouWant will.
+
+Download Details
+Open Source Initiative Approved License
+Publisher: Notepad++ Contributors & PortableApps.com
+Date Updated: 2025-05-05
+Date Added: 2007-07-05
+System Requirements: Windows 7, 8, 10, 11
+     (Legacy Download: Windows Vista: 8.4.6, Windows XP: 7.9.2)
+App License: Open Source (GPL)
+Source: Notepad++, PortableApps.com Launcher, PortableApps.com Installer
+SHA256 Hash: f40202da71fab42bead10613b20946df4b160e3eebee6511094781df2cd7ea0c

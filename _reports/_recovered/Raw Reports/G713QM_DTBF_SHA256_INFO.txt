@@ -1,0 +1,340 @@
+2021 ROG Strix G17 | G713QM
+
+Windows 11 64-bit
+
+Driver & Tools | PS F:\> Get-FileHash [path-to-file]
+
+
+Networking
+Realtek LAN Driver V10.049.0413.2021
+4.11 MB 2021/11/03
+SHA-256: EE94B3F80771D250E52353554D2DA2BD5CFA09B093DEC9FB6DC149CFBD77F243
+Severity: Recommended
+Description: Realtek LAN Driver
+Minimum OS Version: Windows 10 64-bit 20H2
+Device List: RTL8111H
+
+Realtek LAN Driver V10.045.0928.2020
+4.1 MB 2021/11/03
+SHA-256: F3A10C76192634F8D5C5013E70B1C232ACBB2274C8FD3F74AD1027CB39B44B59
+Severity: Recommended
+Description: Realtek LAN Driver
+Minimum OS Version: Windows 10 64-bit 20H1
+Device List: RTL8111H
+
+NXP NFC Driver V12.0.6.0
+3.91 MB 2021/11/03
+SHA-256: 8F64031628CDA37EA23C9A729BE657972FE8E729E7A7C8D85C5698C350E4A85F
+Severity: Recommended
+Description: This package includes the NXP Near Field Communication (NFC) Driver, to support the system to access NFC devices
+Minimum OS Version: Windows 10 64-bit 20H1
+Device List: NPC300
+
+FAQ: - [Notebook] Laptop Frequently Asked Question (FAQ)
+
+MediaTek WLAN Driver V3.00.01.1325
+4.79 MB 2024/06/06
+SHA-256: B82410A49982C95C2DE36E90D37ACF56E96023695FD65B69A024EA12806E3F6A
+Severity: Recommended
+Description: This package includes the MediaTek Wi-Fi Controller Driver, to support the system to connect wireless network.
+Minimum OS Version: Windows 10 64-bit 20H1
+Device List: AW-XB468NF/MT7921LEN
+
+MediaTek WLAN Driver V3.00.01.1294
+4.69 MB 2023/05/02
+SHA-256: DD3181DD888053FEC951F7EA129C12A8EC8CF2332429DD674975FF67B5B9651D
+Severity: Recommended
+Description: This package includes the MediaTek Wi-Fi Controller Driver, to support the system to connect wireless network.
+Minimum OS Version: Windows 10 64-bit 20H1
+Device List: AW-XB468NF/MT7921LEN
+
+Intel Wireless LAN V22.230.0.8
+15.17 MB 2023/06/15
+SHA-256: 6CD68E66187E2A37F9D813192DDD739F290C754C611373023F5137B3950A876A
+Severity: Recommended
+Description: Intel Wireless LAN Driver
+
+Intel Wireless LAN V22.130.0.5
+15.21 MB 2022/05/06
+SHA-256: E30E30BAB096358E56A620AB94A34352698B021145E79E358FE7E2565E4DBD78
+Severity: Recommended
+Description: Intel Wireless LAN Driver
+Minimum OS Version: Windows 10 64-bit 20H1
+Device List: AX200
+
+Chipset
+AMD Chipset V1.2.0.118
+4.21 MB 2021/11/24
+SHA-256: 9907DD61C467512445EC74216CA54481C9065941EBA13F36E25BDDEEBF61528B
+Severity: Recommended
+Description: AMD Chipset Driver for AMD processor in modern, mainstream laptops delivering a powerful communicate serial updates to your laptop computing experiences.
+Minimum OS Version: Windows 10 64-bit 20H1
+
+AMD Chipset V1.2.0.117
+4.88 MB 2021/11/03
+SHA-256: 524B61CB0F51697C90A06BB8E250B1560886A80C6205275E50FFA076385FFD62
+Severity: Recommended
+Description: AMD Chipset Driver for AMD processor in modern, mainstream laptops delivering a powerful communicate serial updates to your laptop computing experiences.
+Minimum OS Version: Windows 10 64-bit 20H1
+
+Audio
+Realtek Codec Console Application latest version at the MS store
+9.25 MB 2021/07/08
+SHA-256: 0E85292F30C19C951B344204EF93BBD08D9E7C50CE28903D3A9517FBDF1E74D8
+Description: This package includes Realtek Codec Console, which provides a central location for making audio-related settings, including changing the volume and muting/unmuting sound. You can also find application and driver information here.
+
+Realtek Audio V6.0.9394.1
+19.62 MB 2022/10/04
+SHA-256: BC9F521871094E821998C6E915D87F7C4B983A24E0A6CB3368C0DCABBBA7E913
+Severity: Recommended
+Description: Realtek Audio Driver, provide audio jack adjust to correct type that user can change, provide Internal MIC algorithm for filter speaking sound. support audio function.This software is required in most cases for the hardware device to function properly.
+Minimum OS Version: Windows 10 64-bit 20H1
+Windows 11 64-bit 21H2
+Device List: ALC3288/ALC285
+
+Graphics
+NVIDIA Graphic Driver V30.0.15.1278
+825.02 MB 2022/06/15
+SHA-256: 16DFD4A1EED89A9B4D86DA096DAAFFF3E88EACDB1A79BDEA829C55C6AF554A33
+Severity: Recommended
+Description: This package includes NVIDIA Graphics Driver, to provide your system the powerful graphic computing experiences
+Minimum OS Version: Windows 10 64-bit 20H1
+Device List: GN20-E5/GN20-P0
+
+NVIDIA Control Panel Application latest version at the MS store
+8.16 MB 2022/09/08
+SHA-256: 4F9C46E7F604E6AF141D283386BB7C3F32EBF72367B0233D4F955A028BDC140D
+Description: This package includes NVIDIA Control Panel Application, to provide your system the powerful graphic computing experiences
+
+AMD Graphics Driver V30.0.13002.19003
+243.87 MB 2022/10/31
+SHA-256: A7EA77F82F10D4B0094BAD38B5534125EF8C2C7CCAB6743059C7422325EADA0B
+Severity: Recommended
+Description: This package includes the AMD Graphics Driver, to provide your system the powerful graphic computing experiences.
+Minimum OS Version: Windows 10 64-bit 20H1
+
+Pointing Device
+ASUS Precision TouchPad Driver V16.0.0.27
+3.58 MB 2024/07/22
+SHA-256: 5DC9C61B207ED3728E508720FA6FFBE53F6AAE9727C1EC71FE1A5367E6EE2F9C
+Severity: Recommended
+Description: This package includes ASUS' touchpad driver, which enables communication between the touchpad and the operating system, to provide super-smooth and precise fingertip control with multi-touch gesture support.
+Device List: ELAN/SC976A-32H0
+
+ASUS Precision TouchPad Driver V11.0.0.35
+3.41 MB 2021/11/03
+SHA-256: 3AF63CAECB6D374D3D0BA9B1960E4B2666B6F9B1DDEB4E69E54726FBBB3EED06
+Severity: Recommended
+Description: This package includes ASUS' touchpad driver, which enables communication between the touchpad and the operating system, to provide super-smooth and precise fingertip control with multi-touch gesture support.
+Minimum OS Version: Windows 10 64-bit 20H1
+Device List: ELAN/SC976A-32H0
+
+ASUS NumberPad Driver V12.0.0.36
+3.57 MB 2021/11/03
+SHA-256: 13E93435C620AB344F27A86DCE6CBFBBC311C6E749D92A78F9B2FC257FFD5C08
+Severity: Recommended
+Description: This package provides ASUS NumberPad Driver, to provide super-smooth and precise fingertip control with multi-touch gesture support. With the NumberPad activated, you can quickly perform data entry or do calculations.
+Minimum OS Version: Windows 10 64-bit 20H1
+Device List: CHICONY/G2ASG5330Z-CO01
+
+Bluetooth
+MediaTek Bluetooth Driver V1.3.17.162
+4.79 MB 2024/06/06
+SHA-256: 4A6EC10D6EB31E52AAFD70D698059869EB1E4C7BE27614DDBAECF49339B60B7E
+Severity: Recommended
+Description: This package includes the MediaTek Bluetooth Driver, to support the system to connect to Bluetooth devices.
+Minimum OS Version: Windows 10 64-bit 20H1
+Device List: AW-XB468NF/MT7921LEN
+
+MediaTek Bluetooth Driver V1.3.17.155
+4.69 MB 2023/05/02
+SHA-256: A905E061D2471ADC8415D7F2A6BCD575409C93E978796DCF9CDD79EB7F43C1BC
+Severity: Recommended
+Description: This package includes the MediaTek Bluetooth Driver, to support the system to connect to Bluetooth devices.
+Minimum OS Version: Windows 10 64-bit 20H1
+Device List: AW-XB468NF/MT7921LEN
+
+Intel Bluetooth V22.230.0.2
+17.02 MB 2023/06/15
+SHA-256: 8D7507BB249AA42284993BDF215EE8CF742685618764133EC0864955A9AC8D65
+Severity: Recommended
+Description: Intel Bluetooth Driver
+
+Intel Bluetooth V22.130.0.2
+5.83 MB 2022/05/06
+SHA-256: C58BEA644A4DF464C42A72C3AC1166E2394B098BABB27A4BFA3EA1E9D5FABC62
+Severity: Recommended
+Description: Intel Bluetooth Driver
+Minimum OS Version: Windows 10 64-bit 20H1
+Device List: AX200
+
+Utilities
+Wireless radio control driver V1.0.0.14
+3.39 MB 2021/10/18
+SHA-256: BB31CB5730CBE85F06982C47C2549167CA202852A1B36475DD16863DA7B317E8
+Description: Switch to airplane mode via hotkey.
+Minimum OS Version: Windows 10 64-bit 20H2
+
+Wireless radio control driver V1.0.0.13
+3.47 MB 2021/03/10
+SHA-256: C4E559213CF58819DE438FCDCE7B417C60DAB9912F3CB1C817B3424AB7768071
+Description: Switch to airplane mode via hotkey.
+Minimum OS Version: Windows 10 64-bit 20H1
+
+ASUS System Control Interface v3 V3.1.43.0
+12.2 MB 2025/03/13
+SHA-256: F7E71B095E3DAF3D39C9A49B31410489ECC41AD04BCF6193FEF78895DB98410A
+Severity: Recommended
+Description: Update ASUS System Control Interface v3 and for the full MyASUS experience, dowload/update MyASUS via below link: https://www.microsoft.com/store/apps/9N7R5S6B0ZZH
+Minimum OS Version: Windows 10 64-bit 20H1
+
+ASUS System Control Interface v3 V3.1.41.0
+12.29 MB 2025/02/10
+SHA-256: DF7D1E76F77F9161C13A52B1E637C907E3FFF3CF55F860EC57C6E6F78D994CB2
+Severity: Recommended
+Description: Update ASUS System Control Interface v3 and for the full MyASUS experience, dowload/update MyASUS via below link: https://www.microsoft.com/store/apps/9N7R5S6B0ZZH
+Minimum OS Version: Windows 10 64-bit 20H1
+
+ASUS Smart Display Control V1.10.13
+31.17 MB 2022/08/08
+SHA-256: 99B3C65EDCAC7024FB146AEE42004410DCFD1883C0C7641830C9CAD538750A38
+Severity: Recommended
+Description: Switch to a lower refresh rate to save power when your computer is on battery mode.
+Minimum OS Version: Windows 10 64-bit 20H1
+
+Asus MultiAntenna Service V3.2.3
+4.14 MB 2023/08/25
+SHA-256: 86E452ED2E53B013337B12EEBC2CEDC2A6F23FA3D5BB0F6930271C98E6FB1936
+Severity: Recommended
+Description: This software is the service app to enable ROG RangeBoost, must be installed to provide best WiFi reception.
+Minimum OS Version: Windows 10 64-bit 20H1
+
+Armoury Crate Control Interface V1.1.0.0
+4.77 MB 2024/10/16
+SHA-256: CDD33F5B5386284C4347FE25CB409A9EC24E63BD06BFB5D5277476DCDCB2670C
+Severity: Recommended
+Description: Update the Armoury Crate Control Interface and use it together with the latest version of Armoury Crate for the best overall experience.
+Minimum OS Version: Windows 10 64-bit 20H1
+
+Armoury Crate & Aura Creator Installer V3.3.1.0
+4.86 MB 2025/04/09
+SHA-256: 831D17EB5E1CC32BE99801A869BF256B9C56B404897945D88B03A43A05AD1A21
+Severity: Recommended
+Description: Thru the installer, to install the latest Armoury Crate、Aura Creator and other prerequisite services for the full experience .
+Left double-click to run the “ArmouryCrateInstallTool .exe” after download and unzip the file to install Armoury Crate, Aura Creator or both APPs.
+Please refer to Aura Creator compatible device list for supported models to create advanced Aura effects: https://www.asus.com/support/FAQ/1042484
+*OS requirement: Windows 10 (1709 or higher version)
+*Install the application and connect to internet , the application will guide user to update the latest version.
+Minimum OS Version: Windows 10 64-bit 20H1
+
+Armoury Crate & Aura Creator Installer V3.2.9.1
+2.01 MB 2023/09/18
+SHA-256: 28638D51712C1EB2EAC47D2614469C088200F6BA53F8F96BEDCD736252E6A324
+Severity: Recommended
+Description: Thru the installer, to install the latest Armoury Crate、Aura Creator and other prerequisite services for the full experience .
+Left double-click to run the “ArmouryCrateInstallTool .exe” after download and unzip the file to install Armoury Crate, Aura Creator or both APPs.
+Please refer to Aura Creator compatible device list for supported models to create advanced Aura effects: https://www.asus.com/support/FAQ/1042484
+*OS requirement: Windows 10 (1709 or higher version)
+*Install the application and connect to internet , the application will guide user to update the latest version.
+Minimum OS Version: Windows 10 64-bit 20H1
+
+Refreshrate Service V2.1.0
+588.53 KB 2022/11/08
+This service application must be installed to enable Panel Overdrive in models with supported panels. Panel Overdrive allows increased display response time.
+Please make sure your Armoury Crate UWP version is V4.2.5.0 or higher, and your Armoury Crate Service version is V4.2.10 or higher.
+If you do not have a supported version, please download: Armoury Crate & Aura Creator Installer.
+
+MyASUS UWP latest version at the MS store
+0 KB 2018/09/17
+MyASUS is the portal of ASUS PC software service, which provides you easy access to all the ASUS software functions, for example, to maintain or update your system, optimize your PC's performance, and quickly contact ASUS aftersales customer service. You can also access ASUS AppDeals via MyASUS to acquire popular apps and exclusive offers. Also, Link to MyASUS, which is a cross-device integration software service between the PC and mobile devices, is available.
+
+BIOS & FIRMWARE
+
+BIOS Update(Windows)
+BIOS Update for Windows V.331
+9.46 MB 2023/03/31
+SHA-256 :041798044350195B3D74A6F54BCC727B3CE4E8D2590B24D97056C8073CCA58CE
+Description :
+It is recommended to download and update the BIOS and firmware for system performance optimization. The update takes a few minutes, please do not turn off your computer during the process to avoid critical problem that system cannot be turned on.
+Caution! Active updates are possible during the Windows Update process!
+
+(UEFI is a firmware package that controls keyboard, monitor, disk and other hardware devices and provides software interface to help OS control hardware devices.)
+
+Important Information:
+Optimize system performance
+
+Introduction :
+- MyASUS in UEFI BIOS - Introduction
+
+How to Install :
+- How to update BIOS in Windows
+
+FAQ :
+- Troubleshooting - Laptop occurs black screen when the BIOS update process is interrupted
+- The Firmware in Device Manager shows a yellow exclamation mark (yellow bang)
+
+BIOS Update for Windows V.321
+9.46 MB 2022/11/11
+SHA-256 :1DEFDD8BF3B4C7F430F9F3D7E34D77869934DF14B62111D8122CB9AEE390BE05
+Description :
+It is recommended to download and update the BIOS and firmware for system performance optimization. The update takes a few minutes, please do not turn off your computer during the process to avoid critical problem that system cannot be turned on.
+Caution! Active updates are possible during the Windows Update process!
+
+(UEFI is a firmware package that controls keyboard, monitor, disk and other hardware devices and provides software interface to help OS control hardware devices.)
+
+Important Information:
+Optimize system performance
+
+Introduction :
+- MyASUS in UEFI BIOS - Introduction
+
+How to Install :
+- How to update BIOS in Windows
+
+FAQ :
+- Troubleshooting - Laptop occurs black screen when the BIOS update process is interrupted
+- The Firmware in Device Manager shows a yellow exclamation mark (yellow bang)
+
+BIOS
+BIOS for ASUS EZ Flash Utility V.331
+7.99 MB 2023/03/31
+SHA-256 :FBA7D2B13A9AA1E901210A4DD9487162C1CB9DB56483B1009A7DA75FAAECB555
+Description :
+It is recommended to download and update the BIOS and firmware for system performance optimization. The update takes a few minutes, please do not turn off your computer during the process to avoid critical problem that system cannot be turned on.
+Caution! Active updates are possible during the Windows Update process!
+
+(UEFI is a firmware package that controls keyboard, monitor, disk and other hardware devices and provides software interface to help OS control hardware devices.)
+
+Important Information:
+Optimize system performance
+
+Introduction :
+- MyASUS in UEFI BIOS - Introduction
+
+How to Install :
+- How to update BIOS with EZ Flash
+
+FAQ :
+- Troubleshooting - Laptop occurs black screen when the BIOS update process is interrupted
+
+BIOS for ASUS EZ Flash Utility V.321
+7.99 MB 2022/11/11
+SHA-256 :819DB3C1CF19D27F7E65EDAE0117DF7DA471E9FAD33801E179FA2BD88A692EFD
+Description :
+It is recommended to download and update the BIOS and firmware for system performance optimization. The update takes a few minutes, please do not turn off your computer during the process to avoid critical problem that system cannot be turned on.
+Caution! Active updates are possible during the Windows Update process!
+
+(UEFI is a firmware package that controls keyboard, monitor, disk and other hardware devices and provides software interface to help OS control hardware devices.)
+
+Important Information:
+Optimize system performance
+
+Introduction :
+- MyASUS in UEFI BIOS - Introduction
+
+How to Install :
+- How to update BIOS with EZ Flash
+
+FAQ :
+- Troubleshooting - Laptop occurs black screen when the BIOS update process is interrupted
+

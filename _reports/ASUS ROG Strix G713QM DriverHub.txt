@@ -1,0 +1,294 @@
+Drivers for Laptops ASUS ROG Strix G713QM
+ASUS
+
+Windows 10 / 11 (64-bit)
+
+Bluetooth devices
+
+IVT Bluetooth Audio Bus
+Driver type: Bluetooth Device
+Vendor: IVT Corporation
+Version: 6.2.84.265
+*.inf file: ivtbtbus.inf
+Hardware ID: {F12D3CF8-B11D-457E-8641-BE2AF2D6D204}\IVTBTBUS
+
+IVT Bluetooth COM Bus
+Driver type: Bluetooth Device
+Vendor: IVT Corporation
+Version: 6.2.84.269
+*.inf file: btcombus.inf
+Hardware ID: {F12D3CF8-B11D-457E-8641-BE2AF2D6D204}\BTCOMBUS
+
+IVT Bluetooth PAN Bus
+Driver type: Bluetooth Device
+Vendor: IVT Corporation
+Version: 6.2.84.265
+*.inf file: btnetbus.inf
+Hardware ID: {F12D3CF8-B11D-457E-8641-BE2AF2D6D204}\BTNETBUS
+
+Intel Wireless Bluetooth
+Driver type: Bluetooth devices
+Vendor: Intel Corporation
+Version: 23.120.0.4
+*.inf file: ibtusb.inf
+Hardware ID: USB\VID_8087&PID_0029&REV_0001
+
+Mediatek Bluetooth Adapter
+Driver type: Bluetooth devices
+Vendor: MediaTek, Inc
+Version: 1.1042.0.506
+*.inf file: mtkbtfilter.inf
+Hardware ID: USB\VID_13D3&PID_3563&MI_00
+
+Network
+
+Avast SecureLine Wintun Adapter
+Driver type: Network adapters
+Vendor: AVAST Software
+Version: 0.14.1.89
+*.inf file: aswwintun.inf
+Hardware ID: ASWWINTUN
+
+Intel Wi-Fi 6 AX200
+Driver type: Network adapters
+Vendor: Intel
+Version: 23.120.0.3
+*.inf file: netwtw08.inf
+Hardware ID: PCI\VEN_8086&DEV_2723&SUBSYS_00848086
+
+Killer Wireless-n|a|ac 1535 Wireless Network Adapter
+Driver type: Network adapters
+Vendor: Qualcomm Atheros Communications Inc
+Version: 11.0.0.791
+*.inf file: netathr7x.inf
+Hardware ID: PCI\VEN_168C&DEV_003E&SUBSYS_15351A56&REV_32
+
+Mediatek Wi-Fi 6 MT7921 Wireless LAN Card
+Driver type: Network adapters
+Vendor: MediaTek, Inc
+Version: 25.040.2.0577
+*.inf file: mtkwl6ex.inf
+Hardware ID: PCI\VEN_14C3&DEV_7961&SUBSYS_46801A3B
+
+Video cards
+
+AMD Radeon Graphics
+Driver type: Display adapters
+Vendor: Advanced Micro Devices Inc
+Version: 31.0.12019.9007
+*.inf file: u0382658_nzparser.inf
+Hardware ID: PCI\VEN_1002&DEV_1638&REV_C5
+
+Controllers
+
+Intel SSD 660p
+Driver type: SCSI and RAID controllers
+Vendor: Intel
+Version: 4.4.0.1003
+*.inf file: ianvme.inf
+Hardware ID: PCI\VEN_8086&DEV_F1A8
+
+Chipsets
+
+AMD Audio CoProcessor
+Driver type: System devices
+Vendor: AMD
+Version: 6.0.0.90
+*.inf file: amdacpbus.inf
+Hardware ID: PCI\VEN_1022&DEV_15E2&REV_01
+
+AMDRyzenMaster
+Driver type: System devices
+Vendor: AMD
+Version: 2.9.0.0
+*.inf file: amdryzenmasterdriver.inf
+Hardware ID: ROOT\AMDRMDRIVER
+
+ATI High Definition Audio Bus
+Driver type: System devices
+Vendor: AMD
+Version: 16.40.0.0000
+*.inf file: amdkmafd.inf
+Hardware ID: PCI\VEN_1002&CC_040300
+
+SteelSeries Device Factory
+Driver type: System devices
+Vendor: SteelSeries
+Version: 1.1.4.1
+*.inf file: ssdevfactory.inf
+Hardware ID: ROOT\SSDEVFACTORY
+
+VMware VMCI Host
+Driver type: System devices
+Vendor: Broadcom, Inc.
+Version: 9.8.18.1
+*.inf file: vmci.inf
+Hardware ID: ROOT\VMWVMCIHOSTDEV
+
+Sound cards
+
+AMD High Definition Audio
+Driver type: Sound, video and game controllers
+Vendor: Advanced Micro Devices
+Version: 10.0.1.30
+*.inf file: atihdwt6.inf
+Hardware ID: HDAUDIO\FUNC_01&VEN_1002&DEV_AA01&SUBSYS_00AA0100&REV_1007
+
+Logitech PRO X Gaming Headset
+Driver type: Sound, video and game controllers
+Vendor: Logitech
+Version: 2021.1.1365.0
+*.inf file: logi_audio.inf
+Hardware ID: USB\VID_046D&PID_0AAA&MI_00
+
+Microsoft Bluetooth A2dp Source
+Driver type: Sound, video and game controllers
+Vendor: Luculent Systems, LLC
+Version: 1.6.0.1
+*.inf file: alta2dp.inf
+Hardware ID: BTHENUM\{0000110B-0000-1000-8000-00805F9B34FB}
+
+NVIDIA Broadcast
+Driver type: Sound, video and game controllers
+Vendor: NVIDIA
+Version: 1.0.0.5
+*.inf file: nvrtxvad.inf
+Hardware ID: USB\VID_0956&PID_9001
+
+NVIDIA High Definition Audio
+Driver type: Sound, video and game controllers
+Vendor: NVIDIA Corporation
+Version: 1.3.38.60
+*.inf file: nvhda.inf
+Hardware ID: HDAUDIO\FUNC_01&VEN_10DE&DEV_009F
+
+Realtek Audio
+Driver type: Sound, video and game controllers
+Vendor: Realtek Semiconductor Corp
+Version: 6.0.9809.1
+*.inf file: hdxacpasus.inf
+Hardware ID: HDAUDIO\FUNC_01&VEN_10EC&DEV_0285&SUBSYS_10431E4E
+
+Realtek High Definition Audio
+Driver type: Sound, video and game controllers
+Vendor: Realtek Semiconductor Corp
+Version: 6.0.9239.1
+*.inf file: hdxrt.inf
+Hardware ID: HDAUDIO\FUNC_01&VEN_10EC&DEV_0285
+
+Input devices
+
+AMD PSP 10.0
+Driver type: SecurityDevices
+Vendor: Advanced Micro Devices Inc
+Version: 4.5.0.0
+*.inf file: amdpsp.inf
+Hardware ID: PCI\VEN_1022&DEV_15DF
+
+ASUS Precision Touchpad
+Driver type: Human Interface Devices (HID)
+Vendor: ASUSTek Computer Inc.
+Version: 16.0.0.32
+*.inf file: asusptpfilter.inf
+Hardware ID: HID\ASUE120A&COL02
+
+Dell Universal Receiver
+Driver type: Human Interface Devices (HID)
+Vendor: Dell
+Version: 1.0.0.3
+*.inf file: unifying.inf
+Hardware ID: USB\VID_413C&PID_301C&MI_01
+
+GAOMON HID
+Driver type: Human Interface Devices (HID)
+Vendor: GAOMON
+Version: 7.1.7610.16485
+*.inf file: vmulti.inf
+Hardware ID: GAOMON\TABLETHID
+
+HID Keyboard
+Driver type: Keyboards
+Vendor: Razer Inc
+Version: 6.2.9200.16384
+*.inf file: rzdev_0098_kbd.inf
+Hardware ID: HID\VID_1532&PID_0098&MI_01&COL01
+
+HID compliant consumer control
+Driver type: Human Interface Devices (HID)
+Vendor: Logicool
+Version: 6.00.45.0
+*.inf file: jfhidhid.inf
+Hardware ID: HID\VID_046D&CLASS_0000001E&COL03
+
+HID compliant touch screen
+Driver type: Human Interface Devices (HID)
+Vendor: Koga Touch Co.,Ltd
+Version: 2.0.20.0810
+*.inf file: kgtchex.inf
+Hardware ID: HID_DEVICE_UP:000D_U:0004
+
+Logitech HID-compliant Unifying
+Driver type: Human Interface Devices (HID)
+Vendor: Logicool
+Version: 6.00.45.0
+*.inf file: jfhideqd.inf
+Hardware ID: {A3535E08-EB26-49A9-8AE0-786ED1242812}\LOGI_HID_DEVICE
+
+Pen
+
+Driver type: Human Interface Devices (HID)
+Vendor: Xenx Technology Limited
+Version: 6.1.7600.16385
+*.inf file: pendriver.inf
+Hardware ID: ROOT\PENDRIVER
+
+SteelSeries Aerox 5
+Driver type: Human Interface Devices (HID)
+Vendor: SteelSeries ApS
+Version: 2.10.2.0
+*.inf file: sshid.inf
+Hardware ID: USB\VID_1038&PID_1850&MI_00
+
+SteelSeries Apex 7
+Driver type: Human Interface Devices (HID)
+Vendor: SteelSeries ApS
+Version: 2.10.2.0
+*.inf file: sshid.inf
+Hardware ID: USB\VID_1038&PID_1612&MI_00
+
+SteelSeries Apex Pro TKL Wireless
+Driver type: Human Interface Devices (HID)
+Vendor: SteelSeries ApS
+Version: 2.10.2.0
+*.inf file: sshid.inf
+Hardware ID: USB\VID_1038&PID_1630&MI_01
+
+T.A320 Pilot
+Driver type: Human Interface Devices (HID)
+Vendor: Guillemot Corporation
+Version: 1.3.2.0
+*.inf file: guihidusblowerdevtfh.inf
+Hardware ID: USB\VID_044F&PID_0405
+
+TCA Q-Eng 1&2
+Driver type: Human Interface Devices (HID)
+Vendor: Guillemot Corporation
+Version: 1.3.2.0
+*.inf file: guihidusblowerdevtfh.inf
+Hardware ID: USB\VID_044F&PID_0407
+
+XP-PEN Tablet
+Driver type: Human Interface Devices (HID)
+Vendor: XPPen Technologies
+Version: 6.1.7600.16385
+*.inf file: xppentablet.inf
+Hardware ID: XPPEN\PENTABLET
+
+Other devices
+
+Western Digital SES
+Driver type: WDC_SAM
+Vendor: Western Digital Technologies
+Version: 1.2.0000.0
+*.inf file: oem23.inf
+Hardware ID: USBSTOR\OTHERWD______SES_DEVICE___

@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentationLink>"./ASUS ROG Strix G17 G713QM Gestalt Spec-Sheet.md"</documentationLink>
+// ## **ASUS ROG Strix G17 G713QM - Gestalt Spec-Sheet**
+// ### **JSON Skeleton ** 
+
+// **Section 1: Device Identity & Provenance** > structured for clarity, export, and easy parsing:
+{
+  "section": "Device Identity & Provenance",
+  "system_aliases": {
+    "oem_designation": "ASUS ROG Strix G17 G713QM-ES94",
+    "alternate_model": "G713QM-HX016T",
+    "device_names": ["LAPTOP-RE37GQQE", "DESKTOP-22G3P3U"],
+    "hardware_platform": "PC",
+    "color": "Eclipse Grey",
+    "registration_date": "2021-10-02",
+    "serial_number": "M4NRKD016818172",
+    "warranty_status": "Expired",
+    "weight_lbs": 5.95,
+    "dimensions_inches": {
+      "length": 15.55,
+      "width": 11.1,
+      "height": 1.11
+    }
+  },
+  "os_history": [
+    {
+      "date": "2021-10-01",
+      "edition": "Windows 11 Home",
+      "version": "2009",
+      "build": "10.0.26100.3194",
+      "notes": "BitLocker escrow active"
+    },
+    {
+      "date": "2022-09-07",
+      "edition": "Windows 10 Home",
+      "version": "19044",
+      "build": "vb_release.191206-1406",
+      "notes": "DxDiag snapshot"
+    },
+    {
+      "date": null,
+      "edition": "Windows 10 Home",
+      "version": "2009",
+      "build": "10.0.22631.2861",
+      "notes": "Later driver suite reference"
+    }
+  ],
+  "licensing": {
+    "activation_type": "Digital license",
+    "status": "Active",
+    "linked_account": true,
+    "bitlocker": {
+      "device_name": "LAPTOP-RE37GQQE",
+      "drive": "OSV",
+      "key_upload_date": "2021-10-01T17:52:00"
+    }
+  },
+  "identity_checkpoints": {
+    "bios_model_string": "G713QM_G713QM",
+    "system_type": "ROG Strix G713QM_G713QM",
+    "tpm": "Firmware TPM",
+    "uefi_boot": true
+  },
+  "discrepancies": [
+    {
+      "field": "Storage Capacity",
+      "value_a": "512 GB (OEM)",
+      "value_b": "1 TB NVMe (installed)",
+      "interpretation": "User-upgraded or alternate SKU"
+    },
+    {
+      "field": "OS Build Lineage",
+      "value_a": "10.0.19044 (2022)",
+      "value_b": "10.0.22631 (later), 10.0.26100 (Win11)",
+      "interpretation": "Upgraded through major builds"
+    },
+    {
+      "field": "RAM Reported",
+      "value_a": "16 GB (base)",
+      "value_b": "15 GB (reported free)",
+      "interpretation": "~1GB reserved for iGPU or hardware"
+    },
+    {
+      "field": "Device Name/Identity",
+      "value_a": "LAPTOP-RE37GQQE",
+      "value_b": "DESKTOP-22G3P3U",
+      "interpretation": "Naming drift over reinstalls"
+    }
+  ],
+  "microsoft_activation_notes": {
+    "linked_to_account": true,
+    "confirmed_status": "Windows is activated with a digital license linked to your Microsoft account",
+    "bitlocker_present": true,
+    "reinstallation_notes": [
+      "Digital entitlement allows reinstalls without product key.",
+      "License survives hardware reactivation if linked to account."
+    ]
+  }
+}
+// This should scale with future sections (hardware, drivers, firmware, etc.). 
+
+// **Section 2: Hardware & Component Stack** > formatted, with all source variants and anomalies preserved in structured form:
+{
+  "section": "Hardware & Component Stack",
+  "cpu": {
+    "model": "AMD Ryzen 9 5900HX",
+    "cores": 8,
+    "threads": 16,
+    "cache_mb": 20,
+    "max_boost_ghz": 4.6,
+    "base_clock_ghz_observed": ["3.3"],
+    "integrated_gpu": {
+      "model": "AMD Radeon Graphics",
+      "device_id": "0x1638"
+    }
+  },
+  "memory": {
+    "installed_gb": 16,
+    "type": "DDR4-3200",
+    "channels": "Dual",
+    "max_supported_gb": 32,
+    "observed_available": ["15.8", "15.0"],
+    "note": "Available memory variance due to hardware reservation"
+  },
+  "storage": {
+    "internal": [
+      {
+        "drive": "C:",
+        "capacity_gb": 955.6,
+        "model": "HFM001TD3JX013N",
+        "interface": "PCIe 3.0 NVMe M.2"
+      }
+    ],
+    "external": [
+      {
+        "drive": "D:",
+        "capacity_gb": 3815.4,
+        "model": "WD My Book 25EE",
+        "filesystem": "exFAT"
+      },
+      {
+        "drive": "E:",
+        "capacity_gb": 953.8,
+        "model": "WD My Passport 25E1",
+        "filesystem": "NTFS"
+      },
+      {
+        "drive": "F:",
+        "capacity_gb": 3815.4,
+        "model": "WD My Passport 2626",
+        "filesystem": "NTFS"
+      },
+      {
+        "drive": "G:",
+        "capacity_gb": 2861.6,
+        "model": "WD My Passport 259F",
+        "filesystem": "NTFS"
+      }
+    ],
+    "oem_declared": "512 GB NVMe",
+    "installed_variation": "1 TB NVMe",
+    "conflict_note": "OEM declared vs observed; may indicate upgrade or SKU delta"
+  },
+  "display": {
+    "size_inches": 17.3,
+    "resolution": "1920x1080",
+    "panel": "IPS-level",
+    "refresh_rate_hz": 144,
+    "sRGB": "62.5%",
+    "AdobeRGB": "47.34%",
+    "adaptive_sync": true,
+    "optimus": true
+  },
+  "discrete_gpu": {
+    "model": "NVIDIA GeForce RTX 3060 Laptop",
+    "vram_gb": 6,
+    "boost_clock_mhz": 1802,
+    "total_display_memory_mb": 13919,
+    "shared_memory_mb": 7896,
+    "rog_boost_power_w": 130,
+    "hybrid_graphics_enabled": true,
+    "detachable": false
+  },
+  "integrated_gpu": {
+    "model": "AMD Radeon Graphics",
+    "device_id": "0x1638",
+    "dedicated_memory_mb": 496,
+    "shared_memory_mb": 7896,
+    "hdr_support": false,
+    "driver_versions": [
+      "30.0.13002.19003",
+      "31.0.12019.9007"
+    ]
+  },
+  "audio_devices": [
+    {
+      "vendor": "Realtek",
+      "codec": ["ALC285", "ALC3288"],
+      "drivers": ["6.0.9394.1", "6.0.9809.1"]
+    },
+    {
+      "vendor": "NVIDIA",
+      "device": "High Definition Audio"
+    },
+    {
+      "vendor": "AMD",
+      "device": "High Definition Audio"
+    },
+    {
+      "vendor": "Logitech",
+      "device": "PRO X Gaming Headset"
+    },
+    {
+      "vendor": "Microsoft",
+      "device": "Bluetooth A2DP Source"
+    },
+    {
+      "vendor": "NVIDIA",
+      "device": "Broadcast Virtual Audio"
+    }
+  ],
+  "input_devices": {
+    "touchpad": {
+      "vendor": "ASUS",
+      "driver_versions": ["11.0.0.35", "16.0.0.32"],
+      "device_id": "SC976A-32H0"
+    },
+    "numberpad": {
+      "vendor": "ASUS",
+      "device_id": "CHICONY/G2ASG5330Z-CO01"
+    },
+    "hid_devices": [
+      "SteelSeries Apex 7",
+      "SteelSeries Aerox 5",
+      "SteelSeries Apex Pro TKL Wireless",
+      "Logitech Unifying Receiver",
+      "XP-Pen Tablet",
+      "GAOMON Digitizer",
+      "Razer HID Keyboard",
+      "Xenx Pen",
+      "Guillemot T.A320 Pilot",
+      "Guillemot TCA Q-Eng 1&2",
+      "Koga Touchscreen"
+    ],
+    "input_bus_conflict_note": "Multiple concurrent HID device drivers from different vendors; requires precision mapping"
+  },
+  "optical_drive": {
+    "present": false
+  }
+}
+
+// **Section 3: BIOS & Firmware Lineage** > capturing all version data, hashes, channels, and notes:
+{
+  "section": "BIOS & Firmware Lineage",
+  "bios_versions": [
+    {
+      "version": "321",
+      "channel": "Windows Update",
+      "release_date": "2022-11-11",
+      "sha256": "1DEFDD8BF3B4C7F430F9F3D7E34D77869934DF14B62111D8122CB9AEE390BE05",
+      "notes": "Stable baseline build"
+    },
+    {
+      "version": "321",
+      "channel": "ASUS EZ Flash",
+      "release_date": "2022-11-11",
+      "sha256": "819DB3C1CF19D27F7E65EDAE0117DF7DA471E9FAD33801E179FA2BD88A692EFD",
+      "notes": "Mirror of above release"
+    },
+    {
+      "version": "331",
+      "channel": "Windows Update",
+      "release_date": "2023-03-31",
+      "sha256": "041798044350195B3D74A6F54BCC727B3CE4E8D2590B24D97056C8073CCA58CE",
+      "notes": "Noted as performance-optimized"
+    },
+    {
+      "version": "331",
+      "channel": "ASUS EZ Flash",
+      "release_date": "2023-03-31",
+      "sha256": "FBA7D2B13A9AA1E901210A4DD9487162C1CB9DB56483B1009A7DA75FAAECB555",
+      "notes": "Identical functionally, alternate installer"
+    }
+  ],
+  "risk_flags": [
+    "System black screen possible if firmware update is interrupted",
+    "Device Manager yellow bang (firmware node) after update corruption",
+    "Active firmware updates possible via Windows Update without user prompt"
+  ],
+  "ancillary_interfaces": {
+    "myasus_uefi": {
+      "features": [
+        "Battery health management",
+        "Fan profile access",
+        "Fallback recovery environment"
+      ],
+      "integration": "Linked to MyASUS UWP"
+    },
+    "tpm": {
+      "implementation": "Firmware TPM",
+      "purpose": [
+        "BitLocker integration",
+        "Device identity verification"
+      ],
+      "firmware_upgrade_events": "None recorded"
+    },
+    "secure_boot": {
+      "enabled": true,
+      "boot_mode": "UEFI",
+      "legacy_support": false
+    }
+  }
+}
+// Everything from release channels to behavioral flags is in here, clean and traceable. This will scale beautifully once we move into layered device driver data next.
+
+// **Section 4: Drivers & Devices** > capturing all driver lineages, device metadata, version drift, and cross-vendor coexistence. All entries are grouped functionally, with notes included where relevant:
+{
+  "section": "Drivers & Devices",
+  "networking": {
+    "wired_lan": {
+      "device": "Realtek RTL8111H",
+      "driver_versions": [
+        "10.045.0928.2020",
+        "10.049.0413.2021"
+      ],
+      "sha256": [
+        "F3A10C76192634F8D5C5013E70B1C232ACBB2274C8FD3F74AD1027CB39B44B59",
+        "EE94B3F80771D250E52353554D2DA2BD5CFA09B093DEC9FB6DC149CFBD77F243"
+      ]
+    },
+    "wireless_lan": {
+      "mediatek_mt7921": {
+        "driver_versions": [
+          "3.00.01.1294",
+          "3.00.01.1325",
+          "25.040.2.0577"
+        ],
+        "device_ids": [
+          "AW-XB468NF",
+          "PCI\\VEN_14C3&DEV_7961&SUBSYS_46801A3B"
+        ]
+      },
+      "intel_ax200": {
+        "driver_versions": [
+          "22.130.0.5",
+          "22.230.0.8",
+          "23.120.0.3"
+        ],
+        "device_id": "PCI\\VEN_8086&DEV_2723&SUBSYS_00848086"
+      },
+      "killer_1535": {
+        "driver_version": "11.0.0.791",
+        "device_id": "PCI\\VEN_168C&DEV_003E&SUBSYS_15351A56"
+      },
+      "virtual_adapter": {
+        "name": "Avast SecureLine Wintun",
+        "driver_version": "0.14.1.89",
+        "inf_file": "aswwintun.inf"
+      }
+    }
+  },
+  "bluetooth": {
+    "intel": {
+      "driver_versions": [
+        "22.130.0.2",
+        "22.230.0.2",
+        "23.120.0.4"
+      ],
+      "inf_file": "ibtusb.inf"
+    },
+    "mediatek": {
+      "driver_versions": [
+        "1.3.17.155",
+        "1.3.17.162",
+        "1.1042.0.506"
+      ],
+      "inf_file": "mtkbtfilter.inf"
+    },
+    "ivt": {
+      "devices": [
+        {
+          "type": "Bluetooth Audio Bus",
+          "version": "6.2.84.265",
+          "inf_file": "ivtbtbus.inf"
+        },
+        {
+          "type": "Bluetooth COM Bus",
+          "version": "6.2.84.269",
+          "inf_file": "btcombus.inf"
+        },
+        {
+          "type": "Bluetooth PAN Bus",
+          "version": "6.2.84.265",
+          "inf_file": "btnetbus.inf"
+        }
+      ]
+    }
+  },
+  "graphics": {
+    "nvidia": {
+      "gpu": "GeForce RTX 3060 Laptop",
+      "driver_version": "30.0.15.1278",
+      "inf_class": "GN20-E5/GN20-P0",
+      "sha256": "16DFD4A1EED89A9B4D86DA096DAAFFF3E88EACDB1A79BDEA829C55C6AF554A33",
+      "control_panel_source": "Microsoft Store"
+    },
+    "amd": {
+      "igpu": "Radeon Graphics (0x1638)",
+      "driver_versions": [
+        "30.0.13002.19003",
+        "31.0.12019.9007"
+      ],
+      "inf_file": "u0382658_nzparser.inf"
+    }
+  },
+  "audio": [
+    {
+      "vendor": "Realtek",
+      "variants": [
+        {
+          "type": "HD Audio",
+          "driver_version": "6.0.9239.1",
+          "inf_file": "hdxrt.inf"
+        },
+        {
+          "type": "Audio Console",
+          "driver_version": "6.0.9809.1",
+          "inf_file": "hdxacpasus.inf"
+        }
+      ],
+      "console_sha256": "0E85292F30C19C951B344204EF93BBD08D9E7C50CE28903D3A9517FBDF1E74D8"
+    },
+    {
+      "vendor": "Logitech",
+      "device": "PRO X Gaming Headset",
+      "driver_version": "2021.1.1365.0",
+      "inf_file": "logi_audio.inf"
+    },
+    {
+      "vendor": "NVIDIA",
+      "device": "High Definition Audio",
+      "driver_version": "1.3.38.60",
+      "inf_file": "nvhda.inf"
+    },
+    {
+      "vendor": "AMD",
+      "device": "High Definition Audio Bus",
+      "driver_version": "16.40.0.0000",
+      "inf_file": "amdkmafd.inf"
+    },
+    {
+      "vendor": "Microsoft",
+      "device": "Bluetooth A2DP",
+      "driver_version": "1.6.0.1",
+      "inf_file": "alta2dp.inf"
+    },
+    {
+      "vendor": "NVIDIA",
+      "device": "Broadcast Virtual Audio",
+      "driver_version": "1.0.0.5",
+      "inf_file": "nvrtxvad.inf"
+    }
+  ],
+  "chipsets_and_controllers": [
+    {
+      "vendor": "AMD",
+      "driver_versions": ["1.2.0.117", "1.2.0.118"],
+      "devices": [
+        {
+          "device": "Audio CoProcessor",
+          "version": "6.0.0.90",
+          "inf_file": "amdacpbus.inf"
+        },
+        {
+          "device": "PSP 10.0",
+          "version": "4.5.0.0",
+          "inf_file": "amdpsp.inf"
+        },
+        {
+          "device": "RyzenMaster",
+          "version": "2.9.0.0",
+          "inf_file": "amdryzenmasterdriver.inf"
+        }
+      ]
+    },
+    {
+      "vendor": "SteelSeries",
+      "device": "Device Factory",
+      "driver_version": "1.1.4.1",
+      "inf_file": "ssdevfactory.inf"
+    },
+    {
+      "vendor": "Intel",
+      "device": "SSD 660p",
+      "driver_version": "4.4.0.1003",
+      "inf_file": "ianvme.inf"
+    },
+    {
+      "vendor": "Broadcom (VMware)",
+      "device": "VMCI Host",
+      "driver_version": "9.8.18.1",
+      "inf_file": "vmci.inf"
+    },
+    {
+      "vendor": "WD",
+      "device": "SmartWare SES",
+      "driver_version": "1.2.0000.0",
+      "inf_file": "oem23.inf"
+    }
+  ],
+  "input_devices": {
+    "asus_precision_touchpad": {
+      "device_id": "SC976A-32H0",
+      "driver_versions": ["11.0.0.35", "16.0.0.32"],
+      "inf_file": "asusptpfilter.inf"
+    },
+    "asus_numberpad": {
+      "device_id": "CHICONY/G2ASG5330Z-CO01",
+      "driver_version": "12.0.0.36"
+    },
+    "peripherals": [
+      "SteelSeries Apex 7",
+      "SteelSeries Aerox 5",
+      "SteelSeries Apex Pro TKL Wireless",
+      "Logitech HID-compliant Unifying",
+      "Logitech HID consumer control",
+      "Razer HID Keyboard",
+      "GAOMON Digitizer",
+      "XP-PEN Tablet",
+      "Xenx Pen",
+      "Guillemot T.A320 Pilot",
+      "Guillemot TCA Q-Eng 1&2",
+      "Koga HID Touchscreen"
+    ],
+    "input_conflict_note": "Concurrent operation of multiple HID vendors; precision tuning may be required"
+  }
+}
+
+// **Section 5: Software Control Stack** > with dependency mapping, version drift, and utility roles:
+{
+  "section": "Software Control Stack",
+  "armoury_crate": {
+    "installers": [
+      {
+        "version": "3.2.9.1",
+        "release_date": "2023-09-18"
+      },
+      {
+        "version": "3.3.1.0",
+        "release_date": "2025-04-09"
+      }
+    ],
+    "installer_tool": "ArmouryCrateInstallTool.exe",
+    "features": ["Armoury Crate", "Aura Creator", "Prerequisite services"],
+    "requirements": {
+      "os": "Windows 10 64-bit",
+      "minimum_version": "1709"
+    },
+    "link": "https://www.asus.com/support/FAQ/1042484",
+    "interface_driver": {
+      "name": "Armoury Crate Control Interface",
+      "version": "1.1.0.0",
+      "release_date": "2024-10-16",
+      "sha256": "CDD33F5B5386284C4347FE25CB409A9EC24E63BD06BFB5D5277476DCDCB2670C"
+    }
+  },
+  "aura_creator": {
+    "installed_via": "Armoury Crate",
+    "compatibility": "SteelSeries RGB devices supported"
+  },
+  "display_and_refresh": {
+    "smart_display_control": {
+      "version": "1.10.13",
+      "release_date": "2022-08-08",
+      "sha256": "99B3C65EDCAC7024FB146AEE42004410DCFD1883C0C7641830C9CAD538750A38",
+      "function": "Reduces refresh rate on battery to save power"
+    },
+    "refreshrate_service": {
+      "version": "2.1.0",
+      "release_date": "2022-11-08",
+      "function": "Enables Panel Overdrive",
+      "dependencies": {
+        "armoury_crate_uwp_minimum": "4.2.5.0",
+        "armoury_crate_service_minimum": "4.2.10"
+      }
+    }
+  },
+  "antenna_services": {
+    "multiantenna_service": {
+      "version": "3.2.3",
+      "release_date": "2023-08-25",
+      "sha256": "86E452ED2E53B013337B12EEBC2CEDC2A6F23FA3D5BB0F6930271C98E6FB1936",
+      "function": "Enables ROG RangeBoost for Wi-Fi optimization"
+    }
+  },
+  "system_interface": {
+    "asus_system_control_interface_v3": [
+      {
+        "version": "3.1.41.0",
+        "release_date": "2025-02-10",
+        "sha256": "DF7D1E76F77F9161C13A52B1E637C907E3FFF3CF55F860EC57C6E6F78D994CB2"
+      },
+      {
+        "version": "3.1.43.0",
+        "release_date": "2025-03-13",
+        "sha256": "F7E71B095E3DAF3D39C9A49B31410489ECC41AD04BCF6193FEF78895DB98410A"
+      }
+    ],
+    "functions": [
+      "Battery diagnostics",
+      "Fan curves",
+      "Power profiles",
+      "Integration with MyASUS UWP"
+    ]
+  },
+  "wireless_utilities": {
+    "radio_control_driver": {
+      "versions": [
+        {
+          "version": "1.0.0.13",
+          "sha256": "C4E559213CF58819DE438FCDCE7B417C60DAB9912F3CB1C817B3424AB7768071"
+        },
+        {
+          "version": "1.0.0.14",
+          "sha256": "BB31CB5730CBE85F06982C47C2549167CA202852A1B36475DD16863DA7B317E8"
+        }
+      ],
+      "function": "Enable wireless radio (airplane mode) hotkey"
+    }
+  },
+  "myasus": {
+    "uwp_app": "MyASUS (latest as of 2018-09-17)",
+    "store_origin": "Microsoft Store",
+    "functions": [
+      "System diagnostics",
+      "Performance optimization",
+      "Software update management",
+      "Aftersales contact portal",
+      "Link to MyASUS (cross-device integration)"
+    ]
+  },
+  "stack_relationships": {
+    "dependencies": [
+      "Aura Creator requires Armoury Crate",
+      "Panel Overdrive requires RefreshRate Service and Armoury Crate ≥ 4.2.5.0",
+      "Battery health/fan tuning requires ASUS System Control Interface"
+    ],
+    "conflicts": "None recorded; functionality preserved across BIOS versions"
+  }
+}
+
+// **Section 6: Peripheral & Input Profiles** > on the full range of internal, HID, creative, and sim-control devices, with driver mappings and cross-referenced vendor footprints:
+{
+  "section": "Peripheral & Input Profiles",
+  "internal_devices": {
+    "asus_precision_touchpad": {
+      "device_id": "HID\\ASUE120A&COL02",
+      "hardware_model": "SC976A-32H0",
+      "driver_versions": ["11.0.0.35", "16.0.0.32"],
+      "inf": "asusptpfilter.inf"
+    },
+    "asus_numberpad": {
+      "device_id": "CHICONY/G2ASG5330Z-CO01",
+      "driver_version": "12.0.0.36"
+    },
+    "koga_touchscreen": {
+      "vendor": "Koga Touch Co., Ltd",
+      "driver_version": "2.0.20.0810",
+      "inf_file": "kgtchex.inf",
+      "hardware_id": "HID_DEVICE_UP:000D_U:0004"
+    }
+  },
+  "keyboard_devices": [
+    {
+      "vendor": "Razer Inc",
+      "device_id": "HID\\VID_1532&PID_0098&MI_01&COL01",
+      "driver_version": "6.2.9200.16384",
+      "inf_file": "rzdev_0098_kbd.inf"
+    },
+    {
+      "vendor": "SteelSeries",
+      "models": [
+        "Apex 7",
+        "Apex Pro TKL Wireless"
+      ],
+      "inf_file": "sshid.inf",
+      "driver_version": "2.10.2.0"
+    }
+  ],
+  "pointing_devices": [
+    {
+      "device": "SteelSeries Aerox 5",
+      "vendor": "SteelSeries ApS",
+      "driver_version": "2.10.2.0",
+      "inf_file": "sshid.inf",
+      "device_id": "USB\\VID_1038&PID_1850&MI_00"
+    },
+    {
+      "device": "Dell Universal Receiver",
+      "vendor": "Dell",
+      "driver_version": "1.0.0.3",
+      "inf_file": "unifying.inf",
+      "device_id": "USB\\VID_413C&PID_301C&MI_01"
+    },
+    {
+      "device": "Logitech HID-compliant Unifying",
+      "vendor": "Logicool",
+      "inf_file": "jfhideqd.inf",
+      "driver_version": "6.00.45.0"
+    },
+    {
+      "device": "HID-compliant Consumer Control",
+      "vendor": "Logicool",
+      "inf_file": "jfhidhid.inf",
+      "device_id": "HID\\VID_046D&CLASS_0000001E&COL03"
+    }
+  ],
+  "pen_and_digitizer_devices": [
+    {
+      "vendor": "GAOMON",
+      "device": "Digitizer",
+      "inf_file": "vmulti.inf",
+      "driver_version": "7.1.7610.16485",
+      "device_id": "GAOMON\\TABLETHID"
+    },
+    {
+      "vendor": "XP-PEN",
+      "device": "Tablet",
+      "inf_file": "xppentablet.inf",
+      "driver_version": "6.1.7600.16385",
+      "hardware_id": "XPPEN\\PENTABLET"
+    },
+    {
+      "vendor": "Xenx Technology Limited",
+      "device": "Pen Input",
+      "inf_file": "pendriver.inf",
+      "driver_version": "6.1.7600.16385",
+      "device_id": "ROOT\\PENDRIVER"
+    }
+  ],
+  "simulation_devices": [
+    {
+      "vendor": "Guillemot Corporation",
+      "device": "T.A320 Pilot",
+      "driver_version": "1.3.2.0",
+      "inf_file": "guihidusblowerdevtfh.inf",
+      "hardware_id": "USB\\VID_044F&PID_0405"
+    },
+    {
+      "vendor": "Guillemot Corporation",
+      "device": "TCA Q-Eng 1&2",
+      "driver_version": "1.3.2.0",
+      "inf_file": "guihidusblowerdevtfh.inf",
+      "hardware_id": "USB\\VID_044F&PID_0407"
+    }
+  ],
+  "compatibility_notes": {
+    "multi_vendor_stack": true,
+    "observed_conflicts": "None reported",
+    "shared_inf_usage": {
+      "sshid.inf": "SteelSeries input stack",
+      "jfhideqd.inf": "Logitech unified HID stack",
+      "vmulti.inf": "GAOMON emulation layer"
+    },
+    "notes": [
+      "Drivers coexist stably despite multi-vendor input stack",
+      "Legacy drivers (e.g. pendriver.inf) still present and functioning",
+      "No ghost or error-class devices detected in diagnostic snapshots"
+    ]
+  }
+}
+
+// **Section 7: Network & Communication Layer** > LAN/WLAN/Bluetooth stack, supporting services, coexistence insights, and integrity flags:
+{
+  "section": "Network & Communication Layer",
+  "wired_lan": {
+    "adapter": "Realtek RTL8111H",
+    "driver_versions": [
+      "10.045.0928.2020",
+      "10.049.0413.2021"
+    ],
+    "inf_file": "realtek.inf",
+    "interface": "RJ45",
+    "link_speed_mbps": 1000,
+    "features": [
+      "Wake-on-LAN",
+      "Jumbo Frame",
+      "Energy Efficient Ethernet"
+    ]
+  },
+  "wireless_lan": {
+    "intel_ax200": {
+      "interface": "PCIe",
+      "driver_versions": [
+        "22.130.0.5",
+        "22.230.0.8",
+        "23.120.0.3"
+      ],
+      "inf_file": "netwtw08.inf",
+      "device_id": "PCI\\VEN_8086&DEV_2723",
+      "status": "Supported across multiple builds"
+    },
+    "mediatek_mt7921": {
+      "interface": "PCIe",
+      "driver_versions": [
+        "3.00.01.1294",
+        "3.00.01.1325",
+        "25.040.2.0577"
+      ],
+      "inf_file": "mtkwl6ex.inf",
+      "device_id": "PCI\\VEN_14C3&DEV_7961",
+      "status": "Wake/suspend issues on early builds"
+    },
+    "killer_1535": {
+      "vendor": "Qualcomm Atheros",
+      "driver_version": "11.0.0.791",
+      "inf_file": "netathr7x.inf",
+      "device_id": "PCI\\VEN_168C&DEV_003E",
+      "status": "Legacy presence only"
+    }
+  },
+  "bluetooth_stack": {
+    "intel": {
+      "driver_versions": [
+        "22.130.0.2",
+        "22.230.0.2",
+        "23.120.0.4"
+      ],
+      "inf_file": "ibtusb.inf",
+      "hardware_id": "USB\\VID_8087&PID_0029"
+    },
+    "mediatek": {
+      "driver_versions": [
+        "1.3.17.155",
+        "1.3.17.162",
+        "1.1042.0.506"
+      ],
+      "inf_file": "mtkbtfilter.inf",
+      "hardware_id": "USB\\VID_13D3&PID_3563"
+    },
+    "ivt": [
+      {
+        "type": "Bluetooth Audio Bus",
+        "version": "6.2.84.265",
+        "inf_file": "ivtbtbus.inf"
+      },
+      {
+        "type": "Bluetooth COM Bus",
+        "version": "6.2.84.269",
+        "inf_file": "btcombus.inf"
+      },
+      {
+        "type": "Bluetooth PAN Bus",
+        "version": "6.2.84.265",
+        "inf_file": "btnetbus.inf"
+      }
+    ],
+    "note": "Presence of IVT stack suggests legacy emulation, VM passthrough, or audio-layer compatibility support"
+  },
+  "signal_optimization": {
+    "multiantenna_service": {
+      "vendor": "ASUS",
+      "version": "3.2.3",
+      "inf_file": "N/A",
+      "sha256": "86E452ED2E53B013337B12EEBC2CEDC2A6F23FA3D5BB0F6930271C98E6FB1936",
+      "function": "RangeBoost dynamic antenna management"
+    },
+    "wireless_radio_control": {
+      "versions": [
+        {
+          "version": "1.0.0.13",
+          "sha256": "C4E559213CF58819DE438FCDCE7B417C60DAB9912F3CB1C817B3424AB7768071"
+        },
+        {
+          "version": "1.0.0.14",
+          "sha256": "BB31CB5730CBE85F06982C47C2549167CA202852A1B36475DD16863DA7B317E8"
+        }
+      ],
+      "function": "Toggle WLAN/Bluetooth via hotkeys"
+    }
+  },
+  "integrity_notes": {
+    "coexistence": [
+      "Intel and MediaTek WLAN stacks observed together",
+      "No hardware conflict reported",
+      "Stack drift varies by OS image"
+    ],
+    "virtual_drivers": [
+      "Avast SecureLine Wintun Adapter V0.14.1.89",
+      "IVT virtual bus layers active"
+    ],
+    "conflict_status": "No critical issues logged across active snapshots"
+  }
+}
+
+// **Section 8: Licensing & Recovery Infrastructure**> preserving all activation data, BitLocker metadata, and recovery pathways:
+{
+  "section": "Licensing & Recovery Infrastructure",
+  "activation": {
+    "license_type": "Digital Entitlement",
+    "linked_to_account": true,
+    "activation_status": "Confirmed activated (2021–2025)",
+    "activation_method": "Microsoft Account (digital license binding)",
+    "account_owner": "David Roberson",
+    "support_reference": "https://support.microsoft.com/en-us/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227"
+  },
+  "os_lineage": [
+    {
+      "edition": "Windows 10 Home",
+      "version": "2009",
+      "build": "10.0.19044",
+      "status": "Activated",
+      "notes": "Factory/OEM baseline"
+    },
+    {
+      "edition": "Windows 11 Home",
+      "version": "2009",
+      "build": "10.0.26100.3194",
+      "status": "Activated",
+      "notes": "License carried forward post-upgrade"
+    },
+    {
+      "edition": "Windows 10 Home",
+      "version": "22H2",
+      "build": "10.0.22631.2861",
+      "status": "Activated",
+      "notes": "Parallel lineage or later snapshot"
+    }
+  ],
+  "bitlocker": {
+    "device_name": "LAPTOP-RE37GQQE",
+    "drive": "OSV",
+    "key_escrow_timestamp": "2021-10-01T17:52:00Z",
+    "key_redacted": true,
+    "key_linked_to_account": true
+  },
+  "product_key": {
+    "provided": false,
+    "required_for_reinstall": false,
+    "behavior_after_hardware_change": {
+      "if_linked": "Reactivates automatically via Activation Troubleshooter",
+      "if_not_linked": "Manual reactivation required"
+    }
+  },
+  "recovery": {
+    "local_reset": {
+      "supported": true,
+      "environment": "Windows Recovery Environment (WinRE)",
+      "launch_methods": [
+        "Settings > Recovery > Reset this PC"
+      ]
+    },
+    "clean_iso_reinstall": {
+      "image_type": "Windows 10/11 Home (x64)",
+      "product_key_prompt": "Skippable",
+      "reactivation": "Automatic upon Microsoft Account sign-in"
+    },
+    "bootloader_flags": {
+      "secure_boot": true,
+      "tpm_type": "Firmware TPM",
+      "boot_mode": "UEFI",
+      "bitlocker_compatible": true
+    }
+  }
+}
+
+// **Section 9: OEM Configuration & Dimensional Metadata** > physical attributes, SKU data, and regional metadata:
+{
+  "section": "OEM Configuration & Dimensional Metadata",
+  "product_identity": {
+    "full_model_name": "ASUS ROG Strix G17 G713QM-ES94",
+    "alternate_designation": "G713QM-HX016T",
+    "system_type": "Notebook PC (17.3\")",
+    "color": "Eclipse Grey",
+    "material": "Plastic/metal blend chassis with brushed texture",
+    "keyboard_layout": "US QWERTY",
+    "chassis_code": "G713QM_G713QM"
+  },
+  "dimensions_and_power": {
+    "weight_lbs": 5.95,
+    "dimensions_inches": {
+      "width": 15.55,
+      "depth": 11.1,
+      "height": 1.11
+    },
+    "battery": {
+      "type": "4-cell Lithium-Ion",
+      "capacity_wh": 90
+    },
+    "power_adapter": {
+      "wattage": 240,
+      "voltage": 20,
+      "amperage": 12,
+      "connector_type": "Barrel-style plug"
+    },
+    "screen_bezel": "Slim-frame (no webcam)"
+  },
+  "oem_defaults": {
+    "factory_os": "Windows 10 Home 64-bit",
+    "recovery_partition": "Present (status unknown)",
+    "declared_ssd_size_gb": 512,
+    "installed_ssd_size_gb": 1000,
+    "installed_ram_gb": 16,
+    "ram_type": "DDR4-3200 (2x8GB)",
+    "retail_box_contents": [
+      "Laptop",
+      "240W Adapter",
+      "ROG Velcro cable tie",
+      "User documentation",
+      "Quick Start Guide"
+    ]
+  },
+  "regional_certifications": {
+    "origin": "United States",
+    "certifications": [
+      "FCC ID: MSQ-AX200NGW",
+      "Wi-Fi 6 Certified (AX)",
+      "RoHS",
+      "CE"
+    ],
+    "documentation_language": "English",
+    "bios_region_defaults": {
+      "power_standard": "U.S.",
+      "input_locale": "en-US"
+    }
+  },
+  "model_drift": [
+    {
+      "attribute": "Storage",
+      "value_oem": "512GB",
+      "value_observed": "1TB",
+      "interpretation": "Upgrade or regional SKU variant"
+    },
+    {
+      "attribute": "OS Edition",
+      "value_oem": "Windows 10 Home",
+      "value_observed": "Windows 11 Home",
+      "interpretation": "Digital license continuity post-upgrade"
+    },
+    {
+      "attribute": "System Alias",
+      "value_oem": "LAPTOP-RE37GQQE",
+      "value_observed": "DESKTOP-22G3P3U",
+      "interpretation": "Post-recovery or multiboot identity shift"
+    }
+  ]
+}
+
+// Next up: Build the scaffolding, frame an `index.md`, stage the Git repo, and integrate ISO hashes and changelog metadata.
+
+// ©2005 David Bryan Roberson - eyeofparadox

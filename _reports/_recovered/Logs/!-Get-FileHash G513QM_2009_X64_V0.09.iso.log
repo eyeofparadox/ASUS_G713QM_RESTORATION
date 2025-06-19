@@ -1,0 +1,20 @@
+PS C:\WINDOWS\system32> cd K:\_ASUS_ROG_Strix_G17_G713QM
+PS K:\_ASUS_ROG_Strix_G17_G713QM> Get-FileHash G513QM_2009_X64_V0.09.iso
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          0AB559E58FE1D855B82D7BF8ACFCA3DB7EFE0203F089F45F455DA049C5EE5894       K:\_ASUS_ROG_Strix_G17_G713QM...
+MD5             A0325DD805DBAA45BF9749C11B1A8D30                                       G:\Archive\_ASUS_ ROG_G17_G713QM\_iso\Win11H_24H2_E_ASUS_G713QM_x64...
+
+PS C:\WINDOWS\system32> Get-FileHash "G:\Archive\_ASUS_ ROG_G17_G713QM\_iso\Win11H_24H2_E_ASUS_G713QM_x64.iso" -Algorithm MD5
+
+Algorithm       Hash                                                                   Path                                                                  
+---------       ----                                                                   ----                                                                  
+MD5             A0325DD805DBAA45BF9749C11B1A8D30                                       G:\Archive\_ASUS_ ROG_G17_G713QM\_iso\Win11H_24H2_E_ASUS_G713QM_x64...
+
+MD5 Checksum: 	206E5A3F20E4626BABD7985E26B4F4BD
+
+
+PS C:\WINDOWS\system32> 
+
+PS K:\_ASUS_ROG_Strix_G17_G713QM>

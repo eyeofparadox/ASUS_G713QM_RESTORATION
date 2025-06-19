@@ -1,0 +1,877 @@
+8GB LEXAR
+
+6:11 PM 3/24/2025
+
+__________________
+AVAILABLE COMMANDS
+
+X:\Windows\System32>dir *.exe /a
+ Volume in drive X is Boot
+ Volume Serial Number is D60A-0DC2
+
+ Directory of X:\Windows\System32
+
+03/18/2019  07:51 PM            26,112 ARP.EXE
+03/18/2019  07:58 PM            83,456 AtBroker.exe
+03/18/2019  07:50 PM            21,504 attrib.exe
+06/11/2019  06:21 PM           589,384 audiodg.exe
+03/18/2019  07:50 PM           961,024 autochk.exe
+03/18/2019  07:50 PM           939,008 autoconv.exe
+03/18/2019  07:50 PM           231,424 bcdboot.exe
+03/18/2019  07:50 PM           481,592 bcdedit.exe
+03/18/2019  07:57 PM           403,968 bmrui.exe
+03/18/2019  07:50 PM            93,184 bootcfg.exe
+03/18/2019  07:57 PM           354,304 BootRec.exe
+03/18/2019  07:50 PM           107,832 bootsect.exe
+03/18/2019  07:50 PM            25,088 chkdsk.exe
+03/18/2019  07:50 PM            21,504 chkntfs.exe
+03/18/2019  07:57 PM           137,216 CloudRecSvc.exe
+03/18/2019  07:50 PM           280,064 cmd.exe
+03/18/2019  07:50 PM            45,056 compact.exe
+03/18/2019  07:58 PM           187,392 CompPkgSrv.exe
+03/18/2019  07:51 PM           885,760 conhost.exe
+03/18/2019  07:50 PM            21,504 convert.exe
+03/18/2019  07:51 PM           225,592 convertvhd.exe
+03/18/2019  07:51 PM           145,312 CredentialUIBroker.exe
+03/18/2019  07:57 PM           157,184 cscript.exe
+03/18/2019  07:51 PM            17,808 csrss.exe
+03/18/2019  07:51 PM            36,152 DeviceCensus.exe
+03/18/2019  07:50 PM           156,160 diskpart.exe
+03/18/2019  07:50 PM           337,920 diskraid.exe
+03/18/2019  07:50 PM           278,840 Dism.exe
+03/18/2019  07:51 PM            21,304 dllhost.exe
+03/18/2019  07:50 PM            12,800 dllhst3g.exe
+03/18/2019  07:50 PM            32,768 dnscacheugc.exe
+03/18/2019  07:50 PM            18,944 doskey.exe
+03/18/2019  07:50 PM            76,800 dpapimig.exe
+03/18/2019  07:51 PM            82,944 driverquery.exe
+03/18/2019  07:51 PM            80,896 drvcfg.exe
+03/18/2019  07:51 PM           173,056 drvinst.exe
+03/18/2019  07:50 PM            38,400 drvload.exe
+03/18/2019  07:50 PM            13,824 Eap3Host.exe
+03/18/2019  07:50 PM           387,584 esentutl.exe
+03/18/2019  07:50 PM            66,048 expand.exe
+03/18/2019  07:50 PM            17,408 find.exe
+03/18/2019  07:51 PM            15,872 finger.exe
+06/11/2019  06:21 PM            21,504 fixmapi.exe
+03/18/2019  07:50 PM            30,720 fltMC.exe
+03/18/2019  07:50 PM           821,904 fontdrvhost.exe
+03/18/2019  07:50 PM           199,480 fsutil.exe
+03/18/2019  07:50 PM            58,880 ftp.exe
+03/18/2019  07:51 PM            14,336 HOSTNAME.EXE
+03/18/2019  07:50 PM            37,888 icacls.exe
+03/18/2019  07:51 PM            13,824 InfDefaultInstall.exe
+03/18/2019  07:51 PM            34,816 ipconfig.exe
+03/18/2019  07:50 PM            50,176 lodctr.exe
+03/18/2019  07:51 PM            58,088 lsass.exe
+03/18/2019  07:57 PM           224,768 manage-bde.exe
+03/18/2019  07:50 PM           856,576 MBR2GPT.EXE
+03/18/2019  07:50 PM            94,208 mcbuilder.exe
+03/18/2019  07:57 PM            92,672 MdSched.exe
+03/18/2019  07:51 PM            18,432 mountvol.exe
+03/18/2019  07:51 PM            16,896 MRINFO.EXE
+03/18/2019  07:51 PM           103,424 MuiUnattend.exe
+03/18/2019  07:58 PM           488,960 Narrator.exe
+03/18/2019  07:50 PM            21,504 nbtstat.exe
+03/18/2019  07:51 PM            69,120 ndadmin.exe
+03/18/2019  07:51 PM            57,856 net.exe
+03/18/2019  07:51 PM           176,128 net1.exe
+03/18/2019  07:50 PM            26,112 netbtugc.exe
+03/18/2019  07:50 PM            36,352 netcfg.exe
+03/18/2019  07:51 PM            78,336 NetCfgNotifyObjectHost.exe
+03/18/2019  07:50 PM            30,208 netiougc.exe
+03/18/2019  07:51 PM            93,184 netsh.exe
+03/18/2019  07:51 PM            38,400 NETSTAT.EXE
+03/18/2019  07:51 PM            71,680 newdev.exe
+03/18/2019  07:50 PM           181,248 notepad.exe
+06/11/2019  06:21 PM         9,917,992 ntoskrnl.exe
+03/18/2019  07:50 PM            64,000 ntprint.exe
+03/18/2019  07:51 PM           113,832 OpenWith.exe
+03/18/2019  07:51 PM            12,288 pacjsworker.exe
+03/18/2019  07:51 PM            19,456 PATHPING.EXE
+03/18/2019  07:51 PM            21,504 PING.EXE
+03/18/2019  07:51 PM           217,088 PkgMgr.exe
+03/18/2019  07:51 PM            59,904 PnPUnattend.exe
+03/18/2019  07:51 PM           281,088 pnputil.exe
+03/18/2019  07:50 PM           492,032 poqexec.exe
+03/18/2019  07:51 PM            96,256 powercfg.exe
+03/18/2019  07:50 PM            16,896 print.exe
+03/18/2019  07:50 PM            17,920 rasautou.exe
+03/18/2019  07:51 PM            46,592 rdrleakdiag.exe
+03/18/2019  07:57 PM           194,560 recdisc.exe
+03/18/2019  07:51 PM            13,824 recover.exe
+03/18/2019  07:51 PM           988,672 refsutil.exe
+03/18/2019  07:51 PM            74,240 reg.exe
+03/18/2019  07:50 PM            11,776 regedt32.exe
+03/18/2019  07:57 PM            29,184 Register-CimProvider.exe
+03/18/2019  07:51 PM            24,064 regsvr32.exe
+03/18/2019  07:57 PM           128,000 repair-bde.exe
+03/18/2019  07:50 PM            21,504 replace.exe
+03/18/2019  07:57 PM            11,264 ResetEngine.exe
+03/18/2019  07:57 PM            10,240 ResetEngInterfaces.exe
+03/18/2019  07:57 PM            30,720 ResetPluginHost.exe
+03/18/2019  07:50 PM           134,656 Robocopy.exe
+03/18/2019  07:51 PM            24,576 ROUTE.EXE
+03/18/2019  07:57 PM           268,800 rstrui.exe
+03/18/2019  07:50 PM            71,168 rundll32.exe
+03/18/2019  07:51 PM            58,880 runexehelper.exe
+03/18/2019  07:50 PM            36,352 sacsess.exe
+06/11/2019  06:21 PM           674,792 services.exe
+03/18/2019  07:51 PM            47,616 sfc.exe
+03/18/2019  07:51 PM           147,400 smss.exe
+06/11/2019  06:21 PM           169,472 SpatialAudioLicenseSrv.exe
+03/18/2019  07:50 PM            16,384 subst.exe
+03/18/2019  07:51 PM            53,744 svchost.exe
+03/18/2019  07:51 PM            36,352 sxstrace.exe
+03/18/2019  07:57 PM           320,512 sysreset.exe
+03/18/2019  07:51 PM            62,976 takeown.exe
+03/18/2019  07:50 PM           252,272 taskmgr.exe
+03/18/2019  07:51 PM            12,800 TCPSVCS.EXE
+03/18/2019  07:51 PM            17,920 TRACERT.EXE
+03/18/2019  07:51 PM            56,848 ucsvc.exe
+03/18/2019  07:50 PM            41,472 unlodctr.exe
+03/18/2019  07:51 PM            33,792 userinit.exe
+03/18/2019  07:50 PM           640,512 vds.exe
+03/18/2019  07:50 PM            26,112 vdsldr.exe
+03/18/2019  07:51 PM           171,320 verifier.exe
+03/18/2019  07:50 PM           190,976 verifiergui.exe
+03/18/2019  07:57 PM         1,446,400 VSSVC.exe
+03/18/2019  07:50 PM            23,040 WallpaperHost.exe
+03/18/2019  07:57 PM           321,536 wbadmin.exe
+03/18/2019  07:57 PM         1,541,632 wbengine.exe
+03/18/2019  07:57 PM           684,544 wdscapture.exe
+03/18/2019  07:57 PM           457,728 wdsclient.exe
+03/18/2019  07:57 PM         1,313,792 wdsmcast.exe
+06/11/2019  06:21 PM           515,896 WerFault.exe
+03/18/2019  07:51 PM           165,832 WerFaultSecure.exe
+06/11/2019  06:21 PM           220,472 wermgr.exe
+03/18/2019  07:50 PM           260,096 wevtutil.exe
+03/18/2019  07:51 PM           516,408 wimserv.exe
+03/18/2019  07:51 PM           371,376 wininit.exe
+06/11/2019  06:21 PM         1,509,728 winload.exe
+03/18/2019  07:50 PM           844,800 winlogon.exe
+03/18/2019  07:51 PM            32,256 winpeshl.exe
+06/11/2019  06:21 PM         1,182,448 winresume.exe
+03/18/2019  07:51 PM            17,408 wowreg32.exe
+03/18/2019  07:51 PM            32,768 wpeinit.exe
+03/18/2019  07:51 PM            12,288 wpeutil.exe
+03/18/2019  07:51 PM           343,552 wpr.exe
+03/18/2019  07:57 PM           165,888 wscript.exe
+03/18/2019  07:51 PM            47,616 xcopy.exe
+             147 File(s)     40,917,776 bytes
+               0 Dir(s)     518,737,920 bytes free
+
+X:\Windows\System32>
+
++++++++++
+
+C:\>cmd /?
+Starts a new instance of the Windows command interpreter
+
+CMD [/A | /U] [/Q] [/D] [/E:ON | /E:OFF] [/F:ON | /F:OFF] [/V:ON | /V:OFF]
+    [[/S] [/C | /K] string]
+
+/C      Carries out the command specified by string and then terminates
+/K      Carries out the command specified by string but remains
+/S      Modifies the treatment of string after /C or /K (see below)
+/Q      Turns echo off
+/D      Disable execution of AutoRun commands from registry (see below)
+/A      Causes the output of internal commands to a pipe or file to be ANSI
+/U      Causes the output of internal commands to a pipe or file to be
+        Unicode
+/T:fg   Sets the foreground/background colors (see COLOR /? for more info)
+/E:ON   Enable command extensions (see below)
+/E:OFF  Disable command extensions (see below)
+/F:ON   Enable file and directory name completion characters (see below)
+/F:OFF  Disable file and directory name completion characters (see below)
+/V:ON   Enable delayed environment variable expansion using ! as the
+        delimiter. For example, /V:ON would allow !var! to expand the
+        variable var at execution time.  The var syntax expands variables
+        at input time, which is quite a different thing when inside of a FOR
+        loop.
+/V:OFF  Disable delayed environment expansion.
+
+Note that multiple commands separated by the command separator '&&'
+are accepted for string if surrounded by quotes.  Also, for compatibility
+reasons, /X is the same as /E:ON, /Y is the same as /E:OFF and /R is the
+same as /C.  Any other switches are ignored.
+
+If /C or /K is specified, then the remainder of the command line after
+the switch is processed as a command line, where the following logic is
+used to process quote (") characters:
+
+    1.  If all of the following conditions are met, then quote characters
+        on the command line are preserved:
+
+        - no /S switch
+        - exactly two quote characters
+        - no special characters between the two quote characters,
+          where special is one of: &<>()@^|
+        - there are one or more whitespace characters between the
+          two quote characters
+        - the string between the two quote characters is the name
+          of an executable file.
+
+    2.  Otherwise, old behavior is to see if the first character is
+        a quote character and if so, strip the leading character and
+        remove the last quote character on the command line, preserving
+        any text after the last quote character.
+
+If /D was NOT specified on the command line, then when CMD.EXE starts, it
+looks for the following REG_SZ/REG_EXPAND_SZ registry variables, and if
+either or both are present, they are executed first.
+
+    HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\AutoRun
+
+        and/or
+
+    HKEY_CURRENT_USER\Software\Microsoft\Command Processor\AutoRun
+
+Command Extensions are enabled by default.  You may also disable
+extensions for a particular invocation by using the /E:OFF switch.  You
+can enable or disable extensions for all invocations of CMD.EXE on a
+machine and/or user logon session by setting either or both of the
+following REG_DWORD values in the registry using REGEDIT.EXE:
+
+    HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\EnableExtensions
+
+        and/or
+
+    HKEY_CURRENT_USER\Software\Microsoft\Command Processor\EnableExtensions
+
+to either 0x1 or 0x0.  The user specific setting takes precedence over
+the machine setting.  The command line switches take precedence over the
+registry settings.
+
+In a batch file, the SETLOCAL ENABLEEXTENSIONS or DISABLEEXTENSIONS arguments
+takes precedence over the /E:ON or /E:OFF switch. See SETLOCAL /? for details.
+
+The command extensions involve changes and/or additions to the following
+commands:
+
+    DEL or ERASE
+    COLOR
+    CD or CHDIR
+    MD or MKDIR
+    PROMPT
+    PUSHD
+    POPD
+    SET
+    SETLOCAL
+    ENDLOCAL
+    IF
+    FOR
+    CALL
+    SHIFT
+    GOTO
+    START (also includes changes to external command invocation)
+    ASSOC
+    FTYPE
+
+To get specific details, type commandname /? to view the specifics.
+
+Delayed environment variable expansion is NOT enabled by default.  You
+can enable or disable delayed environment variable expansion for a
+particular invocation of CMD.EXE with the /V:ON or /V:OFF switch.  You
+can enable or disable delayed expansion for all invocations of CMD.EXE on a
+machine and/or user logon session by setting either or both of the
+following REG_DWORD values in the registry using REGEDIT.EXE:
+
+    HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\DelayedExpansion
+
+        and/or
+
+    HKEY_CURRENT_USER\Software\Microsoft\Command Processor\DelayedExpansion
+
+to either 0x1 or 0x0.  The user specific setting takes precedence over
+the machine setting.  The command line switches take precedence over the
+registry settings.
+
+In a batch file the SETLOCAL ENABLEDELAYEDEXPANSION or DISABLEDELAYEDEXPANSION
+arguments takes precedence over the /V:ON or /V:OFF switch. See SETLOCAL /?
+for details.
+
+If delayed environment variable expansion is enabled, then the exclamation
+character can be used to substitute the value of an environment variable
+at execution time.
+
+You can enable or disable file name completion for a particular
+invocation of CMD.EXE with the /F:ON or /F:OFF switch.  You can enable
+or disable completion for all invocations of CMD.EXE on a machine and/or
+user logon session by setting either or both of the following REG_DWORD
+values in the registry using REGEDIT.EXE:
+
+    HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\CompletionChar
+    HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\PathCompletionChar
+
+        and/or
+
+    HKEY_CURRENT_USER\Software\Microsoft\Command Processor\CompletionChar
+    HKEY_CURRENT_USER\Software\Microsoft\Command Processor\PathCompletionChar
+
+with the hex value of a control character to use for a particular
+function (e.g.  0x4 is Ctrl-D and 0x6 is Ctrl-F).  The user specific
+settings take precedence over the machine settings.  The command line
+switches take precedence over the registry settings.
+
+If completion is enabled with the /F:ON switch, the two control
+characters used are Ctrl-D for directory name completion and Ctrl-F for
+file name completion.  To disable a particular completion character in
+the registry, use the value for space (0x20) as it is not a valid
+control character.
+
+Completion is invoked when you type either of the two control
+characters.  The completion function takes the path string to the left
+of the cursor appends a wild card character to it if none is already
+present and builds up a list of paths that match.  It then displays the
+first matching path.  If no paths match, it just beeps and leaves the
+display alone.  Thereafter, repeated pressing of the same control
+character will cycle through the list of matching paths.  Pressing the
+Shift key with the control character will move through the list
+backwards.  If you edit the line in any way and press the control
+character again, the saved list of matching paths is discarded and a new
+one generated.  The same occurs if you switch between file and directory
+name completion.  The only difference between the two control characters
+is the file completion character matches both file and directory names,
+while the directory completion character only matches directory names.
+If file completion is used on any of the built in directory commands
+(CD, MD or RD) then directory completion is assumed.
+
+The completion code deals correctly with file names that contain spaces
+or other special characters by placing quotes around the matching path.
+Also, if you back up, then invoke completion from within a line, the
+text to the right of the cursor at the point completion was invoked is
+discarded.
+
+The special characters that require quotes are:
+     <space>
+     &()[]{}^=;!'+,`~
+
++++++++++
+
+I:\>xcopy /?	xcopy I:\ "F:\8GB LEXAR" /e /v /c /i /q /g /h /r /t /k /x /y /b
+Copies files and directory trees.
+
+XCOPY source [destination] [/A | /M] [/D[:date]] [/P] [/S [/E]] [/V] [/W]
+                           [/C] [/I] [/Q] [/F] [/L] [/G] [/H] [/R] [/T] [/U]
+                           [/K] [/N] [/O] [/X] [/Y] [/-Y] [/Z] [/B] [/J]
+                           [/EXCLUDE:file1[+file2][+file3]...]
+
+  source       Specifies the file(s) to copy.
+  destination  Specifies the location and/or name of new files.
+  /A           Copies only files with the archive attribute set,
+               doesn't change the attribute.
+  /M           Copies only files with the archive attribute set,
+               turns off the archive attribute.
+  /D:m-d-y     Copies files changed on or after the specified date.
+               If no date is given, copies only those files whose
+               source time is newer than the destination time.
+  /EXCLUDE:file1[+file2][+file3]...
+               Specifies a list of files containing strings.  Each string
+               should be in a separate line in the files.  When any of the
+               strings match any part of the absolute path of the file to be
+               copied, that file will be excluded from being copied.  For
+               example, specifying a string like \obj\ or .obj will exclude
+               all files underneath the directory obj or all files with the
+               .obj extension respectively.
+  /P           Prompts you before creating each destination file.
+  /S           Copies directories and subdirectories except empty ones.
+  /E           Copies directories and subdirectories, including empty ones.
+               Same as /S /E. May be used to modify /T.
+  /V           Verifies the size of each new file.
+  /W           Prompts you to press a key before copying.
+  /C           Continues copying even if errors occur.
+  /I           If destination does not exist and copying more than one file,
+               assumes that destination must be a directory.
+  /Q           Does not display file names while copying.
+  /F           Displays full source and destination file names while copying.
+  /L           Displays files that would be copied.
+  /G           Allows the copying of encrypted files to destination that does
+               not support encryption.
+  /H           Copies hidden and system files also.
+  /R           Overwrites read-only files.
+  /T           Creates directory structure, but does not copy files. Does not
+               include empty directories or subdirectories. /T /E includes
+               empty directories and subdirectories.
+  /U           Copies only files that already exist in destination.
+  /K           Copies attributes. Normal Xcopy will reset read-only attributes.
+  /N           Copies using the generated short names.
+  /O           Copies file ownership and ACL information.
+  /X           Copies file audit settings (implies /O).
+  /Y           Suppresses prompting to confirm you want to overwrite an
+               existing destination file.
+  /-Y          Causes prompting to confirm you want to overwrite an
+               existing destination file.
+  /Z           Copies networked files in restartable mode.
+  /B           Copies the Symbolic Link itself versus the target of the link.
+  /J           Copies using unbuffered I/O. Recommended for very large files.
+
+The switch /Y may be preset in the COPYCMD environment variable.
+
+This may be overridden with /-Y on the command line.
+
++++++++++
+
+C:\>diskpart 
+
+Microsoft DiskPart version 10.0.18362.1
+
+Copyright (C) Microsoft Corporation.
+On computer: MININT-TOLL5KJ
+
+DISKPART>help 
+
+Microsoft DiskPart version 10.0.18362.1
+
+ACTIVE      - Mark the selected partition as active.
+ADD         - Add a mirror to a simple volume.
+ASSIGN      - Assign a drive letter or mount point to the selected volume.
+ATTRIBUTES  - Manipulate volume or disk attributes.
+ATTACH      - Attaches a virtual disk file.
+AUTOMOUNT   - Enable and disable automatic mounting of basic volumes.
+BREAK       - Break a mirror set.
+CLEAN       - Clear the configuration information, or all information, off the
+              disk.
+COMPACT     - Attempts to reduce the physical size of the file.
+CONVERT     - Convert between different disk formats.
+CREATE      - Create a volume, partition or virtual disk.
+DELETE      - Delete an object.
+DETAIL      - Provide details about an object.
+DETACH      - Detaches a virtual disk file.
+EXIT        - Exit DiskPart.
+EXTEND      - Extend a volume.
+EXPAND      - Expands the maximum size available on a virtual disk.
+FILESYSTEMS - Display current and supported file systems on the volume.
+FORMAT      - Format the volume or partition.
+GPT         - Assign attributes to the selected GPT partition.
+HELP        - Display a list of commands.
+IMPORT      - Import a disk group.
+INACTIVE    - Mark the selected partition as inactive.
+LIST        - Display a list of objects.
+MERGE       - Merges a child disk with its parents.
+ONLINE      - Online an object that is currently marked as offline.
+OFFLINE     - Offline an object that is currently marked as online.
+RECOVER     - Refreshes the state of all disks in the selected pack.
+              Attempts recovery on disks in the invalid pack, and
+              resynchronizes mirrored volumes and RAID5 volumes
+              that have stale plex or parity data.
+REM         - Does nothing. This is used to comment scripts.
+REMOVE      - Remove a drive letter or mount point assignment.
+REPAIR      - Repair a RAID-5 volume with a failed member.
+RESCAN      - Rescan the computer looking for disks and volumes.
+RETAIN      - Place a retained partition under a simple volume.
+SAN         - Display or set the SAN policy for the currently booted OS.
+SELECT      - Shift the focus to an object.
+SETID       - Change the partition type.
+SHRINK      - Reduce the size of the selected volume.
+UNIQUEID    - Displays or sets the GUID partition table (GPT) identifier or 
+              master boot record (MBR) signature of a disk.
+
+DISKPART> help attributes
+
+Microsoft DiskPart version 10.0.18362.1
+
+VOLUME      - Manipulate volume attributes.
+DISK        - Manipulate disk attributes.
+
+DISKPART> help attributes volume
+
+    Displays, sets, or clears volume attributes for the selected volume.
+
+Syntax:  ATTRIBUTES VOLUME [SET | CLEAR]
+            [HIDDEN | READONLY | NODEFAULTDRIVELETTER | SHADOWCOPY] [NOERR]
+
+    SET         Sets the specified attribute (HIDDEN, READONLY, and
+                NODEFAULTDRIVELETTER or SHADOWCOPY) for the selected volume.
+
+    CLEAR       Clears the specified attribute (HIDDEN, READONLY,
+                NODEFAULTDRIVELETTER or SHADOWCOPY) from the selected volume.
+
+    HIDDEN      Specifies that the volume is hidden.
+
+    READONLY    Specifies that the volume is read-only.
+
+    NODEFAULTDRIVELETTER
+
+                Specifies that the volume does not receive a drive letter by
+                default.
+
+    SHADOWCOPY  Specifies that the volume is a shadow copy volume.
+
+    NOERR       For scripting only. When an error is encountered, DiskPart
+                continues to process commands as if the error did not occur.
+                Without the NOERR parameter, an error causes DiskPart to exit
+                with an error code.
+
+    On basic master boot record (MBR) disks, the HIDDEN, READONLY, and
+    NODEFAULTDRIVELETTER attributes apply to all volumes on the disk.
+
+    On basic GUID partition table (GPT) disks, and on dynamic MBR and GPT
+    disks, the HIDDEN, READONLY, and NODEFAULTDRIVELETTER attributes apply
+    only to the selected volume.
+
+Example:
+
+To display the attributes on the selected volume, type:
+ATTRIBUTES VOLUME
+
+To set the attribute on the selected volume as read-only, type:
+ATTRIBUTES VOLUME SET READONLY
+
+To clear the read-only attribute from the selected volume, type:
+ATTRIBUTES VOLUME CLEAR READONLY
+
+DISKPART> help list
+
+Microsoft DiskPart version 10.0.18362.1
+
+DISK        - Display a list of disks. For example, LIST DISK.
+PARTITION   - Display a list of partitions on the selected disk.
+              For example, LIST PARTITION.
+VOLUME      - Display a list of volumes. For example, LIST VOLUME.
+VDISK       - Displays a list of virtual disks.
+
+DISKPART> help create
+
+Microsoft DiskPart version 10.0.18362.1
+
+PARTITION   - Create a partition.
+VOLUME      - Create a volume.
+VDISK       - Creates a virtual disk file.
+
+DISKPART> help convert
+
+Microsoft DiskPart version 10.0.18362.1
+
+BASIC       - Convert a disk from dynamic to basic.
+DYNAMIC     - Convert a disk from basic to dynamic.
+GPT         - Convert a disk from MBR to GPT.
+MBR         - Convert a disk from GPT to MBR.
+
+DISKPART> help format
+
+    Formats the specified volume for use with Windows.
+
+Syntax:  FORMAT [[FS=<FS>] [REVISION=<X.XX>] | RECOMMENDED] [LABEL=<"label">]
+                [UNIT=<N>] [QUICK] [COMPRESS] [OVERRIDE] [DUPLICATE] [NOWAIT]
+                [NOERR]
+
+    FS=<FS>     Specifies the type of file system. If no file system is given,
+                the default file system displayed by the FILESYSTEMS command is
+                used.
+
+    REVISION=<X.XX>
+
+                Specifies the file system revision (if applicable).
+
+    RECOMMENDED If specified, use the recommended file system and revision
+                instead of the default if a recommendation exists. The
+                recommended file system (if one exists) is displayed by the
+                FILESYSTEMS command.
+
+    LABEL=<"label">
+
+                Specifies the volume label.
+
+    UNIT=<N>    Overrides the default allocation unit size. Default settings
+                are strongly recommended for general use. The default
+                allocation unit size for a particular file system is displayed
+                by the FILESYSTEMS command.
+
+                NTFS compression is not supported for allocation unit sizes
+                above 4096.
+
+    QUICK       Performs a quick format.
+
+    COMPRESS    NTFS only: Files created on the new volume will be compressed
+                by default.
+
+    OVERRIDE    Forces the file system to dismount first if necessary. All
+                opened handles to the volume would no longer be valid.
+
+    DUPLICATE   UDF Only: This flag applies to UDF format, version 2.5 or
+                higher.
+                This flag instructs the format operation to duplicate the file
+                system meta-data to a second set of sectors on the disk. The
+                duplicate meta-data is used by applications, for example repair
+                or recovery applications. If the primary meta-data sectors are
+                found to be corrupted, the file system meta-data will be read
+                from the duplicate sectors.
+
+    NOWAIT      Forces the command to return immediately while the format
+                process is still in progress. If NOWAIT is not specified,
+                DiskPart will display format progress in percentage.
+
+    NOERR       For scripting only. When an error is encountered, DiskPart
+                continues to process commands as if the error did not occur.
+                Without the NOERR parameter, an error causes DiskPart to exit
+                with an error code.
+
+    A volume must be selected for this operation to succeed.
+
+Examples:
+
+    FORMAT FS=NTFS LABEL="New Volume" QUICK COMPRESS
+    FORMAT RECOMMENDED OVERRIDE
+
+DISKPART> help delete
+
+Microsoft DiskPart version 10.0.18362.1
+
+DISK        - Delete a missing disk from the disk list.
+PARTITION   - Delete the selected partition.
+VOLUME      - Delete the selected volume.
+
+DISKPART> help extend
+
+    Extends the volume or partition with focus, and its file system, into free
+    (unallocated) space on a disk.
+
+Syntax:  EXTEND [SIZE=<N>] [DISK=<N>] [NOERR]
+         EXTEND FILESYSTEM [NOERR]
+
+    SIZE=<N>    Specifies the amount of space in megabytes (MB) to add to the
+                current volume or partition. If no size is given, all of the
+                contiguous free space that is available on the disk is used.
+
+    DISK=<N>    Specifies the disk on which the volume or partition is
+                extended. If no disk is specified, the volume or partition is
+                extended on the current disk.
+
+    FILESYSTEM  Extends the file system of the volume with focus to cover
+                the entire volume. For use only on volumes where the file
+                system was not extended with the volume.
+
+    NOERR       For scripting only. When an error is encountered, DiskPart
+                continues to process commands as if the error did not occur.
+                Without the NOERR parameter, an error causes DiskPart to exit
+                with an error code.
+
+    On basic disks, the free space must be on the same disk as the volume or
+    partition with focus. The free space must also immediately follow the
+    volume or partition with focus (start at the next sector offset).
+
+    On dynamic disks with simple or spanned volumes, a volume can be extended
+    to any free space on any dynamic disk. Using this command, you can convert
+    a simple dynamic volume into a spanned dynamic volume. Mirrored, RAID-5 and
+    striped volumes cannot be extended.
+
+    If the partition was previously formatted with the NTFS file system, the
+    file system is automatically extended to fill the larger partition. No data
+    loss occurs. If the partition was previously formatted with a different
+    file system than NTFS, the command fails with no change to the partition.
+    If the partition was not previously formatted with a file system, the
+    partition will still be extended.
+
+    A volume or partition must be selected for this operation to succeed.
+
+Example:
+
+    EXTEND SIZE=500 DISK=3
+    EXTEND FILESYSTEM
+
+DISKPART> help shrink	shrink desired=5000 minimum=4420
+
+    Reduces the size of the volume with focus by the specified amount. Makes
+    free disk space available from unused space at the end of the volume.
+
+Syntax:  SHRINK [DESIRED=<N>] [MINIMUM=<N>] [NOWAIT] [NOERR]
+        SHRINK QUERYMAX [NOERR]
+
+    DESIRED=<N> Specifies the desired amount of space in megabytes (MB) to
+                reduce the size of the volume by. If a desired amount is not
+                specified, the volume will be reduced by the maximum amount of
+                free space available on the volume.
+
+    MINIMUM=<N> Specifies the minimum amount of space in MB to reduce the size
+                of the volume by.
+
+    QUERYMAX    Returns the maximum number of bytes that the volume can be
+                reduced by (the free space available on the volume). This
+                value may change if applications are currently accessing the
+                volume.
+
+    NOWAIT      Forces the command to return immediately while the shrink
+                process is still in progress.
+
+    NOERR       For scripting only. When an error is encountered, DiskPart
+                continues to process commands as if the error did not occur.
+                Without the NOERR parameter, an error causes DiskPart to exit
+                with an error code.
+
+    If a MINIMUM amount is not specified, the volume will be reduced by either
+    the DESIRED amount (if specified), or by the maximum amount of free space
+    available on the volume. If a MINIMUM amount is specified but not enough
+    free space is available, the command will fail.
+
+    This command works on basic volumes, and on simple or spanned dynamic
+    volumes. You can reduce the size of a volume only if it is formatted using
+    the NTFS file system or if it does not have a file system.
+
+    A volume must be selected for this operation to succeed.
+
+    This command does not operate on OEM, ESP or recovery partitions.
+
+Examples:
+
+    SHRINK DESIRED=500 MINIMUM=250
+    SHRINK QUERYMAX
+
+DISKPART> help assign
+
+    Assigns a drive letter or mounted folder pathname to the volume with focus.
+
+Syntax:  ASSIGN [LETTER=<D> | MOUNT=<PATH>] [NOERR]
+
+    LETTER=<D>  The drive letter to assign to the volume.
+
+    MOUNT=<PATH>
+
+                The mounted folder pathname to assign to the volume.
+
+    NOERR       For scripting only. When an error is encountered, DiskPart
+                continues to process commands as if the error did not occur.
+                Without the NOERR parameter, an error causes DiskPart to exit
+                with an error code.
+
+    If no drive letter or mounted folder is specified, the next available drive
+    letter is assigned. If the drive letter or mounted folder is already in use,
+    an error is generated.
+
+    By using the ASSIGN command, you can change the drive letter associated
+    with a removable drive.
+
+    You cannot assign drive letters to boot volumes or
+    volumes that contain the paging file. In addition, you cannot assign
+    a drive letter to an Original Equipment Manufacturer (OEM) partition
+    unless booted to Windows PE, or any GUID Partition Table (GPT) partition
+    other than a basic data partition, an ESP partition or a recovery
+    partition.
+
+    A volume must be selected for this operation to succeed.
+
+Example:
+
+    ASSIGN LETTER=D
+
+DISKPART> help remove
+
+    Removes a drive letter or mounted folder pathname from the volume
+    with focus.
+
+Syntax:  REMOVE [LETTER=<D> | MOUNT=<PATH> | ALL] [DISMOUNT] [NOERR]
+
+    LETTER=<D>  The drive letter to be removed.
+
+    MOUNT=<PATH>
+
+                The mounted folder path to be removed.
+
+    ALL         Removes all current drive letters and mounted folder paths.
+
+    DISMOUNT    This parameter may be used if 1) all drive letters and
+                mounted folder paths have been removed from the volume, or
+                2) the ALL parameter is specified.  This parameter
+                specifies that the file system is to be dismounted and
+                the volume taken offline. If other processes are using
+                the volume, DiskPart closes any open handles before
+                dismounting the file system and taking the volume offline.
+                You can bring the volume online by assigning it a driver
+                letter, by creating a mounted folder path to the volume, or
+                by using the ONLINE command. DISMOUNT will fail if used
+                on a volume that has any remaining drive letters or mounted
+                folder paths. For scripting, using REMOVE ALL DISMOUNT is
+                recommended.
+
+    NOERR       For scripting only. When an error is encountered, DiskPart
+                continues to process commands as if the error did not occur.
+                Without the NOERR parameter, an error causes DiskPart to exit
+                with an error code.
+
+    If no drive letter or mounted folder path is specified, DiskPart removes
+    the first drive letter or mounted folder path it encounters. If the ALL
+    parameter is used, all current drive letters and mounted folder paths
+    are removed. If the DISMOUNT parameter is used, DiskPart closes all open
+    handles to the volume and then dismounts the volume and takes it offline.
+
+    The REMOVE command can be used to change the drive letter associated with a
+    removable drive. You cannot remove the drive letters on boot or
+    paging volumes.
+
+    A volume must be selected for this operation to succeed.
+
+Example:
+
+    REMOVE LETTER=K
+    REMOVE MOUNT=G:\MountH
+    REMOVE ALL DISMOUNT
+
+DISKPART> 
+
++++++++++
+
+C:\>tree /?
+Graphically displays the folder structure of a drive or path.
+
+TREE [drive:][path] [/F] [/A]
+
+   /F   Display the names of the files in each folder.
+   /A   Use ASCII instead of extended characters.
+
++++++++++
+
+C:\>print /?
+Prints a text file.
+
+PRINT [/D:device] [[drive:][path]filename[...]]
+
+   /D:device   Specifies a print device.
+
++++++++++
+
+C:\>dir /?	dir /a /d /o:end /s > contents.txt
+Displays a list of files and subdirectories in a directory.
+
+DIR [drive:][path][filename] [/A[[:]attributes]] [/B] [/C] [/D] [/L] [/N]
+  [/O[[:]sortorder]] [/P] [/Q] [/R] [/S] [/T[[:]timefield]] [/W] [/X] [/4]
+
+  [drive:][path][filename]
+              Specifies drive, directory, and/or files to list.
+
+  /A          Displays files with specified attributes.
+  attributes   D  Directories                R  Read-only files
+               H  Hidden files               A  Files ready for archiving
+               S  System files               I  Not content indexed files
+               L  Reparse Points             O  Offline files
+               -  Prefix meaning not
+  /B          Uses bare format (no heading information or summary).
+  /C          Display the thousand separator in file sizes.  This is the
+              default.  Use /-C to disable display of separator.
+  /D          Same as wide but files are list sorted by column.
+  /L          Uses lowercase.
+  /N          New long list format where filenames are on the far right.
+  /O          List by files in sorted order.
+  sortorder    N  By name (alphabetic)       S  By size (smallest first)
+               E  By extension (alphabetic)  D  By date/time (oldest first)
+               G  Group directories first    -  Prefix to reverse order
+  /P          Pauses after each screenful of information.
+  /Q          Display the owner of the file.
+  /R          Display alternate data streams of the file.
+  /S          Displays files in specified directory and all subdirectories.
+  /T          Controls which time field displayed or used for sorting
+  timefield   C  Creation
+              A  Last Access
+              W  Last Written
+  /W          Uses wide list format.
+  /X          This displays the short names generated for non-8dot3 file
+              names.  The format is that of /N with the short name inserted
+              before the long name. If no short name is present, blanks are
+              displayed in its place.
+  /4          Displays four-digit years
+
+Switches may be preset in the DIRCMD environment variable.  Override
+preset switches by prefixing any switch with - (hyphen)--for example, /-W.
+
++++++++++
+
+C:\>

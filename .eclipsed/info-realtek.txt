@@ -1,0 +1,189 @@
+info-realtek
+
+- realtek-semiconductor-corp-info
+
+What is Realtek Semiconductor Corp?
+https://www.realtek.com
+
+Realtek as an Audio Chipset Manufacturer:
+Realtek is a major manufacturer of audio chipsets, which are integrated into many motherboards and sound cards. 
+
+Why is Realtek on my computer?
+
+Realtek is likely on your computer because your motherboard or sound card uses a Realtek audio chipset, and the corresponding drivers are installed to enable your computer to communicate with that hardware and play sound. 
+
+Here's a more detailed explanation:
+
+Drivers for Audio Functionality:
+- These chipsets require drivers to function with your operating system (like Windows). These drivers allow your computer to send and receive audio signals to and from the chipset. 
+
+Common in Desktops and Laptops:
+- Realtek audio solutions are very common in both desktop computers and laptops, as they are often included as part of the motherboard's integrated audio capabilities. 
+
+Realtek Audio Console:
+- Some Realtek drivers come with an application called the Realtek Audio Console, which allows you to adjust audio settings and device effects. 
+
+Not part of Windows:
+- Realtek is not part of windows, but is a manufacturer of audio chips and drivers for motherboards. 
+
+OEM's responsibility:
+- It is the manufacturer of your system that decides the appropriate software for your Audio devices (both input and output) on your PC. 
+
+PC Audio Codecs > High Definition Audio Codecs Software > Direct Downloads
+https://www.realtek.com/Download/List?cate_id=593
+
+
+---------
+
+Microsoft Store > Realtek Audio Control
+- rated E for EVERYONE, For all ages by the Entertainment Software Rating Board
+
+"Realtek Audio Control" provides the best audio experience with the Realtek Audio Codec. You can adjust audio device effects and all the audio device settings in this App.
+- Downloads an executable to help install Realtek Audio Control. 
+- Open this file in your downloads to begin installation.
+
+---------
+
+dism-setup-and-execution-realtek-continued
+
+Where to download the Realtek Audio Console?
+- AI Overview
+
+To download the Realtek Audio Console, you need to install the Realtek audio driver from your computer manufacturer's website and then open the Microsoft Store, where the Realtek Audio Console will be "automatically" bought for you. 
+
+Realtek Audio Console is considered a private app, so it doesn't show up in the microsoft store "search". You CANNOT search for it. It is to prevent people trying to install the app on a computer with "legacy" realtek audio drivers (i.e. those that came with realtek hd audio manager). All those 1 star ratings on the Microsoft Store saying that they couldn't install the app --- that's because they have "legacy" audio drivers.
+
+So if it is "missing", then it is because the end-users didn't install the new DCH driver correctly or that they have legacy audio driver (and shouldn't install it anyway).
+
+Unable to download Realtek Audio Console! 
+- Forum summary
+
+This is not a microsoft store issue. If you want the technical answer, installing via device manager method will not install the extension inf file. You have to install DCH drivers (post 2018 windows drivers) using the installer exe (often called setup.exe). 
+
+- You CANNOT install DCH drivers by device manager.
+
+- After you install your computer manufacturer's realtek audio driver, then run Microsoft Store --- the realtek audio console will be "automatically" bought for you. You cannot install other computer manufacturer's realtek audio driver onto your computer
+
+Only using the installer exe will the extension inf file installs the 3 realtek software components. If you don't have these 3 software components installed, then you will have problems getting realtek audio console from the microsoft store. Errors in the installation will bring you these problems --- sometimes asus and msi tell people to kill their internet access and reinstall their drivers.
+
+The screenshot is clearly telling you that the problem is on THEIR end. If your motherboard provides an offline realtek audio console app installation download, then install it the offline way. You can also try to clear the microsoft store cache or reset your microsoft store app.
+
+Here's a more detailed explanation:
+
+Install the Realtek Audio Driver
+
+Go to your computer manufacturer's website (e.g., Dell, HP, MSI, etc.):
+- Find the support section for your specific computer model. 
+- Locate and download the Realtek audio driver for your operating system (Windows 10 or 11). 
+
+Open the Microsoft Store:
+- After installing the driver, open the Microsoft Store. 
+- The Realtek Audio Console should be automatically installed and available for use. 
+
+Troubleshooting
+- If you encounter issues downloading from the Microsoft Store, search for "Realtek Audio Control" in the store. 
+- You can also check the installed apps in the store library. 
+- If you still can't find it, try uninstalling and reinstalling the Realtek audio driver. 
+- Some users have reported success with the Realtek Audio Control offline installer available on GitHub. 
+
+---------
+
+This video demonstrates: https://www.youtube.com/watch?v=m81_LhX3ZWI&t=0 : Go to > 43s
+Guiding Tech
+YouTube · Apr 2, 2024
+
+---------
+
+Here's some additional info: 
+
+### **ASUS\G713QM\Drivers\Audio\Realtek**
+**Required**
+
+### **Realtek Codec Console Application**
+Version: latest version at the MS store
+9.25 MB 2021/07/08
+SHA-256 :0E85292F30C19C951B344204EF93BBD08D9E7C50CE28903D3A9517FBDF1E74D8
+	share link: 
+	https://apps.microsoft.com/detail/9P2B8MCSVPLN?hl=en-us&gl=US&ocid=pdpshare
+	lookup link: 
+	ms-windows-store://pdp?hl=en-us&gl=us&referrer=storeforweb&productid=9p2b8mcsvpln&mode=full&storecid=sfw-secondary-cta&webid=79db90aa-7edd-4711-8f2a-295ae78014f4&websessionid=6b512340-3277-43f9-8693-b754bc511a80
+	*can be used to bypass MSS (see Documents\<notes>.txt)*
+
+Description :
+This package includes Realtek Codec Console, which provides a central location for making audio-related settings, including changing the volume and muting/unmuting sound. You can also find application and driver information here.
+
+### **Realtek Audio Driver**
+Version V6.0.9394.1
+19.62 MB 2022/10/04
+SHA-256 :BC9F521871094E821998C6E915D87F7C4B983A24E0A6CB3368C0DCABBBA7E913
+Severity :
+Recommended  *MSS download fails without this*
+
+Description :
+Realtek Audio Driver, provide audio jack adjust to correct type that user can change, provide Internal MIC algorithm for filter speaking sound. support audio function.This software is required in most cases for the hardware device to function properly.
+
+Minimum OS Version :
+Windows 10 64-bit 20H1
+Windows 11 64-bit 21H2
+
+Device List :
+ALC3288/ALC285
+
+---------
+
+In some reported cases, it has to be a UAD driver in order to work:
+
+Realtek UAD Driver 6.0.9575.1
+https://www.techspot.com/drivers/downloadnow/18228/?evp=9685f2b105f5930635f426f660bba43c&file=25516
+- A third-party modification of Realtek drivers for older computers that support Realtek Legacy HDA FF00 drivers.
+
+More about this driver
+- Compatibility: This Realtek UAD driver mod should install and function properly on all systems supporting Realtek Legacy HDA FF00 drivers that don't rely on any special audio enhancements. If used with devices relying on special audio enhancements functionality and feature set available may be limited.
+
+Project motivation
+- I have an old system that is not supported by OEM specific Realtek UAD drivers and I found HDA drivers to be very large, bloated and causing an unpleasant issue when equalizer was installed that was a pain to live with. Realtek UAD generic drivers were not affected so I permanently switched to them. But Realtek doesn't provide complete and official UAD generic drivers very often so I decided to custom craft it from parts since I discovered it is possible to do so without breaking WHQL signature.
+
+---------
+
+- additional options: (only valid if [Legacy])
+
+Realtek Audio HD Manager : Precursor to Realtek Audio Control
+
+### **Top 10 Realtek Audio HD Manager Alternatives**
+
+There are many alternatives to  and we will discuss some of them in detail.
+
+Alternative 1 – Dolby Audio
+Dolby Audio is a multimedia software and an alternative to Realtek Audio HD Manager. The app can be used to adjust sound and it also comes with the feature of automatic volume control. Another feature of the app is that it can enhance the loudness of the music. The app should not be confused with Dolby Atmos as it is a different app. Volume changes in speech can be controlled and annoying sounds can be eliminated.
+
+Alternative 2 – Sigmatel AC97 Audio Driver
+Sigma AC97Audio Driver is another alternative to Realtek Audio HD Manager. You have to check whether the driver has compatibility with the OS on your machine. The app can be installed on Windows XP/2000/NT4.0/Me/98. The app is available for free and you need to navigate to the official website to download it for free.
+
+Alternative 3 – Nahimic
+Nahimic is a 3D audio software and an excellent alternative to Realtek Audio HD Manager. The app is compatible with many motherboards and computers. The app has the ability to enhance the sound of your speakers and microphone. You can enjoy clear conversation through microphones.
+
+Alternative 4 – SoundMAX Audio Driver
+SoundMAX Audio Driver is another free alternative to Realtek Audio HD Manager and can be installed on Windows XP. The app has compatibility with 32 bits and 64 bits versions of the operating system. The driver can be safely downloaded from the Intel Official website.
+
+Alternative 5 – StellarPlayer
+StellarPlayer is a media player which is available for free. It is one of the best alternatives to Realtek Audio HD Manager. You can watch videos and play audio on this media player. Many multimedia formats are supported by this app. You can find clear graphics on the app. The functionality of the app can be enhanced with the help of plugins.
+
+Alternative 6 – Windows Audio Loudness Equalizer
+Windows Audio Loudness Equalizer is another app that can be used as a substitute for Realtek Audio HD Manager. You can control the volume of different apps available on your computer. It is also popular with the name of Wale Volume Control. There are audio settings and you can set volume levels depending on the app you are using.
+
+Alternative 7 – SRS Audio Essentials
+SRS Audio is a software which is an audio mixer. It mixes Audio on the basis of the app that you are using. It is one of the best alternatives to Realtek Audio HD Manager. Sound stream is processed on the basis of the sound format. The app consists of 6 preset modes which can be used to enhance sound from different sources like movies and games to output devices like speakers, microphones, etc.
+
+Alternative 8 – Razer Surround
+Razer Surround is another useful alternative to Realtek Audio HD Manager. The app is customizable and users can use it to customize sound for their headset. The app is also popular among gamers as they are able to create a virtual surround sound through the app. The app is available for free and can be easily installed on Windows.
+
+Alternative 9 – Yamaha Audio Drivers
+Yamaha Audio Drivers is yet another alternative to Realtek Audio HD Manager. This is a free app and is available for 32-bit and 64-bit operating systems. The app is available for free and can be easily downloaded on Windows from the Intel official website.
+
+Alternative 10 – SoundLock
+SoundLock is a free alternative to Realtek Audio HD Manager. The app has the ability to limit the sounds that are being produced by your Windows system. The app comes with a user interface that is easy to use. The volume of your PC can be locked as per the requirements. The app does not use a lot of memory as it is very light in weight.
+
+Conclusion
+
+Realtek Audio HD Manager is a Legacy sound driver which can be used to enhance the sound of a movie, audio, etc. The app sometimes does not respond and has conflicts with other drivers. There are many alternatives to Realtek Audio HD Manager and some of them are Dolby Audio, Nahimic, Windows Audio Loudness Equalizer, and many more.
+

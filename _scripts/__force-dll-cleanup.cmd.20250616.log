@@ -1,0 +1,11 @@
+Microsoft Windows [Version 10.0.22000.2]
+(c) AnhdvBoot.com
+
+X:\windows\system32>cd /d G:\Lab\GitHub\ASUS_G713QM_RESTORATION-main\_scripts
+
+G:\Lab\GitHub\ASUS_G713QM_RESTORATION-main\_scripts>__force-dll-cleanup.cmd
+
+This:
+`G:\Lab\GitHub\in-the-eyeofparadox\iso\Windows_10_20H1_EN-US_KB5058379\Windows\WinSxS\amd64_microsoft-windows-deskmon_31bf3856ad364e35_10.0.19041.1_none_64c4d9881e6fa61a\deskmon.dll`
+...turned into this:
+`G:\Lab\GitHub\in-the-eyeofparadox\iso\Windows_10_20H1_EN-US_KB5058379\Windows\WinSxS\...1_none_64c4d9881e6fa61a\deskmon.dll`

@@ -1,0 +1,150 @@
+ASUS OEM LIST G713QM ES94 2021
+
+The ASUS ROG STRIX G17 Gaming Laptop will allow you to play your favourite PC games in the best possible conditions thanks to its high-performance components, 144 Hz screen and top-of-the-range design that leaves nothing to chance. The ASUS ROG STRIX G17 G713QM-HX016 Gaming Notebook delivers high performance thanks to its AMD Ryzen 9 5900HX processor, 16 GB DDR4 memory, 1 TB PCIe M.2 SSD and NVIDIA GeForce RTX 3060 graphics chip.
+
+
+Drivers for ASUS ROG Strix G713QM Laptops
+https://www.drvhub.net/laptops/asus/rog-strix-g713qm#:~:text=IVT%20Bluetooth%20Audio%20Bus,.inf%20file:%20mtkbtfilter.inf
+
+
+NVIDIA GeForce RTX 3060 Laptop GPU
+https://www.notebookcheck.net/NVIDIA-GeForce-RTX-3060-Mobile-GPU-Benchmarks-and-Specs.497453.0.html
+
+GeForce RTX 3060 Laptop GPU	3840 @ 0.82 - 1.7 GHz	192 Bit @ 14000 MHz
+Codename	GN20-E3 GA106
+Architecture	Ampere
+Pipelines	3840 - unified
+TMUs	120
+ROPs	48
+Raytracing Cores	30
+Tensor / AI Cores	120
+Core Speed	817 - 1702 (Boost) MHz
+Memory Speed	14000 effective = 1750 MHz
+Memory Bus Width	192 Bit
+Memory Type	GDDR6
+Max. Amount of Memory	6 GB
+Shared Memory	no
+Memory Bandwidth	336 GB/s
+API	DirectX 12_2, Shader 6.7, OpenGL 4.6
+Power Consumption	115 Watt (60 - 115 Watt TGP)
+technology	8 nm
+PCIe	4.0
+Displays	HDMI 2.1, DisplayPort 1.4a
+Features	NVIDIA DLSS, NVIDIA Reflex, Resizable BAR, NVIDIA Broadcast, NVIDIA Ansel, NVIDIA ShadowPlay®, NVIDIA G-SYNC®, Advanced Optimus, Nvidia Max-Q, Dynamic Boost
+Notebook Size	large
+Date of Announcement	04.01.2021 = 1601 days old
+
+The Nvidia GeForce RTX 3060 Mobile (for laptops, GN20-E3, Max-P) is the third Ampere graphics card for notebooks in early 2021. It is based on the GA106 Ampere chip and offers 6 GB GDDR6 graphics memory with a 192 Bit memory bus. It supports PCIe 4.0 and will be available in different variants from 60 or 115 Watt (TGP). As package the notebook graphic card uses GB5-256 and the chip size is 40x40mm. The GPU supports eDP 1.4b to connect the internal monitor.
+
+
+
+ROG - Republic of Gamers
+The Republic of Gamers graphics card are designed and built for the most demanding enthusiasts and competitive overclockers. With premium hardware engineering yielding incredible innovations, they are always the best-in-class.
+
+Based on the Ampere architecture and designed to handle the graphical demands of 1080p gaming, the ASUS GeForce RTX 3060 Republic of Gamers Strix OC Graphics Card brings the power of real-time ray tracing and AI to your PC games. The GPU features 12GB of GDDR6 VRAM and a 192-bit memory interface, offering improved performance and power efficiency over the previous Turing-based generation.
+
+NVIDIA ROG Strix GeForce RTX 3060 6 GB GDDR6 
+https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3060-3060ti/
+
+ASUS RTX 3060 OC Specs
+https://www.bhphotovideo.com/c/product/1625750-REG/asus_rog_strix_rtx3060_o12g_gaming_rog_strix_geforce_rtx.html/overview
+Key Specs
+GPU Model	
+NVIDIA GeForce RTX 3060
+Stream Processors	
+3584 CUDA Cores
+Interface	
+PCI Express 4.0 x16
+GPU Memory	
+12 GB
+Memory Interface	
+GDDR6
+Video Output	
+3x DisplayPort 1.4a
+2x HDMI 2.1
+Power Connection	
+1x 8-Pin PCI Connector
+Recommended System Power Requirement	
+750 W
+GPU Width	
+Dual-Slot
+GPU
+GPU Model	
+NVIDIA GeForce RTX 3060
+Stream Processors	
+3584 CUDA Cores
+Boost Clock Speed	
+OC Mode: 1867 MHz
+Gaming Mode: 1837 MHz
+Interface	
+PCI Express 4.0 x16
+Supported APIs	
+DirectX: 12
+OpenGL: 4.6
+Vulkan
+Memory Speed	
+15 Gb/s
+GPU Memory	
+12 GB
+Memory Interface	
+GDDR6
+Memory Interface Width	
+192-Bit
+Memory Bandwidth	
+360 GB/s
+Display Support
+Video Output	
+3x DisplayPort 1.4a
+2x HDMI 2.1
+Maximum Digital Resolution	
+7680 x 4320
+Power Requirements
+Power Connection	
+1x 8-Pin PCI Connector
+Recommended System Power Requirement	
+750 W
+Height	
+5.3" / 133.6 mm
+Length	
+11.8" / 300.00 mm
+GPU Width	
+Dual-Slot
+Cooler Type	
+Open Fansink with Three Fans
+Lighting	
+RGB LED
+Packaging Info
+Package Weight	
+3.935 lb
+Box Dimensions (LxWxH)	
+16 x 9.3 x 3.6"
+
+Items Included
+ASUS GeForce RTX 3060 Republic of Gamers Strix OC Graphics Card
+ROG Hook and Loop Fastener
+Limited 3-Year Manufacturer Warranty
+Additional Resources
+Quickstart Guide
+
+10.9 MB
+https://www.bhphotovideo.com/c/product/1625750-REG/asus_rog_strix_rtx3060_o12g_gaming_rog_strix_geforce_rtx.html
+The ASUS ROG Strix GeForce RTX 3060 6 GB GDDR6 is a graphics card designed for gaming and features a boost clock of 1882 MHz (Gaming Mode). It also includes 3584 CUDA cores, 6GB of GDDR6 memory with a 15 Gbps memory speed, and a 192-bit memory interface. It supports up to 7680x4320 resolution, has a 1x 8-pin power connector, and is recommended to be used with a 650W power supply.
+
+What does ASUS stand for?
+ASUS takes its name from Pegasus, the winged horse in Greek mythology that symbolises wisdom and knowledge. ASUS embodies the strength, purity, and adventurous spirit of this fantastic creature, and soars to new heights with each new product it creates.
+
+What does ASUS ROG Strix stand for?
+Taken from the ancient Roman and Greek word for owl, Strix means the keenest hearing and sharpest eyesight. Strix means feeling your environment so that you detect and react to the slightest movement. Strix means survival on the very edge of instinct. Strix is in your blood, as it is in ours.
+-------
+ASUS Graphics Cards – No.1 Gamers’ Choice
+
+ASUS STRIX gaming graphics cards packed with exclusive ASUS technologies, including DirectCU III with Triple Wing-Blade 0dB Fan Design for maximum air flow with 30% cooler and 3X quieter performance. This card features exclusive ASUS AUTO-EXTREME Technology with Super Alloy Power II for premium quality and best reliability. It also has GPU Tweak II with XSplit Gamecaster, provides intuitive performance tweaking and lets you stream your gameplay instantly.
+
+Game Cool
+DirectCU III with 10mm Heatpipe
+30% Cooler and 3X Quieter Performance
+Exclusive DirectCU III cooling technology features two exclusive 10 mm direct-GPU contact heat-pipes that transports 40% more heat away from the GPU and outperforms reference designs, achieving up to 30% cooler gaming performance.
+
+
+ASUS Warrnty Check and Serial Number to Model Number Lookup Tool
+https://www.asus.com/us/support/warranty-status-inquiry/

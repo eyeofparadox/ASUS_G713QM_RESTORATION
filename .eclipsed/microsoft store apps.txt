@@ -1,0 +1,5 @@
+https://apps.microsoft.com/detail/9nf8h0h7wmlt?hl=en-US&gl=US NVIDIA Control Panel
+https://apps.microsoft.com/detail/9n7r5s6b0zzh?hl=en-US&gl=US MyASUS
+
+After: Audio_DriverOnly_Dolby_ROG_Realtek_J_V6.0.9394.1_30490_20250415011638
+https://apps.microsoft.com/detail/9p2b8mcsvpln?hl=en-US&gl=US Realtek Audio Control

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<logs>
+<log build="40338" product="Acronis Cyber Protect Home Office" task_name="My Disk Drives Backup" uuid="5FDD7F4E-6035-4363-94E8-3CF384128EDD" version="27.5">
+	<event code="0" id="1" level="2" message="Operation &quot;My Disk Drives Backup&quot; started." module="100" time="1748768645" />
+	<event code="252" id="2" level="2" message="Backup operation succeeded." module="100" time="1748768702" />
+</log>
+<log build="40338" product="Acronis Cyber Protect Home Office" task_name="My Disk Drives Backup" uuid="5FDD7F4E-6035-4363-94E8-3CF384128EDD" version="27.5">
+	<event code="0" id="1" level="2" message="Operation &quot;My Disk Drives Backup&quot; started." module="100" time="1748770784" />
+	<event code="252" id="2" level="2" message="Backup operation succeeded." module="100" time="1748770785" />
+</log>
+<log build="40338" product="Acronis Cyber Protect Home Office" task_name="My Disk Drives Backup" uuid="FF92CB3C-DA0E-4A19-938F-F434BE70A3F4" version="27.5">
+	<event code="0" id="1" level="2" message="Operation &quot;My Disk Drives Backup&quot; started." module="100" time="1748772541" />
+	<event code="252" id="2" level="2" message="Backup operation succeeded." module="100" time="1748772637" />
+</log>
+<log build="40338" product="Acronis Cyber Protect Home Office" task_name="My Disk Drives Backup" uuid="38B417CE-5B1F-4041-A048-9090A00CB091" version="27.5">
+	<event code="0" id="1" level="2" message="Operation &quot;My Disk Drives Backup&quot; started." module="100" time="1748773174" />
+	<event code="252" id="2" level="2" message="Backup operation succeeded." module="100" time="1748773234" />
+</log>
+</logs>

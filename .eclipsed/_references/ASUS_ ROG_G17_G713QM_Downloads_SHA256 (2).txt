@@ -1,0 +1,200 @@
+ASUS ROG G17 G713QM
+
+BIOS
+"C:\Users\david\Downloads\G713QMAS331.zip"
+"C:\Users\david\Downloads\ASUS_G713QM_331_BIOS_Update_2.exe"
+
+BIOS for ASUS EZ Flash Utility
+
+Version 331
+7.99 MB 2023/03/31
+SHA-256 :FBA7D2B13A9AA1E901210A4DD9487162C1CB9DB56483B1009A7DA75FAAECB555
+Description :
+It is recommended to download and update the BIOS and firmware for system performance optimization. The update takes a few minutes, please do not turn off your computer during the process to avoid critical problem that system cannot be turned on.
+Caution! Active updates are possible during the Windows Update process!
+
+(UEFI is a firmware package that controls keyboard, monitor, disk and other hardware devices and provides software interface to help OS control hardware devices.)
+
+Important Information:
+Optimize system performance
+
+Introduction :
+- MyASUS in UEFI BIOS - Introduction
+
+How to Install :
+- How to update BIOS with EZ Flash
+
+FAQ :
+- Troubleshooting - Laptop occurs black screen when the BIOS update process is interrupted
+
+
+BIOS Update for Windows
+
+Version 331
+9.46 MB 2023/03/31
+SHA-256 :041798044350195B3D74A6F54BCC727B3CE4E8D2590B24D97056C8073CCA58CE
+Description :
+It is recommended to download and update the BIOS and firmware for system performance optimization. The update takes a few minutes, please do not turn off your computer during the process to avoid critical problem that system cannot be turned on.
+Caution! Active updates are possible during the Windows Update process!
+
+(UEFI is a firmware package that controls keyboard, monitor, disk and other hardware devices and provides software interface to help OS control hardware devices.)
+
+Important Information:
+Optimize system performance
+
+Introduction :
+- MyASUS in UEFI BIOS - Introduction
+
+How to Install :
+- How to update BIOS in Windows
+
+FAQ :
+- Troubleshooting - Laptop occurs black screen when the BIOS update process is interrupted
+- The Firmware in Device Manager shows a yellow exclamation mark (yellow bang)
+
+
+Realtek LAN Driver
+Version V10.049.0413.2021
+4.11 MB 2021/11/03
+SHA-256 :EE94B3F80771D250E52353554D2DA2BD5CFA09B093DEC9FB6DC149CFBD77F243
+
+NXP NFC Driver
+
+Version V12.0.6.0
+3.91 MB 2021/11/03
+SHA-256 :8F64031628CDA37EA23C9A729BE657972FE8E729E7A7C8D85C5698C350E4A85F
+
+MediaTek WLAN Driver
+
+Version V3.00.01.1325
+4.79 MB 2024/06/06
+SHA-256 :B82410A49982C95C2DE36E90D37ACF56E96023695FD65B69A024EA12806E3F6A
+
+Intel Wireless LAN
+
+Version V22.230.0.8
+15.17 MB 2023/06/15
+SHA-256 :6CD68E66187E2A37F9D813192DDD739F290C754C611373023F5137B3950A876A
+
+AMD Chipset
+
+Version V1.2.0.118
+4.21 MB 2021/11/24
+SHA-256 :9907DD61C467512445EC74216CA54481C9065941EBA13F36E25BDDEEBF61528B
+
+Realtek Audio
+
+Version V6.0.9394.1
+19.62 MB 2022/10/04
+SHA-256 :BC9F521871094E821998C6E915D87F7C4B983A24E0A6CB3368C0DCABBBA7E913
+
+NVIDIA Graphic Driver
+
+Version V30.0.15.1278
+825.02 MB 2022/06/15
+SHA-256 :16DFD4A1EED89A9B4D86DA096DAAFFF3E88EACDB1A79BDEA829C55C6AF554A33
+
+NVIDIA Control Panel Application
+
+Version latest version at the MS store
+8.16 MB 2022/09/08
+SHA-256 :4F9C46E7F604E6AF141D283386BB7C3F32EBF72367B0233D4F955A028BDC140D
+
+AMD Graphics Driver
+
+Version V30.0.13002.19003
+243.87 MB 2022/10/31
+SHA-256 :A7EA77F82F10D4B0094BAD38B5534125EF8C2C7CCAB6743059C7422325EADA0B
+
+AMD Control Panel
+
+Version V10.20.40028.0
+164.54 MB 2021/11/03
+SHA-256 :5F357D68DEFCF6962F471E11AAB1174A85CA6095A05C770711DC6FC2C6F4D14F
+
+AMD Raid Driver
+
+Version V9.3.1.00030
+3.72 MB 2021/11/03
+SHA-256 :8A21B89FA0C589F676244B2FA52F04336195E0024CFA870B446AE3DF7218FAE3
+
+Dolby Atmos driver for ROG
+
+Version V3.20901.918.0
+6.39 MB 2021/11/03
+SHA-256 :16DE1651F826F8CDC7B06BC1124511AB7B3276284B6763094C1BD67EE56778DF
+
+ASUS Precision TouchPad Driver
+
+Version V16.0.0.27
+3.58 MB 2024/07/22
+SHA-256 :5DC9C61B207ED3728E508720FA6FFBE53F6AAE9727C1EC71FE1A5367E6EE2F9C
+
+ASUS NumberPad Driver
+
+Version V12.0.0.36
+3.57 MB 2021/11/03
+SHA-256 :13E93435C620AB344F27A86DCE6CBFBBC311C6E749D92A78F9B2FC257FFD5C08
+
+MediaTek Bluetooth Driver
+
+Version V1.3.17.162
+4.79 MB 2024/06/06
+SHA-256 :4A6EC10D6EB31E52AAFD70D698059869EB1E4C7BE27614DDBAECF49339B60B7E
+
+Intel Bluetooth
+
+Version V22.230.0.2
+17.02 MB 2023/06/15
+SHA-256 :8D7507BB249AA42284993BDF215EE8CF742685618764133EC0864955A9AC8D65
+
+Wireless radio control driver
+
+Version V1.0.0.14
+3.39 MB 2021/10/18
+SHA-256 :BB31CB5730CBE85F06982C47C2549167CA202852A1B36475DD16863DA7B317E8
+
+ASUS System Control Interface v3
+
+Version V3.1.43.0
+12.2 MB 2025/03/13
+SHA-256 :F7E71B095E3DAF3D39C9A49B31410489ECC41AD04BCF6193FEF78895DB98410A
+
+ASUS Smart Display Control
+
+Version V1.10.13
+31.17 MB 2022/08/08
+SHA-256 :99B3C65EDCAC7024FB146AEE42004410DCFD1883C0C7641830C9CAD538750A38
+
+Asus MultiAntenna Service
+
+Version V3.2.3
+4.14 MB 2023/08/25
+SHA-256 :86E452ED2E53B013337B12EEBC2CEDC2A6F23FA3D5BB0F6930271C98E6FB1936
+
+Armoury Crate Control Interface
+
+Version V1.1.0.0
+4.77 MB 2024/10/16
+SHA-256 :CDD33F5B5386284C4347FE25CB409A9EC24E63BD06BFB5D5277476DCDCB2670C
+
+Armoury Crate & Aura Creator Installer
+
+Version V3.3.1.0
+4.86 MB 2025/04/09
+SHA-256 :831D17EB5E1CC32BE99801A869BF256B9C56B404897945D88B03A43A05AD1A21
+
+Refreshrate Service
+
+Version V2.1.0
+588.53 KB 2022/11/08
+This service application must be installed to enable Panel Overdrive in models with supported panels. Panel Overdrive allows increased display response time.
+Please make sure your Armoury Crate UWP version is V4.2.5.0 or higher, and your Armoury Crate Service version is V4.2.10 or higher.
+If you do not have a supported version, please download: Armoury Crate & Aura Creator Installer.
+
+MyASUS UWP
+
+Version latest version at the MS store
+0 KB 2018/09/17
+MyASUS is the portal of ASUS PC software service, which provides you easy access to all the ASUS software functions, for example, to maintain or update your system, optimize your PC's performance, and quickly contact ASUS aftersales customer service. You can also access ASUS AppDeals via MyASUS to acquire popular apps and exclusive offers. Also, Link to MyASUS, which is a cross-device integration software service between the PC and mobile devices, is available.
+

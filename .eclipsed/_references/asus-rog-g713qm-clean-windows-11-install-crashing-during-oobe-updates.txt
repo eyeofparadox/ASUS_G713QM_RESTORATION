@@ -1,0 +1,62 @@
+asus-rog-g713qm-clean-windows-11-install-crashing-during-oobe-updates
+
+
+
+If an ASUS ROG G713QM is crashing during Windows 11 installation (specifically during the Out-of-Box Experience (OOBE)) and Out-of-Box updates, it's likely due to a hardware or software incompatibility, or potentially a BIOS issue. Here's a troubleshooting guide: [1, 1, 2, 2, 3, 3]
+
+1. Verify Hardware Compatibility: [4]
+SSD: The most likely culprit is the SSD itself. If you have another SSD, try installing Windows on that to see if the problem persists. [4]
+RAM: Try booting with only one RAM stick at a time in different slots to isolate any RAM issues. [5, 6]
+GPU: Try booting without your dedicated GPU (if you have one) to see if the instability disappears. [6, 7]
+
+2. BIOS and UEFI Settings: [5, 5, 7, 7]
+Clear CMOS: Clear the CMOS to reset the BIOS to factory defaults. This can sometimes resolve issues related to improper BIOS settings. [5, 5, 7, 7]
+XMP/EXPO: Disable XMP/EXPO (if enabled) during the initial Windows install process, as overclocked RAM can cause instability. [7, 7, 8]
+BIOS Update: Ensure you have the latest BIOS version for your ROG G713QM. [5, 5, 9, 9]
+
+3. Software and Drivers: [10, 10]
+Windows 11 Version: Consider trying an older version of Windows 11 (23H2 or 22H2) if the issue is specifically with the latest 24H2 update. [10, 10]
+AsLogDumpTool: Use the AsLogDumpTool2.exe diagnostic tool in MyASUS to gather more information about the crash. [1, 1]
+Drivers: If the issue persists after a clean install, it's possible that pre-installed ASUS drivers are interfering with the installation process. You can try installing Windows drivers from the Microsoft Update catalog or by letting Windows manage the drivers. [1, 1]
+
+4. Other Troubleshooting: [7, 7]
+USB Drive: Try using a different USB drive for the Windows installation media. [7, 7]
+Disk Partitioning: If the PC crashes during Windows installation, try deleting all partitions on the target drive and letting the installer reformat it. [11, 11, 12, 12]
+System Restore: If the crashes occur after installing updates, try restoring the system to a previous state before the updates. [13, 13, 14]
+
+5. Contact Support: [15, 15]
+ASUS Support: If you've exhausted these options, contact ASUS support for further assistance, especially if you suspect a hardware issue. [13, 15, 15, 16]
+Microsoft Support: If the issue is related to Windows updates, contact Microsoft support. [3, 3]
+
+
+Generative AI is experimental.
+[1] https://rog-forum.asus.com/t5/gaming-notebooks/asus-g14-crashing-after-windows-11-clean-install/td-p/1072454
+[2] https://rog-forum.asus.com/t5/gaming-notebooks/rog-strix-g1713qm-black-screen-issues/td-p/1064996
+[3] https://support.microsoft.com/en-us/windows/get-help-with-windows-upgrade-and-installation-errors-ea144c24-513d-a60e-40df-31ff78b3158a
+[4] https://answers.microsoft.com/en-us/windows/forum/all/fresh-windows-11-install-keeps-crashing-and/1410085c-5557-4fea-ad24-6212fcf86880
+[5] https://rog-forum.asus.com/t5/intel-700-600-series/windows-11-keeps-freezing-when-installing/td-p/1070260
+[6] https://rog-forum.asus.com/t5/z170/random-crashes-bsod-and-now-unable-to-install-windows-solved/td-p/682976
+[7] https://www.reddit.com/r/buildapc/comments/1avlr33/pc_crashes_during_windows_11_install_help_needed/
+[8] https://answers.microsoft.com/en-us/windows/forum/all/system-blue-screens-after-turning-on-xmp-this-is/82296127-752e-4fe5-bebb-830725ab8e84
+[9] https://www.reddit.com/r/pcmasterrace/comments/zv2oe8/windows_11_crashing_after_fresh_install_bios/
+[10] https://answers.microsoft.com/en-us/windows/forum/all/pc-crashing-while-installing-windows/eebd8c81-fad0-4398-8d22-acd5c898e5e9
+[11] https://www.partitionwizard.com/partitionmanager/pc-crashes-during-windows-installation.html
+[12] https://www.reddit.com/r/iBUYPOWER/comments/1dh43pe/windows_11_installation_crashing/
+[13] https://www.asus.com/us/support/faq/1013063/
+[14] https://answers.microsoft.com/en-us/windows/forum/all/windows-system-problem/75b06115-a365-4858-9dca-5208e69b575f
+[15] https://www.reddit.com/r/ASUS/comments/1appwsq/rog_strix_g713ih_continually_crashing/
+[16] https://answers.microsoft.com/en-us/windows/forum/all/error-code-0xc0000225/910ef575-be3c-410d-b476-4872ef18f41e
+
+Windows 11 23H2 64-bit iso download
+Windows 11, version 23H2 (22631.5262) amd64 
+
+Get-FileHash I:\Windows_11_23H2_64Bit.iso
+PS C:\WINDOWS\system32> Get-FileHash I:\Windows_11_23H2_64Bit.iso
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          D20EB130D8574F6C5F45791D63E487F382A227420A8429D9AAB2727165610E11       I:\Windows_11_23H2_64Bit.iso
+
+
+
+Windows_11_23H2_22631.5262_amd64

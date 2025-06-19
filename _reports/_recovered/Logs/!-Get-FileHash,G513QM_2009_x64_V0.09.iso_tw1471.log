@@ -1,0 +1,15 @@
+PS C:\WINDOWS\system32> cd K:\_ASUS_ROG_Strix_G17_G713QM
+PS K:\_ASUS_ROG_Strix_G17_G713QM> Get-FileHash G513QM_2009_X64_V0.09.iso
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          0AB559E58FE1D855B82D7BF8ACFCA3DB7EFE0203F089F45F455DA049C5EE5894       K:\_ASUS_ROG_Strix_G17_G713QM...
+
+Filename                               Reference        SHA256                                                  Status
+------------------------------------------------------------------------------------------------------------
+Win11H_24H2_E_ASUS_G713QM_x64.iso      __________      CD3A2909EECDEADB6C9598A9E641A7FAB409B780C1DE7DE1CB3076BB3DA71025  No Reference
+Windows_10_19H1_1903_x64_E.iso         __________      9846DFBDD7C39EB8D025E0F28E180C6F4084ECF87ECD11805CD19C205F7A3B4E  No Reference
+Windows_10_22H2_64Bit.iso              __________      CA93099034DE38247CB336299F3E7C3E3A374F449D4BCBDE89E9C8A9C8AAD248  No Reference
+Windows_11_23H2_64Bit.iso              __________      D20EB130D8574F6C5F45791D63E487F382A227420A8429D9AAB2727165610E11  No Reference
+Windows_11_24H2_1742_x64.iso           __________      B56B911BF18A2CEAEB3904D87E7C770BDF92D3099599D61AC2497B91BF190B11  No Reference
+Windows_11_24H2_2033_x64.iso           __________      CDC330E9F41AB5B2C8E9CE93F95055E97752BBBB814B3ACBCFE429C91AD46217  No Reference

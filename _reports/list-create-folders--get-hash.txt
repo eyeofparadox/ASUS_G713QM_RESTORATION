@@ -1,0 +1,95 @@
+## How does a .bat create multiple folders using a .txt list?
+
+A **batch file (.bat)** can read a list of folder names from a **.txt file** and create multiple directories using the `mkdir` command. Here's how you can do it:
+
+### **Steps to Create Multiple Folders Using a Batch File**
+#### **1. Prepare the Text File**
+Create a `.txt` file (e.g., `folders.txt`) and add the folder names, one per line:
+```
+ProjectA
+ProjectB
+Documents
+Backups
+```
+
+#### **2. Create the Batch File**
+Open **Notepad** and write the following script:
+```batch
+@echo off
+for /f "tokens=*" %%A in (folders.txt) do (
+    mkdir "%%A"
+)
+```
+Save it as `create_folders.bat` in the same directory as `folders.txt`.
+
+#### **3. Run the Batch File**
+Double-click `create_folders.bat`, and it will create all the folders listed in `folders.txt`.
+
+### **Explanation**
+- `for /f "tokens=*" %%A in (folders.txt) do (...)` → Reads each line from `folders.txt` and stores the folder name in `%%A`.
+- `mkdir "%%A"` → Creates a directory with the name specified in `folders.txt`.
+
+#### **Bonus: Choose Folder Location**
+If you want to create folders in a specific directory, modify the script:
+```batch
+@echo off
+for /f "tokens=*" %%A in (folders.txt) do (
+    mkdir "C:\Users\David\Documents\%%A"
+)
+```
+Replace `"C:\Users\David\Documents\"` with the desired path.
+
+Let me know if you need modifications to fit your setup!
+
+
+## And if I wanted to get MD5 hash values from a list of files, will batch do, or is powershell needed? (It's not available on the system I need use at the moment)
+
+Since **PowerShell** isn't available, you can still use a **batch file (.bat)** to generate **MD5 hash values** using the built-in `certutil` command in Windows.
+
+### **Batch Script for MD5 Hashing**
+Create a `.bat` file with the following contents:
+```batch
+@echo off
+setlocal enabledelayedexpansion
+
+for %%F in (*.*) do (
+    echo Processing: %%F
+    certutil -hashfile "%%F" MD5
+    echo.
+)
+pause
+```
+### **How It Works**
+- `for %%F in (*.*)` → Loops through all files in the current directory.
+- `certutil -hashfile "%%F" MD5` → Generates the MD5 checksum for each file.
+- `echo.` → Inserts a blank line for readability.
+
+### **Modifications**
+If your list of files is in a text file (`files.txt`), modify the script:
+```batch
+@echo off
+setlocal enabledelayedexpansion
+
+for /f "tokens=*" %%F in (files.txt) do (
+    echo Processing: %%F
+    certutil -hashfile "%%F" MD5
+    echo.
+)
+pause
+```
+Place `files.txt` in the same directory and list files like:
+```
+C:\Path\to\file1.txt
+C:\Path\to\file2.exe
+C:\Path\to\document.pdf
+```
+
+### **Limitations**
+- `certutil` is a built-in Windows tool, so it should work unless restricted.
+- No advanced features like recursive directory scanning.
+- Only works with **full paths** or files in the current directory.
+
+This should get you those MD5 hash values without needing PowerShell. Hope this helps!
+
+
+
