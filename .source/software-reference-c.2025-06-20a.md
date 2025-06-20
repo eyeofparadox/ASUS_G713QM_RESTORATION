@@ -226,8 +226,4 @@
 "G:\Archive\Programs\VMware Workstation Pro\VMware-workstation-full-17.6.3-24583834.exe"
 ___
 
-<<<<<<< HEAD
 ##### also referenced on: https://copilot.microsoft.com/shares/pages/hBGcaft6cREEuWJcLa2Pq
-=======
-##### also referenced on: https://copilot.microsoft.com/shares/pages/hBGcaft6cREEuWJcLa2Pq
->>>>>>> 344d528c3de7b0b21877eb3a92b8dc119d29965f
