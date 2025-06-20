@@ -1,49 +1,56 @@
-Assembling a custom Windows 11 ISO specific to an ASUS G713QM device, specifically to integrate both drivers and installers into the working folder `D:\Win11H_24H2_E_ASUS_G713QM_x64` before finalizing the ISO. 
+work-report_iso-customization-with-driver+installer-integration.md
 
-D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount
-D:\BIOS\ASUS_G713QM_331_BIOS_Update_20250415011056
-D:\DRIVERS\AMD_Chipset_DriverOnly_ROG_AMD_Z_V1.2.0.118Sub5_23894_20250415005259
-D:\DRIVERS\AMD_Graphic_DriverOnly_ROG_AMD_J_V30.0.13002.19003_30967_20250415005633
-D:\DRIVERS\ArmouryCrateControlInterface_ASUS_Z_V1.1.0.0_16223_20250415010046
-D:\DRIVERS\ASUSSystemControlInterfacev3_ASUS_Z_V3.1.43.0_16526_20250415011437
-D:\DRIVERS\Audio_DriverOnly_Dolby_ROG_Realtek_J_V6.0.9394.1_30490_20250415011638
-D:\DRIVERS\Bluetooth_ROG_Intel_J_V22.230.0.2_34465_20250415012006
-D:\DRIVERS\Bluetooth_ROG_MediaTek_J_V1.3.17.162Sub1_38024_20250415012116
-D:\DRIVERS\DolbyAtmosdriverforROG_ASUS_Z_V3.20901.918.0_13213_20250415012439
-D:\DRIVERS\Graphic_DCH_ROG_NVIDIA_Z_V30.0.15.1278_28163_20250415012719
-D:\DRIVERS\LAN_ROG_Realtek_J_V10.049.0413.2021_23045_20250415012848
-D:\DRIVERS\NFC_NXP_J_V12.0.6.0_20159_20250415013039
-D:\DRIVERS\PrecisionTouchPad_ROG_ASUS_J_V16.0.0.27_39160_20250415013134
-D:\DRIVERS\PrecisionTouchPadNumberPad_ROG_ASUS_J_V12.0.0.36_21509_20250415013240
-D:\DRIVERS\Raid_ROG_AMD_J_V9.3.1.00030_23049_20250415013347
-D:\DRIVERS\WirelessLan_DCH_ROG_Intel_J_V22.230.0.8_34463_20250415013452
-D:\DRIVERS\WirelessLan_ROG_MediaTek_J_V3.00.01.1325Sub1_38028_20250415013603
-D:\DRIVERS\Wirelessradiocontroldriver_ASUS_Z_V1.0.0.14_13413_20250415013643
-D:\INSTALLERS\RefreshRateService_V2.1.0
-D:\INSTALLERS\ArmouryCrateAuraCreatorInstaller_ASUS_Z_V3.3.1.0_16611_20250415164113
-D:\INSTALLERS\AsusMultiAntennaService_ASUS_Z_V3.2.3_15314_20250415010143
-D:\INSTALLERS\ASUSSmartDisplayControl_ASUS_Z_V1.10.13_14430_20250415010827
 ---
 
-1. Mount the Windows 11 Donor ISO
+## Customized ISO - Windows 11 24H2 with ASUS G713QM Driver & Support Integration 
+
+**Task**: Assembling a custom Windows 11 ISO specific to an ASUS G713QM device, **specifically** to integrate both *drivers* and *installers* into the working folder `D:\Win11H_24H2_E_ASUS_G713QM_x64` before finalizing the ISO. 
+
+D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount  
+D:\BIOS\ASUS_G713QM_331_BIOS_Update_20250415011056  
+D:\DRIVERS\AMD_Chipset_DriverOnly_ROG_AMD_Z_V1.2.0.118Sub5_23894_20250415005259  
+D:\DRIVERS\AMD_Graphic_DriverOnly_ROG_AMD_J_V30.0.13002.19003_30967_20250415005633  
+D:\DRIVERS\ArmouryCrateControlInterface_ASUS_Z_V1.1.0.0_16223_20250415010046  
+D:\DRIVERS\ASUSSystemControlInterfacev3_ASUS_Z_V3.1.43.0_16526_20250415011437  
+D:\DRIVERS\Audio_DriverOnly_Dolby_ROG_Realtek_J_V6.0.9394.1_30490_20250415011638  
+D:\DRIVERS\Bluetooth_ROG_Intel_J_V22.230.0.2_34465_20250415012006  
+D:\DRIVERS\Bluetooth_ROG_MediaTek_J_V1.3.17.162Sub1_38024_20250415012116  
+D:\DRIVERS\DolbyAtmosdriverforROG_ASUS_Z_V3.20901.918.0_13213_20250415012439  
+D:\DRIVERS\Graphic_DCH_ROG_NVIDIA_Z_V30.0.15.1278_28163_20250415012719  
+D:\DRIVERS\LAN_ROG_Realtek_J_V10.049.0413.2021_23045_20250415012848  
+D:\DRIVERS\NFC_NXP_J_V12.0.6.0_20159_20250415013039  
+D:\DRIVERS\PrecisionTouchPad_ROG_ASUS_J_V16.0.0.27_39160_20250415013134  
+D:\DRIVERS\PrecisionTouchPadNumberPad_ROG_ASUS_J_V12.0.0.36_21509_20250415013240  
+D:\DRIVERS\Raid_ROG_AMD_J_V9.3.1.00030_23049_20250415013347  
+D:\DRIVERS\WirelessLan_DCH_ROG_Intel_J_V22.230.0.8_34463_20250415013452  
+D:\DRIVERS\WirelessLan_ROG_MediaTek_J_V3.00.01.1325Sub1_38028_20250415013603  
+D:\DRIVERS\Wirelessradiocontroldriver_ASUS_Z_V1.0.0.14_13413_20250415013643  
+D:\INSTALLERS\RefreshRateService_V2.1.0  
+D:\INSTALLERS\ArmouryCrateAuraCreatorInstaller_ASUS_Z_V3.3.1.0_16611_20250415164113  
+D:\INSTALLERS\AsusMultiAntennaService_ASUS_Z_V3.2.3_15314_20250415010143  
+D:\INSTALLERS\ASUSSmartDisplayControl_ASUS_Z_V1.10.13_14430_20250415010827  
+
+---
+
+### 1. Mount the Windows 11 Donor ISO
 - Mount the original Windows 11 ISO:
 	- Right-click the ISO file and select Mount.
 	- Identify the `install.wim` file, usually located in the `sources` folder of the mounted ISO.
 	
 ---
 
-2. Mount the Windows Image for Editing
+### 2. Mount the Windows Image for Editing
 1. Create a Mount Directory:
 	- Make a subdirectory for mounting:	
 		```powershell
 		mkdir D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount
-		```
 		dism /Get-WimInfo /WimFile:D:\Win11_24H2_English_x64Bit_ISO\sources\install.wim
 
 		Index : 1
 		Name : Windows 11 Home
 		Description : Windows 11 Home
 		Size : 18,727,965,088 bytes
+		```
 
 2. Mount the Desired Index:
 	- Mount the Windows image (Index 1 corresponds to Home; adjust the `Index` if necessary for a different edition):	
@@ -60,7 +67,7 @@ D:\INSTALLERS\ASUSSmartDisplayControl_ASUS_Z_V1.10.13_14430_20250415010827
 
 ---
 
-3. Integrate Drivers
+### 3. Integrate Drivers
 1. Add Drivers to the Mounted Image:
 	- Use DISM to add drivers from your dedicated driver folder:	
 		```powershell
@@ -664,7 +671,7 @@ D:\INSTALLERS\ASUSSmartDisplayControl_ASUS_Z_V1.10.13_14430_20250415010827
 
 ---
 
-4. Add Unattended Installers
+### 4. Add Unattended Installers
 1. Prepare the Installers:
 	- Copy all files from `D:\_INSTALLERS` into the working folder:	
 		```powershell
@@ -696,7 +703,7 @@ D:\INSTALLERS\ASUSSmartDisplayControl_ASUS_Z_V1.10.13_14430_20250415010827
 
 ---
 
-5. Commit and Unmount the Image
+### 5. Commit and Unmount the Image
 - Save the changes and unmount the image:
 	```powershell
 	dism /Unmount-WIM /MountDir:D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount /Commit
@@ -704,7 +711,7 @@ D:\INSTALLERS\ASUSSmartDisplayControl_ASUS_Z_V1.10.13_14430_20250415010827
 
 ---
 
-6. Create the Custom ISO
+### 6. Create the Custom ISO
 1. Rebuild the Bootable ISO:
 	- Use the following `oscdimg` command to create the bootable ISO:
 		```powershell
@@ -718,7 +725,7 @@ D:\INSTALLERS\ASUSSmartDisplayControl_ASUS_Z_V1.10.13_14430_20250415010827
 
 ---
 
-Potential Issues to Watch For
+### Potential Issues to Watch For
 - Path Errors: Double-check all paths, especially when transferring files to the mounted image.
 - Silent Install Flags: Test the flags for each installer separately to ensure they work as expected.
 - Driver Compatibility: Ensure the drivers match your target hardware (G713QM) and Windows version.

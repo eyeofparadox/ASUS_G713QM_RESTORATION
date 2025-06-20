@@ -1,4 +1,4 @@
-admin-vm-diagnostics-review.md
+admin-review_vm-diagnostics.md
 ---
 > I'm trying to get Git and GitHub Desktop deployed on my X750JB, and am in the middle of syncing the local forks on it and my G713QM. Between the two systems, and a number of external USB drives, my repo was literaly all over the place. Once I have a single master, I'll update the online repos. Once that's done, it will be under proper version control and we can afford to make changes again.
 >

@@ -1,18 +1,32 @@
-F:\Win11_24H2_English_x64.iso copied to:
-D:\Win11_24H2_English_x64
-1]
-mkdir D:\Mount
-2]
-dism /Mount-WIM /WimFile:D:\Win11_24H2_English_x64\sources\install.wim /Index:1 /MountDir:D:\Mount
-3]
-dism /Image:D:\Mount /Add-Driver /Driver:D:\ASUS_G17_G713QM\_DRIVERS /Recurse
-4]
-dism /Unmount-WIM /MountDir:D:\Mount /Commit
+## Copilot - How to Create a Custom Windows Install ISO
 
-D:\Win11H_24H2_E_ASUS_G713QM_x64
+> This is where my research has gotten me:
+
+#### Prep Checklist: (from multiple online sources)
+
+> [1] **Stage**  
+> - F:\Win11_24H2_English_x64.iso copied to:  
+> - D:\Win11_24H2_English_x64  
+
+> [2] **Mount**  
+> - mkdir D:\Mount  
+> - dism /Mount-WIM /WimFile:D:\Win11_24H2_English_x64\sources\install.wim /Index:1 /MountDir:D:\Mount  
+
+> [3] **Add drivers**  
+> - dism /Image:D:\Mount /Add-Driver /Driver:D:\ASUS_G17_G713QM\_DRIVERS /Recurse  
+
+> [4] **Dismount**  
+> - dism /Unmount-WIM /MountDir:D:\Mount /Commit  
+
+> [5] **Verify and Name**  
+> - D:\ASUS_G713QM_Win11H_24H2_E_x64
+
 ---
 
 ### **Next Steps**
+
+> This condenses our initial chat expanding on that checklist:
+
 1. **Remount Your Windows 11 ISO**:
    - Insert the ISO or mount it virtually (right-click > Mount on the `.iso` file).
    - Ensure you locate the `install.wim` file, typically found in the `sources` folder of the mounted ISO.
@@ -48,9 +62,11 @@ D:\Win11H_24H2_E_ASUS_G713QM_x64
 
 ---
 
-mkdir D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount\Windows\Setup\Scripts
+> Task and chat resumed after a bit. The above summaries were used to refresh Copilot on the topic.
 
-Ah, that clears things up perfectly! So, you're assembling a custom Windows 11 ISO specific to your G713QM device, and the goal is to integrate both drivers and installers into your working folder (`D:\Win11H_24H2_E_ASUS_G713QM_x64`) before finalizing the ISO. Here's a detailed step-by-step process to ensure a smooth and efficient workflow:
+Ah, that clears things up perfectly! So, you're assembling a custom Windows 11 ISO specific to your G713QM device, and the goal is to integrate both drivers and installers into your working folder `D:\ASUS_G713QM_Win11H_24H2_E_x64` before finalizing the ISO. 
+
+Here's a detailed step-by-step process to ensure a smooth and efficient workflow:
 
 ---
 
@@ -65,13 +81,13 @@ Ah, that clears things up perfectly! So, you're assembling a custom Windows 11 I
 1. **Create a Mount Directory**:
    - Make a subdirectory for mounting:  
      ```powershell
-     mkdir D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount
+     mkdir D:\ASUS_G713QM_Win11H_24H2_E_x64\Mount
      ```
 
 2. **Mount the Desired Index**:
    - Mount the Windows image (Index 1 corresponds to Home; adjust the `Index` if necessary for a different edition):  
      ```powershell
-     dism /Mount-WIM /WimFile:E:\sources\install.wim /Index:1 /MountDir:D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount
+     dism /Mount-WIM /WimFile:E:\sources\install.wim /Index:1 /MountDir:D:\ASUS_G713QM_Win11H_24H2_E_x64\Mount
      ```
 
 ---
@@ -80,13 +96,13 @@ Ah, that clears things up perfectly! So, you're assembling a custom Windows 11 I
 1. **Add Drivers to the Mounted Image**:
    - Use DISM to add drivers from your dedicated driver folder:  
      ```powershell
-     dism /Image:D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount /Add-Driver /Driver:D:\DRIVERS /Recurse
+     dism /Image:D:\ASUS_G713QM_Win11H_24H2_E_x64\Mount /Add-Driver /Driver:D:\DRIVERS /Recurse
      ```
 
 2. **Verify the Drivers**:
    - Confirm the drivers were added successfully:  
      ```powershell
-     dism /Image:D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount /Get-Drivers
+     dism /Image:D:\ASUS_G713QM_Win11H_24H2_E_x64\Mount /Get-Drivers
      ```
 
 ---
@@ -95,15 +111,15 @@ Ah, that clears things up perfectly! So, you're assembling a custom Windows 11 I
 1. **Prepare the Installers**:
    - Copy all files from `D:\INSTALLERS` into the working folder:  
      ```powershell
-     mkdir D:\Win11H_24H2_E_ASUS_G713QM_x64\Installers
-     copy D:\INSTALLERS\* D:\Win11H_24H2_E_ASUS_G713QM_x64\Installers
+     mkdir D:\ASUS_G713QM_Win11H_24H2_E_x64\Installers
+     copy D:\INSTALLERS\* D:\ASUS_G713QM_Win11H_24H2_E_x64\Installers
      ```
 
 2. **Automate Installer Execution**:
    - Write a `SetupComplete.cmd` file that will run after Windows installation completes.  
      Create the following directory in your mounted image:
      ```powershell
-     mkdir D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount\Windows\Setup\Scripts
+     mkdir D:\ASUS_G713QM_Win11H_24H2_E_x64\Mount\Windows\Setup\Scripts
      ```
    - Save this batch script (`SetupComplete.cmd`) in the `Scripts` folder:
      ```batch
@@ -117,8 +133,8 @@ Ah, that clears things up perfectly! So, you're assembling a custom Windows 11 I
 3. **Copy Installers into the Mounted Image**:
    - Place all the installers into the appropriate folder in the mounted image:  
      ```powershell
-     mkdir D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount\Windows\Setup\Installers
-     copy D:\INSTALLERS\* D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount\Windows\Setup\Installers
+     mkdir D:\ASUS_G713QM_Win11H_24H2_E_x64\Mount\Windows\Setup\Installers
+     copy D:\INSTALLERS\* D:\ASUS_G713QM_Win11H_24H2_E_x64\Mount\Windows\Setup\Installers
      ```
 
 ---
@@ -126,7 +142,7 @@ Ah, that clears things up perfectly! So, you're assembling a custom Windows 11 I
 ### **5. Commit and Unmount the Image**
 - Save the changes and unmount the image:
    ```powershell
-   dism /Unmount-WIM /MountDir:D:\Win11H_24H2_E_ASUS_G713QM_x64\Mount /Commit
+   dism /Unmount-WIM /MountDir:D:\ASUS_G713QM_Win11H_24H2_E_x64\Mount /Commit
    ```
 
 ---
@@ -135,7 +151,7 @@ Ah, that clears things up perfectly! So, you're assembling a custom Windows 11 I
 1. **Rebuild the Bootable ISO**:
    - Use the following `oscdimg` command to create the bootable ISO:
      ```powershell
-     oscdimg -m -o -u2 -bD:\Win11H_24H2_E_ASUS_G713QM_x64\boot\etfsboot.com D:\Win11H_24H2_E_ASUS_G713QM_x64 D:\Win11H_24H2_E_ASUS_G713QM_x64.iso
+     oscdimg -m -o -u2 -bD:\ASUS_G713QM_Win11H_24H2_E_x64\boot\etfsboot.com D:\ASUS_G713QM_Win11H_24H2_E_x64 D:\ASUS_G713QM_Win11H_24H2_E_x64.iso
      ```
 
    - Ensure the **`etfsboot.com`** file from the original Windows ISO is placed correctly in `boot`.
@@ -152,4 +168,4 @@ Ah, that clears things up perfectly! So, you're assembling a custom Windows 11 I
 
 ---
 
-Let me know if you hit any snags—you're well on your way to completing this custom build for your G713QM! 🚀
+Let me know if you hit any snags—you're well on your way to completing this custom build for your G713QM!

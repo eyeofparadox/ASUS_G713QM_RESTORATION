@@ -1,10 +1,17 @@
-admin-command-script-revision.md
+admin-sop_documentation-and-naming_initial-considerations.md
+
 ---
+
+## ADMIN SOP - Documentation & Naming Conventions
+
+**Brief**: In the midst of consolidating all materials related to this project, the ad hoc nature of the work became profound. Simply consilidating the repo was not enough to achieve order from chaos. It was time to introduce `admin` oversight and `sop` formalization. 
+
+### Initial Considerations
 > Once I have a single master, I'll update the online repos. Once that's done, it will be under proper version control and we can afford to make changes again.
 
 That sounds like a much-needed consolidation phase, David—the digital equivalent of rolling up scattered scrolls from multiple vaults and binding them into a single grimoire.
 
-Once you’ve unified the forks into a definitive master on the X750JB, we’ll have a clean baseline for:
+Once you’ve unified the forks into a definitive master on the X750JB, we’ll have a clean baseline for:2
 
 - Incremental commits and reversions  
 - Tagging validated milestones (e.g., post-hash verification, spec-sheet freeze)  
