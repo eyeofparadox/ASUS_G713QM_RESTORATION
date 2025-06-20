@@ -1,0 +1,106 @@
+h1. HTML Tag plugin for Notepad++
+
+h2. Downloads
+
+h3. Current Versions (1.2.0, ...)
+
+* https://bitbucket.org/rdipardo/htmltag/downloads
+* https://github.com/rdipardo/nppHTMLTag/releases (mirror)
+
+h3. Old Versions (..., 1.1.0)
+
+* https://fossil.2of4.net/npp_htmltag
+
+*Note*
+_v1.1.0 was the last release supporting ANSI versions of Notepad++_
+
+h3. Development builds
+
+* Visit https://circleci.com/gh/rdipardo/nppHTMLTag
+* Locate the build run you want to see
+* In the "Workflow" column, click "cmake"
+* Click on the name of the job (e.g. "build")
+* Click on the "ARTIFACTS" tab
+* Select the correct ZIP archive for your Notepad++ version:
+** "HTMLTag_arm64.zip" (64-bit ARM)
+** "HTMLTag_x64.zip" (64-bit Intel)
+** "HTMLTag_win32.zip" (32-bit Intel)
+
+h2. Introduction
+
+This plugin provides the following core functions (see the full list of commands "below":#usage):
+* HTML and XML tag jumping, synchronized tag renaming, and selection of tags with or without contents
+* HTML entity encoding/decoding (example: @é@ to @&eacute;@)
+* JS character encoding/decoding (example: @é@ to @\u00E9@)
+
+Visit "the wiki":https://github.com/rdipardo/nppHTMLTag/wiki for more detailed information and illustrations.
+
+h2. Installation
+
+*Note*
+_Notepad++ 8.3 is the *minimum required* version for 64-bit releases of HTML Tag 1.2 and newer_
+
+h3. Plugins Admin
+
+A builtin "plugin manager":pl-admin is available in Notepad++ versions 7.6 and newer.
+
+Find _Plugins_ on the main menu bar and select _Plugins Admin_. Check the box beside _HTML Tag_ and click _Install_.
+
+h3. Manual installation
+
+New plugin versions are added to Plugins Admin only when a new Notepad++ release is published.
+To use an updated plugin before release, or downgrade to an earlier version, simply replace the plugin's DLL with another one.
+
+*Note*
+_This assumes you have already found a compatible version from a trusted source_
+
+Extract the DLL and accompanying files to the plugins folder under @%ProgramFiles%\Notepad++@ (or wherever you're running Notepad++ from).
+
+For 32-bit versions, make sure the plugin folder is named @HTMLTag_unicode@ and the module is named @HTMLTag_unicode.dll@.
+Otherwise, the folder should be named @HTMLTag@ and the module @HTMLTag.dll@.
+
+Right-click on @HTMLTag.dll@ (64-bit), or @HTMLTag_unicode.dll@ (32-bit), and select _Properties_.
+
+If the _Unblock_ option is shown, click the checkbox and click _Apply_, then _OK_:
+
+!{border:0;width:400}https://i.ibb.co/C77Wmfx/NPPFSIPlugin-MOTW.png(npp-plugin-with-MOTW)!
+
+Restart Notepad++ if it's already running.
+
+
+h2. Usage
+
+| Alt+T  | to select the matching tag |
+| Alt+F2 | to select both matching tags -- edits and autocompletions will be synchronized while the multiple selections are active |
+| Alt+Shift+T | to select both tags and the entire contents in between |
+| Ctrl+Alt+T | to select only the contents between tags |
+| Ctrl+E | to encode all selected non-ASCII characters to their HTML entities |
+| Ctrl+Alt+E | same as Ctrl+E, but encodes line breaks as well |
+| Ctrl+Shift+E | to dEcode all selected HTML entities |
+| Alt+J | to encode all selected non-ASCII character to their Javascript entities |
+| Alt+Shift+J | to dEcode all selected JS entities |
+| | *Hint:* to decode entities when nothing is selected, position the caret after the target text and execute one of the commands above. |
+
+All commands are available under the Plugins menu item 'HTML Tag'; the shortcut keys can be adjusted
+with the shortcut mapper.
+
+
+h3. To do
+
+* -Add a command to close the open tag at the current location-
+  Use the "builtin Notepad++ feature":autoclose
+* Add command to encode entities in the contents only (only apply encoding when not inside tags;
+  leave valid tags and entities alone)
+* -Add command to select tags only (and leave the contents out of the selection)-
+  Added in "1.4.1":https://bitbucket.org/rdipardo/htmltag/src/v1.4.1/NEWS.textile
+* Make it play nice(r) with PHP & ASP tags (either highlight those separately or ignore them)
+* -Add option to encode entities 'as-you-type'- Added in "1.4.0":https://bitbucket.org/rdipardo/htmltag/src/v1.4.0/NEWS.textile
+* -Add option to close tags 'as-you-type' (type '&lt;/' and the rest will be inserted automagically)-
+  Not needed if "tag auto-closing":autoclose is enabled in Notepad++
+* -drop down a list of tags after '&lt;'-
+* -drop down a list of attributes on space after a tag-
+  Notepad++ can "auto-complete":autocomplete many (X/HT)ML keywords
+
+[autoclose]https://npp-user-manual.org/docs/auto-completion/#auto-insertion
+[autocomplete]https://npp-user-manual.org/docs/auto-completion/#how-to-make-it-work
+[pl-admin]https://npp-user-manual.org/docs/plugins/#install-using-plugins-admin

@@ -1,0 +1,108 @@
+
+Run:
+```
+PS G:\Lab\.github\ASUS_G713QM_RESTORATION\_scripts> .\vmware-usb-injection-shell-folder-split.ps1
+
+[INFO] Routing versioned files from:
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware
+
+[OK]  Routed vmhgfs.cat_Win8.8BDCA6AC_F45F_4C88_A93E_5CE65A466AB7 â†’ drivers\Win8\vmhgfs.cat
+[OK]  Routed vmhgfs.inf_Win8.8BDCA6AC_F45F_4C88_A93E_5CE65A466AB7 â†’ drivers\Win8\vmhgfs.inf
+[OK]  Routed vmhgfs.sys_Win8.8BDCA6AC_F45F_4C88_A93E_5CE65A466AB7 â†’ drivers\Win8\vmhgfs.sys
+[OK]  Routed vmmouse.cat_Win8.869A7E00_6687_0000_83A8_EF0F76CF0001 â†’ drivers\Win8\vmmouse.cat
+[OK]  Routed vmmouse.inf_Win8.869A7E00_6687_0000_83A8_EF0F76CF0001 â†’ drivers\Win8\vmmouse.inf
+[OK]  Routed vmmouse.sys_Win8.869A7E00_6687_0000_83A8_EF0F76CF0001 â†’ drivers\Win8\vmmouse.sys
+[OK]  Routed vmusbmouse.cat_Win8.54D6295A_D7A7_442B_AC06_35032EF17F36 â†’ drivers\Win8\vmusbmouse.cat
+[OK]  Routed vmusbmouse.inf_Win8.54D6295A_D7A7_442B_AC06_35032EF17F36 â†’ drivers\Win8\vmusbmouse.inf
+[OK]  Routed vmusbmouse.sys_Win8.54D6295A_D7A7_442B_AC06_35032EF17F36 â†’ drivers\Win8\vmusbmouse.sys
+[OK]  Routed vmxnet3.cat_Win11.F3CA6F2B_E79D_4B54_B2B8_E2EE1AF2C740 â†’ drivers\Win11\vmxnet3.cat
+[OK]  Routed vmxnet3.cat_Win7.65A6FECF_ACB9_4B44_8A79_885950293BA1 â†’ drivers\Win7\vmxnet3.cat
+[OK]  Routed vmxnet3.cat_Win8.FC7BF8B8_27FB_4212_B385_AA45F07D667E â†’ drivers\Win8\vmxnet3.cat
+[OK]  Routed vmxnet3.inf_Win11.F3CA6F2B_E79D_4B54_B2B8_E2EE1AF2C740 â†’ drivers\Win11\vmxnet3.inf
+[OK]  Routed vmxnet3.inf_Win7.65A6FECF_ACB9_4B44_8A79_885950293BA1 â†’ drivers\Win7\vmxnet3.inf
+[OK]  Routed vmxnet3.inf_Win8.FC7BF8B8_27FB_4212_B385_AA45F07D667E â†’ drivers\Win8\vmxnet3.inf
+[OK]  Routed vmxnet3.sys_Win11.F3CA6F2B_E79D_4B54_B2B8_E2EE1AF2C740 â†’ drivers\Win11\vmxnet3.sys
+[OK]  Routed vmxnet3.sys_Win7.65A6FECF_ACB9_4B44_8A79_885950293BA1 â†’ drivers\Win7\vmxnet3.sys
+[OK]  Routed vmxnet3.sys_Win8.FC7BF8B8_27FB_4212_B385_AA45F07D667E â†’ drivers\Win8\vmxnet3.sys
+
+[DONE] Routing and renaming complete. Log saved to:
+G:\Lab\.github\ASUS_G713QM_RESTORATION\_scripts\vmware-usb-injection-harvest-foldered-rename.log
+```
+Log:
+```
+== VMware Foldered Rename Log - 2025-06-19 22:31:51 ==
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmhgfs.cat_Win8.8BDCA6AC_F45F_4C88_A93E_5CE65A466AB7 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmhgfs.cat
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmhgfs.inf_Win8.8BDCA6AC_F45F_4C88_A93E_5CE65A466AB7 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmhgfs.inf
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmhgfs.sys_Win8.8BDCA6AC_F45F_4C88_A93E_5CE65A466AB7 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmhgfs.sys
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmmouse.cat_Win8.869A7E00_6687_0000_83A8_EF0F76CF0001 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmmouse.cat
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmmouse.inf_Win8.869A7E00_6687_0000_83A8_EF0F76CF0001 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmmouse.inf
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmmouse.sys_Win8.869A7E00_6687_0000_83A8_EF0F76CF0001 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmmouse.sys
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmusbmouse.cat_Win8.54D6295A_D7A7_442B_AC06_35032EF17F36 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmusbmouse.cat
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmusbmouse.inf_Win8.54D6295A_D7A7_442B_AC06_35032EF17F36 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmusbmouse.inf
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmusbmouse.sys_Win8.54D6295A_D7A7_442B_AC06_35032EF17F36 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmusbmouse.sys
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.cat_Win11.F3CA6F2B_E79D_4B54_B2B8_E2EE1AF2C740 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win11\vmxnet3.cat
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.cat_Win7.65A6FECF_ACB9_4B44_8A79_885950293BA1 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win7\vmxnet3.cat
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.cat_Win8.FC7BF8B8_27FB_4212_B385_AA45F07D667E -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmxnet3.cat
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.inf_Win11.F3CA6F2B_E79D_4B54_B2B8_E2EE1AF2C740 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win11\vmxnet3.inf
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.inf_Win7.65A6FECF_ACB9_4B44_8A79_885950293BA1 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win7\vmxnet3.inf
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.inf_Win8.FC7BF8B8_27FB_4212_B385_AA45F07D667E -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmxnet3.inf
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.sys_Win11.F3CA6F2B_E79D_4B54_B2B8_E2EE1AF2C740 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win11\vmxnet3.sys
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.sys_Win7.65A6FECF_ACB9_4B44_8A79_885950293BA1 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win7\vmxnet3.sys
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.sys_Win8.FC7BF8B8_27FB_4212_B385_AA45F07D667E -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmxnet3.sys
+```
+Path verification:
+```
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win7\vmxnet3.sys"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmhgfs.cat"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmhgfs.inf"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmhgfs.sys"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmmouse.cat"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmmouse.inf"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmmouse.sys"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmusbmouse.cat"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmusbmouse.inf"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmusbmouse.sys"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmxnet3.cat"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmxnet3.inf"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win8\vmxnet3.sys"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win11\vmxnet3.cat"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win11\vmxnet3.inf"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win11\vmxnet3.sys"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\rpctool.exe"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\setup.exe"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VGAuthCli.en"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VGAuthLib.en"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VGAuthService.en"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmhgfs.cat"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmhgfs.inf"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmhgfs.sys"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmmouse.cat"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmmouse.inf"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmmouse.sys"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmtoolsd.exe"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmusbmouse.cat"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmusbmouse.inf"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmusbmouse.sys"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VMware Tools\Drivers\pvscsi\Win7\amd64\pvscsi.cat"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VMware Tools\Drivers\pvscsi\Win7\amd64\pvscsi.inf"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VMware Tools\Drivers\pvscsi\Win7\amd64\pvscsi.sys"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VMware Tools\Drivers\pvscsi\Win7\amd64\txtsetup.oem"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VMware Tools\Drivers\pvscsi\Win8\amd64\pvscsi.cat"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VMware Tools\Drivers\pvscsi\Win8\amd64\pvscsi.inf"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VMware Tools\Drivers\pvscsi\Win8\amd64\pvscsi.sys"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VMware Tools\Drivers\pvscsi\Win8\amd64\txtsetup.oem"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VMware Tools\Drivers\pvscsi\Win10\amd64\pvscsi.cat"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VMware Tools\Drivers\pvscsi\Win10\amd64\pvscsi.inf"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VMware Tools\Drivers\pvscsi\Win10\amd64\pvscsi.sys"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VMware Tools\Drivers\pvscsi\Win10\amd64\txtsetup.oem"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VMwareToolboxCmd.exe"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.cat"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.inf"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.sys"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\windows.iso"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\_VGAuthService.exe"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\_vm3dmp.sys"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\_vm3dmp.sys_Vista"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win7\vmxnet3.cat"
+"G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\drivers\Win7\vmxnet3.inf"
+```

@@ -1,0 +1,1203 @@
+﻿<!DOCTYPE HTML>
+<html><head><meta charset="utf-8">
+<title>Columns++ for Notepad++</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body                   {margin: 0; padding: 0; width: 100%; height: 100%;}
+body                         {display: flex; flex-direction: column; font: 1em Calibri, Tahoma, sans-serif;}
+
+header                       {padding: 0; width: 100%; display: flex; flex-direction: row; justify-content: space-around;}
+header                       {border-style: none none solid none; border-width: 0 0 2px 0;}
+header                       {font-size: min(5vw,10vh,1.75rem); font-weight: bold;}
+
+footer                       {padding: 4px 0; width: 100%; display: flex; flex-direction: row; align-items: center; font-size: medium;}
+footer                       {border-style: solid none none none; border-width: 2px 0 0 0;}
+footer a[rel=license]        {padding: 0 8px; text-decoration: none;}
+footer a[rel=license] img    {border: none;}
+
+#foottext                    {flex: 1; margin: 0 1em; text-align: center;}
+#foottext a                  {white-space: nowrap; text-decoration: none; color: inherit; }
+#foottext a:hover            {text-decoration: underline;}
+#foottext.linklist a:link    {color: #00c;}
+#foottext.linklist a:visited {color: #900;}
+
+#fontdown, #fontup           {margin: 0 8px; padding: 0; height: 28px; width: 48px; text-align: center; display: none;}
+#fontdown, #fontup           {color: #000; border: none; border-radius: 15%/20%; cursor: pointer;}
+#fontdown, #fontup           {background: transparent;}
+#fontdown:hover,
+#fontup:hover                {background: #333; color: #fff;}
+#fontdown                    {font: inherit; font-size: 13px;}
+#fontup                      {font: inherit; font-size: 19px; line-height: 1.0;}
+
+main                         {flex: 1; overflow: auto;}
+article                      {padding: 0 1em; line-height: 1.4;}
+p                            {margin: 0; padding: 0;}
+p + p                        {margin: .5em 0 0 0; padding: 0;}
+h1                           {line-height: 1.25; margin: .5em 0 0 0;}
+h1                           {font-size: 1.5rem; text-align: center; font-weight: bold; font-style: normal; padding: 0;}
+h2                           {font-size: 1.2rem; text-align: left;   font-weight: bold; font-style: normal; padding: 0; margin: 0;}
+h3                           {font-size: 1rem;   text-align: left;   font-weight: bold; font-style: normal; padding: 0; margin: 0;}
+
+main a                       {white-space: nowrap; text-decoration: none;}
+main a:link                  {color: #00c;}
+main a:visited               {color: #900;}
+main a:hover                 {text-decoration: underline;}
+
+@media (max-width:  480px)   {
+    main      a {white-space: normal;}
+    #foottext a {white-space: normal;}
+}
+
+main article section         {border-style: none; border-width: 0; padding: 0 1em .3em 1em; background: #eee;}
+main article section         {margin: 1.25rem 0 .4rem 0;}
+main article section h2      {border-style: none none solid none; border-width: 0 0 1px 0;}
+main article section h2      {margin: 0 0 .3em -6px; padding: .2em 0 .2em 6px;}
+main article section h3      {border-style: none none solid none; border-width: 0 0 1px 0;}
+main article section h3      {margin: .75em 0 .2em 0; padding: .2em 0 .1em 0; line-height: 1.2;}
+main article h1+section      {margin-top: .75rem;}
+main article h1+p            {margin-top: .6em;}
+main article section+p       {margin-top: .75em;}
+main article section >
+             p:first-child   {margin-top: .3em;}
+
+main article section.note    {font-size: .85em; border-style: solid; border-width: 3px 1px 1px 6px; padding: 0 6px;}
+
+body h1              {margin: 0;}
+body .pagenav        {font-weight: bold; text-align: center; margin: .5em .5em 0 .5em; line-height: 1.6; background: #eee;}
+body .pagenav a      {margin: 0 .5em; white-space: nowrap;} /* nowrap overrides main a {white-space: normal;} in @media rule */
+
+@media (min-width: 640px) {
+   body main         {display: flex; flex-direction: row; padding: 0;}
+   body .pagenav     {padding: .5em 0 0 0; margin: 1.25em 1em .4em;}
+   body .pagenav     {white-space: pre;}
+   body article      {flex: 1; overflow: auto; padding: 0 1em 0 0;}
+   body h1           {margin-top: .5em;}
+}
+
+body #centershortlines ~ article h1        {max-width: calc(32em + 12px);}
+body #centershortlines ~ article section   {max-width: 48em;}
+
+p.subsub            {margin-left: 1.5em;}
+
+table.optionsTable        {border: none; margin: 1em 0 1em 1em; width: calc(100% - 1em - 2px); border-collapse: collapse;}
+table.optionsTable th     {padding: .5em .5em .5em .5em; font-weight: bold;   text-align: left; vertical-align: top; border: 1px solid black;}
+table.optionsTable td     {padding: .5em .5em .5em .5em; font-weight: normal; text-align: left; vertical-align: top; border: 1px solid black;}
+table.optionsTable .group {text-align: center; background: #d0d0d0; }
+
+table.justAlign       {border: none; margin: 0; border-collapse: collapse;}
+table.justAlign td    {border:none; padding: 0; font: inherit;}
+table.justAlign td+td {padding: 0 0 0 1em;}
+
+table.charnames          {border: none; margin: 1em 0 1em 1em; width: calc(100% - 1em - 2px); border-collapse: collapse;}
+table.charnames th       {padding: 0 .5em 0 .5em; font-weight: bold;   text-align: left; vertical-align: top; border: 1px solid black;}
+table.charnames td       {padding: 0 .5em 0 .5em; font-weight: normal; text-align: left; vertical-align: top; border: 1px solid black;}
+table.charnames tr td:first-child + td {text-align: right; font-family: monospace;}
+
+ul    {margin: 0 0 .5em 0;}
+ul li {margin: .25em 0;}
+
+span.mnemonic {color: #fff; background: #000; padding: 0 .2em; border-radius: .2em; font-size: .9em; font-weight: bold; display: inline-block;}
+
+body                {color: #000; background: #d0d0d0; line-height: 1.4;}
+*                   {border-color: #999;}
+#centershortlines   {width: calc((100vw - (13.5em + 48em + 2em + 24px)) / 2);}
+
+</style>
+<script>
+function doPageLoad() {
+    if (document.getElementById("fontdown")) {
+        document.getElementById("fontdown").style.display = "inline-block";
+        document.getElementById("fontup").style.display = "inline-block";
+        if (window.localStorage) {
+            var n = localStorage.getItem("ColumnsPlusPlusFontSize");
+            if (!isNaN(n) && n >= 9 && n <= 40) {
+                document.documentElement.style.fontSize = n + "px";
+                document.documentElement.style.fontSize = n + "px";
+            }
+        }
+    }
+}
+
+function setFontDown() {
+    var n = parseFloat(window.getComputedStyle(document.documentElement).fontSize);
+    if (n > 9) --n;
+    document.documentElement.style.fontSize = n + "px";
+    if (window.localStorage) localStorage.setItem("ColumnsPlusPlusFontSize", n);
+}
+
+function setFontUp() {
+    var n = parseFloat(window.getComputedStyle(document.documentElement).fontSize);
+    if (n < 40) ++n;
+    document.documentElement.style.fontSize = n + "px";
+    if (window.localStorage) localStorage.setItem("ColumnsPlusPlusFontSize", n);
+    if (window.getComputedStyle(document.body).display == "block") window.scrollBy(0,10000);
+}
+
+window.addEventListener("load", doPageLoad);
+</script>
+</head>
+<body>
+
+<header>Columns++ for Notepad++ documentation</header>
+
+<main>
+
+<div id=centershortlines></div>
+
+<nav class=pagenav><a href="#introduction">Introduction</a>
+<a href="#purpose"      >Purpose and limitations</a>
+<a href="#elastic"      >Elastic tabstops</a>
+<a href="#rectangular"  >Rectangular selections</a>
+<a href="#regular"      >Regular expressions</a>
+<a href="#search"       >Search</a>
+<a href="#calculation"  >Calculation</a>
+<a href="#formulas"     >Formulas</a>
+<a href="#alignment"    >Alignment</a>
+<a href="#timestamps"   >Timestamps</a>
+<a href="#sorting"      >Sorting</a>
+<a href="#conversion"   >Conversion</a>
+<a href="#numberformats">Number formats</a>
+<a href="#options"      >Options</a>
+<a href="#about"        >Help/About</a></nav>
+
+<article>
+
+<section id=introduction><h2>Introduction</h2>
+
+<p><strong>Columns++</strong> is a plugin for <a href="https://notepad-plus-plus.org/">Notepad++</a> which offers features for working with text and data arranged in columns, including an implementation of elastic tabstops, enhanced searching and sorting, column alignment and numeric calulations. Like <strong>Notepad++</strong>, <strong>Columns++</strong> is released under the <a href="https://www.gnu.org/licenses/gpl.html">GNU General Public License</a> (either <a href="https://www.gnu.org/licenses/gpl-3.0.html">version 3</a> of the License, or, at your option, any later version). <strong>Columns++</strong> was first released by <a href="http://www.coises.com/">Randall Joseph Fellmy</a> in 2023; you can find the source code  on <a href="https://github.com/Coises/ColumnsPlusPlus">GitHub</a>.</p>
+
+<p><strong>Columns++</strong> uses the <a href="https://github.com/ArashPartow/exprtk">C++ Mathematical Expression Toolkit Library (ExprTk)</a> by <a href="https://www.partow.net/">Arash Partow</a>, which is released under the <a href="https://www.opensource.org/licenses/MIT">MIT license</a>; <a href="https://github.com/nlohmann/json">JSON for Modern C++</a> by <a href="https://nlohmann.me">Niels Lohmann</a>, which is released under the <a href="https://www.opensource.org/licenses/MIT">MIT license</a>; the <a href="https://github.com/boostorg/regex/">Boost.Regex library</a>, which is released under the <a href="https://www.boost.org/LICENSE_1_0.txt">Boost Software License, Version 1.0</a>; and some files from the <a href="https://www.unicode.org/ucd/">Unicode Character Database</a>, which is released under the <a href="https://www.unicode.org/license.txt">Unicode License V3</a>.
+
+</section>
+
+<section id=purpose><h2>Purpose and limitations</h2>
+
+<p><strong>Columns++</strong> is designed to provide some helpful functions for editing text or data that is lined up visually in columns, so that you can make a rectangular selection of the column(s) you want to process.</p>
+
+<p>The integrated implementation of <a href="#elastic">Elastic tabstops</a> works to line up columns when tabs are used as logical separators, including tab-separated values data files as well as any ordinary text or code document containing sections in which you want to line up columns easily using tabs. You can use this feature on its own or with the other functions in <strong>Columns++</strong>.</p>
+
+<p><strong>Columns++</strong> is optimized for use with Elastic tabstops. It also works with files that use traditional, fixed tabs for alignment, or no tabs at all; however, you should ordinarily select only one column at a time in files that don’t use Elastic tabstops.</p>
+
+<p><strong>Columns++</strong> is generally not helpful when columns do not line up visually, such as in comma-separated values files. However, Columns++ can convert between delimiter-separated values and tabbed presentation; and there are some features, particularly <a href="#search">Search</a> using numeric formulas in regular expression replacement strings and <a href="#sorting">Sorting</a> with custom criteria, which may be useful in documents that are not column-oriented.</p>
+
+<p>Elastic tabstops can cause loading and editing to be slow for large files. By default, Elastic tabstops is automatically turned off for files over 1000 KB or 5000 lines. You can change these limits.</p>
+
+
+</section>
+
+<section id=elastic><h2>Elastic tabstops</h2>
+
+<p><strong>Columns++</strong> includes a new implementation of Nick Gravgaard’s <a href="https://nickgravgaard.com/elastic-tabstops/">Elastic tabstops</a>. (<em>Please note that as of this writing I have not communicated with Mr. Gravgaard about my implementation of his proposal, and no endorsement on his part is implied. — RJF</em>)</p>
+
+<p>The first item of the <strong>Columns++</strong> menu enables or disables <strong>Elastic tabstops</strong>. <strong>Elastic tabstops</strong> stretches tabs so that columns line up to fit their content, using only a single tab to separate one column from the next.</p>
+
+<p>This implementation of <strong>Elastic tabstops</strong> includes some options that were not part of the original proposal. These options can be accessed by using the <strong>Profile...</strong> menu option. There are three “built-in” profiles:</p>
+
+<table class=optionsTable>
+<tr><th>Classic</th><td>endeavors to reproduce precisely the behavior described in the proposal linked above.</td></tr>
+<tr><th>General</th><td>ensures that leading tabs are always used for indentation, and are not lined up with elastic tabstops.</td></tr>
+<tr><th>Tabular</th><td>is suitable for tab-separated values files, in which the entire file is a single table with the values in each row separated by single tabs.</td></tr>
+</table>
+
+<p>You can select a profile from the drop-down box in the <strong>Elastic tabstops profile</strong> dialog. You can also change individual settings; choose some options to automatically enable a profile or disable elastic tabstops for different types of files; and save, rename or delete profiles.</p>
+
+<h3>Settings in an elastic tabstops profile</h3>
+
+<p>Along with the enabled or disabled status of elastic tabstops, the settings in an elastic tabstops profile are kept independently for each document you have open. These settings, which are available in the <strong>Elastic tabstops profile</strong> dialog, are:</p>
+
+<table class=optionsTable>
+<tr><th>Use leading tabs for indentation only; don't make them elastic.</th><td>When checked, this option treats tabs which occur at the beginning of a line, before the first non-tab character, as ordinary fixed-width tabs instead of elastic tabs. Without this option, a line with a tab used to line up a column of data cannot be followed by a line that uses tabs for indentation without an intervening blank line; otherwise, the first leading tab will expand to line up with the tab on the previous line. The disadvantage is that if you want an empty column at the beginning of a line, you must place a space before the first tab to make it line up with the next column.</td></tr>
+<tr><th>Line up elastic tabstops throughout the entire document.</th><td>Normally elastic tabstops are positioned independently whenever a column is interrupted; that is, tabstops created by tabs that appear on adjacent lines are lined up, but they don’t “project through” lines with fewer (or no) tabs. This option indicates that a single set of tabstops is to be used for the entire document, so that columns line up even when intervening lines have fewer columns.</td></tr>
+<tr><th>Do not allow text following the last tab on a line to span columns.</th><td>Normally, text following the last tab on a line is not treated as belonging to a “column” at all. This makes sense for documents that mix text and tables. However, for documents that are entirely tabular but have omitted tabs at the end of lines where the final columns are blank, this option (along with the one above) is needed to keep things lined up properly.</td></tr>
+<tr><th>Override default/language tab size (used for indent or minimum):</th><td>Elastic tabstops uses the “tab size” in different ways depending on whether <strong>Use leading tabs for indentation only</strong> is checked: when checked, the tab size represents the number of spaces each leading tab indents, and it is otherwise ignored; when unchecked, it is the minimum space between any two tabstops (that is, the width of the intervening column plus the space between columns). When the <strong>Override tab size</strong> box is unchecked, <strong>Columns++</strong> uses the tab size set in <strong>Notepad++</strong>; when checked, the spin box to the right specifies the size (in spaces) to be used.</td></tr>
+<tr><th>Minimum space between elastic columns:</th><td>This spin box specifies the size (in spaces) occupied by the tab following the longest span of text in a column.</td></tr>
+<tr><th>Apply monospaced font optimizations:</th><td>
+
+<p>When <strong>Use DirectWrite</strong> is not enabled in <a href="https://npp-user-manual.org/docs/preferences/#misc">Notepad++ MISC. settings</a>, responsiveness with elastic tabstops enabled is greatly improved if it is possible to calculate the width of text by counting characters rather than by measuring. This only works if the fonts in use are monospaced (typewriter-like fonts in which every character has the same width; also called fixed pitch fonts), and all the fonts used by the styles in the current language have the same width. Monospaced font optimizations do not appear to offer any benefit (and might make things slower) when DirectWrite is enabled.</p>
+<table class=optionsTable>
+<tr><th>Yes</th><td>Monospaced font optimizations are applied unconditionally.</td></tr>
+<tr><th>No</th><td>Monospaced font optimizations are not applied.</td></tr>
+<tr><th>Best estimate</th><td>Monospaced font optimizations are applied if they appear to be appropriate. The text <strong>(yes)</strong> or <strong>(no)</strong> following <strong>Best estimate</strong> indicates whether <strong>Columns++</strong> has determined that display of the current document is monospaced and DirectWrite is not enabled.</td></tr>
+<tr><th>Don't show expanded mnemonics for non-printing characters when monospaced.</th><td><strong>Notepad++</strong> normally shows mnemonics, like <span class=mnemonic>ESC</span> or <span class=mnemonic>NBSP</span>, for control characters, invalid characters and (at user option) other non-printing characters. While this is usually helpful, it breaks the assumption of monospacing, which can dramatically slow some operations on larger files when monospaced fonts are used. This option (checked by default) displays a simple <span class=mnemonic>!</span> indicator instead of the usual multi-character mnemonics when elastic tabstops are enabled and monospaced font optimizations are in effect.</td></tr>
+</table>
+<p>Usually it’s best to let <strong>Columns++</strong> determine whether to use monospaced font optimizations, but there can be exceptional cases. <strong>Columns++</strong> checks the width of a space and a capital letter W in each font assigned to a style in the current language; if these are all the same, it uses monospace optimizations if DirectWrite is not enabled. In some cases, a language might define styles which inhibit optimization but are never applied in a particular file; for large files, the performance gain from forcing monospaced font optimizations may be considerable. Conversely, a font might use monospaced characters in the ASCII range but wider characters outside that range; in this case, monospaced font optimizations can cause processing to be much slower than necessary, since each line in which text overflows the expected width in any column forces additional measurement and layout of text. If you want to use elastic tabstops with a large file, but response is sluggish and the best estimate chosen by <strong>Columns++</strong> seems wrong, it’s worth trying the opposite setting.</p>
+</td></tr>
+</table>
+
+<p>These settings are only applied when you click the <strong>OK</strong> button near the bottom right of the dialog.</p>
+
+<h3>Saving, renaming and deleting profiles</h3>
+
+<p>You can save the settings in a profile by clicking the <strong>Save As...</strong> button to the right of the profile selection drop-down box. You can give the profile any name that does not begin with an asterisk or an open parenthesis and is not one of the three built-in profiles (“Classic,” “General” and “Tabular”). You can use the additional options from the drop-down menu at the right of the <strong>Save As...</strong> button to rename or delete a profile. If you have made changes to an existing profile that is not a built-in profile, you can save the changes without having to type the profile name again by using the <strong>Save</strong> option.</p>
+
+<h3>Automatically enabling or disabling elastic tabstops</h3>
+
+<p>By default, <strong>Columns++</strong> uses whatever settings were in effect for the last active tab when you open a file or a new tab. You can change this behavior with the remaining options on the <strong>Elastic tabstops profile</strong> dialog.</p>
+
+<p>The checkbox under the profile selection dropdown labeled <strong>Automatically enable this profile when opening <em>type</em> files.</strong> is available when a built-in or saved profile is selected (and <strong>Disable... when opening <em>type</em> files.</strong> in the bottom section of the dialog, which will be explained later, is not checked). Checking this box assigned the selected built-in or saved profile to be enabled whenever you open a file of the same <em>type</em> as the one you are currently viewing. The <em>Type</em> can be existing files with the same extension, existing files with no extension, or new files. This option is only applied when you click the <strong>OK</strong> button near the bottom right of the dialog.</p>
+
+<p>The options in the box labeled <strong>When opening an existing file without an explicit rule for its extension</strong> allow you choose what happens when opening existing files for which you haven’t set either <strong>Automatically enable this profile...</strong> or <strong>Disable... when opening...</strong>:</p>
+
+<table class=optionsTable>
+<tr><th>keep the same settings as the last viewed tab.</th><td>This is the default behavior: each existing file you open begins with same the elastic tabstops settings you had previously. Note that setting does not affect the default for <em>new</em> files; if you want a profile enabled, or elastic tabstops disabled, whenever you open a new tab with <strong>File|New</strong> you must set that behavior specifically using one of the <strong>when opening new files</strong> options in the <strong>Elastic tabstops profile</strong> dialog opened when viewing a new file.</td></tr>
+<tr><th>disable elastic tabstops.</th><td>Elastic tabstops will be turned off when opening any existing file unless you’ve specifically set a rule to turn it on for that file’s extension.</td></tr>
+<tr><th>enable this profile:</th><td>You can select any built-in or saved profile, which will be enabled when opening any existing file unless you’ve set a different rule for that file’s extension.</td></tr>
+</table>
+
+<p>The options in the box labeled <strong>Disable elastic tabstops (applies to all profiles)</strong> allow you choose specific conditions under which elastic tabstops should always be disabled:</p>
+
+<table class=optionsTable>
+<tr><th>when opening <em>type</em> files.</th><td>If you always want elastic tabstops disabled when you open the type of file in the current tab, check this box.</td></tr>
+<tr><th>when opening files over ____ KB.</th><td rowspan=2>Elastic tabstops can cause loading and editing to be slow for large files. These options disable elastic tabstops when loading files over the specified limits, regardless of any other settings. The default values disable elastic tabstops for files over 1000 KB or 5000 lines.</td></tr>
+<tr><th>when opening files over ____ lines.</th></tr>
+</table>
+
+<p>Note that although the options for automatically enabling or disabling elastic tabstops do not affect the tab you have open, they are only applied when you click the <strong>OK</strong> button near the bottom right of the dialog.</p>
+
+</section>
+
+<section id=rectangular><h2>Rectangular selections</h2>
+
+<p>Most of the commands from the <strong>Columns++</strong> menu operate on rectangular selections.
+
+<p>You can select a single column or multiple columns separated by tabs. Since each tab is interpreted as a column separator, this works as expected when elastic tabstops are used. The results with traditional fixed tabs are not likely to be obvious or expected when sequences of multiple fixed tabs are included in the selection, since <strong>Columns++</strong> interprets each tab as starting a new “logical” column without regard to physical placement.</p>
+
+<p>When selecting one or more columns in a document using tabs, you should generally <em>include the tab that ends the rightmost selected column</em> in your selection. Unless all the entries in the last column are the same width, it is often difficult or impossible to get a complete selection without including the final tabs; in any case, <strong>Columns++</strong> will process the trailing tabs intelligently.</p>
+
+<p>When you invoke a command that requires a rectangular selection and the current selection is not a non-zero-width rectangular selection, <strong>Columns++</strong> will inform you of this and, if possible, offer reasonable options to create a rectangular selection based on the current selection or cursor position.</p>
+
+<p>You can enable specific “implicit” rectangular selections in the <a href="#options-autoextend">Options</a> dialog if you would prefer that <strong>Columns++</strong> make those selections without prompting you.</p>
+
+<h3 id=selectionmenu>Selection submenu and keyboard shortcuts</h3>
+
+<p>The <strong>Selection</strong> submenu contains commands to create a rectangular selection based on the current selection.</p>
+
+<table class=optionsTable>
+<tr class=group><th>Command</th><th>Keyboard shortcut</th><th>Action</th></tr>
+<tr><th>Select&nbsp;Up</th><th>Ctrl+Alt+Up</th><td>Makes a rectangular selection which encloses the current selection and extends upward to reach the first line of the document.</td></tr>
+<tr><th>Select&nbsp;Left</th><th>Ctrl+Alt+Left</th><td>Makes a rectangular selection which encloses the current selection and extends to the left edge of the document.</td></tr>
+<tr><th>Select&nbsp;Right</th><th>Ctrl+Alt+Right</th><td>Makes a rectangular selection which encloses the current selection and extends to the right far enough to include the rightmost character in each line of which it includes any part.</td></tr>
+<tr><th>Select&nbsp;Down</th><th>Ctrl+Alt+Down</th><td>Makes a rectangular selection which encloses the current selection and extends downward to reach the last line of the document; except that if the last line is empty (that is, the document ends with a line return), the selection extends to the next-to-last line.</td></tr>
+<tr><th>Enclose&nbsp;Selection</th><th>Ctrl+Alt+Home</th><td>Makes the smallest rectangular selection which includes every part of the current selection.</td></tr>
+<tr><th>Extend&nbsp;Selection</th><th>Ctrl+Alt+End</th><td><p>If the selection is contained in a single line, makes a rectangular selection which encloses the current selection and extends from the first line of the document to the last line of the document; except that if the last line is empty (that is, the document ends with a line return), the selection extends to the next-to-last line.</p>
+
+<p>If the selection is an empty selection (a zero-width rectangular selection or a multiple selection in which each selection is empty) spanning more than one line, makes a rectangular selection which encloses the current selection and extends from the left edge of the document far enough to the right to include the rightmost character in each line of which it includes any part.</p>
+
+<p>Otherwise, makes the smallest rectangular selection which includes every part of the current selection.</p>
+</td></tr>
+</table>
+
+<p>The keyboard shortcuts are defined by default, but you can change or remove them using the <strong>Shortcut Mapper</strong> from the <strong>Settings</strong> menu in <strong>Notepad++</strong>. These commands do not always work sensibly when word-wrapped lines are included in the selection range.</p>
+
+
+</section>
+
+<section id=regular><h2>Regular expressions</h2>
+
+<p>Several commands in <strong>Columns++</strong> can use regular expressions for matching character strings. <strong>Columns++</strong> uses the same regular expression engine, <a href="https://www.boost.org/doc/libs/1_83_0/libs/regex/">Boost.Regex</a>, used in <strong>Notepad++</strong>, so the syntax and behavior are mostly the same. Some considerations unique to <strong>Columns++</strong> are described below.</p>
+
+<p>Within a rectangular selection, the selection in each row is matched independently of the surrounding text. The <strong>^</strong> assertion matches the beginning of the selection within a row, the <strong>$</strong> assertion matches the end of the selection, and lookahead and lookbehind assertions cannot examine text past the boundaries of the selection. (Lookbehind assertions in <strong>Notepad++</strong> can examine all text back to the beginning of the document, even when counting or replacing in a selection.) When using the <strong>Search in indicated region</strong> dialog, the region to be searched can be made up of one or more separate segments, each of which is searched independently. When a rectangular selection initializes the search region, each row of the selection becomes a separate segment of the search region.</p>
+
+<p>A rectangular selection enclosing a series of lines, or the entire document, is not the same as an ordinary selection encompassing the same series of lines, or the entire document. Rectangular selections do not include line endings, and each line is a separate selection when matching. This applies to search regions created from such selections for use in the <strong>Search in indicated region</strong> dialog, where it can be important to distinguish these two cases (which, unfortunately, appear the same visually).</p>
+
+<p>Matches for regular expressions using the <strong>\K</strong> directive are never replaced when performing stepwise Find and Replace in <strong>Notepad++</strong>. In the <strong>Search in indicated region</strong> dialog in <strong>Columns++</strong>, such matches can be replaced if you do not click outside the dialog between finding the match and replacing it.</p>
+
+<h3>Unicode</h3>
+
+<p>There are some significant differences in the way <strong>Columns++</strong> and <strong>Notepad++</strong> match regular expressions in Unicode documents. <strong>Columns++</strong> treats the document text as a series of Unicode code points (i.e., UTF-32) while <strong>Notepad++</strong> treats it as UTF-16. Most of the differences are related to this change.</p>
+
+<p>There are no surrogate pairs in <strong>Columns++</strong> regular expressions; each code point matches as a single character. To enter any Unicode character in hexadecimal notation, use the full code point; for example, enter &#x1f642; as <code>\x{1f642}</code>. (The surrogate pair, <code>\x{d83d}\x{de42}</code>, which must be used in <strong>Notepad++</strong> search, <em>will not match</em> in <strong>Columns++</strong>.)</p>
+
+<p><strong>Scintilla</strong>, the display control used in <strong>Notepad++</strong>, represents Unicode internally as UTF-8. (This is true whether the file containing the document is UTF-8, UTF-16 or anything else other than “ANSI.”) When displaying Unicode documents that contain invalid UTF-8, Scintilla shows each byte that cannot be decoded as a hexadecimal code in reversed colors. You can match any of these bytes with <code>\i</code>; to match a specific byte, use the hexadecimal code Scintilla displays as a symbolic character name, e.g., <code>[[.xF7.]]</code>. (When matching a regular expression, <strong>Columns++</strong> treats each of these error bytes as if it were the Unicode code point formed by adding <code>0xdc00</code> to the invalid byte. These code points are in the surrogate range and are invalid as UTF-32 code units.)</p>
+
+<p>The period (<code>.</code>) matches any one code point except the characters which end lines in Scintilla: carriage return (<code>\x0d</code> or <code>\r</code>) and newline (also called line feed, <code>\x0a</code> or <code>\n</code>). This corresponds to the <a href="https://npp-user-manual.org/docs/searching/#single-character-matches">documented</a> behavior of the period, but not the actual behavior in Notepad++ (where there are several other control characters it does not match). Use <code>\X</code> to match a character including any combining code points (marks) which follow it. (In Notepad++ search, <code>.</code> and <code>\X</code> do not work as expected when the code points involved are outside the basic multilingual plane, that is, 0x10000 or greater.)</p>
+
+<p>The <a href="https://www.boost.org/doc/libs/release/libs/regex/doc/html/boost_regex/syntax/character_classes/optional_char_class_names.html">Unicode character classes</a> and these escape sequences, negations (which match characters not in the class) and character classes are added:</p>
+
+<table class=optionsTable>
+<tr><th>escape</th><th>negation</th><th>character class</th><th>meaning</th></tr>
+<tr><td><code>\i</code></td><td><code>\I</code></td><td><code>[[:invalid:]]</code></td><td>a byte in an invalid UTF-8 sequence</td></tr>
+<tr><td><code>\o</code></td><td><code>\O</code></td><td><code>[[:ascii:]]</code></td><td>an ASCII character, code points 0 through 127</td></tr>
+<tr><td><code>\y</code></td><td><code>\Y</code></td><td><code>[[:defined:]]</code></td><td>any Unicode code point that is assigned and is not a surrogate or a private use character</td></tr>
+</table>
+
+<p>Some symbolic names for <a href="https://www.boost.org/doc/libs/release/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html#boost_regex.syntax.perl_syntax.collating_elements">collating elements</a> have been added, including all the abbreviations used to display invisible characters; all can be entered in any mix of upper and lower case. This is the full list:</p>
+
+<table class=charnames>
+<tr><th>expression</th><th>code pt</th><th>common name</th></tr>
+<tr><td><code>[[.nul.]]</code></td>                                      <td>   00</td><td>null</td></tr>
+<tr><td><code>[[.soh.]]</code></td>                                      <td>   01</td><td>start of heading</td></tr>
+<tr><td><code>[[.stx.]]</code></td>                                      <td>   02</td><td>start of text</td></tr>
+<tr><td><code>[[.etx.]]</code></td>                                      <td>   03</td><td>end of text</td></tr>
+<tr><td><code>[[.eot.]]</code></td>                                      <td>   04</td><td>end of transmission</td></tr>
+<tr><td><code>[[.enq.]]</code></td>                                      <td>   05</td><td>enquiry</td></tr>
+<tr><td><code>[[.ack.]]</code></td>                                      <td>   06</td><td>acknowledge</td></tr>
+<tr><td><code>[[.bel.]]</code><br><code>[[.alert.]]</code></td>          <td>   07</td><td>bell</td></tr>
+<tr><td><code>[[.bs.]]</code><br><code>[[.backspace.]]</code></td>       <td>   08</td><td>backspace</td></tr>
+<tr><td><code>[[.ht.]]</code><br><code>[[.tab.]]</code></td>             <td>   09</td><td>horizontal tab</td></tr>
+<tr><td><code>[[.lf.]]</code><br><code>[[.newline.]]</code></td>         <td>   0a</td><td>line feed,<br>new line</td></tr>
+<tr><td><code>[[.vt.]]</code><br><code>[[.vertical-tab.]]</code></td>    <td>   0b</td><td>line tabulation,<br>vertical tab</td></tr>
+<tr><td><code>[[.ff.]]</code><br><code>[[.form-feed.]]</code></td>       <td>   0c</td><td>form feed</td></tr>
+<tr><td><code>[[.cr.]]</code><br><code>[[.carriage-return.]]</code></td> <td>   0d</td><td>carriage return</td></tr>
+<tr><td><code>[[.so.]]</code></td>                                       <td>   0e</td><td>shift out</td></tr>
+<tr><td><code>[[.si.]]</code></td>                                       <td>   0f</td><td>shift in</td></tr>
+<tr><td><code>[[.dle.]]</code></td>                                      <td>   10</td><td>data link escape</td></tr>
+<tr><td><code>[[.dc1.]]</code></td>                                      <td>   11</td><td>device control one</td></tr>
+<tr><td><code>[[.dc2.]]</code></td>                                      <td>   12</td><td>device control two</td></tr>
+<tr><td><code>[[.dc3.]]</code></td>                                      <td>   13</td><td>device control three</td></tr>
+<tr><td><code>[[.dc4.]]</code></td>                                      <td>   14</td><td>device control four</td></tr>
+<tr><td><code>[[.nak.]]</code></td>                                      <td>   15</td><td>negative acknowledge</td></tr>
+<tr><td><code>[[.syn.]]</code></td>                                      <td>   16</td><td>synchronous idle</td></tr>
+<tr><td><code>[[.etb.]]</code></td>                                      <td>   17</td><td>end of transmission block</td></tr>
+<tr><td><code>[[.can.]]</code></td>                                      <td>   18</td><td>cancel</td></tr>
+<tr><td><code>[[.em.]]</code></td>                                       <td>   19</td><td>end of medium</td></tr>
+<tr><td><code>[[.sub.]]</code></td>                                      <td>   1a</td><td>substitute</td></tr>
+<tr><td><code>[[.esc.]]</code></td>                                      <td>   1b</td><td>escape</td></tr>
+<tr><td><code>[[.fs.]]</code><br><code>[[.IS4.]]</code></td>             <td>   1c</td><td>information separator four</td></tr>
+<tr><td><code>[[.gs.]]</code><br><code>[[.IS3.]]</code></td>             <td>   1d</td><td>information separator three</td></tr>
+<tr><td><code>[[.rs.]]</code><br><code>[[.IS2.]]</code></td>             <td>   1e</td><td>information separator two</td></tr>
+<tr><td><code>[[.us.]]</code><br><code>[[.IS1.]]</code></td>             <td>   1f</td><td>information separator one</td></tr>
+<tr><td><code>[[.space.]]</code></td>                                    <td>   20</td><td></td></tr>
+<tr><td><code>[[.exclamation-mark.]]</code></td>                         <td>   21</td><td>&#x21;</td></tr>
+<tr><td><code>[[.quotation-mark.]]</code></td>                           <td>   22</td><td>&#x22;</td></tr>
+<tr><td><code>[[.number-sign.]]</code></td>                              <td>   23</td><td>&#x23;</td></tr>
+<tr><td><code>[[.dollar-sign.]]</code></td>                              <td>   24</td><td>&#x24;</td></tr>
+<tr><td><code>[[.percent-sign.]]</code></td>                             <td>   25</td><td>&#x25;</td></tr>
+<tr><td><code>[[.ampersand.]]</code></td>                                <td>   26</td><td>&#x26;</td></tr>
+<tr><td><code>[[.apostrophe.]]</code></td>                               <td>   27</td><td>&#x27;</td></tr>
+<tr><td><code>[[.left-parenthesis.]]</code></td>                         <td>   28</td><td>&#x28;</td></tr>
+<tr><td><code>[[.right-parenthesis.]]</code></td>                        <td>   29</td><td>&#x29;</td></tr>
+<tr><td><code>[[.asterisk.]]</code></td>                                 <td>   2a</td><td>&#x2a;</td></tr>
+<tr><td><code>[[.plus-sign.]]</code></td>                                <td>   2b</td><td>&#x2b;</td></tr>
+<tr><td><code>[[.comma.]]</code></td>                                    <td>   2c</td><td>&#x2c;</td></tr>
+<tr><td><code>[[.hyphen.]]</code></td>                                   <td>   2d</td><td>&#x2d;</td></tr>
+<tr><td><code>[[.period.]]</code></td>                                   <td>   2e</td><td>&#x2e;</td></tr>
+<tr><td><code>[[.slash.]]</code></td>                                    <td>   2f</td><td>&#x2f;</td></tr>
+<tr><td><code>[[.zero.]]</code></td>                                     <td>   30</td><td>&#x30;</td></tr>
+<tr><td><code>[[.one.]]</code></td>                                      <td>   31</td><td>&#x31;</td></tr>
+<tr><td><code>[[.two.]]</code></td>                                      <td>   32</td><td>&#x32;</td></tr>
+<tr><td><code>[[.three.]]</code></td>                                    <td>   33</td><td>&#x33;</td></tr>
+<tr><td><code>[[.four.]]</code></td>                                     <td>   34</td><td>&#x34;</td></tr>
+<tr><td><code>[[.five.]]</code></td>                                     <td>   35</td><td>&#x35;</td></tr>
+<tr><td><code>[[.six.]]</code></td>                                      <td>   36</td><td>&#x36;</td></tr>
+<tr><td><code>[[.seven.]]</code></td>                                    <td>   37</td><td>&#x37;</td></tr>
+<tr><td><code>[[.eight.]]</code></td>                                    <td>   38</td><td>&#x38;</td></tr>
+<tr><td><code>[[.nine.]]</code></td>                                     <td>   39</td><td>&#x39;</td></tr>
+<tr><td><code>[[.colon.]]</code></td>                                    <td>   3a</td><td>&#x3a;</td></tr>
+<tr><td><code>[[.semicolon.]]</code></td>                                <td>   3b</td><td>&#x3b;</td></tr>
+<tr><td><code>[[.less-than-sign.]]</code></td>                           <td>   3c</td><td>&#x3c;</td></tr>
+<tr><td><code>[[.equals-sign.]]</code></td>                              <td>   3d</td><td>&#x3d;</td></tr>
+<tr><td><code>[[.greater-than-sign.]]</code></td>                        <td>   3e</td><td>&#x3e;</td></tr>
+<tr><td><code>[[.question-mark.]]</code></td>                            <td>   3f</td><td>&#x3f;</td></tr>
+<tr><td><code>[[.commercial-at.]]</code></td>                            <td>   40</td><td>&#x40;</td></tr>
+<tr><td><code>[[.left-square-bracket.]]</code></td>                      <td>   5b</td><td>&#x5b;</td></tr>
+<tr><td><code>[[.backslash.]]</code></td>                                <td>   5c</td><td>&#x5c;</td></tr>
+<tr><td><code>[[.right-square-bracket.]]</code></td>                     <td>   5d</td><td>&#x5d;</td></tr>
+<tr><td><code>[[.circumflex.]]</code></td>                               <td>   5e</td><td>&#x5e;</td></tr>
+<tr><td><code>[[.underscore.]]</code></td>                               <td>   5f</td><td>&#x5f;</td></tr>
+<tr><td><code>[[.grave-accent.]]</code></td>                             <td>   60</td><td>&#x60;</td></tr>
+<tr><td><code>[[.left-curly-bracket.]]</code></td>                       <td>   7b</td><td>&#x7b;</td></tr>
+<tr><td><code>[[.vertical-line.]]</code></td>                            <td>   7c</td><td>&#x7c;</td></tr>
+<tr><td><code>[[.right-curly-bracket.]]</code></td>                      <td>   7d</td><td>&#x7d;</td></tr>
+<tr><td><code>[[.tilde.]]</code></td>                                    <td>   7e</td><td>&#x7e;</td></tr>
+<tr><td><code>[[.del.]]</code></td>                                      <td>   7f</td><td>delete</td></tr>
+<tr><td><code>[[.pad.]]</code></td>                                      <td>   80</td><td>padding character</td></tr>
+<tr><td><code>[[.hop.]]</code></td>                                      <td>   81</td><td>high octet preset</td></tr>
+<tr><td><code>[[.bph.]]</code></td>                                      <td>   82</td><td>break permitted here</td></tr>
+<tr><td><code>[[.nbh.]]</code></td>                                      <td>   83</td><td>no break here</td></tr>
+<tr><td><code>[[.ind.]]</code></td>                                      <td>   84</td><td>index</td></tr>
+<tr><td><code>[[.nel.]]</code></td>                                      <td>   85</td><td>next line</td></tr>
+<tr><td><code>[[.ssa.]]</code></td>                                      <td>   86</td><td>start of selected area</td></tr>
+<tr><td><code>[[.esa.]]</code></td>                                      <td>   87</td><td>end of selected area</td></tr>
+<tr><td><code>[[.hts.]]</code></td>                                      <td>   88</td><td>character (horizontal) tabulation set</td></tr>
+<tr><td><code>[[.htj.]]</code></td>                                      <td>   89</td><td>character (horizontal) tabulation with justification</td></tr>
+<tr><td><code>[[.lts.]]</code></td>                                      <td>   8a</td><td>line (vertical) tabulation set</td></tr>
+<tr><td><code>[[.pld.]]</code></td>                                      <td>   8b</td><td>partial line forward (down)</td></tr>
+<tr><td><code>[[.plu.]]</code></td>                                      <td>   8c</td><td>partial line backward (up)</td></tr>
+<tr><td><code>[[.ri.]]</code></td>                                       <td>   8d</td><td>reverse line feed (index)</td></tr>
+<tr><td><code>[[.ss2.]]</code></td>                                      <td>   8e</td><td>single-shift two</td></tr>
+<tr><td><code>[[.ss3.]]</code></td>                                      <td>   8f</td><td>single-shift three</td></tr>
+<tr><td><code>[[.dcs.]]</code></td>                                      <td>   90</td><td>device control string</td></tr>
+<tr><td><code>[[.pu1.]]</code></td>                                      <td>   91</td><td>private use one</td></tr>
+<tr><td><code>[[.pu2.]]</code></td>                                      <td>   92</td><td>private use two</td></tr>
+<tr><td><code>[[.sts.]]</code></td>                                      <td>   93</td><td>set transmit state</td></tr>
+<tr><td><code>[[.cch.]]</code></td>                                      <td>   94</td><td>cancel character</td></tr>
+<tr><td><code>[[.mw.]]</code></td>                                       <td>   95</td><td>message waiting</td></tr>
+<tr><td><code>[[.spa.]]</code></td>                                      <td>   96</td><td>start of protected area</td></tr>
+<tr><td><code>[[.epa.]]</code></td>                                      <td>   97</td><td>end of protected area</td></tr>
+<tr><td><code>[[.sos.]]</code></td>                                      <td>   98</td><td>start of string</td></tr>
+<tr><td><code>[[.sgci.]]</code></td>                                     <td>   99</td><td>single graphic character introducer</td></tr>
+<tr><td><code>[[.sci.]]</code></td>                                      <td>   9a</td><td>single character introducer</td></tr>
+<tr><td><code>[[.csi.]]</code></td>                                      <td>   9b</td><td>control sequence introducer</td></tr>
+<tr><td><code>[[.st.]]</code></td>                                       <td>   9c</td><td>string terminator</td></tr>
+<tr><td><code>[[.osc.]]</code></td>                                      <td>   9d</td><td>operating system command</td></tr>
+<tr><td><code>[[.pm.]]</code></td>                                       <td>   9e</td><td>private message</td></tr>
+<tr><td><code>[[.apc.]]</code></td>                                      <td>   9f</td><td>application program command</td></tr>
+<tr><td><code>[[.nbsp.]]</code></td>                                     <td>   a0</td><td>no-break space</td></tr>
+<tr><td><code>[[.shy.]]</code></td>                                      <td>   ad</td><td>soft hyphen</td></tr>
+<tr><td><code>[[.alm.]]</code></td>                                      <td> 061c</td><td>arabic letter mark</td></tr>
+<tr><td><code>[[.sam.]]</code></td>                                      <td> 070f</td><td>syriac abbreviation mark</td></tr>
+<tr><td><code>[[.ospm.]]</code></td>                                     <td> 1680</td><td>ogham space mark</td></tr>
+<tr><td><code>[[.mvs.]]</code></td>                                      <td> 180e</td><td>mongolian vowel separator</td></tr>
+<tr><td><code>[[.nqsp.]]</code></td>                                     <td> 2000</td><td>en quad</td></tr>
+<tr><td><code>[[.mqsp.]]</code></td>                                     <td> 2001</td><td>em quad</td></tr>
+<tr><td><code>[[.ensp.]]</code></td>                                     <td> 2002</td><td>en space</td></tr>
+<tr><td><code>[[.emsp.]]</code></td>                                     <td> 2003</td><td>em space</td></tr>
+<tr><td><code>[[.3/msp.]]</code></td>                                    <td> 2004</td><td>three-per-em space</td></tr>
+<tr><td><code>[[.4/msp.]]</code></td>                                    <td> 2005</td><td>four-per-em space</td></tr>
+<tr><td><code>[[.6/msp.]]</code></td>                                    <td> 2006</td><td>six-per-em space</td></tr>
+<tr><td><code>[[.fsp.]]</code></td>                                      <td> 2007</td><td>figure space</td></tr>
+<tr><td><code>[[.psp.]]</code></td>                                      <td> 2008</td><td>punctation space</td></tr>
+<tr><td><code>[[.thsp.]]</code></td>                                     <td> 2009</td><td>thin space</td></tr>
+<tr><td><code>[[.hsp.]]</code></td>                                      <td> 200a</td><td>hair space</td></tr>
+<tr><td><code>[[.zwsp.]]</code></td>                                     <td> 200b</td><td>zero-width space</td></tr>
+<tr><td><code>[[.zwnj.]]</code></td>                                     <td> 200c</td><td>zero-width non-joiner</td></tr>
+<tr><td><code>[[.zwj.]]</code></td>                                      <td> 200d</td><td>zero-width joiner</td></tr>
+<tr><td><code>[[.lrm.]]</code></td>                                      <td> 200e</td><td>left-to-right mark</td></tr>
+<tr><td><code>[[.rlm.]]</code></td>                                      <td> 200f</td><td>right-to-left mark</td></tr>
+<tr><td><code>[[.ls.]]</code></td>                                       <td> 2028</td><td>line separator</td></tr>
+<tr><td><code>[[.ps.]]</code></td>                                       <td> 2029</td><td>paragraph separator</td></tr>
+<tr><td><code>[[.lre.]]</code></td>                                      <td> 202a</td><td>left-to-right embedding</td></tr>
+<tr><td><code>[[.rle.]]</code></td>                                      <td> 202b</td><td>right-to-left embedding</td></tr>
+<tr><td><code>[[.pdf.]]</code></td>                                      <td> 202c</td><td>pop directional formatting</td></tr>
+<tr><td><code>[[.lro.]]</code></td>                                      <td> 202d</td><td>left-to-right override</td></tr>
+<tr><td><code>[[.rlo.]]</code></td>                                      <td> 202e</td><td>right-to-left override</td></tr>
+<tr><td><code>[[.nnbsp.]]</code></td>                                    <td> 202f</td><td>narrow no-break space</td></tr>
+<tr><td><code>[[.mmsp.]]</code></td>                                     <td> 205f</td><td>medium mathematical space</td></tr>
+<tr><td><code>[[.wj.]]</code></td>                                       <td> 2060</td><td>word joiner</td></tr>
+<tr><td><code>[[.(fa).]]</code></td>                                     <td> 2061</td><td>function application</td></tr>
+<tr><td><code>[[.(it).]]</code></td>                                     <td> 2062</td><td>invisible times</td></tr>
+<tr><td><code>[[.(is).]]</code></td>                                     <td> 2063</td><td>invisible separator</td></tr>
+<tr><td><code>[[.(ip).]]</code></td>                                     <td> 2064</td><td>invisible plus</td></tr>
+<tr><td><code>[[.lri.]]</code></td>                                      <td> 2066</td><td>left-to-right isolate</td></tr>
+<tr><td><code>[[.rli.]]</code></td>                                      <td> 2067</td><td>right-to-left isolate</td></tr>
+<tr><td><code>[[.fsi.]]</code></td>                                      <td> 2068</td><td>first strong isolate</td></tr>
+<tr><td><code>[[.pdi.]]</code></td>                                      <td> 2069</td><td>pop directional isolate</td></tr>
+<tr><td><code>[[.iss.]]</code></td>                                      <td> 206a</td><td>inhibit symmetric swapping</td></tr>
+<tr><td><code>[[.ass.]]</code></td>                                      <td> 206b</td><td>activate symmetric swapping</td></tr>
+<tr><td><code>[[.iafs.]]</code></td>                                     <td> 206c</td><td>inhibit arabic form shaping</td></tr>
+<tr><td><code>[[.aafs.]]</code></td>                                     <td> 206d</td><td>activate arabic form shaping</td></tr>
+<tr><td><code>[[.nads.]]</code></td>                                     <td> 206e</td><td>national digit shapes</td></tr>
+<tr><td><code>[[.nods.]]</code></td>                                     <td> 206f</td><td>nominal digit shapes</td></tr>
+<tr><td><code>[[.idsp.]]</code></td>                                     <td> 3000</td><td>ideographic space</td></tr>
+<tr><td><code>[[.zwnbsp.]]</code></td>                                   <td> feff</td><td>zero-width no-break space</td></tr>
+<tr><td><code>[[.iaa.]]</code></td>                                      <td> fff9</td><td>interlinear annotation anchor</td></tr>
+<tr><td><code>[[.ias.]]</code></td>                                      <td> fffa</td><td>interlinear annotation separator</td></tr>
+<tr><td><code>[[.iat.]]</code></td>                                      <td> fffb</td><td>interlinear annotation terminator</td></tr>
+<tr><td><code>[[.sflo.]]</code></td>                                     <td>1bca0</td><td>shorthand format letter overlap</td></tr>
+<tr><td><code>[[.sfco.]]</code></td>                                     <td>1bca1</td><td>shorthand format continuing overlap</td></tr>
+<tr><td><code>[[.sfds.]]</code></td>                                     <td>1bca2</td><td>shorthand format down step</td></tr>
+<tr><td><code>[[.sfus.]]</code></td>                                     <td>1bca3</td><td>shorthand format up step</td></tr>
+<tr><td><code>[[.x80.]]–[[.xff.]]</code></td>                            <td></td>     <td>invalid UTF-8 bytes</td></tr>
+</table>
+
+</section>
+
+<section id=search><h2>Search</h2>
+
+<p><strong>Columns++</strong> offers the ability to find and replace within a region marked by an <em>indicator</em>. <strong>Notepad++</strong> uses several indicators, including the 1st to 5th Styles from the Search menu and the Find Mark Style used by the <strong>Mark</strong> function. <strong>Columns++</strong> lets you use any one of those six indicators, or a custom indicator (the default), to define the region for searching.</p>
+
+<p>By default, if there is a rectangular selection or a multiple selection when you begin a search, <strong>Columns++</strong> will use it to set the search region. If a search region is not already set:</p>
+
+<ul>
+<li>if nothing is selected, the search region will be set to the entire document;
+<li>if an ordinary selection covering more than a single line is present, the search region will be set to that selection;
+<li>if a selection on a single line is present, <strong>Columns++</strong> will show a dialog offering to create a rectangular selection based on the current selection, from which it will then set the search region.
+</ul>
+
+<p>The <strong>Search...</strong> item on the <strong>Columns++</strong> menu opens the <strong>Search in indicated region</strong> dialog. Many of the options on this dialog are similar to the corresponding <strong>Notepad++</strong> search options. You can drag the left or right edge of this dialog to make it wider, and you can leave it open while you edit the document in other ways.</p>
+
+<h3>Find what</h3>
+
+<p>The <strong>Find what</strong> box specifies the text, extended text or regular expression for which to search. Contiguous segments of the indicated region are searched sequentially (forward or backward), one at a time. It is not possible for a single match to span multiple segments. (E.g., for a region derived from a rectangular selection, each match must be contained in a single row.) When no more occurrences of the search string can be found, <strong>Columns++</strong> gives a status message to that effect; if focus remains on the search dialog, the next search will resume from the beginning of the region.</p>
+
+<p>When using regular expressions, the circumflex (<strong>^</strong>) and the dollar sign (<strong>$</strong>) match the beginning and end (respectively) of contiguous segments of the search region as well as their usual match to the beginning and ending of a line. This is particularly useful when the search region comes from a column selection, since <strong>^</strong> and <strong>$</strong> will match the left and right ends of the selection in each row.</p>
+
+<h3>Replace with</h3>
+
+<p>The <strong>Replace with</strong> box specifies the text, extended text or regular expression replacement for search and replace operations.</p>
+
+<p>When using regular expressions, the replacement can contain formulas, specified as:
+<br><strong>(?=<em>formula</em>)</strong> or <strong>(?=<em>format</em>:<em>formula</em>)</strong>
+<br>within the replacement string; the <a href="#formulas">Formulas</a> section describes them in detail.</p>
+
+<p><em>Technical note: The results of formulas are enclosed in parentheses and substituted into the regular expression replacement string before it is processed by the regular expression engine. Ordinarily this results in expected behavior and needs no consideration by the user. However, formulas in <strong>Columns++</strong> support the <strong>return</strong> call described in section 20 of the <a href="https://github.com/ArashPartow/exprtk#readme">ExprTk documentation</a>. Using this call, it is possible to substitute an arbitrary character string; since the substitution occurs before regular expression replacement processing, characters substituted in this way will be interpreted as part of regular expression replacement. For example, </em><strong>(?=return ['$', reg(1)])</strong><em> would be replaced by the capture group the number of which is given by the first capture group.</em></p>
+
+<h3>Extended search syntax</h3>
+
+<p>The syntax for extended find and replace strings is almost the same <a href="https://npp-user-manual.org/docs/searching/#extended-search-mode">as in <strong>Notepad++</strong> searches</a>, with these exceptions:</p>
+
+<ul>
+<li><strong>\U</strong> (note the capital <strong>U</strong>) can be followed by one to six hexadecimal digits to specify any valid Unicode character.
+<li><strong>\b</strong>, <strong>\d</strong>, <strong>\o</strong> and <strong>\x</strong> specify Unicode code points in Unicode files and bytes in non-Unicode files. In <strong>Notepad++</strong> search they always specify Unicode code points.
+<li><strong>\b</strong>, <strong>\d</strong>, <strong>\o</strong>, <strong>\u</strong> and <strong>\x</strong> can be followed by any number of digits of the appropriate type up to the maximum for each (2 binary, 3 decimal, 3 octal, 4 hexadecimal and 2 hexadecimal, respectively); the first non-digit, or the maximum number of digits, terminates the sequence. In <strong>Notepad++</strong> search these sequences must contain exactly the required number of digits.
+</ul>
+
+<h3>Search actions</h3>
+
+<p>The <strong>Find</strong>, <strong>Count</strong>, <strong>Replace</strong> and <strong>Replace All</strong> buttons work like those in <strong>Notepad++</strong> search, except that they search in the indicated region, and there is no <strong>Wrap around</strong> option. Instead, <strong>Find</strong> and <strong>Replace</strong> show a message at the bottom of the dialog when the end of the search region is reached and subsequently restart from the beginning of the search region, while <strong>Count</strong> and <strong>Replace All</strong> always make use of the entire search region. The downward-pointing arrowheads on the right side of the <strong>Count</strong> and <strong>Replace All</strong> buttons open menus of additional options.</p>
+
+<p>From the <strong>Count</strong> button menu:</p>
+
+<ul>
+<li><strong>Select All</strong> creates a multiple selection including one selection for each match in the search region.
+<li><strong>Count Before</strong> counts matches in the search region preceding the selection or caret. Matches which overlap the selection or caret are not counted.
+<li><strong>Count After</strong> counts matches in the search region following the selection or caret. Matches which overlap the selection or caret are not counted.
+<li><strong>Select Before</strong> creates a multiple selection including one selection for each match in the search region preceding the selection or caret. Matches which overlap the selection or caret are not selected.
+<li><strong>Select After</strong> creates a multiple selection including one selection for each match in the search region following the selection or caret. Matches which overlap the selection or caret are not selected.
+</ul>
+
+<p>From the <strong>Replace All</strong> button menu:</p>
+
+<ul>
+<li><strong>Replace Before</strong> replaces matches in the search region preceding the selection or caret. Matches which overlap the selection or caret are not counted.
+<li><strong>Replace After</strong> replaces matches in the search region following the selection or caret. Matches which overlap the selection or caret are not counted.
+<li><strong>Clear History</strong> is shown when the <strong>Replace</strong> button has been used to make replacements using formula substitutions. Ordinarily the <strong>Replace</strong> functions will continue incrementing counters and referencing capture group and calculation history until after a <strong>Replace All/Before/After</strong> action is performed or the <strong>Replace with</strong> string is changed. This menu item clears the counters and the capture group and calculation history immediately.
+</ul>
+
+<h3>Other controls in the Search dialog</h3>
+
+<p>When you initiate a search action, the region used for the search is determined by whether a region is already defined using the selected indicator, what is currently selected, and the <strong>Auto set</strong> check box in the <strong>Selection -&gt; Region</strong> group box:</p>
+
+<table class=optionsTable>
+<tr><th rowspan=2></th><th colspan=2>no search region defined</th><th colspan=2>search region defined</th></tr>
+<tr><th><em>Auto set</em> checked</th><th><em>Auto set</em> not&nbsp;checked</th><th><em>Auto set</em> checked</th><th><em>Auto set</em> not&nbsp;checked</th></tr>
+<tr><th>nothing selected</th>
+<td>The search region is set to the entire document.</td>
+<td><strong>Columns++</strong> will prompt you to make a rectangular selection based on the cursor position.</td>
+<td rowspan=3>The search region is not changed. Stepwise searching (<strong>Find</strong> or <strong>Replace</strong>) begins or continues from the position of the cursor or past the selection.</td>
+<td rowspan=4><p>The search region is not changed. Stepwise searching begins or continues from the position of the cursor or past the selection.</p>
+<p>For rectangular and multiple selections, the primary selection (the one containing the cursor) determines where stepwise searching begins or continues.</p></td>
+</tr>
+<tr><th>selection within a single line</th>
+<td colspan=2><strong>Columns++</strong> will prompt you to make a rectangular selection based on the current selection.</td>
+</tr>
+<tr><th>multi-line selection</th>
+<td colspan=2>The search region is set to the selection.</td>
+</tr>
+<tr><th>rectangular or multiple selection</th>
+<td colspan=3>The search region is set to the selection.</td>
+</table>
+
+<p><strong>Backward direction</strong>, <strong>Match whole word only</strong>, <strong>Match case</strong> and the <strong>Search Mode</strong> options (<strong>Normal</strong>, <strong>Extended</strong> and <strong>Regular expression</strong>) have the same meanings as in the <strong>Notepad++</strong> search dialogs.</p>
+
+<table class=optionsTable>
+<tr><th colspan=2 class=group>Selection -&gt; Region</th></tr>
+<tr><th>Set</th><td>sets the indicated region to the current selection. If nothing is selected, sets the indicated region to the entire document.</td></tr>
+<tr><th>Add</th><td>adds the current selection to the indicated region.</td></tr>
+<tr><th>Remove</th><td>removes from the indicated region any text that is within the current selection.</td></tr>
+<tr><th>Auto set</th><td>Automatically sets the search region if a rectangular or multiple selection is present, or if nothing is selected and no search region is set, when one of the search buttons is clicked, as described above.</td></tr>
+<tr><th>Auto clear</th><td>De-selects the current selection after it is used to set or modify the indicated region. Even if this box is not checked, if <strong>Auto set</strong> is checked, a rectangular or multiple selection will be de-selected after adding it to or removing it from an existing region to prevent the region from being set to the selection when you perform a search.</td></tr>
+<tr><th colspan=2 class=group>Indicator</th></tr>
+<tr><td>drop-down</td><td>selects which indicator is used to identify the search region.</td></tr>
+<tr><th>Clear on close</th><td>determines whether an existing indicated region is cleared when the dialog is closed. This option is set to checked when you choose the <strong>Custom Style</strong> indicator and to unchecked when you choose any other indicator; however, you may change it after you select an indicator and it will stick until you change the indicator again.</td></tr>
+<tr><th>Clear</th><td>clears the current search indicator, so that there is no search region indicated.</td></tr>
+</table>
+
+</section>
+
+<section id=calculation><h2>Calculation</h2>
+
+<p><strong>Columns++</strong> can add or average columns of numbers or perform calculations across rows; these are explained below. See <a href="#numberformats">Number formats</a> for details about how <strong>Columns++</strong> recognizes numbers, how numbers are represented internally in calculations, and some limitations on the accuracy of calculations.</p>
+
+<h3>Calculating in columns</h3>
+
+<p>The <strong>Add numbers...</strong> and <strong>Average numbers...</strong> items on the <strong>Columns++</strong> menu perform calculations on a rectangular selection of a column of numbers, or of multiple columns separated by elastic tabstops. (These commands can be used on selections that include traditional fixed tabs; but the results may not be as expected, since they treat tabs as logical separators, ignoring physical positioning.)</p>
+
+<p><strong>Columns++</strong> shows a dialog to present the results of the calculation, which offers the following options:</p>
+
+<table class=optionsTable>
+
+<tr><th>Thousands separator</th><td>Select a <strong>Thousands separator</strong> option (<strong>None</strong>, <strong>Comma</strong>/<strong>Period</strong>, <strong>Apostrophe</strong> or <strong>Blank</strong>) to control how numeric results are formatted.</td></tr>
+
+<tr><th>Decimal places</th><td>
+<p>If <strong>Automatic</strong> is checked, <strong>Notepad++</strong> chooses the number of decimal places in the result based on the data. For <strong>Add numbers</strong>, the result uses the fewest decimal places needed to avoid losing precision; for <strong>Average numbers</strong>, the result shows three more than the greatest number of decimal places in any input values.</p>
+<p>If <strong>Automatic</strong> is not checked, choose the number of decimal places (0-16) to which to round results. If <strong>Suppress trailing zeros</strong> is checked, zeros at the end of the decimal portion of numbers are omitted; if this box is not checked, exactly the number of decimal places selected are included.</p>
+</td></tr>
+
+<tr><th>Format as time</th><td>
+<p>If <strong>Automatic</strong> is checked, <strong>Notepad++</strong> uses the time formatting rules set in the <a href="#timeformats">Time formats</a> dialog if at least one of the input numbers is expressed as a time; otherwise, the result is formatted as a simple number.</p>
+<p>If <strong>Automatic</strong> is not checked, choose the format (1-4 segments) to be used for the results.</p>
+</td></tr>
+<tr>
+<th>Insert...</th>
+<td>Check to insert the results into the document, at the end of the rectangular selection, when you close the dialog. If the last line of the rectangular selection is empty (spaces, tabs and/or virtual space), the option will be <strong>Insert these results in the last line of the selection</strong>; otherwise, it will be <strong>Insert a line containing these results following the last line of the selection.</strong></td></tr>
+<tr><th>Copy these results to the clipboard?</th><td>
+Close the dialog with the <strong>Yes</strong> button to copy the results to the clipboard, or use <strong>No</strong> to leave the clipboard unchanged.
+</td></tr>
+</table>
+
+<h3 id="calculation-rows">Calculating across rows</h3>
+
+<p>The <strong>Calculate...</strong> command from the <strong>Columns++</strong> menu inserts the results of a calculation into each line of a rectangular selection. The command opens a dialog which lets you supply the formula for the calculation. Formulas are described in <a href="#formulas">a separate section</a>; they are mostly ordinary mathematical expressions, with special <em>variables</em> and <em>functions</em> to represent numbers found in the selection; for example, if a single column of numbers is selected, <strong>this + 20</strong> would add a column with each of the original numbers increased by 20. Here are the options on the <strong>Calculate</strong> dialog:</p>
+
+<table class=optionsTable>
+<tr><th>Formula</th><td>Enter the formula for the calculation, as described in the <a href="#formulas">Formulas</a> section.</td></tr>
+<tr><th>Regex</th><td>If you enter a regular expression, the first occurrence of the expression within the selection in each row of the rectangular selection is matched. Use the <strong>match case</strong> box to indicate whether to use case-sensitive matching. If <strong>Skip unmatched lines</strong> is checked and the regular expression box is not empty, rows in which the regular expression does not match are ignored; the formula is not evaluated, nor is a tab or any space padding added to the selection in the row to account for the new column.</td></tr>
+<tr><th>Thousands separator</th><td>Select a <strong>Thousands separator</strong> option (<strong>None</strong>, <strong>Comma</strong>/<strong>Period</strong>, <strong>Apostrophe</strong> or <strong>Blank</strong>) to control how numeric results are formatted.</td></tr>
+<tr><th>Decimal places</th><td>Choose the number of decimal places (0-16) to which to round results. If <strong>Suppress trailing zeros</strong> is checked, zeros at the end of the decimal portion of numbers are omitted; if this box is not checked, exactly the number of decimal places selected are included.</td></tr>
+<tr><th>Format as time</th><td>Check the <strong>Enabled</strong> box to use the formats enabled in the bottom section of the <a href="#timeformats">Time formats</a> dialog to show the results. The <strong>Formats...</strong> button lets you open that dialog without closing this one.</td></tr>
+<tr><th>New column</th><td>
+<table class=optionsTable>
+<tr><th>Tabbed</th><td>Check to use a tab to separate the new column from the existing selection; uncheck to pad with spaces so as to leave one space between edge of the existing selection and the new column.</td></tr>
+<tr><th>Numeric&nbsp;aligned</th><td>Check to align results as numbers, following the same rules as the <a href="#alignment">Align numeric</a> command; uncheck to leave results left-justified.</td></tr>
+<tr><th>Insert&nbsp;at&nbsp;left</th><td>Check to insert the new column at the left of the selection; uncheck to insert on the right.</td></tr>
+</table></td></tr>
+</table>
+
+</section>
+
+<section id=formulas><h2>Formulas</h2>
+
+<p><strong>Formulas</strong> are representations of mathematical computations. <strong>Columns++</strong> uses the <a href="https://github.com/ArashPartow/exprtk">ExprTk (Expression Toolkit)</a> package to implement formulas used by the <a href="#calculation-rows">Calculate...</a> command and formulas in regular expression replacements for the <a href="#search">Search</a> functions. Following are descriptions of the variables and functions defined by <strong>Columns++</strong>, along with some general features of the syntax of ExprTk expressions. See <a href="#numberformats">Number formats</a> for details about how <strong>Columns++</strong> recognizes numbers, how numbers are represented internally in calculations, and some limitations on the accuracy of calculations.</p>
+
+<p>Wherever a numeric value is used, it is also possible for the value to be <em>Not-a-Number</em>, an indication that something which was expected to produce a number failed to do so. This can happen because you tried to get a number from the document, but the associated text could not be unambiguously interpreted as a number. It can also be the result of an undefined mathematical operation, such as dividing by zero. In most cases, if any of the inputs to an operation or function are <em>Not-a-Number</em>, the result is also <em>Not-a-Number</em>. When the result of a formula is <em>Not-a-Number</em>, <strong>Columns++</strong> does not insert any text (aside from a tab and/or spaces needed to keep columns aligned).</p>
+
+<h3>Variables and functions implemented by <strong>Columns++</strong></h3>
+
+<p>When <strong>Calculate</strong> is applied to a rectangular selection, the formula given is evaluated once for each row of the selection (or, if a regular expression is given and <strong>Skip unmatched lines</strong> is checked, for each row in which the regular expression matches). The term <em>row</em> refers to the part of a single line in the document which is included in the rectangular selection, and the term <em>current row</em> is the row for which the formula is being evaluated, and into which the results of the formula will be inserted. Rows are processed in sequence, from top to bottom.</p>
+
+<table class=optionsTable>
+<tr><th colspan=2 class=group>Variables and functions in Calculate command formulas</th></tr>
+<tr><th>count</th><td>the total number of rows (lines) in the selection</td></tr>
+<tr><th>index</th><td>counting from one, the row number within the selection of the current row</td></tr>
+<tr><th>match</th><td>zero if no regular expression was given or if the regular expression did not match in the current row; otherwise, counting from one and including the current row, the number of rows on which the regular expression has matched</td></tr>
+<tr><th>line</th><td>the line number of line containing the current row (within the entire document, counting from one; that is, the same as the line number shown in the left margin if line numbers are enabled in <strong>Notepad++</strong>)</td></tr>
+<tr><th>this</th><td>if a regular expression was given, the numeric value of the text matched by the regular expression; otherwise, the numeric value of the current row</td></tr>
+<tr><th>
+col(<em>n</em>)
+<br>col(<em>n</em>,<em>p</em>)
+<br>col(<em>n</em>,<em>p</em>,<em>v</em>)
+<br>
+<br>tab(<em>n</em>)
+<br>tab(<em>n</em>,<em>p</em>)
+<br>tab(<em>n</em>,<em>p</em>,<em>v</em>)
+<br>
+<br>reg(<em>n</em>)
+<br>reg(<em>n</em>,<em>p</em>)
+<br>reg(<em>n</em>,<em>p</em>,<em>v</em>)
+</th><td>
+These functions retrieve the numeric value in the specified segment within a row (the selected part of a line). The <strong>col</strong> function divides the segments by white space (any run of blanks and/or tabs). The <strong>tab</strong> function divides by tab characters. The <strong>reg</strong> function retrieves regular expression capture groups.
+<table class=optionsTable>
+<tr><th><em>n</em></th><td>the column, tab or capture group to retrieve, numbering from one; if zero, <strong>col</strong> and <strong>tab</strong> return the entire row (the selected part of the line), while <strong>reg</strong> returns the portion of the row matched by the regular expression</td></tr>
+<tr><th><em>p</em></th><td>if given, the number of rows previous to the current one from which the value is to be retrieved; if omitted or zero, the current row is accessed. If a regular expression is specified and <strong>Skip unmatched lines</strong> is checked, unmatched lines will be ignored when counting backward to previous lines.</td></tr>
+<tr><th><em>v</em></th><td>a numeric value to use instead of <em>Not-a-Number</em> if there are not <strong><em>p</em></strong> previous rows, if there are not <strong><em>n</em></strong> columns, tabs or capture groups in the indicated row, or if the indicated text cannot be unambiguously interpreted as a number</td></tr>
+</table>
+</td></tr>
+<tr><th>
+last
+<br>last(<em>p</em>)
+<br>last(<em>p</em>,<em>v</em>)
+</th><td>
+<p>The <strong>last</strong> function with no arguments represents the last result of a calculation that was not <em>Not-a-Number</em>; if the current row is the first row, or if no previous calculations have resulted in anything other than <em>Not-a-Number</em>, <strong>last</strong> is zero.<p>
+<p>When <strong><em>p</em></strong> or <strong><em>p</em></strong> and <strong><em>v</em></strong> are specified, they are interpreted as for <strong>col</strong>/<strong>tab</strong>/<strong>reg</strong>, except that <strong><em>p</em></strong> cannot be zero; the function retrieves the result of the calculation on the row indicated, substituting <strong><em>v</em></strong>, if specified, for <em>Not-a-Number</em>.</p>
+</td></tr>
+</table>
+
+<p>When formulas are used in regular expression replacements for the <a href="#search">Search</a> dialog, the formula given is evaluated once for each match. 
+Formulas in regular expression replacements are specified as:
+<br><strong>(?=<em>formula</em>)</strong> or <strong>(?=<em>format</em>:<em>formula</em>)</strong></p>
+
+<table class=optionsTable>
+<tr><th colspan=2 class=group>Variables and functions in Search regular expression replacement formulas</th></tr>
+<tr><th>match</th><td>counting from one and including the current match, the number of times the regular expression has been matched and replaced (When doing stepwise find and replace, matches which were found but not replaced are not counted.)</td></tr>
+<tr><th>line</th><td>the line number in which the current match begins (within the entire document, counting from one; that is, the same as the line number shown in the left margin if line numbers are enabled in <strong>Notepad++</strong>)</td></tr>
+<tr><th>this</th><td>the numeric value of the text matched by the regular expression</td></tr>
+<tr><th>
+reg(<em>n</em>)
+<br>reg(<em>n</em>,<em>p</em>)
+<br>reg(<em>n</em>,<em>p</em>,<em>v</em>)
+</th><td>
+These functions retrieve the numeric value of a regular expression capture group.
+<table class=optionsTable>
+<tr><th><em>n</em></th><td>the capture group the value of which is to be retrieved, numbering from one; zero returns the value of the text matched by the regular expression</td></tr>
+<tr><th><em>p</em></th><td>if given, the number of matches previous to the current one from which the value is to be retrieved; if omitted or zero, the current match is accessed</td></tr>
+<tr><th><em>v</em></th><td>a numeric value to use instead of <em>Not-a-Number</em> if there are not <strong><em>p</em></strong> previous matches, if there are not <strong><em>n</em></strong> capture groups in the indicated match, or if the indicated text cannot be unambiguously interpreted as a number</td></tr>
+</table>
+</td></tr>
+<tr><th>
+sub(<em>n</em>)
+<br>sub(<em>n</em>,<em>p</em>)
+<br>sub(<em>n</em>,<em>p</em>,<em>v</em>)
+</th><td>
+These functions retrieve the numeric value previously calculated for a substitution.
+<table class=optionsTable>
+<tr><th><em>n</em></th><td>the formula substitution the value of which is to be retrieved, counting from the left and numbering from one; zero refers to the formula in which the expression appears</td></tr>
+<tr><th><em>p</em></th><td>
+<p>If given, <strong><em>p</em></strong> specifies the number of matches previous to the current one from which the value is to be retrieved; zero retrieves the value from the current match if <strong><em>n</em></strong> is greater than zero and less than the number of the current formula, otherwise the result is <em>Not-a-Number</em>.</p>
+<p>If omitted, indicates the last result for the <strong><em>n</em></strong>th formula substitution which was not <em>Not-a-Number</em>; if the current match is the first match, or if no previous matches have resulted in anything other than <em>Not-a-Number</em>, the result is zero.</p>
+</td></tr>
+<tr><th><em>v</em></th><td>a numeric value to use instead of <em>Not-a-Number</em> if the result would otherwise be <em>Not-a-Number</em></td></tr>
+</table>
+</td></tr>
+<tr><th>
+last
+<br>last(<em>p</em>)
+<br>last(<em>p</em>,<em>v</em>)
+</th><td>
+<p>equivalent to <strong>sub(0)</strong>, <strong>sub(0,<em>p</em>)</strong> and <strong>sub(0,<em>p</em>,<em>v</em>)</strong>
+</td></tr>
+</table>
+
+<table class=optionsTable id=formatFormula>
+<tr><th colspan=2 class=group>Format specifications for Search regular expression replacement formulas</th></tr>
+<tr><td colspan=2><em>When a format is not specified, the default is </em><strong>1.-6</strong><em> (up to six decimals, suppress trailing zeros, suppress decimal separator if nothing follows, no leading zeros except that a digit is required before the decimal point).</em></td></tr>
+<tr><th><em>n</em></th><td>
+One or two digits specify the minimum number of integer digits to be shown (i.e., shorter values will be left-padded with zeros); <strong>0</strong> indicates that a leading zero is not required for decimals. If omitted, the default is <strong>1</strong>.
+</td></tr>
+<tr><th>t</th><td>
+The letter <strong>t</strong> (or <strong>T</strong>) specifies that the result of the formula will be shown in <a href="#timeformats">time format</a>. If <strong><em>n</em></strong> is used it must appear before <strong>t</strong>; <strong><em>n</em></strong> then applies to the leftmost time segment in each result, regardless of what time unit that represents.</td></tr>
+<tr><td><strong>.</strong><br><strong>,</strong></td><td>A period or a comma indicates that decimal places can be shown, using the current decimal separator (see <a href="#options">Options</a> — it doesn’t matter whether you use a period or a comma in the format). When a format is specified without a decimal indicator, decimals are rounded and not shown. If a decimal indicator is present but no additional specification follows, the default is <strong>.-6</strong> (up to six decimal places, suppress trailing zeros, suppress decimal separator if nothing follows).</td></tr>
+<tr><td colspan=2><em>One of the following can follow the decimal indicator if it is specified:</em></td></tr>
+<tr><td><strong><em>d</em></strong></td><td>
+one or two digits specifying the exact number of decimal places to be shown
+</td></tr>
+<tr><td><strong>-<em>d</em></strong></td><td>
+one or two digits specifying the maximum number of decimal places to be shown, omitting any trailing zeros and decimal separator
+</td></tr>
+<tr><td><strong><em>m</em>-<em>d</em></strong></td><td>
+Up to <strong><em>d</em></strong> decimal places will be shown, but no fewer than <strong><em>m</em></strong>. If <strong><em>m</em></strong> is <strong>0</strong>, all decimal places will be omitted if they are zeros, but the decimal separator will still be shown.
+</td></tr>
+</table>
+
+<h3>Syntax of formulas</h3>
+
+<p>Formulas are written using most of the common conventions for writing mathematical expressions in typical programming languages: numbers are written with an optional minus sign, digits and an optional decimal point (no commas); <strong>+</strong>, <strong>-</strong>, <strong>*</strong>, <strong>/</strong>, <strong>%</strong> and <strong>^</strong> indicate addition, subtraction, multiplication, division, remainder and exponentiation; parentheses are used to indicate order of operations. You can also use logical expressions built from common operators, including <strong>=</strong> or <strong>==</strong>, <strong>!=</strong> or <strong>&lt;&gt;</strong>, <strong>&lt;</strong>, <strong>&lt;=</strong>, <strong>&gt;</strong>, <strong>&gt;=</strong>, <strong>&amp;</strong> and <strong>|</strong>, in a conditional expression:</p>
+
+<table class=optionsTable>
+<tr><th><em>test</em> ? <em>option1</em> : <em>option2</em></th><td>yields <strong><em>option1</em></strong> if <strong><em>test</em></strong> is true, <strong><em>option2</em></strong> if <strong><em>test</em></strong> is false</td></tr>
+</table>
+
+<p>so <strong>col(1)>10?col(2):col(3)</strong> gives the content of column 2 if column 1 is greater than 10, otherwise the content of column 3.</p>
+
+<p>Formulas can use the many functions built into ExprTk, including these common mathematical functions:</p>
+
+<table class=optionsTable>
+<tr><th>abs</th><td>absolute value</td></tr>
+<tr><th>avg</th><td>average of any number of values</td></tr>
+<tr><th>ceil</th><td>smallest integer greater than or equal to</td></tr>
+<tr><th>erf</th><td>error function</td></tr>
+<tr><th>erfc</th><td>complimentary error function</td></tr>
+<tr><th>exp</th><td>e to the power of the given value</td></tr>
+<tr><th>floor</th><td>largest integer less than or equal to</td></tr>
+<tr><th>frac</th><td>fractional (decimal) part</td></tr>
+<tr><th>hypot</th><td>hypotenuse of a right triangle from two sides (eg: hypot(x,y) = sqrt(x*x + y*y))</td></tr>
+<tr><th>log</th><td>natural logarithm</td></tr>
+<tr><th>log10</th><td>base 10 logarithm</td></tr>
+<tr><th>log2</th><td>base 2 logarithm</td></tr>
+<tr><th>max</th><td>largest of any number of values</td></tr>
+<tr><th>min</th><td>smallest of any number of values</td></tr>
+<tr><th>ncdf</th><td>normal cumulative distribution function</td></tr>
+<tr><th>round</th><td>round to the nearest integer</td></tr>
+<tr><th>roundn</th><td>round the first argument to the number of decimal places specified by the second argument</td></tr>
+<tr><th>sqrt</th><td>square root</td></tr>
+<tr><th>trunc</th><td>integer part (round down)</td></tr>
+</table>
+
+<p>and trigonometric functions (in all cases, angles are expressed in radians):</p>
+
+<table class=optionsTable>
+<tr><th>acos</th><td>arc cosine; interval [-1,+1]</td></tr>
+<tr><th>acosh</th><td>inverse hyperbolic cosine</td></tr>
+<tr><th>asin</th><td>arc sine; interval [-1,+1]</td></tr>
+<tr><th>asinh</th><td>inverse hyperbolic sine</td></tr>
+<tr><th>atan</th><td>arc tangent; interval [-1,+1]</td></tr>
+<tr><th>atan2</th><td>two-argument arc tangent; interval [-pi,+pi]</td></tr>
+<tr><th>atanh</th><td>inverse hyperbolic tangent</td></tr>
+<tr><th>cos</th><td>cosine</td></tr>
+<tr><th>cosh</th><td>hyperbolic cosine</td></tr>
+<tr><th>cot</th><td>cotangent</td></tr>
+<tr><th>csc</th><td>cosecant</td></tr>
+<tr><th>deg2grad</th><td>convert from degrees to gradians</td></tr>
+<tr><th>deg2rad</th><td>convert from degrees to radians</td></tr>
+<tr><th>grad2deg</th><td>convert from gradians to degrees</td></tr>
+<tr><th>rad2deg</th><td>convert from radians to degrees</td></tr>
+<tr><th>sec</th><td>secant</td></tr>
+<tr><th>sin</th><td>sine</td></tr>
+<tr><th>sinc</th><td>sine cardinal</td></tr>
+<tr><th>sinh</th><td>hyperbolic sine</td></tr>
+<tr><th>tan</th><td>tangent</td></tr>
+<tr><th>tanh</th><td>hyperbolic tangent</td></tr>
+</table>
+
+<p>ExprTk expressions have many more features which are described in Sections 8, 12, 13 and 20 of the <a href="https://github.com/ArashPartow/exprtk#readme">documentation</a> for ExprTk. <strong>Columns++</strong> supports the <strong>return</strong> call (section 20 of the ExprTk documentation). The returned strings and scalar values will be concatenated and inserted in the new column; if two or more scalar values are specified without intervening strings they will be separated by a tab character (if <strong>Tabbed</strong> is checked) or a single space. The concatenated string will be left aligned, regardless of whether <strong>Numeric aligned</strong> is checked.</p>
+
+</section>
+
+<section id=alignment><h2>Alignment</h2>
+
+<p><strong>Align left</strong>, <strong>Align right</strong>, <strong>Align numeric</strong> and <strong>Align...</strong> process rectangular selections. The selection can be a single column, or multiple columns separated by elastic tabs. (These commands can be used on selections that include traditional fixed tabs; but the results may not be as expected, since they treat tabs as logical separators, ignoring physical positioning.) Alignment is accomplished by adding and/or removing ASCII spaces at the beginning and/or end of a column; therefore, precise alignment is not always possible when using proportionally-spaced fonts.</p>
+
+<h3>Align numeric</h3>
+
+<p>Details about how numbers are recognized and interpreted are given in the section on <a href="#numberformats">Number formats</a>. The alignment of items which are not recognized as numbers is unchanged. The <strong>Decimal separator is comma</strong> item near the bottom of the <strong>Columns++</strong> menu determines whether the comma or the period is the decimal separator.</p>
+
+<p>The settings in the <a href="#timeformats">Time formats</a> dialog determine how numeric alignment proceeds when there are numbers with colons. The <strong>Numbers with one or two colons represent</strong> setting identifies which colon (days<strong>:</strong>hours, hours<strong>:</strong>minutes or minutes<strong>:</strong>seconds) is present in all numbers with colons; that colon is aligned across all lines. Numbers without colons are aligned according to the <strong>Time units: numbers with no colons represent</strong> setting, such that they line up with the position that same unit would occupy in a time-formatted number with four segments, all of which except days have two integer digits (e.g., “1:00:00:00”).</p>
+
+<h3>Custom alignment</h3>
+
+<p>The <strong>Align...</strong> command opens a dialog which allows you to specify a string of one or more characters, or a regular expression, to be aligned in the column or columns within a rectangular selection:</p>
+
+<table class=optionsTable>
+<tr><th>Align by</th><td><p>Specify a character, a string of characters, or a regular expression to be aligned in each column.</p>
+<p>Items in which this character string or regular expression does not match are not changed.</p>
+<p>Regular expression matches are aligned by the start (leftmost position) of the match. To align by some other part of the match, rewrite it using a lookbehind assertion or the <strong>\K</strong> directive. It does not matter what characters are included in the match, only the position at which it starts.</p></td></tr>
+<tr><th>First<br>Last<br>Regular&nbsp;expression</th><td>Choose whether to align using the first or the last occurrence of the <strong>Align by</strong> character or string in each row, or whether to interpret the <strong>Align by</strong> specification as a regular expression.</td></tr>
+<tr><th>Match&nbsp;case</th><td>Check to distinguish upper and lower case when the string to be matched includes letters.</td></tr>
+<tr><td colspan=2>The following settings can be useful when the column to be processed includes some lines which will not be aligned (because the <strong>Align by</strong> character, string or expression does not match). Since unmatched items are not changed, you can use the margin settings to control how the set of aligned items, taken together, is placed relative to the unmatched lines. In other situations, the default of <strong>0 Left</strong> is usually best.</td></tr>
+<tr><th>Margin</th><td>Specify number of space characters, if any, to be used as a margin between the edge of the column and the aligned items.</td></tr>
+<tr><th>Left<br>Right</th><td>Choose whether aligned items should be positioned relative to the left side or the right side of the column in which they occur. The margin is relative to this side of the column.</td></tr>
+</table>
+
+</section>
+
+<section id=timestamps><h2>Timestamps</h2>
+
+<p>The <strong>Timestamps...</strong> command opens a dialog that lets you convert between common timestamp formats. The command requires a rectangular selection, which can be a single column or multiple columns separated by tabs. The dialog is comprised of five sections: <strong>From counter</strong>, <strong>From date and time</strong>, <strong>Time zones and locale</strong>, <strong>To counter</strong> and <strong>To date and time</strong>.</p>
+
+<p>The <strong>Overwrite selection</strong> checkbox at the bottom left of the dialog controls whether the results of the conversion replace the selected timestamps (checked) or whether one or more new columns are added to the right of the selection to hold the results (default, unchecked).</p>
+
+<p><em>Note: The <strong>Timestamps...</strong> command does not work properly on older versions of Windows. <strong>Columns++</strong> attempts to detect this and removes the menu item on those systems. Based on Microsoft documentation, the author expects that it will be fully functional on Windows 10 version 1903/19H1 and later, and on Windows Server 2022 and later; it may work on some older systems with the exception of time zone functionality.</em></p>
+
+<h3>From counter</h3>
+
+<p><strong>From counter</strong> processing may be enabled or disabled using the check box at the top left of the section. When enabled, this section controls the interpretation of any items in the selection which consist of a single number. The number is treated as a counter representing elapsed time. The starting point is called the <em>epoch</em> and the length of time represented by an increase of one in the counter is called the <em>unit</em>.
+
+<p><em>Note: As with other</em> <strong>Columns++</strong> <em>commands, numbers to be recognized as counters can include spaces, apostrophes and either commas or periods (whichever is not selected as the decimal separator). If your data contains date and time formats that are separated only by these characters (for example, <tt>12.10.1980</tt> if</em> <strong>Decimal separator is comma</strong> <em>is selected), be sure to disable the</em> <strong>From counter</strong> <em>section. You can leave it enabled if all your date and time formatted data uses separators that would disqualify the entries as numbers.</em></p>
+
+<table class=optionsTable>
+<tr><th>Unix time</th><td><p>a common timestamp counter, for which the epoch is January 1st, 1970 and the unit is one second. Unix time does not count leap seconds.</p></td></tr>
+<tr><th>Windows filetime</th><td><p>the timestamp format used to store creation, modification and access dates of files in Windows. Its epoch in January 1st, 1601 and its unit is 100 nanoseconds. Windows filetime counts leap seconds.</p></td></tr>
+<tr><th>Excel 1900</th><td><p>the default date system for Excel for Windows, and for Excel for Mac beginning with Excel 2016. It counts in days, beginning with <strong>1</strong> for January 1st, 1900 and counting <a href="https://learn.microsoft.com/en-us/office/troubleshoot/excel/wrongly-assumes-1900-is-leap-year">February 29th, 1900</a> (even though there was no such date, since 1900 was not a leap year). The count does not include leap seconds.</p></td></tr>
+<tr><th>Excel 1904</th><td><p>the default date system for Excel for Mac prior to Excel 2016. The epoch is January 1st, 1904, the unit is 1 day, and leap seconds are not counted.</p></td></tr>
+<tr><th>Custom</th><td><p>enables the <strong>Epoch</strong>, <strong>Unit</strong> and <strong>Include leap seconds in count</strong> controls to define counter specifications.</p></td></tr>
+<tr><th>Epoch</th><td><p>specifies the date and time corresponding to a counter value of zero. Enter this as a four-digit year, a dash, a one- or two-digit month, a dash, and a one- or two-digit day, optionally followed by a space and a time in hours, minutes and seconds (including up to seven decimal places), separated by colons.</p>
+<p><em>Note: This field is always specified in Universal Coordinated Time. If you have a counter which counts relative to a local date and time, enter the corresponding UTC date and time here.</em></p></td></tr>
+<tr><th>Unit</th><td><p>the number of seconds corresponding to an increase of one in the counter. The smallest possible value is  <strong>1e-7</strong> (or <strong>.0000001</strong>), corresponding to 100 nanoseconds. Use <strong>.001</strong> to represent one millisecond, <strong>1</strong> to represent one second or <strong>86400</strong> to represent one day.</p></td></tr>
+<tr><th>Include leap seconds in count</th><td><p>when checked, the count includes <em>leap seconds</em>. Leap seconds are occasional one-second adjustments made to keep clock time synchronized to astronomical time. Ignoring leap seconds makes the correspondence between timestamp counters and clock time straightforward, but if a leap second occurs between two such timestamps, the difference between the timestamps will not accurately represent the elapsed time. Most timestamps ignore leap seconds; Windows filetime is a notable exception. For a more comprehensive explanation, see <a href="https://en.wikipedia.org/wiki/Leap_second">Leap second</a> on Wikipedia.</p></td></tr>
+</table>
+
+<h3>From date and time</h3>
+
+<p><strong>From date and time</strong> processing may be enabled or disabled using the check box at the top left of the section. When enabled, this section controls the interpretation of any items in the selection which were not processed by the <strong>From counter</strong> section.</p>
+
+<table class=optionsTable>
+<tr><th style="white-space: nowrap;">year-month-day<br>month-day-year<br>day-month-year</th><td><p>When one of these options is selected, <strong>Columns++</strong> tries to interpret each item as a date and an optional time following the date. The parsing algorithm recognizes names and abbreviations for months in the current locale. When the order of month, day and year is ambiguous (e.g., <strong>12-08-04</strong>), the selected order is used (e.g., <strong>August 4th, 2012</strong>; <strong>December 8th, 2004</strong>; or <strong>August 12th, 2004</strong>).</p></td></tr>
+<tr><th>yy limit</th><td>specifies the latest year represented by a two-digit year; two-digit years are interpreted as years from 99 years before this year through this year.</td></tr>
+<tr><th>Parse</th><td><p>Selecting this option allows you to specify a regular expression; <strong>Columns++</strong> attempts to match the expression to each item and, when the match succeeds, named capture groups are used to designate the elements of the date and time. The name of each capture group is a single, case-sensitive letter:</p>
+<table class=optionsTable>
+<tr><th>y</th><td>year</td></tr>
+<tr><th>M</th><td>month (1-12 or the name or abbreviation in the current locale)</td></tr>
+<tr><th>d</th><td>day of the month</td></tr>
+<tr><th>D</th><td>day of the year</td></tr>
+<tr><th>H</th><td>hour (0-23 if <strong>t</strong> is null, 1-12 if <strong>t</strong> is not null)</td></tr>
+<tr><th>m</th><td>minute</td></tr>
+<tr><th>s</th><td>second (may include decimals)</td></tr>
+<tr><th>t</th><td>am or pm (may be the designator for the current locale or the first letter of the designator)</td></tr>
+<tr><th>Z</th><td>an ISO 8601 time zone offset — the letter <strong>Z</strong>, or a plus or minus sign followed by two digits, four digits, or two digits, a colon and two digits representing the hours and minutes ahead of (East, plus sign) or behind (West, minus sign) UTC by which the given times have been offset</td></tr>
+</table>
+<p>The groups <strong>y</strong> and either <strong>D</strong> or both <strong>M</strong> and <strong>d</strong> must match and provide valid values for the parse to succeed.</p>
+<p><strong>Example</strong>: Suppose you have entries of the form <tt>2018.113t14.08</tt> representing 14:08 on the 113th day of 2018; you could use <strong style="white-space: nowrap;">(?&lt;y&gt;\d+)\.(?&lt;D&gt;\d+)t(?&lt;H&gt;\d+)\.(?&lt;m&gt;\d+)</strong> to parse them.</p>
+</td></tr>
+</table>
+
+<h3>Time zones and locale</h3>
+
+<p><strong>Time zones and locale</strong> specification may be enabled or disabled using the check box at the top left of the section. When enabled, this section lets you specify the time zones and the locale to be used. When this section is disabled (the default condition), Universal Coordinated Time is assumed and the locale of your Windows system is used. Only enable this section when you need to use specified time zones instead of Universal Coordinated Time, or to interpret or format dates and times in another language.</p>
+
+<p>The top row in this section lets you choose the region and time zone assumed when parsing dates and times which do not include a time offset, and the region and time zone used to format generated dates and times. The bottom row lets you choose the language and locale used. Neither time zones nor locales apply to counters.</p>
+
+<h3>To counter</h3>
+<p>The <strong>To Counter</strong> button closes the dialog and converts timestamps to the specified counter. The other settings in this section have the same meaning as in the corresponding settings in the <strong>From counter</strong> section.</p>
+
+<h3>To date and time</h3>
+
+<p>The <strong>To Date/Time</strong> button closes the dialog and converts timestamps to the specified date and time format. An example of a date and time formatted as specified is shown just above the button. </p>
+
+<table class=optionsTable>
+<tr><th>ISO 8601</th><td><p>Format the date and time according to the ISO 8601 standard; equivalent to specifying <strong style="white-space: nowrap;">yyyy-MM-dd'T'HH:mm:ss.sssZ</strong> as a custom picture.</td></tr>
+<tr><th>Locale short</th><td><p>Use the short date and short time formats from Windows regional settings, separated by a space.<br><em>Note: Windows locale formats cannot render dates before January 1st, 1601.</em></p></td></tr>
+<tr><th>Locale long</th><td><p>Use the long date and long time formats from Windows regional settings, separated by a space.<br><em>Note: Windows locale formats cannot render dates before January 1st, 1601.</em></p></td></tr>
+<tr><th>Custom</th><td><p>Use the specified picture to format the date and time. The picture format is similar to that used for specifying date and time formats in Windows settings:</p>
+<table class=optionsTable>
+<tr><th>yy</th><td>two-digit year</td></tr>
+<tr><th>yyyy</th><td>four-digit year</td></tr>
+<tr><th>D</th><td>day of the year as one to three digits</td></tr>
+<tr><th>DDD</th><td>day of the year as three digits (with leading zeros for 1-99)</td></tr>
+<tr><th>M</th><td>month as one or two digits</td></tr>
+<tr><th>MM</th><td>month as two digits (with a leading zero for 1-9)</td></tr>
+<tr><th>MMM</th><td>abbreviation for the month</td></tr>
+<tr><th>MMMM</th><td>name of the month</td></tr>
+<tr><th>MMMMM</th><td>name of the month, padded with blanks as needed to equal the length of the longest name</td></tr>
+<tr><th>NNNN</th><td>name of the month (nominative case)<br><em>Note: Some locales support nominative and genitive cases of the names of months; for those locales,</em> <strong>MMMM</strong> <em>substitutes the genitive case and</em> <strong>NNNN</strong> <em>the nominative case. In locales without this distinction, both names are the same.</td></tr>
+<tr><th>NNNNN</th><td>name of the month (nominative case), padded with blanks as needed to equal the length of the longest name</td></tr>
+<tr><th>d</th><td>day of the month as one or two digits</td></tr>
+<tr><th>dd</th><td>day of the month as two digits (with leading zero for 1-9)</td></tr>
+<tr><th>ddd</th><td>the abbreviation for the day of the week</td></tr>
+<tr><th>dddd</th><td>the name of the day of the week</td></tr>
+<tr><th>ddddd</th><td>the name of the day of the week, padded with blanks as needed to equal the length of the longest name</td></tr>
+<tr><th>H</th><td>hour (0-23) as one or two digits</td></tr>
+<tr><th>HH</th><td>hour (00-23) as two digits (with leading zero for 0-9)</td></tr>
+<tr><th>h</th><td>hour (1-12) as one or two digits</td></tr>
+<tr><th>hh</th><td>hour (01-12) as two digits (with leading zero for 0-9)</td></tr>
+<tr><th>m</th><td>minute as one or two digits</td></tr>
+<tr><th>mm</th><td>minute as two digits (with leading zero for 0-9)</td></tr>
+<tr><th>s</th><td>seconds as one or two digits</td></tr>
+<tr><th>ss</th><td>seconds as two digits (with leading zero for 0-9)</td></tr>
+<tr><th>T</th><td>initial letter of AM/PM designation for the current locale</td></tr>
+<tr><th>TT</th><td>AM/PM designation for the current locale</td></tr>
+<tr><th>t</th><td>initial letter of am/pm designation for the current locale, forced to lower case</td></tr>
+<tr><th>tt</th><td>am/pm designation for the current locale, forced to lower case</td></tr>
+<tr><th>z</th><td>the effective time zone offset from UTC, as a plus or minus sign, two hours digits, a colon and two minutes digits</td></tr>
+<tr><th>zz</th><td>the effective time zone offset from UTC, as a plus or minus sign and two hours digits, followed by a colon and two minutes digits only if the minutes are non-zero</td></tr>
+<tr><th>zzzz</th><td>the effective time zone offset from UTC, as a plus or minus sign, two hours digits and two minutes digits</td></tr>
+<tr><th>Z ZZ ZZZZ</th><td>the same as <strong>z</strong>, <strong>zz</strong> and <strong>zzzz</strong>, but substituting the letter <strong>Z</strong> when the offset is zero.</td></tr>
+<tr><th>ZZZ</th><td>an abbreviation for the effective time zone
+<br><em>Note: Time zone abbreviations are not unambiguous. They can be useful for human-readable data where the context is understood, but they cannot be interpreted for further processing. Use an ISO 8601 time zone offset if you may need to process it further.</em></td></tr>
+<tr><th>xD</th><td>right-justified day of the year (three characters, with leading blanks for 1-99)</td></tr>
+<tr><th>xM xd xH xh xm xs</th><td>same as <strong>M</strong>, <strong>d</strong>, etc. but right-justified with a leading blank for values less than 10</td></tr>
+<tr><th>.sssssss<br>,sssssss</th><td><strong>s</strong>, <strong>ss</strong> or <strong>zs</strong> may be followed by a period or a comma and one to seven <strong>s</strong> characters to format decimal seconds.</td></tr>
+<tr><th>'</th><td>Enclose literal strings in apostrophes; within a literal string, use two apostrophes to represent one.</td></tr>
+</table>
+
+<p>All other characters are copied verbatim to the result.</p>
+
+</td></tr>
+</table>
+
+</section>
+
+<section id=sorting><h2>Sorting</h2>
+
+<p><strong>Notepad++</strong> supports sorting lines using a rectangular selection to define the sort keys, but this does not work as expected when tabs (whether elastic or traditional fixed) are used. The sort commands in <strong>Columns++</strong> use a rectangular selection to identify the sort keys and work as expected when tabs are present. These are “stable” sorts, meaning the order of lines with equal sort keys is unchanged. There are three variants of ascending and descending sorts:</p>
+
+<table class=optionsTable>
+<tr><th>binary</th><td>The raw byte values of the internal representations of the selected sort strings are used as sort keys. For most purposes, this matches what you would expect from a “case sensitive” sort, with the sort order dependent on the active code page. Unicode files sort by code point.</td></tr>
+<tr><th>locale</th><td>The sort order is defined by the current Windows locale. For most purposes, this matches what you would expect from a “case insensitive” sort.</td></tr>
+<tr><th>numeric</th><td>The selections on each line are interpreted as tab-separated numbers. The <a href="#numberformats">Number formats</a> section describes in detail how <strong>Columns++</strong> recognizes numbers. Items which can’t be interpreted as numbers sort first (whether the sort is ascending or descending).</td></tr>
+</table>
+
+<h3>Custom sorts</h3>
+
+<p>In addition to the six immediate sort commands on the <strong>Columns++</strong> menu, you can use the <strong>Sort...</strong> command to open a dialog giving you more control over the details of the sort:</p>
+
+<table class=optionsTable>
+<tr><th colspan=2 class=group>What to sort</th></tr>
+<tr><th>Whole lines</th><td>Individual lines remain intact and are sorted using the column selection to define the sort keys.</td></tr>
+<tr><th>Selected text only</th><td><p>Only the selected portions of lines are sorted; the surrounding text on each line remains in place.</p>
+<p><em>Note: This will result in blank-padding lines in the selection which do not extend to or past the right boundary of the column selection. If elastic tabstops are enabled and the number of tabs included in the column selection is different on different lines (for example, because some lines are short), results using <strong>Selected text only</strong> are unlikely to be as expected.</em></p></td></tr>
+</table>
+
+<table class=optionsTable>
+<tr><th colspan=2 class=group>Sort direction</th></tr>
+<tr><th>Ascending</th><td>Smaller numbers, narrower text, or characters earlier in the collating sequence, come first.</td></tr>
+<tr><th>Descending</th><td>Larger numbers, wider text, or characters later in the collating sequence, come first.</td></tr>
+</table>
+
+<table class=optionsTable>
+<tr><th colspan=2 class=group>Sort type</th></tr>
+<tr><th>Binary</th><td>The raw byte values of the internal representations of the selected sort strings are used as sort keys. For most purposes, this matches what you would expect from a “case sensitive” sort, with the sort order dependent on the active code page. Unicode files sort by code point.</td></tr>
+<tr><th>Locale</th><td>The sort order is defined by a Windows locale, as specified in the <strong>Locale sort details</strong> section.</td></tr>
+<tr><th>Numeric</th><td>Sort strings are interpreted as numbers, as described in the <a href="#numberformats">Number formats</a> section. Strings which can’t be interpreted as numbers sort first (whether the sort is ascending or descending). When <strong>Regular expression</strong> is selected, the regular expression is used to parse the selected text on each line; in all other cases, the text is interpreted as a sequence of tab-separated values.</td></tr>
+<tr><th>Width</th><td>The visible width of the selected sort strings are used as keys.</td></tr>
+</table>
+
+<table class=optionsTable>
+<tr><th colspan=2 class=group>Sort key</th></tr>
+<tr><th>Entire column</th><td>The selected text on each line is used as the sort key.</td></tr>
+<tr><th>Ignore surrounding blanks/tabs</th><td>For <strong>Binary</strong> and <strong>Locale</strong> sorts, leading and trailing blanks and tabs in the text selected on each line are ignored, and the remaining text is used as the sort key. For <strong>Numeric</strong> sorts, this option behaves the same as <strong>Entire column</strong> (the text is treated as tab-separated values regardless of which option is selected, which is the same as the immediate numeric sorts on the <strong>Columns++</strong> menu).</td></tr>
+<tr><th>Tabbed</th><td>The selected text is tab-separated; sort keys must be specified in the <strong>Keys</strong> box.</td></tr>
+<tr><th>Regular expression</th><td>A regular expression is used to parse the selected text on each line.</td></tr>
+<tr><th>Find what</th><td>Specifies a regular expression. The first match of the expression within the selected text in each line will be used to determine the sort key.</td></tr>
+<tr><th>Match case</th><td>When checked, the regular expression match is case sensitive; otherwise, the case of the text is ignored.</td></tr>
+<tr><th>Specify keys using capture groups</th><td>When checked, the <strong>Keys</strong> box specifies the sort sequence in terms of capture groups. When unchecked, the text matched by the regular expression is used as the sort key.</td></tr>
+<tr><th>Keys</th><td><p>A list of keys, separated by spaces, commas and/or semicolons, to be used for sorting. The major sort key is listed first, with subsequent keys having lower precedence. Each key is designated with a number. If <strong>Tabbed</strong> is selected, the number indicates a tab-separated field, numbered left to right counting from 1; 0 represents the entire selected text in the line. If <strong>Regular expression</strong> is selected, the number is the number of a capture group; 0 represents the entire match.</p>
+<p>Each sort key number may be followed (without intervening spaces) by one of the letters <strong>a</strong> or <strong>d</strong>, and/or one of the letters <strong>b</strong>, <strong>l</strong>, <strong>n</strong> or <strong>w</strong>. These specify <strong>a</strong>scending, <strong>d</strong>escending, <strong>b</strong>inary, <strong>l</strong>ocale, <strong>n</strong>umeric and <strong>w</strong>idth, overriding the selections in the <strong>Sort direction</strong> and/or <strong>Sort type</strong> boxes for the capture group or tab field to which they are appended.</p></td></tr>
+</table>
+
+<table class=optionsTable>
+<tr><th colspan=2 class=group>Locale sort details</th></tr>
+<tr><td colspan=2><em>Locale sorting makes use of the Windows API function <a href="https://learn.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-lcmapstringex">LCMapStringEx</a>. The exact behavior of the sort is dependent on the exact behavior of this function; the following attempts to describe the most important points.</em></td></tr>
+<tr><th>Language</th><td>Selects the language for which a selection of locales will be offered.</td></tr>
+<tr><th>Locale</th><td>Selects a Windows locale from those available for the selected language.</td></tr>
+<tr><th>Case sensitive</th><td>Case sensitivity in a linguistic sort is not applied character by character; instead, when and only when two strings match completely except for case, case is applied to further sort them. Consequently, when this box is checked, the result will still not resemble what most users expect of a “case sensitive” sort. When this box is unchecked, the LINGUISTIC_IGNORECASE flag is passed to LCMapStringEx.</td></tr>
+<tr><th>Sort digits as numbers</th><td>This causes the sort to attempt to recognize strings including digits — like “data5” and “data10” — in such a way that “data5” will sort before “data10” in an ascending sort instead of after. The same algorithm is used to sort file names in Windows File Explorer. When this box is checked, the SORT_DIGITSASNUMBERS flag is passed to LCMapStringEx.</td></tr>
+<tr><th>Ignore diacritics</th><td>Windows API documentation says: <em>Ignore nonspacing characters, as linguistically appropriate. Note: This flag does not always produce predictable results when used with decomposed characters, that is, characters in which a base character and one or more nonspacing characters each have distinct code point values.</em> When this box is checked, the LINGUISTIC_IGNOREDIACRITIC flag is passed to LCMapStringEx.</td></tr>
+<tr><th>Ignore symbols and punctuation</th><td>This causes spaces, punctuation and “symbols” (the documentation is not more specific) to be ignored. Strings are sorted as if all the letters and numbers were run together, ignoring spaces, hyphens, periods and so on. When this box is checked, the NORM_IGNORESYMBOLS flag is passed to LCMapStringEx.</td></tr>
+</table>
+
+</section>
+
+<section id=conversion><h2>Conversion</h2>
+
+<h3>Convert tabs to spaces</h3>
+
+<p>Use <strong>Convert tabs to spaces</strong> on any selection to replace tabs in the selection with equivalent spaces, taking elastic tabstops into account if enabled. If nothing is selected, the entire file is converted.</p>
+
+<h3>Convert separated values to tabs...<br>Convert tabs to separated values...</h3>
+
+<p>These commands convert the selection, or the entire file if nothing is selected, between delimiter-separated values (typically *.csv, comma-separated values) and tabbed presentation (typically *.tsv or tab-separated values).</p>
+
+<p>Both delimiter-separated values and tab-separated values use a structure comprised of <em>records</em> (rows) containing <em>fields</em> (which are interpreted as being arranged in columns). In tabbed documents, each line of the file is a record, and fields within a record are separated by tabs. Fields cannot contain tabs or line-ending characters as such, but these can be encoded, typically using backslash notation (\t, \n, \r for tab, new line and return). Consistency requires that the encoding character must also be encoded (e.g., two backslashes in the file to represent a single backslash in the field’s value).</p>
+
+<p>In delimiter-separated files, records are divided by line breaks and fields are divided by a separator character, typically a comma. However, when a field contains the separator character or line-ending characters, the problematic characters are <em>escaped</em> rather than encoded, meaning that the original character is still used in the file, but context indicates that it is not to be interpreted as a field or record separator. Typically, quote marks surround a field which contains line-ending or separator characters, and quotes within the field are doubled.</p>
+
+<p>There are many variations in the details of data representation in delimiter-separated and tab-separated values files. When you select <strong>Convert separated values to tabs...</strong> or <strong>Convert tabs to separated values...</strong>, <strong>Columns++</strong> displays a dialog in which you can adjust the conversion accordingly:</p>
+
+<table class=optionsTable>
+<tr><th>Column separator</th><td>
+
+<table class=optionsTable>
+<tr><th>Comma</th><td rowspan=3>selects the column separator for the separated values.</td></tr>
+<tr><th>Semicolon</th></tr>
+<tr><th>Vertical line</th></tr>
+<tr><th>Other</th><td>
+specifies the column separator as any single character within the Unicode Basic Multilingual Plane except for null, line feed or carriage return.</td></tr>
+</table>
+
+</td></tr>
+<tr><th>Separated values syntax</th><td>
+
+<table class=optionsTable>
+<tr><th>Quote</th><td rowspan=2>recognizes quotes and/or apostrophes at the beginning of a field as the start of a quoted field, in which line-ending and separator characters are part of the field value.</td></tr>
+<tr><th>Apostrophe</th></tr>
+<tr><th>Escape character</th><td>
+defines an escape character for separated values. The character following an escape character is used unchanged as a part of the field value, without any special meaning (that is, it doesn’t separate fields or records or begin or end a quoted field).
+</td></tr>
+<tr><th>Preserve quotes, escapes and blanks when converting to tabbed</th><td>
+<p>indicates that quotation marks, apostrophes, escape characters and leading and trailing blanks within separated values fields are copied as is to the tabbed presentation.</p>
+<p>This tends to “clutter” the appearance of the tabbed document; however, it makes it possible to “round-trip” to tabs and back to separated values without any change in fields that were not edited. If you intend to convert a separated values file to tabbed presentation for ease of editing and there are non-standard details in the way quotes, escapes or blanks are used in the separated values file which must be preserved when converting back, keep this box checked for both conversions.</p>
+<p>When this box is unchecked, <strong>Columns++</strong> quotes or escapes fields containing leading blanks or quotes anywhere in the field when converting from tabbed presentation to separated values. When checked, so long as the field will not cause a parsing failure — such as by containing an unquoted and unescaped separator character, or by beginning with a quote but not being a properly quoted field when taken in its entirety — <strong>Columns++</strong> will preserve the field as is.</p>
+</td></tr>
+</table>
+
+<tr><th>Tab, new line and return characters in tabbed documents</th><td>
+<p>Fields in tabbed presentation cannot contain tabs or line-ending characters; if there are any of these characters in separated values fields, they must be encoded or replaced when converting to tabs.
+<table class=optionsTable>
+<tr><th>Backslash-style encoding</th><td><p>The specified character (<strong>\</strong> by default) followed by <strong>t</strong>, <strong>n</strong> or <strong>r</strong> encodes a tab, new line or return; the encoding character is doubled to indicate a single occurrence in the data. Encoding is applied when converting from separated values to tabbed presentation and reversed when converting from tabbed presentation to separated values.</p><p>This encoding method, using the backslash as the encoding character, is probably the most commonly-understood way to represent tabs and line-ending characters in tabbed presentation; however, it is inconvenient for reading and editing if the data includes Windows file paths, since all backslash characters in the data are doubled.</p></td></tr>
+<tr><th>URL-style encoding</th><td>The specified character (<strong>%</strong> by default) followed by two hexadecimal digits (numeric digits or the letters A-F in either case) encodes a byte value; <strong>%09</strong>, <strong>%0A</strong> and <strong>%0D</strong> encode tab, line feed and return. When converting from separated values to tabbed presentation, these three are encoded; the per cent symbol or other specified character is encoded only if it is followed by two hexadecimal digits. When converting from tabbed presentation to separated values, any occurrence of the specified character followed by two hexadecimal digits is decoded to a byte in the code page active for the file.</td></tr>
+<tr><th>Replace when converting to tabbed</th><td>indicates that the disallowed characters are replaced with the text specified when converting to tabbed presentation; no attempt is made to restore the original characters when converting from tabs to separated values.</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+</section>
+
+<section id=numberformats><h2>Number formats</h2>
+
+<p><strong>Columns++</strong> interprets characters in a document as numbers in many contexts, including the <a href="#calculation">Calculation</a> commands, the <a href="#alignment">Align numeric</a> command, numeric <a href="#sorting">sort</a> fields and formula substitutions in regular expression <a href="#search">searches</a>.</p>
+
+<p>Numbers can include thousands separators and decimals. The <strong>Decimal separator is comma</strong> item near the bottom of the <strong>Columns++</strong> menu determines whether the comma or the period is the decimal separator; thousands separators may be a space, an apostrophe, or whichever of comma or period is not the decimal separator. Numbers can also be times, using colons to separate days, hours, minutes and seconds.</p>
+
+<h3>Internal representation of numeric values and accuracy of calculations</h3>
+
+<p>When <strong>Columns++</strong> performs calculations, it represents numeric values internally as <a href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format">double precision floating point</a> numbers. Any number up to 9,007,199,254,740,992 without a fraction or decimal, positive or negative, is represented exactly. Most fractions and decimals cannot be represented exactly, but in ordinary use, rounding to a reasonable number of decimal places (so that the total number of digits before and after the decimal is under 15) will make discrepancies irrelevant. Numeric results which exceed 9,007,199,254,740,992 in absolute value are represented in <a href="https://en.wikipedia.org/wiki/Scientific_notation">scientific notation</a>.</p>
+
+<h3>Recognizing numbers in documents</h3>
+
+<p>There is some flexibility in what can be included along with a number in a column or a regular expression match. Common currency signs can precede the number with or without a space, and a minus sign can precede or follow a currency sign. Non-numeric characters (such as units, like “mg” or “ft”) can follow the number. (These are not interpreted, though; <strong>Columns++</strong> will add 5 yards and 5 inches to get 10 without complaint.) Non-numeric characters can precede the number if they are separated from the number by at least one space.</p>
+
+<ul>
+
+<li><strong>Add numbers</strong> and <strong>Average numbers</strong> skip items that have no digits; but if an item which includes one or more digits cannot be unambiguously interpreted as a number, <strong>Columns++</strong> will select the item and will not perform the calculation.
+
+<li>In <a href="#formulas">formulas</a>, variables and functions which represent numbers in the document are set to <em>Not-a-Number</em> if the associated document text cannot be unambiguously interpreted as a number.
+
+<li>When sorting numerically, fields which cannot be unambiguously interpreted as numbers sort to the beginning.
+
+<li><strong>Align numeric</strong> uses slightly more lenient rules for recognizing numbers; the alignment of items which are not recognized as numbers is unchanged. The limitations in the <i>Internal representation of numeric values and accuracy of calculations</i> section above do not apply to <strong>Align numeric</strong>, as this command does not convert numbers to internal representation.
+
+</ul>
+
+<h3>Decimal separator is comma</h3>
+
+<p><strong>Decimal separator is comma</strong> may be checked or unchecked to control how <strong>Columns++</strong> interprets numbers. This setting is maintained per document (while the document remains open), so it can be different in different tabs.</p>
+
+<h3 id=timeformats>Time formats</h3>
+<p><strong>Time formats...</strong> opens a dialog that allows you to control how <strong>Columns++</strong> interprets and shows numbers represented as times.</p>
+
+<table class=optionsTable>
+<tr><th colspan=2 class=group>Time units: numbers with no colons represent</th></tr>
+<tr><th>days<br>hours<br>minutes<br>seconds</th><td>Select the unit for calculations involving times. In calculations involving times, times specified without colons are interpreted as being in this unit, and times specified with colons are converted to this unit.</td></tr>
+<tr><th colspan=2 class=group>Numbers with one or two colons represent</th></tr>
+<tr><th>
+<table class=justAlign>
+<tr><td>days:hours</td><td>days:hours:minutes</td></tr>
+<tr><td>hours:minutes</td><td>days:hours:minutes</td></tr>
+<tr><td>hours:minutes</td><td>hours:minutes:seconds</td></tr>
+<tr><td>minutes:seconds</td><td>hours:minutes:seconds</td></tr>
+</table>
+</th><td>Select the way times with one or two colons will be interpreted. (Times with three colons are always <strong>days:hours:minutes:seconds</strong>.)</td></tr>
+<tr><th colspan=2 class=group>Results of calculations can use these formats for times</th></tr>
+<tr><th>
+<table class=justAlign>
+<tr><td>1 segment</td><td><em>unit</em></td></tr>
+<tr><td>2 segments</td><td><em>unit1</em>:<em>unit2</em></td></tr>
+<tr><td>3 segments</td><td><em>unit3</em>:<em>unit4</em>:<em>unit5</em></td></tr>
+<tr><td>4 segments</td><td>days:hours:minutes:seconds</td></tr>
+</table>
+</th><td>Check the box before each format to enable results to be shown in that format when times are displayed. The <a href="#calculation">Calculation</a> commands and <a href="#formatFormula">formula substitutions</a> in regular expression search replacements can show their results as times; when time display is enabled, these settings determine which formats can be used for results.</td></tr>
+</table>
+
+</section>
+
+<section id=options><h2>Options</h2>
+
+<p><strong>Options...</strong> opens a dialog that allows you to control some aspects of <strong>Columns++</strong>:
+
+<table class=optionsTable>
+<tr><th>Show Columns++ on the main menu bar.</th><td>lets you choose whether to add an entry for <strong>Columns++</strong> to the main menu bar, just to the left of the <strong>Plugins</strong> menu, or leave it as an entry on the <strong>Plugins</strong> menu.</td></tr>
+<tr><th>Replace: Don't move to the following occurrence.</th><td>has the same effect as the option of the same name on the <strong>Searching</strong> panel of the <strong>Preferences</strong> dialog in <strong>Notepad++</strong>, but for the <strong>Search in indicated region</strong> dialog in <strong>Columns++</strong>. When checked, the <strong>Replace</strong> button in the search dialog does not immediately perform another find after replacing text; in effect, the button alternates between finding and replacing, giving you a chance to see the effect of the replace before moving to the next occurrence of the search string.</td></tr>
+<tr><th>Show Elastic tabstops progress dialog when seconds remaining exceeds about:</th><td>lets you choose the minimum estimated remaining time, from 1 to 20 seconds, that will cause <strong>Columns++</strong> to display a progress dialog during a long-running Elastic tabstops operation. The default is 2.</td></tr>
+</table>
+
+<table class=optionsTable id="options-autoextend">
+<tr><th colspan=2 class=group>Automatically extend selections to form rectangles</th></tr>
+<tr><td colspan=2>You can enable “implicit” selections for <strong>Columns++</strong> commands that require rectangular selections, bypassing the dialogs that ask you if you want to make a rectangular selection.</td></tr>
+<tr><th>Selections on one line extend downward to the last line.</th>
+<td>A selection of one or more characters on a single line is “projected” downward to the last line of the file. This allows you to select full columns (skipping headers, if desired) without scrolling all the way to the end of the file. If the last line of the file is completely empty (that is, the file ends with an end-of-line sequence) that line will not be included in the selection.</td></tr>
+<tr><th>Full row selections are replaced by the enclosing rectangle.</th>
+<td>A single selection of complete lines is replaced by a rectangular selection wide enough to include all the text on all lines in the selection. Usually you get this kind of selection by dragging in the left margin. If the selection ends at the beginning of a line (as when dragging downward in the left margin), that line is not included in the rectangular selection. The selection made by <strong>Edit|Select All</strong> will be converted to a rectangular selection that encompasses the entire file (excluding the last line, if it consists of only a line ending).</td></tr>
+<tr><th>Zero-width selections extend to the right to the end of the longest line.</th>
+<td>A “thin” selection, or a rectangular selection containing no characters or virtual space, is extended to the right far enough to enclose the end of the longest line in the selection. When selecting a rectangular region meant to extend from some column far enough to the right include the ends of all lines, this avoids the need to scroll through and figure out how wide the selection needs to be.</td></tr>
+</table>
+
+<table class=optionsTable>
+<tr><th colspan=2 class=group>Custom style for Search in indicated region</th></tr>
+<tr><td colspan=2>
+<p>By default, <strong>Columns++</strong> defines a custom style to indicate the area to be searched by shading the background. This uses a Scintilla resource called an <em>indicator</em>; in some cases this might conflict with other plugins, so some options to control it are available here. You can also choose the color and transparency of the background.</p>
+<p><em>These options are disabled if the</em> <strong>Search in indicated region</strong> <em>dialog is open when the</em> <strong>Options</strong> <em>dialog is opened.</em></p>
+</td></tr>
+<tr><th>Enable custom style</th><td>When checked, a custom style will be available.</td></tr>
+<tr><th>Alpha, Red, Green, Blue</th><td>Specify the transparency and color of the background for the custom style.</td></tr>
+<tr><th>Override Notepad++ indicator allocation</th><td><strong>Notepad++</strong> version 8.5.6 introduced a mechanism to avoid conflicts in indicator numbers used by plugins. If this mechanism is available, <strong>Columns++</strong> will set the indicator accordingly unless this box is checked. If you have plugins installed which have not been updated to use the new mechanism, it is possible that there will still be a conflict with the indicator number <strong>Notepad++</strong> assigns; in that case, you can check this box to choose the indicator number manually. If this box is disabled, either the version of <strong>Notepad++</strong> you are running does not support the indicator allocation mechanism, or there were no available indicators remaining when this plugin was loaded.</td></tr>
+<tr><th>Indicator number</th><td>When <strong>Override Notepad++ indicator allocation</strong> is unchecked and a <strong>Notepad++</strong> indicator allocation is available, this box shows the Scintilla indicator number allocated to <strong>Columns++</strong>. Otherwise it allows you to choose the indicator number <strong>Columns++</strong> will use.</td></tr>
+</table>
+
+<table class=optionsTable>
+<tr><th colspan=2 class=group>Check for updates and show a notification at the bottom of the Columns++ menu</th></tr>
+<tr><td colspan=2>
+<p>Columns++ can check for updates. It does this by connecting to the Internet and requesting release information from GitHub. No information about your installation is sent to GitHub. This check is done when Notepad++ loads Columns++, no more often than once every twelve hours. If Columns++ finds a release newer than the one currently installed, it adds the notice <strong>Update Available</strong> to the <strong>Help/About...</strong> entry at the bottom of the <strong>Columns++</strong> menu.</p>
+</td></tr>
+<tr><th>Show for any new release</th><td>Show a notice if a release newer than the one you have installed is found.</td></tr>
+<tr><th>Show for stable releases only</th><td>Show a notice only if a stable release newer than the one you have installed is found. Releases are generally marked stable (production-ready) after they have been released for long enough that the author believes any serious problems would have been reported.</td></tr>
+<tr><th>Do not check</th><td>Select this option if you do not want Columns++ to connect to GitHub to check for new releases.</td></tr>
+</table>
+
+</section>
+
+<section id=about><h2>Help/About</h2>
+
+<p><strong>Help/About...</strong> provides access to release/version identification, this help file, and changelog, license and source information. It also allows you to check GitHub for the newest release and the latest stable release of Columns++.</p>
+
+</section>
+
+</article>
+
+</main><footer id=footer><div id=foottext class=linklist>
+
+<a href="https://notepad-plus-plus.org/">Notepad++</a> • <a href="http://www.coises.com/">coises.com (author’s web site)</a> • <a href="https://github.com/Coises/ColumnsPlusPlus">Columns++ on GitHub</a>
+
+</div><button type=button id=fontdown onclick="setFontDown();">Txt-</button><button type=button id=fontup onclick="setFontUp();">Txt+</button>
+</footer></body></html>

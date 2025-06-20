@@ -1,0 +1,36 @@
+﻿== VMware Filename Strip-Down Log - 2025-06-19 22:25:39 ==
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VGAuthCli.en.6C78E07E_E9FD_479D_942B_CD97FB809D1E -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VGAuthCli.en
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VGAuthLib.en.6C78E07E_E9FD_479D_942B_CD97FB809D1E -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VGAuthLib.en
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VGAuthService.en.6C78E07E_E9FD_479D_942B_CD97FB809D1E -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\VGAuthService.en
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmhgfs.cat_Win7.7DB59F61_11D0_48D1_9DE6_2E7789EBD659 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmhgfs.cat
+[SKIP] Conflict: vmhgfs.cat already exists in VMware
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmhgfs.inf_Win7.7DB59F61_11D0_48D1_9DE6_2E7789EBD659 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmhgfs.inf
+[SKIP] Conflict: vmhgfs.inf already exists in VMware
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmhgfs.sys_Win7.7DB59F61_11D0_48D1_9DE6_2E7789EBD659 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmhgfs.sys
+[SKIP] Conflict: vmhgfs.sys already exists in VMware
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmmouse.cat_Win7.CB532A43_B61F_406D_AFB4_BA7BC4D425E2 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmmouse.cat
+[SKIP] Conflict: vmmouse.cat already exists in VMware
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmmouse.inf_Win7.CB532A43_B61F_406D_AFB4_BA7BC4D425E2 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmmouse.inf
+[SKIP] Conflict: vmmouse.inf already exists in VMware
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmmouse.sys_Win7.CB532A43_B61F_406D_AFB4_BA7BC4D425E2 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmmouse.sys
+[SKIP] Conflict: vmmouse.sys already exists in VMware
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmusbmouse.cat_Win7.12781D4A_03BA_4CA6_83CF_69655235516A -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmusbmouse.cat
+[SKIP] Conflict: vmusbmouse.cat already exists in VMware
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmusbmouse.inf_Win7.12781D4A_03BA_4CA6_83CF_69655235516A -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmusbmouse.inf
+[SKIP] Conflict: vmusbmouse.inf already exists in VMware
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmusbmouse.sys_Win7.12781D4A_03BA_4CA6_83CF_69655235516A -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmusbmouse.sys
+[SKIP] Conflict: vmusbmouse.sys already exists in VMware
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.cat_Win10.1D753C86_ED47_40D0_B24B_E4F0756353CD -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.cat
+[SKIP] Conflict: vmxnet3.cat already exists in VMware
+[SKIP] Conflict: vmxnet3.cat already exists in VMware
+[SKIP] Conflict: vmxnet3.cat already exists in VMware
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.inf_Win10.1D753C86_ED47_40D0_B24B_E4F0756353CD -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.inf
+[SKIP] Conflict: vmxnet3.inf already exists in VMware
+[SKIP] Conflict: vmxnet3.inf already exists in VMware
+[SKIP] Conflict: vmxnet3.inf already exists in VMware
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.sys_Win10.1D753C86_ED47_40D0_B24B_E4F0756353CD -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\vmxnet3.sys
+[SKIP] Conflict: vmxnet3.sys already exists in VMware
+[SKIP] Conflict: vmxnet3.sys already exists in VMware
+[SKIP] Conflict: vmxnet3.sys already exists in VMware
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\_vm3dmp.sys_Vista.0FF146E0_2F5B_4A58_BD2B_00E00CE8E7B5 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\_vm3dmp.sys_Vista
+G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\_vm3dmp.sys_Win8.5915DE75_3E39_4B1A_BCEC_899EC4C40102 -> G:\Lab\.github\ASUS_G713QM_RESTORATION\.transfer\VMware\_vm3dmp.sys

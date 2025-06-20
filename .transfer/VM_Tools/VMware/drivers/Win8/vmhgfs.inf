@@ -1,0 +1,196 @@
+
+;-------------------------------------------------------------------------
+; vmhgfs.inf
+;
+; Copyright (c) 1993-1999, Microsoft Corporation
+; Copyright (c) 1999-2024 Broadcom. All Rights Reserved.
+; The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
+;-------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Version]
+Signature="$WINDOWS NT$"
+Class       = NetClient
+ClassGuid   = {4d36e973-e325-11ce-bfc1-08002be10318}
+Provider    = %CompanyProvider%
+DriverVer   = 07/16/2024, 11.0.47.0
+CatalogFile = vmhgfs.cat
+DriverPackageDisplayName=%loc.VMHgfsServiceDisplayName%
+DriverPackageType=FileSystem
+PnpLockdown = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; ##################################################
+
+[DestinationDirs]
+VMHgfs.DriverFiles.x64    = 12
+VMHgfs.DllFiles.x64       = 11
+VMHgfs.DllFiles_WOW64.x64 = 16425
+
+[SourceDisksNames]
+1 = %loc.Disk1%,,,""
+
+[SourceDisksFiles]
+vmhgfs.sys=1
+vmhgfs_x64.dll=1
+
+vmhgfs_x86.dll=1
+
+
+;;
+;; Installation Section
+;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[DefaultInstall]
+; AddReg              = DDInstallNdi
+OptionDesc          = %loc.VMHgfsServiceDesc%
+CopyFiles           = VMHgfs.DriverFiles.x64,VMHgfs.DllFiles.x64,VMHgfs.DllFiles_WOW64.x64
+; Characteristics     = 0x10      ;NCF_NO_SERVICE
+
+; [DefaultInstall.NetworkProvider]
+; DeviceName = %NetworkProviderDeviceName%
+
+[DefaultInstall.Services]
+AddService          = %VMHgfsServiceName%,0x800,VMHgfs.Service.x64 ; SPSVCINST_STARTSERVICE
+
+
+
+; Required for NetClient or NetService class if we get this working
+; [DDInstallNdi]
+; HKR, Ndi,Service,,%VMHgfsServiceName%
+; HKR, Ndi\Interfaces,UpperRange,,"noupper"
+; HKR, Ndi\Interfaces,LowerRange,,"nolower"
+
+; ##################################################
+
+;;
+;; Default uninstall sections
+;;
+
+[DefaultUninstall]
+DelFiles   = VMHgfs.DriverFiles.x64,VMHgfs.DllFiles.x64,VMHgfs.DllFiles_WOW64.x64
+DelReg     = VMHgfs.DelRegistry
+
+
+[DefaultUninstall.Services]
+DelService = %VMHgfsServiceName%,0x200 ; SPSVCINST_STOPSERVICE
+
+;
+; Services Section
+;
+
+[VMHgfs.Service.x64]
+DisplayName      = %loc.VMHgfsServiceDisplayName%
+Description      = %loc.VMHgfsServiceDesc%
+ServiceBinary    = %12%\vmhgfs.sys              ;%windir%\system32\drivers\vmhgfs.sys
+ServiceType      = 2                            ;SERVICE_FILE_SYSTEM_DRIVER
+StartType        = 3                            ;SERVICE_DEMAND_START
+ErrorControl     = 1                            ;SERVICE_ERROR_IGNORE
+LoadOrderGroup   = NetworkProvider
+AddReg           = VMHgfs.AddRegistry
+Dependencies     = "Mup"
+
+;
+; Registry Modifications
+;
+
+[VMHgfs.AddRegistry]
+;
+; The following does not have to be manually set as it is done by the network class
+; installer.
+; HKLM\System\CurrentControlSet\Control\NetworkProvider\Order
+;
+HKR,%RegParametersSubkeyName%,%RegServerValueName%,0x00000000,%RegServerValue%
+HKR,%RegParametersSubkeyName%,%RegShareValueName%,0x00000000,%RegShareValue%
+HKR,%RegNetworkProviderSubkeyName%,%RegProviderNameValueName%,0x00000000,%loc.RegProviderNameValue%
+HKR,%RegNetworkProviderSubkeyName%,%RegProviderPathName%, 0x20000, "%%SystemRoot%%\System32\vmhgfs.dll"
+HKR,%RegNetworkProviderSubkeyName%,%RegProviderDeviceName%,0x00000000,%RegProviderDeviceNameValue%
+; TBD -
+; Our only option is to append to the list, but we must have prepend to work without Lanman delays
+;(FLG_ADDREG_TYPE_MULTI_SZ=0x00010000 | FLG_ADDREG_APPEND=0x00000008)
+; HKLM,SYSTEM\CurrentControlSet\Control\NetworkProvider\Order,ProviderOrder,0x00010008,%VMHgfsServiceName%
+
+[VMHgfs.DelRegistry]
+HKLM,SYSTEM\CurrentControlSet\Services\%VMHgfsServiceName%
+
+;
+; Copy Files
+;
+
+[VMHgfs.DriverFiles.x64]
+vmhgfs.sys,,,2
+
+[VMHgfs.DllFiles.x64]
+vmhgfs.dll,vmhgfs_x64.dll,,0x00004000   ;  COPYFLG_IN_USE_TRY_RENAME
+
+[VMHgfs.DllFiles_WOW64.x64]
+
+vmhgfs.dll,vmhgfs_x86.dll,,0x00004000   ;  COPYFLG_IN_USE_TRY_RENAME
+
+
+;;
+[Strings]
+loc.VMHgfsServiceDesc        = "Implements the VMware HGFS protocol. This protocol provides connectivity to host files provided by the HGFS server."
+loc.VMHgfsServiceDisplayName = "VMware Host Guest Client Redirector"
+loc.Disk1                    = "VMHgfs Source Media"
+CompanyProvider              = "Broadcom Inc."
+VMHgfsServiceName            = "vmhgfs"
+RegParametersSubkeyName      = "Parameters"
+RegServerValueName           = "ServerName"
+RegServerValue               = "vmware-host"
+RegShareValueName            = "ShareName"
+RegShareValue                = "Shared Folders"
+RegNetworkProviderSubkeyName = "networkprovider"
+RegProviderNameValueName     = "Name"
+loc.RegProviderNameValue     = "VMware Shared Folders"
+RegProviderPathName          = "ProviderPath"
+RegProviderDeviceName        = "DeviceName"
+RegProviderDeviceNameValue   = "\Device\hgfs"

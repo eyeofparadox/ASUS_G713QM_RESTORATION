@@ -1,0 +1,48 @@
+_admin/logs/npp-crash-2025-06-16.txt
+---
+# Incident Log – Notepad++ Crash During Case Documentation
+
+**Date:** 2025-06-16  
+**Time:** Approx. [Insert local time, e.g. 21:48 PDT]  
+**System:** ASUS_G713QM  
+**Workspace:** in-the-eyeofparadox-main/_casefiles  
+**Actor:** David [EyeOfParadox]
+
+---
+
+## Description
+
+Notepad++ crashed unexpectedly while finalizing `045-ellipsis-massacre.md`. The crash occurred during documentation of the recovered folder paths following the "Ellipsis Massacre" folder renaming event.
+
+Ironically, the crash struck while adding the concluding lines related to restoring the ghosted WinSxS directory—fittingly timed during the “exorcism” log entry.
+
+---
+
+## Artifacts
+
+- `the-real-index.bin` x2  
+  - Temporary crash recovery files (approx. 43 KB)  
+  - Preserved in Google Drive for cold-case retention  
+  - Local copies discarded following review
+
+---
+
+## Recovery
+
+- Manual redo of final edit completed successfully  
+- Casefile 045 committed in full with canonical recovered paths  
+- No data loss beyond a few lines retyped  
+- Meta log created to preserve anomaly context
+
+---
+
+## Commentary
+
+> “Even the tools of record can’t always bear witness to spectral cleanup—sometimes they crash under the weight of truth.”
+
+---
+
+## Notes
+
+- May indicate transient plugin instability or encoding overlap  
+- Recommend monitoring Npp autosave plugin behavior when working with `.cmd` and `.md` concurrently  
