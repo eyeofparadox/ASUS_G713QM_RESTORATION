@@ -1,7 +1,5 @@
 ## ASUS ROG G713QM crashes during the clean install of Windows 11, specifically during the Out-of-Box Experience
 
----
-
 AI Overview
 
 It can be frustrating when your ASUS ROG G713QM crashes during the clean install of Windows 11, specifically during the Out-of-Box Experience (OOBE) and subsequent updates. Here's a breakdown of common causes and troubleshooting steps based on the search results:
