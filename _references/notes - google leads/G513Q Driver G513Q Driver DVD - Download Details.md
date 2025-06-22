@@ -1,14 +1,10 @@
-![ASUSTreiber.de - Your ASUS driver site on the Internet][image1]
-
-ASUSTreiber.de \- Your ASUS driver site on the Internet – G513Q Driver DVD 0.09\_20H2
+## ASUSTreiber.de \- Your ASUS driver site on the Internet – G513Q Driver DVD 0.09\_20H2
 
 ---
 
  Download Details | Popular
 
-### **![G513Q driver][image2]** 
-
-**G513Q Driver DVD**
+### G513Q Driver DVD
 
 Version 0.09\_20H2
 
