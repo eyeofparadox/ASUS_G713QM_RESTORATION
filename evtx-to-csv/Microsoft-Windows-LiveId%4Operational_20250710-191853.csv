@@ -1,0 +1,90 @@
+﻿RecordId,Time,Provider,Level,EventId,Message
+270,6/23/2025 6:25:24 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+79,6/23/2025 1:09:20 AM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+81,6/23/2025 1:09:22 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+82,6/23/2025 1:09:22 AM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+84,6/23/2025 1:09:22 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+85,6/23/2025 1:09:22 AM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+87,6/23/2025 1:09:22 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDGetAppData returned the following error code: 0x80048869.
+118,6/23/2025 1:42:37 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+119,6/23/2025 1:42:37 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+78,6/23/2025 1:09:20 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+121,6/23/2025 1:42:38 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+124,6/23/2025 1:42:38 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDGetAppData returned the following error code: 0x80048869.
+126,6/23/2025 1:42:47 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+127,6/23/2025 1:42:47 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+138,6/23/2025 1:45:39 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+139,6/23/2025 1:45:39 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+141,6/23/2025 1:45:39 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+142,6/23/2025 1:45:39 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+144,6/23/2025 1:45:40 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDGetAppData returned the following error code: 0x80048869.
+122,6/23/2025 1:42:38 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+67,6/23/2025 1:08:38 AM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+66,6/23/2025 1:08:38 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+64,6/23/2025 1:08:28 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDGetAppData returned the following error code: 0x80048869.
+12,6/23/2025 1:04:12 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+13,6/23/2025 1:04:12 AM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+20,6/23/2025 1:04:18 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+21,6/23/2025 1:04:18 AM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+32,6/23/2025 1:05:03 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+33,6/23/2025 1:05:03 AM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+35,6/23/2025 1:05:04 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+36,6/23/2025 1:05:04 AM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+37,6/23/2025 1:05:15 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCleanupIdentity returned the following error code: 0x80070057.
+39,6/23/2025 1:05:16 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+40,6/23/2025 1:05:16 AM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+42,6/23/2025 1:05:16 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDGetAppData returned the following error code: 0x80048869.
+44,6/23/2025 1:05:16 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+45,6/23/2025 1:05:16 AM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+47,6/23/2025 1:05:16 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDGetAppData returned the following error code: 0x80048869.
+58,6/23/2025 1:08:28 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+59,6/23/2025 1:08:28 AM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+61,6/23/2025 1:08:28 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+62,6/23/2025 1:08:28 AM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+146,6/23/2025 1:45:42 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+9,6/23/2025 1:04:12 AM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+147,6/23/2025 1:45:42 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+159,6/23/2025 1:48:57 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+224,6/23/2025 6:15:05 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+225,6/23/2025 6:15:05 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+227,6/23/2025 6:15:06 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDGetAppData returned the following error code: 0x80048869.
+229,6/23/2025 6:15:15 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+230,6/23/2025 6:15:15 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+241,6/23/2025 6:23:18 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+242,6/23/2025 6:23:18 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+244,6/23/2025 6:23:18 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+222,6/23/2025 6:15:05 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+245,6/23/2025 6:23:18 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+249,6/23/2025 6:23:26 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+250,6/23/2025 6:23:26 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+261,6/23/2025 6:25:20 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+262,6/23/2025 6:25:20 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+264,6/23/2025 6:25:20 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+265,6/23/2025 6:25:20 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+267,6/23/2025 6:25:20 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDGetAppData returned the following error code: 0x80048869.
+269,6/23/2025 6:25:24 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+247,6/23/2025 6:23:18 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDGetAppData returned the following error code: 0x80048869.
+221,6/23/2025 6:15:05 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+210,6/23/2025 6:11:37 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+209,6/23/2025 6:11:37 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+161,6/23/2025 1:48:57 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+162,6/23/2025 1:48:57 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+164,6/23/2025 1:48:57 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDGetAppData returned the following error code: 0x80048869.
+166,6/23/2025 1:49:00 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+167,6/23/2025 1:49:00 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+169,6/23/2025 1:49:15 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+170,6/23/2025 1:49:15 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+181,6/23/2025 1:58:41 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+182,6/23/2025 1:58:41 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+184,6/23/2025 1:58:42 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+185,6/23/2025 1:58:42 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+187,6/23/2025 1:58:42 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDGetAppData returned the following error code: 0x80048869.
+189,6/23/2025 1:58:44 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+190,6/23/2025 1:58:44 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+201,6/23/2025 6:11:27 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+202,6/23/2025 6:11:27 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+204,6/23/2025 6:11:27 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+205,6/23/2025 6:11:27 PM,Microsoft-Windows-LiveId,2,2028,ErrorVerifier in function Windows::Internal::Security::WebAuthentication::UserHostAuthenticationOperation::SetupIdentityHandle encountered unexpected error code (Unknown HResult Error code: 0x80048869).
+207,6/23/2025 6:11:28 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDGetAppData returned the following error code: 0x80048869.
+158,6/23/2025 1:48:57 PM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.
+8,6/23/2025 1:04:12 AM,Microsoft-Windows-LiveId,2,6113,RPC call to function WLIDCreateContext returned the following error code: 0x80048869.

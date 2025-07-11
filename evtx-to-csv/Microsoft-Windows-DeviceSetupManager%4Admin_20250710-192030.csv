@@ -1,0 +1,453 @@
+﻿RecordId,Time,Provider,Level,EventId,Message
+632,6/23/2025 6:25:19 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+216,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+218,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+219,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+220,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+221,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+222,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+223,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+224,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+225,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+227,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+228,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+215,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+230,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+232,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+233,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+235,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+236,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+237,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+238,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+240,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+241,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+242,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+243,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+245,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+231,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+246,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+214,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+212,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+176,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+178,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+179,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+180,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+181,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+182,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+183,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+185,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+186,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+188,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+189,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+213,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+192,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+194,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+196,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+197,6/23/2025 1:42:36 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+198,6/23/2025 1:42:36 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+200,6/23/2025 1:42:36 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+201,6/23/2025 1:42:36 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+202,6/23/2025 1:42:36 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+203,6/23/2025 1:42:36 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+204,6/23/2025 1:42:36 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+205,6/23/2025 1:42:36 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+211,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+193,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+249,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+250,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+251,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+293,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+294,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+296,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+297,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+300,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+301,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+302,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+304,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+305,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+306,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+312,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+292,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+313,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+315,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+316,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+317,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+318,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+319,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+320,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+321,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+322,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+324,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+326,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+327,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+314,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+291,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+288,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+287,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+253,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+254,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+255,6/23/2025 1:45:37 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+262,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+263,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+264,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+265,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+266,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+267,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+268,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+269,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+270,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+271,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+273,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+274,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+276,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+277,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+278,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+279,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+280,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+282,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+283,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+284,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+285,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+286,6/23/2025 1:48:55 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+175,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+328,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+173,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+171,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+52,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+53,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+55,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+56,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+57,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+58,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+60,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+61,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+63,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+64,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+71,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+51,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+72,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+74,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+75,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+76,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+77,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+78,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+79,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+80,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+82,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+83,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+84,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+86,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+73,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+87,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+50,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+47,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+13,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+14,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+16,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+17,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+18,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+19,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+20,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+21,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+22,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+23,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+25,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+48,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+26,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+29,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+36,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+37,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+38,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+39,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+40,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+41,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+42,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+43,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+44,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+45,6/23/2025 1:08:22 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+28,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+88,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+90,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+91,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+135,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+137,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+138,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+140,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+141,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+145,6/23/2025 1:12:43 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+146,6/23/2025 1:12:43 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+149,6/23/2025 1:12:43 AM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+151,6/23/2025 1:12:44 AM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+154,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+155,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+134,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+156,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+158,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+159,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+160,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+161,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+162,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+163,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+165,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+166,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+168,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+169,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+170,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+157,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+133,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+132,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+130,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+92,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+93,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+95,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+96,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+98,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+99,6/23/2025 1:09:18 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+103,6/23/2025 1:10:31 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+104,6/23/2025 1:10:31 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+105,6/23/2025 1:10:31 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+106,6/23/2025 1:10:31 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+113,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+114,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+115,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+116,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+117,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+118,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+119,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+120,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+121,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+122,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+124,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+125,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+126,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+127,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+129,6/23/2025 1:11:28 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+172,6/23/2025 1:42:35 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+329,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+332,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+333,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+523,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+524,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+525,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+526,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+528,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+529,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+530,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+531,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+533,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+534,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+536,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+522,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+537,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+539,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+541,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+542,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+543,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+544,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+545,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+546,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+548,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+549,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+550,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+551,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+538,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+553,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+521,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+519,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+484,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+485,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+486,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+487,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+488,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+489,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+490,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+491,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+493,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+494,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+495,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+520,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+496,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+499,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+501,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+502,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+505,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+506,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+507,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+509,6/23/2025 6:15:04 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+510,6/23/2025 6:15:04 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+511,6/23/2025 6:15:04 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+517,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+518,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+498,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+554,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+555,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+556,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+600,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+601,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+602,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+604,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+605,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+607,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+608,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+609,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+610,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+611,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+612,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+599,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+614,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+617,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+618,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+619,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+620,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+622,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+623,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+626,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+627,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+628,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+630,6/23/2025 6:25:19 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+631,6/23/2025 6:25:19 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+615,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+597,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+596,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+595,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+558,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+559,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+561,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+562,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+565,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+566,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+567,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+569,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+570,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+571,6/23/2025 6:23:16 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+578,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+579,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+580,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+581,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+582,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+583,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+584,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+585,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+586,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+587,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+589,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+590,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+592,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+593,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+594,6/23/2025 6:25:18 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+482,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+481,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+478,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+477,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+374,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+376,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+377,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+378,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+379,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+380,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+381,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+383,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+384,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+386,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+387,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+373,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+388,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+391,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+392,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+393,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+394,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+395,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+396,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+398,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+399,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+401,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+402,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+403,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+389,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+372,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+371,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+369,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+334,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+335,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+336,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+337,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+338,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+339,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+341,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+342,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+344,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+345,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+347,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+348,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+350,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+351,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+352,6/23/2025 1:58:39 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+354,6/23/2025 1:58:40 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+355,6/23/2025 1:58:40 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+356,6/23/2025 1:58:40 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+362,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+363,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+364,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+365,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+366,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+367,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+368,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+404,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+12,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+406,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+410,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+448,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+449,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+450,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+451,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+452,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+453,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+457,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+458,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+459,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+460,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+461,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+446,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+462,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+464,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+465,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+466,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+468,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+469,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+471,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+472,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+473,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+474,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+475,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+476,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+463,6/23/2025 6:15:03 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+445,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+444,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+443,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+411,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+412,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software AMDRadeonsettings had non-critical error 0x4D5 during installation, will retry later."
+414,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,164,"Software NVIDIACorp.NVIDIAControlPanel had non-critical error 0x4D5 during installation, will retry later."
+415,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+416,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+418,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+419,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+420,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+421,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+422,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+423,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+424,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+425,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+426,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+427,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+429,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+430,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+433,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+434,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+435,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+436,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+438,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+439,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,200,A connection to the Windows Update service could not be established.
+440,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
+441,6/23/2025 6:11:26 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+407,6/23/2025 6:11:25 PM,Microsoft-Windows-DeviceSetupManager,3,201,A connection to the Windows Metadata and Internet Services (WMIS) could not be established.
+11,6/23/2025 1:05:00 AM,Microsoft-Windows-DeviceSetupManager,3,202,The Network List Manager reports no connectivity to the internet.
