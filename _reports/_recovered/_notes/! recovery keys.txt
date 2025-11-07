@@ -1,0 +1,11 @@
+BitLocker Recovery Keys
+Device Name
+LAPTOP-RE37GQQE
+Key ID
+84249D31
+Recovery Key
+173756-711612-511544-026653-396088-480227-066748-585178
+Drive
+OSV
+Key upload date
+10/1/2021 5:52:00 PM

@@ -1,0 +1,64 @@
+robocopy G:\Partitions H:\Partitions /e /copyall /dcopy:dat /im /xd dirs H:\!_X750JB\Portfolio /xf file H:\!_X750JB\Portfolio /sl /move /v /fp /bytes /np /log:!_Partitions_Migration.log /tee
+
+
+ASUS Consumer Chat Support. My name is Abbigail_L. It is my understanding that a Windows update caused your device to freeze during repairs and install, is that right?
+
+Just to clarify, is it that the system crashed or froze while doing a Windows update?
+
+The system crashed during an update and during every repair and recovery attempt. I kept following the instructions that came up, and everything made things worse. It wiped out each recovery partition in turn. I had backups of the partitions, but they were unresponsive when restored. The recovery drive I created at the time of purchase ended up with the wrong drivers (G513QM instead of G713QM).
+
+The HD ended up needing to be completely repartitioned. I tried to do a clean windows 11 install, but the current iso does not work on ASUS laptops. I need an OEM image for a G713QM to reset the computer. As I said, I had previously backed up the MYASUS partition, but when I used that to try and restore the laptop, it did not work. Worse, it turns out that UEFI Cloud Recovery requires the OEM partitions that were wiped out. 
+
+The recovery drive I have is for a G513QM; I'm searching for a G713QM recovery media image, but don't expect to find it. I can still interrupt a Windows OOBE setup to load drivers manually, but it would be convenient to have a script to launch all the .exe's--I plan to be attending, so I'll respond to the dialogs manually since I can't set up an unattended script without a virtual machine.
+
+That makes sense—since the **OEM recovery partition** was wiped, Cloud Recovery won’t work. Searching for a **G713QM recovery media image** is worth a shot, though ASUS doesn't always make those publicly available. If you don’t find one, manually injecting drivers during **Windows OOBE setup** is a solid workaround.
+
+### **Automating Driver Installation with a Script**
+Since you plan to **attend and respond to dialogs manually**, the best approach is a **batch script** to launch all the `.exe` installers sequentially. Here's one that runs each installer and waits for manual interaction:
+
+```batch
+@echo off
+setlocal
+
+:: Set driver folder path
+set DRIVER_PATH=C:\Drivers
+
+:: Loop through all .exe files in the folder
+for %%F in ("%DRIVER_PATH%\*.exe") do (
+    echo Launching: %%F
+    start "" "%%F"
+    timeout /t 10 >nul
+)
+
+echo All drivers launched. Proceed manually with installations.
+pause
+```
+
+🚀 **How It Works:**
+- **Scans the driver folder** for `.exe` installers.
+- **Launches each one**, letting you manually go through each dialog.
+- **Pauses between launches**, so multiple installers don’t overlap.
+
+🔹 If you want **longer pauses**, increase `timeout /t 10` to a higher number.  
+🔹 If installers **require specific parameters**, manually add them after `"%%F"` (e.g., `"%%F /silent"` if applicable).
+
+This ensures all drivers launch **while keeping manual control** during setup. Let me know if you'd like refinements! 🚀
+
+
+G713QM
+Gaming NB
+Serial Number: M4NRKD016818172
+Out Of Warranty
+
+
+Internet Speed Test
+015102050100+
+
+58.1 Mbps download
+14.4 Mbps upload
+
+Latency: 11 ms
+Server: San Francisco Bay Area
+Your Internet connection is very fast.
+
+Your Internet connection should be able to handle multiple devices streaming HD videos, video conferencing, and gaming at the same time.
