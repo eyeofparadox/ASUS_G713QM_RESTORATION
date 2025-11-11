@@ -3,7 +3,7 @@ In the wake of a **Windows Update** wiping out the entire HD of my **ASUS ROG G7
 
 I started in pursuit of the right media, the tools to make better use of it, some expert guidance through the scripting trials that followed, and the transformation of my efforts into a greater project that I am pinning down here. As the rabbit-hole gets deeper, more content will be added to this repo so that future visitors can see not just **what** was built, but *why* and *how* it took shape under pressure. 
 
-> **Temporary Suspension**: I opted to send the laptop in before my extended coverage ran out. ASUS contacted me a couple weeks later saying they were unable to fix it and issued a reimbursement. They kept the old machine and I bought a newer model.So, I can't really follow up on it, but when time permits, I may distill all the useful work-product and archive it. ^_^
+> **Temporary Suspension**: I opted to send the laptop in before my extended coverage ran out. ASUS contacted me a couple weeks later saying they were unable to fix it and issued a reimbursement. They kept the old machine and I bought a newer model. So, I can't really follow up on it, but when time permits, I may distill all the useful work-product and archive it. ^_^
 
 ---
 
